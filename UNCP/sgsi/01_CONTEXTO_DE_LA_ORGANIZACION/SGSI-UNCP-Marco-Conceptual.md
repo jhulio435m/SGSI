@@ -4,7 +4,7 @@
 ## Universidad Nacional del Centro del Perú (UNCP)
 ### Marco Conceptual General
 
----
+***
 
 \newpage
 
@@ -23,7 +23,7 @@ Cubre **TODO tipo de información**, sin importar su formato:
 
 Principios fundamentales: **Confidencialidad, Integridad, Disponibilidad (CID)**.
 
----
+***
 
 \newpage
 
@@ -52,7 +52,7 @@ Principios fundamentales: **Confidencialidad, Integridad, Disponibilidad (CID)**
 | **Destrucción segura** | Trituradoras de papel certificadas para documentos confidenciales |
 | **Archivo histórico** | Control de acceso, condiciones ambientales (temperatura, humedad, plagas) |
 
----
+***
 
 \newpage
 
@@ -151,7 +151,7 @@ Conforme a la R.M. N° 119-2018-PCM y los Lineamientos del PGTD (R.S. N° 005-20
 - Acciones correctivas y preventivas
 - Mejora continua del SGSI
 
----
+***
 
 \newpage
 
@@ -174,7 +174,7 @@ Conforme a la R.M. N° 119-2018-PCM y los Lineamientos del PGTD (R.S. N° 005-20
 | **A.17 Continuidad** | BCP y DRP para sistemas críticos | x | x |
 | **A.18 Cumplimiento** | Ley 29733, D.L. 1412, transparencia, CGR | x | x |
 
----
+***
 
 \newpage
 
@@ -203,7 +203,7 @@ Conforme a la R.M. N° 119-2018-PCM y los Lineamientos del PGTD (R.S. N° 005-20
 | Declaraciones juradas | RRHH / OCI | Fuga de datos personales |
 | Tesis impresas | Biblioteca central / facultades | Deterioro, extravío |
 
----
+***
 
 \newpage
 
@@ -228,7 +228,7 @@ Conforme a la R.M. N° 119-2018-PCM y los Lineamientos del PGTD (R.S. N° 005-20
 | **Conectividad cloud** | Ninguna | AWS Direct Connect / Azure ExpressRoute a PNGD-PCM |
 | **SIEM** | Inexistente | Wazuh / Microsoft Sentinel con IA para detección de DDoS y SQLi |
 
----
+***
 
 \newpage
 
@@ -252,7 +252,7 @@ Conforme a la R.M. N° 119-2018-PCM y los Lineamientos del PGTD (R.S. N° 005-20
 | **Directiva N° 006-2019-CG/INTEG** - SCI | Implementación del Sistema de Control Interno |
 | **ISO/IEC 27001:2022** | Estándar internacional para SGSI |
 
----
+***
 
 \newpage
 
@@ -271,7 +271,7 @@ El SGSI se articula directamente con el Plan de Gobierno y Transformación Digit
 
 El PGTD de la UNCP incluye el proyecto PGTD-01 "Implementación del SGSI basado en ISO 27001" con un horizonte 2026-2030 y un presupuesto estimado de S/ 850,000.
 
----
+***
 
 \newpage
 
@@ -282,7 +282,7 @@ El PGTD de la UNCP incluye el proyecto PGTD-01 "Implementación del SGSI basado 
 3. **Plan de implementación:** Cronograma, recursos, presupuesto, responsables
 4. **Certificación:** Auditoría interna → certificación ISO 27001
 
----
+***
 
 *Documento: SGCI-UNCP-MC-001*
 *Versión: 1.1*

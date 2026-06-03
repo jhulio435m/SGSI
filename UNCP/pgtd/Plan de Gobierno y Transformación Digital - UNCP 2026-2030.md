@@ -77,9 +77,7 @@ NTP ISO/IEC 38500:2016 & Gobierno de TI para la Organizacion \\
 
 ### 2.2 Normas Institucionales
 
-\begin{notebox}
-\textbf{Pendiente de verificacion:} resoluciones sujetas a disponibilidad del servidor files.uncp.edu.pe.
-\end{notebox}
+
 
 \begin{compacttable}[Normas institucionales aplicables al PGTD]
 \rowcolors{2}{uncpTableStripe}{white}
@@ -158,9 +156,7 @@ Este mandato vinculante sustenta tecnicamente todos los proyectos de digitalizac
 
 ### 3.4 Alineamiento con el PEI UNCP 2026-2030
 
-\begin{notebox}
-\textbf{Pendiente de verificacion:} informacion sujeta a disponibilidad del servidor files.uncp.edu.pe.
-\end{notebox}
+
 
 Los objetivos estrategicos institucionales (OEI) del PEI UNCP 2026-2030 que se relacionan directamente con el presente plan son:
 
@@ -210,9 +206,9 @@ La UNCP actualmente cuenta con las siguientes unidades relacionadas con la gesti
 
 ![Estructura Organizacional de la UNCP](imagenes/Organigrama-UNCP-2025-1.jpg){width=90%}
 
-**Comite de Gobierno Digital:** conformado mediante Resolucion N 1862-R-2023, pendiente de verificacion documental final, presidido por el Rector e integrado por:
+**Comite de Gobierno Digital:** conformado formalmente mediante Resolucion N 1862-R-2023, presidido por el Rector e integrado por:
 
-\begin{compacttable}[Composicion actual del Comite de Gobierno Digital]
+\begin{compacttable}[Composicion del Comite de Gobierno Digital]
 \rowcolors{2}{uncpTableStripe}{white}
 \begin{tabularx}{\textwidth}{L{0.45\textwidth} Y}
 \toprule
@@ -221,26 +217,24 @@ La UNCP actualmente cuenta con las siguientes unidades relacionadas con la gesti
 Rector & Titular de la entidad / Presidente del CGTD \\
 Director(a) General de Administracion & Lider de Gobierno y Transformacion Digital \\
 Jefe(a) de la Oficina de Tecnologias de la Informacion (OTI) & Responsable del area de informatica \\
+Oficial de Seguridad de la Informacion & Responsable de seguridad (Res. N 2143-R-2023) \\
 Jefe(a) de la Unidad de Recursos Humanos & Responsable del area de recursos humanos \\
 Jefe(a) de la Unidad de Tramite documentario y Archivo & Responsable del area de atencion al ciudadano \\
 Jefe(a) de la Oficina de Asesoria Juridica & Responsable del area legal \\
 Jefe(a) de la Oficina de Planeamiento y Presupuesto & Responsable del area de planificacion \\
+Responsable de Software Publico & Designado por Res. N 2140-R-2023 \\
 \bottomrule
 \end{tabularx}
 \end{compacttable}
 
 **Observaciones sobre la estructura actual:**
-- El Comite de Gobierno Digital fue conformado formalmente pero su operatividad es limitada
-- No existe un Oficial de Seguridad y Confianza Digital designado formalmente
-- La OTI cuenta con personal limitado (2 personas confirmadas: Rocio Damian y Juan Carlos Garay)
-- No se ha designado formalmente al Lider de Gobierno y Transformacion Digital (el rol recae en el DGA)
-- No existe separacion clara entre funciones de gobierno digital y operaciones TI
+- El Comite de Gobierno Digital se encuentra operativo y sesiona regularmente segun el marco legal vigente.
+- Se cuenta con un Oficial de Seguridad de la Informacion designado formalmente mediante Resolucion N 2143-R-2023.
+- La OTI cuenta con personal tecnico especializado, incluyendo a Rocio Damian y Juan Carlos Garay, aunque se requiere fortalecer el equipo para los nuevos desafios.
+- El rol de Lider de Gobierno y Transformacion Digital es ejercido por el Director General de Administracion (DGA).
+- Se ha designado un Responsable de Software Publico segun Resolucion N 2140-R-2023.
 
 ### 4.2 Infraestructura Tecnologica
-
-\begin{notebox}
-\textbf{Pendiente de verificacion tecnica:} detalle sujeto a disponibilidad del servidor files.uncp.edu.pe.
-\end{notebox}
 
 **Red de datos:**
 
@@ -252,32 +246,52 @@ La UNCP cuenta con una red de datos que interconecta las diferentes facultades y
 \toprule
 \tableheader Componente & Situacion Actual \\
 \midrule
-Red de campus & Fibra optica entre edificios principales, con segmentacion limitada \\
-Conectividad a internet & 300 Mbps simetricos, insuficientes para la demanda actual \\
-Red inalambrica & Cobertura parcial en facultades, sin autenticacion unificada \\
-Segmentacion de red & Ausente en la mayoria de las facultades \\
-Protocolo IPv6 & No implementado \\
-VPN de acceso remoto & Implementacion basica, sin controles de acceso avanzados \\
+Red de campus & Fibra optica entre edificios principales, con segmentacion por VLANs \\
+Conectividad a internet & 4 Gbps simetricos, con alta velocidad y estabilidad \\
+Red inalambrica & Cobertura en facultades, con autenticacion basica \\
+Segmentacion de red & Implementada mediante protocolos IPv4 \\
+Protocolo IPv6 & En proceso de transicion y adopcion \\
+VPN de acceso remoto & Implementacion para acceso administrativo y academico \\
 Firewall perimetral & Equipo de generacion anterior, sin actualizacion de licencias \\
 \bottomrule
 \end{tabularx}
 \end{compacttable}
 
-**Servidores:**
+**Servidores e Infraestructura Cloud:**
 
-\begin{compacttable}[Situacion actual de servidores]
+La UNCP ha migrado significativamente a la nube, utilizando servicios de Huawei Cloud (IaaS y PaaS) para sus aplicaciones criticas.
+
+\begin{compacttable}[Situacion actual de servidores e infraestructura cloud]
 \rowcolors{2}{uncpTableStripe}{white}
 \begin{tabularx}{\textwidth}{L{0.32\textwidth} C{0.18\textwidth} Y}
 \toprule
-\tableheader Tipo & Cantidad & Observaciones \\
+\tableheader Tipo & Cantidad / Detalle & Observaciones \\
 \midrule
-Servidores fisicos & 12 & Varios con mas de 7 anos de antiguedad \\
-Servidores virtualizados & 8 hosts (VMware) & Capacidad al 80\%, sin plan de expansion \\
-Almacenamiento SAN & 1 equipo (24 TB) & 75\% utilizado, sin replicacion \\
-Servicio en la nube & Minimo & Solo servicios de correo institucional en cloud \\
+Servidores fisicos & 8 & Ubicados en el Datacenter local \\
+Servidores virtualizados & 3 & Entorno de virtualizacion local \\
+Infraestructura Cloud (IaaS) & 3 servicios & Huawei Cloud: ASP.NET Core, PHP, Desarrollo \\
+Plataforma Cloud (PaaS) & 1 servicio & Gestion de bases de datos y servicios gestionados \\
+Almacenamiento en Nube & 12 TB (Object Storage) & Servicio de almacenamiento estandar \\
+Backup en Nube & 4 TB & Cloud Backup and Recovery \\
 \bottomrule
 \end{tabularx}
 \end{compacttable}
+
+**Detalle de la Infraestructura en la Nube (Huawei Cloud):**
+- **Servidor ASP.NET Core:** 96 GB RAM, 24 vCPU, 1024 GB Storage. Incluye balanceador de carga para 50,000 conexiones concurrentes y autoescalado.
+- **Base de Datos ASP.NET:** MySQL 8.0.33, 96 GB RAM, 24 vCPU, 2048 GB Storage.
+- **Servidor PHP:** 16 GB RAM, 8 vCPU, 3072 GB Storage (Incremental).
+- **Base de Datos PHP:** MySQL 5.7.40, 16 GB RAM, 8 vCPU, 1024 GB Storage.
+- **Seguridad Perimetral Cloud:** WAF con 20 reglas, Proteccion Anti-DDoS, Certificados SSL Wildcard.
+- **Otros:** CDN para entrega de contenido, IAM para gestion de identidades, DNS de alta velocidad.
+
+**Hardware e Inventario de Equipos (Annex 03):**
+Segun el inventario de activos digitales de 2025, la UNCP cuenta con:
+- **Computadoras de escritorio:** 3,736 total (1,253 operativas de alto rendimiento).
+- **Computadoras portatiles:** 1,861 total (773 operativas).
+- **Impresoras y Multifuncionales:** 1,200 equipos.
+- **Escaneres:** 501 unidades.
+- **Equipos de Red:** 143 Access Points, 137 Switches PoE, 9 Firewalls fisicos.
 
 **Sistemas de Informacion:**
 
@@ -287,17 +301,16 @@ Servicio en la nube & Minimo & Solo servicios de correo institucional en cloud \
 \toprule
 \tableheader Sistema & Funcion & Estado \\
 \midrule
-SIGA (Sistema Integrado de Gestion Administrativa) & Gestion administrativa, presupuestal y de recursos humanos & Operativo, version desactualizada \\
-Campus Virtual (Moodle) & Plataforma de educacion virtual & Operativo, version 4.1, aloja 350+ cursos \\
-Sistema de Matricula Academica & Proceso de matricula en linea & Operativo con limitaciones, caidas en periodos de alta demanda \\
-Repositorio Institucional de Tesis (DSpace) & Almacenamiento y difusion de tesis & Operativo, requiere actualizacion \\
-Correo Institucional (Microsoft 365) & Comunicacion oficial & Operativo, migrado desde Google Workspace \\
-Sistema de Tramite Documentario (GESDOC/ADESA) & Gestion de documentos y expedientes & Operativo, con modulo para usuarios externos e internos \\
-Sistema de Recursos Humanos (Planillas) & Gestion de personal y planillas & Operativo, integrado parcialmente con SIGA \\
-Sistema de Tesoreria & Recaudacion y pagos & Operativo, sin pasarela de pagos en linea \\
-Portal Web Institucional & Informacion y servicios & WordPress, requiere actualizacion de seguridad \\
-Sistema de Helpdesk (OTI) & Soporte tecnico y mesa de ayuda & Operativo en erphelpdesk.uncp.edu.pe \\
-Intranet ADESA & Gestion academica docente-estudiante & Operativo en erpintranet.uncp.edu.pe \\
+ERP ADESA (23 Modulos) & Gestion Academica y Administrativa integral & Operativo (Sistema principal) \\
+SIGA / SIAF & Gestion administrativa, presupuestal y financiera & Operativo \\
+Campus Virtual (Moodle / Teams) & Plataforma de educacion virtual y videoconferencia & Operativo \\
+Sistema de Biblioteca (KOHA) & Gestion de prestamos y busqueda de libros & Operativo \\
+Repositorio Institucional (DSpace) & Almacenamiento y difusion de tesis e investigacion & Operativo \\
+Correo Institucional (Office 365) & Comunicacion oficial (@uncp.edu.pe) & Operativo \\
+Tramite Documentario (ERP-ADESA) & Gestion de documentos y expedientes (Interno/Externo) & Operativo \\
+Sistema de Centro Medico & Gestion de historias clinicas e inventario farmaceutico & Operativo \\
+Sistema de Comedor Universitario & Control de asistencia de beneficiarios & Operativo \\
+Sistema de Proyeccion Social & Gestion de procedimientos de proyeccion social & Operativo \\
 \bottomrule
 \end{tabularx}
 \end{compacttable}
@@ -308,7 +321,33 @@ Intranet ADESA & Gestion academica docente-estudiante & Operativo en erpintranet
 
 La UNCP cuenta con licencias de software propietario para sistemas operativos, bases de datos y herramientas ofimaticas, aunque existe un porcentaje significativo de equipos con software sin licenciamiento adecuado. No se cuenta con un inventario centralizado de licencias ni con una politica formal de adquisicion de software.
 
-### 4.3 Servicios Digitales Actuales
+### 4.3 Procesos Digitalizados
+
+A continuacion se detallan los macroprocesos y procesos de la UNCP que cuentan con soporte digital, indicando su nivel de madurez y el detalle de las herramientas utilizadas:
+
+\begin{compacttable}[Procesos digitalizados de la UNCP]
+\rowcolors{2}{uncpTableStripe}{white}
+\begin{tabularx}{\textwidth}{L{0.25\textwidth} L{0.25\textwidth} C{0.10\textwidth} Y}
+\toprule
+\tableheader Macroproceso & Proceso & Nivel & Detalle / Comentarios \\
+\midrule
+\textbf{Posicionamiento Institucional} & Gestion de convenios y movilidad & Total & Modulo de Cooperacion Internacional en ERP ADESA \\
+\textbf{Gestion de Admision} & Inscripcion y seleccion & Total & Modulo de admision ERP-ADESA, consulta biometrica \\
+\textbf{Formacion Profesional} & Organizacion academica & Total & Modulos de Gestion Docente y Matriculas (ERP ADESA) \\
+\textbf{Gestion de Investigacion} & Proyectos e investigacion & Parcial & Seguimiento en ERP ADESA y sistemas de revistas/tesis \\
+\textbf{Seguimiento al egresado} & Gestion de egresados & Total & Sistemas digitales dentro de ERP ADESA \\
+\textbf{Responsabilidad Social} & Proyeccion Social & Total & Modulo de Proyeccion Social en ERP ADESA \\
+\textbf{Gestion de RRHH} & Incorporacion y planillas & Parcial & Uso de SIAF y modulos ERP para convocatorias \\
+\textbf{Gestion Academica} & Evaluacion de Desempeño & Total & Modulo Gestion de Docentes (ERP ADESA) \\
+\textbf{Gestion de la Inversion} & Formulacion y ejecucion & Parcial & Banco de Inversiones MEF, SIGA y SIAF \\
+\textbf{Gestion Financiera} & Captacion y gasto & Total & SIGA, SIAF y Modulo Caja del ERP-ADESA \\
+\textbf{Gestion Documental} & Tramite y atencion & Total & Módulo de Trámite Documentario del ERP ADESA \\
+\textbf{Gestion de Asuntos Legales} & Procedimientos disciplinarios & Total & Sistema desarrollado por OTI; otros procesos parciales \\
+\bottomrule
+\end{tabularx}
+\end{compacttable}
+
+### 4.4 Servicios Digitales Actuales
 
 La UNCP ofrece actualmente los siguientes servicios digitales:
 
@@ -318,38 +357,31 @@ La UNCP ofrece actualmente los siguientes servicios digitales:
 \toprule
 \tableheader Servicio & Canal & Nivel de Madurez \\
 \midrule
-Consulta de notas en linea & Web & Transaccional parcial \\
-Matricula virtual & Web & Transaccional con intermitencias \\
-Consulta de horarios & Web & Informativo \\
-Descarga de boletas de pago & Web & Transaccional \\
-Tramite documentario interno (GESDOC) & Web & Transaccional \\
+Consulta de notas en linea & Web (ERP ADESA) & Transaccional \\
+Matricula virtual & Web (ERP ADESA) & Transaccional \\
+Consulta de horarios & Web (ERP ADESA) & Transaccional \\
+Descarga de boletas de pago & Web (ERP ADESA) & Transaccional \\
+Tramite documentario interno (GESDOC/ADESA) & Web & Transaccional \\
 Tramite documentario externo (ADESA) & Web/Movil & Transaccional \\
-Mesa de Partes Virtual & Web & Operativo (erpcampus.uncp.edu.pe) \\
-Correo institucional (Microsoft 365) & Web/Movil & Operativo \\
-Campus virtual (Moodle) & Web/Movil & Operativo \\
-Repositorio de tesis (DSpace) & Web & Informativo \\
-Biblioteca virtual & Web & Informativo \\
-Portal de Transparencia Estandar & Web & Operativo \\
-Portal de Transparencia Universitaria & Web & Operativo \\
-Libro de Reclamaciones virtual & Web & Operativo (plataforma nacional) \\
-Informacion institucional & Web/Redes & Informativo \\
-Helpdesk OTI & Web & Operativo \\
+Mesa de Partes Virtual & Web (erpcampus.uncp.edu.pe) & Operativo \\
+Correo institucional (Office 365) & Web/Movil & Operativo \\
+Campus virtual (Moodle/Teams) & Web/Movil & Operativo \\
+Repositorio de tesis (DSpace) & Web & Informativo / Transaccional \\
+Biblioteca virtual (MyLOFT) & Web & Operativo \\
+Portal de Transparencia & Web & Operativo \\
+Convocatorias Virtuales & Web & Operativo \\
 \bottomrule
 \end{tabularx}
 \end{compacttable}
 
 **Problemas identificados en los servicios digitales actuales:**
-- No existe un portal unificado de servicios digitales (cada sistema tiene su propio acceso)
-- Los servicios no estan disenados con enfoque centrado en el usuario
-- Falta de interoperabilidad entre sistemas
-- Ausencia de mecanismos de autenticacion unificada (SSO)
-- Limitada disponibilidad de servicios moviles
-- No se cuenta con un catalogo de servicios digitales formalizado
-- Los servicios no cumplen estandar de accesibilidad web (R.S. N 001-2025-PCM/SGTD - Lineamiento de accesibilidad para personas con discapacidad)
+- Se requiere un portal unificado para mejorar la experiencia del usuario (SSO).
+- Los servicios deben alinearse completamente al estandar de accesibilidad (WCAG 2.2).
+- Falta de interoperabilidad total entre algunos modulos antiguos y la nueva infraestructura cloud.
 
-### 4.4 Seguridad de la Informacion
+### 4.5 Seguridad de la Informacion
 
-De acuerdo con el diagnostico realizado en el "SGSI-UNCP-Marco-Conceptual", la situacion actual de la seguridad de la informacion en la UNCP presenta las siguientes caracteristicas:
+De acuerdo con el diagnostico realizado y los datos del plan anterior, la situacion de la seguridad de la informacion en la UNCP es la siguiente:
 
 \begin{compacttable}[Situacion actual de seguridad de la informacion]
 \rowcolors{2}{uncpTableStripe}{white}
@@ -357,21 +389,14 @@ De acuerdo con el diagnostico realizado en el "SGSI-UNCP-Marco-Conceptual", la s
 \toprule
 \tableheader Dimension & Situacion Actual \\
 \midrule
-Politicas de seguridad & Dispersas, no formalizadas, sin aprobacion de alta direccion \\
-Organizacion de seguridad & Sin Oficial de Seguridad designado, sin Comite de Seguridad \\
-Gestion de activos & Inventario incompleto, sin clasificacion de informacion \\
-Control de acceso & Usuarios compartidos en varios sistemas, contraseñas debiles, sin 2FA \\
-Seguridad fisica & Acceso sin control en varias facultades, sala de servidores con control basico \\
-Seguridad de redes & Sin segmentacion, firewall sin reglas actualizadas, sin IDS/IPS \\
-Gestion de vulnerabilidades & No se realizan analisis periodicos \\
-Gestion de incidentes & No existe procedimiento formal, incidentes no se reportan \\
-Backups & Programados pero no se realizan pruebas de restauracion periodicas \\
-Continuidad del negocio & Sin plan de continuidad ni DRP \\
-Concientizacion & Minima, no existe programa de capacitacion en seguridad \\
-Cumplimiento legal & Parcial (Ley 29733, D.L. 1412) \\
-Cifrado de datos & No implementado en reposo ni en transito para datos sensibles \\
-Gestion de cambios & Sin procedimiento formal \\
-Seguridad en desarrollos & No se consideran requisitos de seguridad en nuevos sistemas \\
+Politicas de seguridad & En proceso de formalizacion y actualizacion bajo ISO 27001 \\
+Organizacion de seguridad & Oficial de Seguridad designado (Res. N 2143-R-2023) \\
+Gestion de activos & Inventario de activos digitales realizado en 2025 \\
+Control de acceso & Implementacion de protocolos HTTPS, SSL Wildcard e IAM \\
+Seguridad de redes & Firewalls fisicos (9) y virtuales (1), segmentacion por VLANs \\
+Seguridad Cloud & WAF, Anti-DDoS y monitoreo de eventos en Huawei Cloud \\
+Gestion de vulnerabilidades & Realizacion de analisis periodicos en servicios criticos \\
+Backups & Cloud Backup and Recovery (4 TB) y backups locales \\
 \bottomrule
 \end{tabularx}
 \end{compacttable}
@@ -384,46 +409,36 @@ Seguridad en desarrollos & No se consideran requisitos de seguridad en nuevos si
 \toprule
 \tableheader Activo & Riesgo Principal \\
 \midrule
-Base de datos academica (matricula, notas, grados) & Perdida de historial academico, procesos judiciales \\
-Sistema de tesoreria / recaudacion & Fraude financiero \\
-Correo institucional (Microsoft 365) & Suplantacion, phishing, fuga de informacion \\
-Plataforma campus virtual & Interrupcion del servicio educativo \\
-Repositorio de tesis e investigacion & Perdida de propiedad intelectual \\
-Sistema de planillas (RRHH) & Fuga de datos personales de trabajadores \\
-Actas de notas originales (fisico) & Perdida, deterioro, incendio \\
-Expedientes de grados y titulos (fisico) & Perdida, falsificacion \\
+Base de datos academica (ERP ADESA) & Compromiso de integridad y disponibilidad \\
+Sistema de tesoreria / recaudacion & Fraude financiero o perdida de datos transaccionales \\
+Correo institucional (Office 365) & Suplantacion, phishing, fuga de informacion \\
+Plataforma campus virtual / Moodle & Interrupcion del servicio educativo \\
+Sistemas de investigacion y tesis & Perdida de propiedad intelectual \\
+Historias clinicas (Centro Medico) & Acceso no autorizado a datos sensibles \\
 \bottomrule
 \end{tabularx}
 \end{compacttable}
 
-### 4.5 Presupuesto de Gobierno Digital
+### 4.6 Presupuesto de Gobierno Digital
 
-El presupuesto asignado a tecnologias digitales en la UNCP se ha mantenido estable en los ultimos anos, aunque por debajo de las necesidades reales:
+El presupuesto asignado a tecnologias digitales en la UNCP segun el POI 2025 y proyecciones:
 
-\begin{compacttable}[Presupuesto de gobierno digital 2024]
+\begin{compacttable}[Presupuesto de gobierno digital]
 \rowcolors{2}{uncpTableStripe}{white}
 \begin{tabularx}{\textwidth}{Y R{0.24\textwidth} C{0.18\textwidth}}
 \toprule
-\tableheader Concepto & Presupuesto 2024 (S/) & Porcentaje \\
+\tableheader Concepto & Presupuesto Estimado (S/) & Porcentaje \\
 \midrule
-Personal (OTI) & 480,000 & 32\% \\
-Software y licencias & 210,000 & 14\% \\
-Hardware e infraestructura & 360,000 & 24\% \\
-Servicios de conectividad & 240,000 & 16\% \\
-Servicios externos y consultorias & 120,000 & 8\% \\
-Capacitacion & 90,000 & 6\% \\
-\textbf{Total} & \textbf{1,500,000} & \textbf{100\%} \\
+Personal y Capacitacion & 570,000 & 30\% \\
+Software, Licencias y Cloud & 475,000 & 25\% \\
+Hardware e Infraestructura & 570,000 & 30\% \\
+Servicios de Conectividad & 285,000 & 15\% \\
+\textbf{Total} & \textbf{1,900,000} & \textbf{100\%} \\
 \bottomrule
 \end{tabularx}
 \end{compacttable}
 
-**Observaciones presupuestales:**
-- El presupuesto de TI representa aproximadamente el 1.2% del presupuesto total de la UNCP, por debajo del 3-5% recomendado para instituciones de educacion superior
-- No existe una partida presupuestal especifica para proyectos de gobierno digital
-- La ejecucion presupuestal en el rubro de inversiones TI ha sido inferior al 70% en los ultimos dos anos
-- No se cuenta con un plan de inversiones multianual en tecnologia
-
-### 4.6 Cumplimiento Normativo
+### 4.7 Cumplimiento Normativo
 
 \begin{compacttable}[Cumplimiento normativo]
 \rowcolors{2}{uncpTableStripe}{white}
@@ -431,25 +446,17 @@ Capacitacion & 90,000 & 6\% \\
 \toprule
 \tableheader Norma & Estado de Cumplimiento \\
 \midrule
-Ley N 29733 (Proteccion de Datos Personales) & Parcial: no se cuenta con un registro de bases de datos personales ni con un procedimiento de atencion de derechos ARCO \\
-D.S. N 016-2024-JUS (Nuevo Reglamento de Proteccion de Datos) & No implementado: no se han realizado DPIAs ni evaluaciones de impacto para transferencias internacionales de datos \\
-D.L. N 1412 (Gobierno Digital) & Parcial: Comite de Gobierno Digital creado pero no operativo plenamente \\
-D.S. N 098-2025-PCM (Modificatoria del Reglamento LGD) & No implementado: los servicios digitales no cumplen las nuevas condiciones de identidad digital, interoperabilidad y gestion documental electronica \\
-D.S. N 033-2018-PCM (Plataforma Digital Unica) & Implementado: la UNCP esta presente en gob.pe/uncp con informacion institucional, tramites y servicios \\
-D.S. N 029-2021-PCM (Reglamento LGD, modificado por D.S. N 098-2025-PCM) & Parcial: sin Lider de Gobierno Digital designado formalmente \\
-R.M. N 119-2018-PCM (Comite de Gobierno Digital) & Cumplimiento formal: Comite creado mediante Resolucion N 1862-R-2023 \\
-Ley N 31814 y D.S. N 115-2025-PCM (Reglamento de IA) & No implementado: el proyecto PGTD-08 contempla modelos de IA que requieren auditoria de algoritmos, supervision humana y registro obligatorio ante la SGTD \\
-Directiva N 001-2025-PCM/SGTD (Consumo seguro PIDE) & No implementado: no se han establecido las medidas de seguridad digital para el consumo de servicios de interoperabilidad \\
-R.S. N 001-2025-PCM/SGTD (Accesibilidad digital) & No implementado: los servicios digitales actuales no cumplen las pautas WCAG 2.2 ni el lineamiento de accesibilidad para personas con discapacidad \\
-Directiva N 006-2019-CG/INTEG (SCI) & Parcial: el componente de tecnologia y seguridad requiere fortalecimiento \\
-NTP ISO/IEC 27001 & No implementado: fase de planificacion inicial \\
-D.S. N 063-2010-PCM (Transparencia) & Implementado: Portal de Transparencia Estandar operativo \\
-D.S. N 205-2020-PCM (Mesa de Partes Digital) & Implementado: Mesa de Partes Virtual operativa \\
+Ley N 29733 (Proteccion de Datos Personales) & Implementado: Controles en bases de datos y seguridad Cloud \\
+D.L. N 1412 (Gobierno Digital) & Implementado: Comite de Gobierno Digital constituido y operativo \\
+D.S. N 029-2021-PCM (Reglamento LGD) & Cumplimiento: Designacion de roles criticos (Seguridad, Software Publico) \\
+Resolucion N 1862-R-2023 (CGD) & Cumplimiento: Comite conformado y liderando la transformacion \\
+NTP ISO/IEC 27001 & En proceso: Implementacion del SGSI (Proyecto PGTD-01) \\
+D.S. N 033-2018-PCM (GOB.PE) & Implementado: Presencia activa en gob.pe/uncp \\
 \bottomrule
 \end{tabularx}
 \end{compacttable}
 
-### 4.7 Matriz Resumen AS-IS
+### 4.8 Matriz Resumen AS-IS
 
 \begin{compacttable}[Matriz resumen AS-IS]
 \rowcolors{2}{uncpTableStripe}{white}
@@ -457,27 +464,20 @@ D.S. N 205-2020-PCM (Mesa de Partes Digital) & Implementado: Mesa de Partes Virt
 \toprule
 \tableheader Dimension & Situacion Actual (AS-IS) \\
 \midrule
-Politicas de seguridad & Dispersas, no formalizadas \\
-Organizacion TI & Sin Oficial de Seguridad, OTI con personal limitado (2 personas) \\
-Infraestructura de red & Sin segmentacion, firewall desactualizado \\
-Servidores & Varios con mas de 7 anos, capacidad al limite \\
-Sistemas de informacion & Dispersos, sin interoperabilidad, sin SSO \\
-Servicios digitales & Nivel informativo/transaccional basico, sin portal unificado \\
-Seguridad de la informacion & Controles minimos, sin SGSI \\
-Gestion de incidentes & Inexistente \\
-Continuidad del negocio & Sin BCP/DRP \\
-Competencias digitales & Sin programa de capacitacion \\
-Presupuesto TI & Insuficiente (1.2\% del presupuesto total) \\
-Cumplimiento normativo & Parcial \\
-Presencia en GOB.PE & Implementada \\
-Mesa de Partes Digital & Operativa \\
-Portal de Transparencia & Operativo \\
-Datos Abiertos & No implementado \\
+Politicas de seguridad & Basadas en estandares internacionales, en formalizacion \\
+Organizacion TI & Comite operativo, Oficial de Seguridad designado \\
+Infraestructura de red & Fibra optica, 4 Gbps de internet, segmentacion VLAN \\
+Infraestructura Cloud & Huawei Cloud (PaaS/IaaS) operativa para sistemas criticos \\
+Sistemas de informacion & ERP ADESA integrado con 23 modulos \\
+Servicios digitales & Nivel transaccional en procesos clave (matricula, notas) \\
+Seguridad de la informacion & Controles tecnicos robustos en nube, SGSI en fase de proyecto \\
+Gestion de incidentes & Procedimientos basicos implementados por OTI \\
+Cumplimiento normativo & Nivel alto de cumplimiento formal y operativo \\
 \bottomrule
 \end{tabularx}
 \end{compacttable}
 
-### 4.8 Modelo de Madurez de Gobierno Digital (Diagnostico FONAFE)
+### 4.9 Modelo de Madurez de Gobierno Digital (Diagnostico FONAFE)
 
 Para la evaluacion del nivel de madurez de gobierno digital en la UNCP, se empleo el modelo de medicion utilizado por FONAFE en su Plan de Gobierno y Transformación Digital 2023-2026, adaptado al contexto universitario. Este modelo mide las capacidades de gestion tecnologica a traves de cinco dominios ponderados:
 
@@ -1098,15 +1098,17 @@ El Comite de Gobierno y Transformacion Digital (CGTD) fue conformado en la UNCP 
 1 & Rector & Titular de la entidad / Presidente del CGTD \\
 2 & Director(a) General de Administracion & Lider de Gobierno y Transformacion Digital \\
 3 & Jefe(a) de la Oficina de Tecnologias de la Informacion (OTI) & Responsable del area de informatica \\
-4 & Jefe(a) de la Unidad de Recursos Humanos & Responsable del area de recursos humanos \\
-5 & Jefe(a) de la Unidad de Tramite documentario y Archivo & Responsable del area de atencion al ciudadano \\
-6 & Jefe(a) de la Oficina de Asesoria Juridica & Responsable del area legal \\
-7 & Jefe(a) de la Oficina de Planeamiento y Presupuesto & Responsable del area de planificacion \\
+4 & Oficial de Seguridad de la Informacion & Responsable de seguridad (Res. N 2143-R-2023) \\
+5 & Jefe(a) de la Unidad de Recursos Humanos & Responsable del area de recursos humanos \\
+6 & Jefe(a) de la Unidad de Tramite documentario y Archivo & Responsable del area de atencion al ciudadano \\
+7 & Jefe(a) de la Oficina de Asesoria Juridica & Responsable del area legal \\
+8 & Jefe(a) de la Oficina de Planeamiento y Presupuesto & Responsable del area de planificacion \\
+9 & Responsable de Software Publico & Designado por Res. N 2140-R-2023 \\
 \bottomrule
 \end{tabularx}
 \end{compacttable}
 
-**Nota:** Esta composicion corresponde a la establecida en la Resolucion N 1862-R-2023. Se requiere actualizar dicha resolucion para incluir los roles de Oficial de Seguridad y Confianza Digital y Vicerrector Academico como Lider de Gobierno Digital, en cumplimiento del D.S. N 029-2021-PCM y R.M. N 087-2019-PCM.
+**Nota:** Esta composicion integra los roles establecidos en la Resolucion N 1862-R-2023 y las resoluciones complementarias N 2143-R-2023 (Seguridad) y N 2140-R-2023 (Software Publico), cumpliendo con el D.S. N 029-2021-PCM y R.M. N 087-2019-PCM.
 
 **Funciones del CGTD:**
 - Aprobar el Plan de Gobierno y Transformacion Digital y sus actualizaciones

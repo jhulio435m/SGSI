@@ -7,7 +7,7 @@
 3. Entregar a la OTI para consolidacion en el registro maestro.
 4. Actualizar semestralmente o ante cambios significativos.
 
----
+***
 
 ## 1. Registro de Activos
 
@@ -29,7 +29,7 @@
 - **Instalacion (IN)**: Data centers, racks, cableado estructurado
 - **Soporte Fisico (SF)**: Documentos impresos, medios removibles
 
----
+***
 
 ## 2. Clasificacion de Seguridad (C-I-D)
 
@@ -56,7 +56,7 @@
 | C=1 e I=1 y D=1 | **Media** |
 | C=1 y (I=1 o D=1) | **Baja** |
 
----
+***
 
 ## 3. Controles Asociados (ISO 27001:2022 - Anexo A)
 
@@ -68,7 +68,7 @@
 | PR-001 | A.8.1 (Proteccion equipos), A.8.20 (Seguridad en redes), A.8.21 (Seguridad de servicios en red) | Pendiente | Sin segmentacion de red implementada |
 | PE-001 | A.5.4 (Responsabilidades), A.5.6 (Contacto con la autoridad), A.6.3 (Toma de conciencia) | Pendiente | Sin capacitacion formal en seguridad |
 
----
+***
 
 ## 4. Procedimiento de Auditoria AS-IS
 
@@ -112,7 +112,7 @@ UNIDAD ORGANIZACIONAL: _________________________________
 RESPONSABLE DEL INVENTARIO: ____________________________
 FECHA: _________________________________________________
 
----
+***
 
 ACTIVO #: ___
 Nombre del Activo: _____________________________________
@@ -142,7 +142,7 @@ Observaciones: __________________________________________
 - Registro maestro consolidado y aprobado por OTI
 - Activos criticos identificados y reportados a la Alta Direccion
 
----
+***
 
 ## 5. Registro de Cambios
 
@@ -150,6 +150,6 @@ Observaciones: __________________________________________
 |---|---|---|---|
 | 1.0 | 2025-05-30 | Creacion inicial de la plantilla | Comite de Gobierno Digital UNCP |
 
----
+***
 
 *Documento: PL-ACT-001 | Version: 1.0 | Estado: Borrador | Proyecto: PGTD-01 (SGSI)*

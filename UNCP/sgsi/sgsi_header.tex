@@ -1,0 +1,82 @@
+\usepackage[top=2.5cm, bottom=2.5cm, left=1.8cm, right=1.8cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{amssymb}
+\usepackage{xurl} 
+\usepackage[most]{tcolorbox}
+\usepackage{adjustbox}
+
+% Colors
+\definecolor{uncpInk}{HTML}{1F2937}
+\definecolor{uncpMuted}{HTML}{5B677A}
+\definecolor{uncpAccent}{HTML}{24476B}
+\definecolor{uncpLightBg}{HTML}{E8EDF3}
+\definecolor{uncpSoft}{HTML}{F3F6FA}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=uncpAccent,
+    urlcolor=uncpAccent,
+    citecolor=uncpAccent,
+    breaklinks=true
+}
+
+\setlength{\parskip}{8pt}
+\setlength{\parindent}{0pt}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small SGSI ISO/IEC 27001 - UNCP}
+\lfoot{\small Universidad Nacional del Centro del Perú}
+\rfoot{\small Página \thepage\ de \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+% Titles
+\titleformat{\section}{\Large\bfseries\color{uncpAccent}}{\thesection}{0.75em}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries\color{uncpInk}}{\thesubsection}{0.75em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{uncpInk}}{\thesubsubsection}{0.75em}{}
+
+% Tables
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{pdflscape}
+\usepackage[table]{xcolor}
+
+\definecolor{uncpTableHeader}{HTML}{E9EEF5}
+\definecolor{uncpTableStripe}{HTML}{F7F9FC}
+\definecolor{uncpTableRule}{HTML}{9AA7B8}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\tableheader}{\rowcolor{uncpTableHeader}\bfseries}
+
+% Aggressive table patching
+\AtBeginEnvironment{longtable}{\footnotesize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.1}}
+\AtBeginEnvironment{tabular}{\footnotesize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.1}}
+\AtBeginEnvironment{tabularx}{\footnotesize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.1}}
+
+% Boxes
+\newtcolorbox{notebox}{
+  enhanced, colback=uncpSoft, colframe=uncpTableRule,
+  boxrule=0.5pt, arc=1.5mm, left=8pt, right=8pt, top=6pt, bottom=6pt
+}
+
+% Images
+\let\origfigure\figure
+\let\endorigfigure\endfigure
+\renewenvironment{figure}[1][H]{\origfigure[#1]}{\endorigfigure}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
