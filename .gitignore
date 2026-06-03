@@ -1,6 +1,3 @@
-# PDFs generados
-*.pdf
-
 # Archivos temporales
 *.tmp
 *.swp
