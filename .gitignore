@@ -1,0 +1,17 @@
+# PDFs generados
+*.pdf
+
+# Archivos temporales
+*.tmp
+*.swp
+*.swo
+*~
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Node / Python / etc (por si acaso)
+node_modules/
+__pycache__/
+*.pyc
