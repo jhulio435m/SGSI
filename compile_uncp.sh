@@ -3,60 +3,62 @@
 # Script de compilación automática para documentos UNCP
 # Requiere: pandoc, xelatex y la fuente Trebuchet MS
 
-set -e # Detener el script si hay algún error
+set -e
 
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$SCRIPT_DIR"
 echo "🚀 Iniciando compilación de documentos UNCP..."
 
-# 1. Compilar PGTD y Cronograma
-echo "📄 Generando Plan de Gobierno y Transformación Digital (PGTD)..."
-cd UNCP/pgtd
-pandoc "Plan de Gobierno y Transformación Digital - UNCP 2026-2030.md" \
-    -o "Plan de Gobierno y Transformación Digital - UNCP 2026-2030.pdf" \
-    --pdf-engine=xelatex \
-    -H header.tex \
-    -V papersize:a4 \
-    -V geometry:margin=1in \
-    --toc --lof --lot \
+PANDOC_OPTS=(
+    --pdf-engine=xelatex
+    -H "UNCP/header.tex"
     -V mainfont="Trebuchet MS"
+    -V geometry:margin=1in
+)
+
+# 1. PGTD
+echo "📄 Generando Plan de Gobierno y Transformación Digital (PGTD)..."
+pandoc "${PANDOC_OPTS[@]}" \
+    "UNCP/pgtd/Plan de Gobierno y Transformación Digital - UNCP 2026-2030.md" \
+    -o "UNCP/pgtd/Plan de Gobierno y Transformación Digital - UNCP 2026-2030.pdf" \
+    -V headertitle="PGTD 2026-2030 - UNCP" \
+    --toc --lof --lot
 
 echo "📅 Generando Cronograma..."
-pandoc "Cronograma-PGTD-UNCP-2026-2030.md" \
-    -o "Cronograma-PGTD-UNCP-2026-2030.pdf" \
-    --pdf-engine=xelatex \
-    -V geometry:margin=1in \
-    -V mainfont="Trebuchet MS"
+pandoc "${PANDOC_OPTS[@]}" \
+    "UNCP/pgtd/Cronograma-PGTD-UNCP-2026-2030.md" \
+    -o "UNCP/pgtd/Cronograma-PGTD-UNCP-2026-2030.pdf" \
+    -V headertitle="Cronograma PGTD 2026-2030 - UNCP" \
+    --toc
 
-# 2. Compilar documentos de Seguridad (SGSI)
+# 2. SGSI
 echo "🛡️ Generando documentos de Seguridad (SGSI)..."
-cd ../sgsi
-pandoc "SGSI-UNCP-Marco-Conceptual.md" \
-    -o "SGSI-UNCP-Marco-Conceptual.pdf" \
-    --pdf-engine=xelatex \
-    -V geometry:margin=1in \
-    -V mainfont="Trebuchet MS"
+pandoc "${PANDOC_OPTS[@]}" \
+    "UNCP/sgsi/01_CONTEXTO_DE_LA_ORGANIZACION/D-SGSI-06-Marco-Conceptual.md" \
+    -o "UNCP/sgsi/01_CONTEXTO_DE_LA_ORGANIZACION/D-SGSI-06-Marco-Conceptual.pdf" \
+    -V headertitle="SGSI ISO/IEC 27001 - UNCP" \
+    --toc
 
-pandoc "Alcance-SGSI-UNCP.md" \
-    -o "Alcance-SGSI-UNCP.pdf" \
-    --pdf-engine=xelatex \
-    -V geometry:margin=1in \
-    -V mainfont="Trebuchet MS"
+pandoc "${PANDOC_OPTS[@]}" \
+    "UNCP/sgsi/01_CONTEXTO_DE_LA_ORGANIZACION/D-SGSI-02-Alcance-SGSI.md" \
+    -o "UNCP/sgsi/01_CONTEXTO_DE_LA_ORGANIZACION/D-SGSI-02-Alcance-SGSI.pdf" \
+    -V headertitle="SGSI ISO/IEC 27001 - UNCP" \
+    --toc
 
-# 3. Compilar Análisis de Infraestructura
+# 3. Análisis de Infraestructura
 echo "🏗️ Generando Análisis de Infraestructura..."
-cd ../analisis
-pandoc "Infraestructura-UNCP-Analisis.md" \
-    -o "Infraestructura-UNCP-Analisis.pdf" \
-    --pdf-engine=xelatex \
-    -V geometry:margin=1in \
-    -V mainfont="Trebuchet MS"
+pandoc "${PANDOC_OPTS[@]}" \
+    "UNCP/analisis/Infraestructura-UNCP-Analisis.md" \
+    -o "UNCP/analisis/Infraestructura-UNCP-Analisis.pdf" \
+    -V headertitle="Análisis Infraestructura - UNCP" \
+    --toc
 
-# 4. Compilar Requerimiento de Información (RFI)
+# 4. Requerimiento de Información
 echo "📋 Generando Requerimiento de Información..."
-cd ..
-pandoc "Requerimiento-Informacion-PGTD.md" \
-    -o "Requerimiento-Informacion-PGTD.pdf" \
-    --pdf-engine=xelatex \
-    -V geometry:margin=1in \
-    -V mainfont="Trebuchet MS"
+pandoc "${PANDOC_OPTS[@]}" \
+    "UNCP/Requerimiento-Informacion-PGTD.md" \
+    -o "UNCP/Requerimiento-Informacion-PGTD.pdf" \
+    -V headertitle="RFI PGTD - UNCP" \
+    --toc
 
 echo "✅ ¡Compilación exitosa! Los archivos PDF están listos en sus respectivas carpetas."

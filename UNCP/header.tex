@@ -1,0 +1,86 @@
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{amssymb}
+\usepackage{xurl}
+\usepackage[most]{tcolorbox}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{pdflscape}
+\usepackage[table]{xcolor}
+\usepackage{etoolbox}
+\usepackage{adjustbox}
+\definecolor{uncpInk}{HTML}{1F2937}
+\definecolor{uncpMuted}{HTML}{5B677A}
+\definecolor{uncpAccent}{HTML}{24476B}
+\definecolor{uncpLightBg}{HTML}{E8EDF3}
+\definecolor{uncpSoft}{HTML}{F3F6FA}
+\definecolor{uncpTableHeader}{HTML}{E9EEF5}
+\definecolor{uncpTableStripe}{HTML}{F7F9FC}
+\definecolor{uncpTableRule}{HTML}{9AA7B8}
+\hypersetup{colorlinks=true, linkcolor=uncpAccent, urlcolor=uncpAccent, citecolor=uncpAccent, breaklinks=true}
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small $headertitle$}
+\lfoot{\small Universidad Nacional del Centro del Perú}
+\rfoot{\small Página \thepage\ de \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\titleformat{\section}
+  {\Large\bfseries\color{uncpAccent}}
+  {\thesection}{0.75em}{}
+  [\titlerule]
+\titleformat{\subsection}
+  {\large\bfseries\color{uncpInk}}
+  {\thesubsection}{0.75em}{}
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\color{uncpInk}}
+  {\thesubsubsection}{0.75em}{}
+\titlespacing*{\section}{0pt}{1.8ex plus .2ex}{1.0ex}
+\titlespacing*{\subsection}{0pt}{1.3ex plus .2ex}{0.6ex}
+\titlespacing*{\subsubsection}{0pt}{1.0ex plus .2ex}{0.4ex}
+\setlist[itemize]{leftmargin=1.2em, itemsep=2pt, topsep=3pt}
+\setlist[enumerate]{leftmargin=1.4em, itemsep=2pt, topsep=3pt}
+\captionsetup{font=small, labelfont=bf, textfont=it, skip=6pt}
+\renewcommand{\contentsname}{Índice general}
+\renewcommand{\listtablename}{Índice de tablas}
+\renewcommand{\listfigurename}{Índice de figuras}
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\figurename}{Figura}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\tableheader}{\rowcolor{uncpTableHeader}\bfseries}
+\newenvironment{compacttable}[1][]{%
+  \ifstrempty{#1}{}{\captionof{table}{#1}\vspace{2pt}}%
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \renewcommand{\arraystretch}{1.18}
+}{%
+  \par\vspace{2pt}{\footnotesize\textit{Fuente: Elaboración propia.}}\par
+}
+\AtBeginEnvironment{longtable}{\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.18}}
+\AtBeginEnvironment{tabular}{\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.18}}
+\AtBeginEnvironment{tabularx}{\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.18}}
+\newtcolorbox{notebox}{
+  enhanced, colback=uncpSoft, colframe=uncpTableRule,
+  boxrule=0.4pt, arc=1mm, left=7pt, right=7pt, top=5pt, bottom=5pt
+}
+\let\origfigure\figure
+\let\endorigfigure\endfigure
+\renewenvironment{figure}[1][H]{\origfigure[#1]}{\endorigfigure}
+\pretocmd{\listoftables}{}{}{}
+\pretocmd{\listoffigures}{}{}{}
