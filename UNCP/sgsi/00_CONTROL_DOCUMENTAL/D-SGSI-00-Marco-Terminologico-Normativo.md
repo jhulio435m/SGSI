@@ -14,10 +14,16 @@ A diferencia de un glosario lineal, la UNCP adopta una **Ontología Dinámica** 
 
 *   **ACTIVO (ISO)** tiene un **VALOR (ISO)** y posee **VULNERABILIDADES (ISO/NIST)**.
 *   **AMENAZA (ISO)** explota una **VULNERABILIDAD** mediante una **TÉCNICA/TÁCTICA (MITRE)**.
-*   La explotación resulta en un **INCIDENTE (ISO)** que impacta la **CID (ISO)**.
-*   Se aplica un **CONTROL (ISO/NIST)** para mitigar el **RIESGO (ISO 31000)**.
+*   **INCIDENTE (ISO)** impacta la **CID (ISO)**.
+*   **CONTROL (ISO/NIST)** mitiga el **RIESGO (ISO 31000)**.
+*   **DESARROLLO SEGURO (POL-SGSI-01)** garantiza la seguridad de las **APLICACIONES** en entornos **MÓVILES (POL-SGSI-05)**.
 
-## 3. Diccionario Crítico Interoperable (ISO / NIST / MITRE)
+## 3. Niveles de Aplicación y Cumplimiento
+Dado el ecosistema de la UNCP, se definen dos niveles de control sobre los activos:
+1.  **Nivel Mandatorio (Personal Administrativo y Docente):** El cumplimiento de las políticas (especialmente **POL-SGSI-05**) es de carácter obligatorio debido al alto riesgo de acceso a bases de datos críticas y sistemas de gestión.
+2.  **Nivel de Concientización (Estudiantes):** Al no tener la universidad control técnico directo sobre los dispositivos personales de los alumnos, la estrategia se centra en **Campañas de Concientización** permanentes para promover el uso seguro de los servicios digitales.
+
+## 4. Diccionario Crítico Interoperable (ISO / NIST / MITRE)
 
 | Término (ISO 27000) | Definición Semántica | Correspondencia NIST / MITRE |
 | :--- | :--- | :--- |

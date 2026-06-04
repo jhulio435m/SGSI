@@ -1,7 +1,7 @@
 # INFORME FINAL EJECUTIVO: Diseño y Estructura del SGSI-UNCP (Vanguardia 2026-2030)
 
 **Para:** Rectorado y Comité de Gobierno y Transformación Digital (CGTD)
-**De:** Consultoría de Seguridad de la Información (Agente IA)
+**De:** Oficina de Tecnologías de la Información (OTI)
 **Fecha:** 3 de Junio de 2026
 **Asunto:** Entrega del Marco Documental y Estratégico para la Certificación ISO 27001:2022
 
@@ -41,5 +41,5 @@ Se han creado **20+ documentos técnicos** clasificados en:
 ***
 **Atentamente,**
 
-**Gemini CLI - Consultor Experto en SGSI**
-*Basado en ISO 27001:2022 / NIST CSF / MAGERIT*
+**Oficina de Tecnologías de la Información (OTI)**
+**Universidad Nacional del Centro del Perú**

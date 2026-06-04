@@ -59,7 +59,20 @@
 \definecolor{uncpTableRule}{HTML}{9AA7B8}
 
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
 \newcommand{\tableheader}{\rowcolor{uncpTableHeader}\bfseries}
+
+% Environment for tables
+\newenvironment{compacttable}[1][]{%
+  \ifstrempty{#1}{}{\captionof{table}{#1}\vspace{2pt}}%
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.1}
+}{%
+  \par\vspace{2pt}{\scriptsize\textit{Fuente: Elaboración propia.}}\par
+}
 
 % Aggressive table patching
 \AtBeginEnvironment{longtable}{\footnotesize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.1}}

@@ -32,10 +32,16 @@ A diferencia de un glosario lineal, la UNCP adopta una **Ontología Dinámica** 
 
 *   **ACTIVO (ISO)** tiene un **VALOR (ISO)** y posee **VULNERABILIDADES (ISO/NIST)**.
 *   **AMENAZA (ISO)** explota una **VULNERABILIDAD** mediante una **TÉCNICA/TÁCTICA (MITRE)**.
-*   La explotación resulta en un **INCIDENTE (ISO)** que impacta la **CID (ISO)**.
-*   Se aplica un **CONTROL (ISO/NIST)** para mitigar el **RIESGO (ISO 31000)**.
+*   **INCIDENTE (ISO)** impacta la **CID (ISO)**.
+*   **CONTROL (ISO/NIST)** mitiga el **RIESGO (ISO 31000)**.
+*   **DESARROLLO SEGURO (POL-SGSI-01)** garantiza la seguridad de las **APLICACIONES** en entornos **MÓVILES (POL-SGSI-05)**.
 
-### 3. Diccionario Crítico Interoperable (ISO / NIST / MITRE)
+### 3. Niveles de Aplicación y Cumplimiento
+Dado el ecosistema de la UNCP, se definen dos niveles de control sobre los activos:
+1.  **Nivel Mandatorio (Personal Administrativo y Docente):** El cumplimiento de las políticas (especialmente **POL-SGSI-05**) es de carácter obligatorio debido al alto riesgo de acceso a bases de datos críticas y sistemas de gestión.
+2.  **Nivel de Concientización (Estudiantes):** Al no tener la universidad control técnico directo sobre los dispositivos personales de los alumnos, la estrategia se centra en **Campañas de Concientización** permanentes para promover el uso seguro de los servicios digitales.
+
+### 4. Diccionario Crítico Interoperable (ISO / NIST / MITRE)
 
 | Término (ISO 27000) | Definición Semántica | Correspondencia NIST / MITRE |
 | :--- | :--- | :--- |
@@ -121,10 +127,11 @@ Todos los documentos del SGSI seguirán el siguiente formato de código:
 Comité de Gobierno Digital - UNCP
 
 
-## R-SGSI-00: Lista Maestra de Documentos del SGSI (Actualizada)
+## R-SGSI-00: Lista Maestra de Documentos del SGSI (Sincronizada)
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
 **Última Actualización:** 03/06/2026
+**Norma:** ISO/IEC 27001:2022 (Cláusula 7.5)
 
 
 \vspace{0.3cm}\hrule\vspace{0.3cm}
@@ -132,34 +139,39 @@ Comité de Gobierno Digital - UNCP
 
 | Código | Nombre del Documento | Versión | Carpeta Destino |
 | :--- | :--- | :--- | :--- |
+| **D-SGSI-00** | Marco de Referencia Terminológico y Normativo | 1.0 | 00_\hspace{0pt}CONTROL_\hspace{0pt}DOCUMENTAL |
 | **P-SGSI-00** | Procedimiento de Control de Documentos y Registros | 1.0 | 00_\hspace{0pt}CONTROL_\hspace{0pt}DOCUMENTAL |
 | **R-SGSI-00** | Lista Maestra de Documentos del SGSI | 1.0 | 00_\hspace{0pt}CONTROL_\hspace{0pt}DOCUMENTAL |
-| **D-SGSI-00** | Marco de Referencia Terminológico y Normativo | 1.0 | 00_\hspace{0pt}CONTROL_\hspace{0pt}DOCUMENTAL |
 | **D-SGSI-01** | Análisis del Contexto Estratégico (PESTEL/MEFE) | 1.0 | 01_\hspace{0pt}CONTEXTO_\hspace{0pt}DE_\hspace{0pt}LA_\hspace{0pt}ORGANIZACION |
 | **D-SGSI-02** | Alcance del SGSI (Vanguardia) | 2.0 | 01_\hspace{0pt}CONTEXTO_\hspace{0pt}DE_\hspace{0pt}LA_\hspace{0pt}ORGANIZACION |
+| **D-SGSI-06** | Marco Conceptual del SGSI | 1.0 | 01_\hspace{0pt}CONTEXTO_\hspace{0pt}DE_\hspace{0pt}LA_\hspace{0pt}ORGANIZACION |
 | **D-SGSI-07** | Mapa de Procesos del SGSI | 1.0 | 01_\hspace{0pt}CONTEXTO_\hspace{0pt}DE_\hspace{0pt}LA_\hspace{0pt}ORGANIZACION |
-| **POL-SGSI-00**| Política General de Seguridad de la Información | 1.0 | 02_\hspace{0pt}LIDERAZGO |
+| **D-SGSI-03** | Política General de Seguridad de la Información | 1.0 | 02_\hspace{0pt}LIDERAZGO |
 | **ACT-SGSI-01**| Acta de Compromiso de la Alta Dirección | 1.0 | 02_\hspace{0pt}LIDERAZGO |
-| **P-SGSI-01** | Metodología de Gestión de Riesgos | 1.0 | 03_\hspace{0pt}PLANIFICACION |
-| **R-SGSI-01** | Inventario de Activos de Información | 1.0 | 03_\hspace{0pt}PLANIFICACION |
-| **R-SGSI-02** | Matriz y Plan de Tratamiento de Riesgos | 1.0 | 03_\hspace{0pt}PLANIFICACION |
+| **D-SGSI-04** | Metodología de Gestión de Riesgos | 1.0 | 03_\hspace{0pt}PLANIFICACION |
 | **D-SGSI-05** | Declaración de Aplicabilidad (SoA) | 1.0 | 03_\hspace{0pt}PLANIFICACION |
-| **P-SGSI-04** | Plan de Capacitación y Concientización | 1.0 | 04_\hspace{0pt}SOPORTE |
-| **P-SGSI-03** | Marco de Respuesta a Incidentes (CSIRT) | 1.0 | 05_\hspace{0pt}OPERACION |
-| **P-SGSI-04** | Gestión de Identidades (Zero Trust) | 1.0 | 05_\hspace{0pt}OPERACION |
-| **P-SGSI-06** | Resiliencia y Continuidad Híbrida | 1.0 | 05_\hspace{0pt}OPERACION |
-| **P-SGSI-05** | Gestión de Cambios y Proveedores | 1.0 | 05_\hspace{0pt}OPERACION |
-| **P-SGSI-09** | Metodología de Auditoría Estratégica | 1.0 | 06_\hspace{0pt}EVALUACION_\hspace{0pt}DEL_\hspace{0pt}DESEMPEÑO |
-| **R-SGSI-06** | Programa Maestro de Auditoría | 1.0 | 06_\hspace{0pt}EVALUACION_\hspace{0pt}DEL_\hspace{0pt}DESEMPEÑO |
+| **R-SGSI-01** | Inventario de Activos de Información | 1.0 | 03_\hspace{0pt}PLANIFICACION |
+| **R-SGSI-02** | Matriz de Evaluación y Tratamiento de Riesgos | 1.0 | 03_\hspace{0pt}PLANIFICACION |
+| **P-SGSI-08** | Plan de Capacitación y Concientización | 1.0 | 04_\hspace{0pt}SOPORTE |
+| **P-SGSI-02** | Marco de Respuesta a Incidentes (CSIRT) | 1.0 | 05_\hspace{0pt}OPERACION |
+| **P-SGSI-03** | Gestión de Identidades (Zero Trust) | 1.0 | 05_\hspace{0pt}OPERACION |
+| **P-SGSI-04** | Procedimiento de Gestión de Cambios | 1.0 | 05_\hspace{0pt}OPERACION |
+| **P-SGSI-05** | Resiliencia y Continuidad en Nube Híbrida | 1.0 | 05_\hspace{0pt}OPERACION |
+| **P-SGSI-06** | Procedimiento de Gestión de Seguridad con Proveedores | 1.0 | 05_\hspace{0pt}OPERACION |
+| **P-SGSI-07** | Procedimiento de Eliminación Segura de Información | 1.0 | 05_\hspace{0pt}OPERACION |
+| **P-SGSI-09** | Metodología de Auditoría Basada en Riesgos | 1.0 | 06_\hspace{0pt}EVALUACION_\hspace{0pt}DEL_\hspace{0pt}DESEMPEÑO |
+| **R-SGSI-03** | Cuadro de Mando de Verificación (KPIs) | 1.0 | 06_\hspace{0pt}EVALUACION_\hspace{0pt}DEL_\hspace{0pt}DESEMPEÑO |
+| **R-SGSI-04** | Programa Maestro de Auditoría | 1.0 | 06_\hspace{0pt}EVALUACION_\hspace{0pt}DEL_\hspace{0pt}DESEMPEÑO |
 | **Plantillas** | Planes, Informes y Listas de Auditoría | 1.0 | 06_\hspace{0pt}EVALUACION_\hspace{0pt}DEL_\hspace{0pt}DESEMPEÑO |
-| **POL-SGSI-01**| Política de Desarrollo Seguro y APIs | 1.0 | 09_\hspace{0pt}POLITICAS_\hspace{0pt}Y_\hspace{0pt}PROCEDIMIENTOS |
-| **POL-SGSI-02**| Políticas de Usuario Final (Uso Aceptable) | 1.0 | 09_\hspace{0pt}POLITICAS_\hspace{0pt}Y_\hspace{0pt}PROCEDIMIENTOS |
-| **POL-SGSI-03**| Políticas de Respaldo y Clasificación | 1.0 | 09_\hspace{0pt}POLITICAS_\hspace{0pt}Y_\hspace{0pt}PROCEDIMIENTOS |
-| **POL-SGSI-05**| Política de Dispositivos Móviles | 1.0 | 09_\hspace{0pt}POLITICAS_\hspace{0pt}Y_\hspace{0pt}PROCEDIMIENTOS |
-| **POL-SGSI-06**| Política de Contraseñas y Autenticación | 1.0 | 09_\hspace{0pt}POLITICAS_\hspace{0pt}Y_\hspace{0pt}PROCEDIMIENTOS |
+| **D-SGSI-08** | Guía de Implementación de Controles (ISO 27002) | 1.0 | 08_\hspace{0pt}ANEXO_\hspace{0pt}A_\hspace{0pt}CONTROLES |
 | **POL-SGSI-07**| Política de Seguridad Física y Áreas Seguras | 1.0 | 08_\hspace{0pt}ANEXO_\hspace{0pt}A_\hspace{0pt}CONTROLES |
-| **P-SGSI-10** | Procedimiento de Eliminación Segura | 1.0 | 08_\hspace{0pt}ANEXO_\hspace{0pt}A_\hspace{0pt}CONTROLES |
-| **F-SGSI-01** | Formato de Solicitud de Accesos | 1.0 | 10_\hspace{0pt}FORMATOS |
+| **POL-SGSI-01**| Política de Desarrollo Seguro y APIs | 1.0 | 09_\hspace{0pt}POLITICAS_\hspace{0pt}Y_\hspace{0pt}PROCEDIMIENTOS |
+| **POL-SGSI-02**| Política de Uso Aceptable, Escritorio y Teletrabajo | 1.0 | 09_\hspace{0pt}POLITICAS_\hspace{0pt}Y_\hspace{0pt}PROCEDIMIENTOS |
+| **POL-SGSI-03**| Política de Respaldo e Información | 1.0 | 09_\hspace{0pt}POLITICAS_\hspace{0pt}Y_\hspace{0pt}PROCEDIMIENTOS |
+| **POL-SGSI-04**| Política de Seguridad con Proveedores | 1.0 | 09_\hspace{0pt}POLITICAS_\hspace{0pt}Y_\hspace{0pt}PROCEDIMIENTOS |
+| **POL-SGSI-05**| Política de Dispositivos Móviles | 1.0 | 09_\hspace{0pt}POLITICAS_\hspace{0pt}Y_\hspace{0pt}PROCEDIMIENTOS |
+| **POL-SGSI-06**| Política de Contraseñas | 1.0 | 09_\hspace{0pt}POLITICAS_\hspace{0pt}Y_\hspace{0pt}PROCEDIMIENTOS |
+| **F-SGSI-01** | Formato de Solicitud de Alta/Baja de Acceso | 1.0 | 10_\hspace{0pt}FORMATOS |
 | **F-SGSI-02** | Registro de Asistencia a Capacitación | 1.0 | 10_\hspace{0pt}FORMATOS |
 | **F-SGSI-03** | Formato de Baja y Devolución de Activos | 1.0 | 10_\hspace{0pt}FORMATOS |
 | **F-SGSI-04** | Reporte de Acción Correctiva (RAC) | 1.0 | 10_\hspace{0pt}FORMATOS |
@@ -174,11 +186,99 @@ Comité de Gobierno Digital - UNCP
 
 
 
-
 \newpage
 # Contexto De La Organizacion
 
-## Alcance del SGSI - Universidad Nacional del Centro del Perú
+## D-SGSI-01: Análisis del Contexto Estratégico del SGSI-UNCP
+
+**Organización:** Universidad Nacional del Centro del Perú (UNCP)
+**Versión:** 1.0 (Análisis 360°: PESTEL, Porter, MEFE, MEFI, CAME)
+**Referencia:** ISO/IEC 27001:2022 (Cláusula 4)
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+### Fase 1: Análisis del Entorno (Cláusula 4.1)
+
+#### 1.1. Análisis PESTEL (Macroentorno)
+
+| Factor | Descripción y Diagnóstico | Impacto en SGSI |
+| :--- | :--- | :--- |
+| **Político** | Mandato nacional de Transformación Digital (PCM/SGTD). | **Alto.** Obliga a la implementación del SGSI por ley. |
+| **Económico** | Presupuesto institucional (Canon/RDR) sujeto a priorización. | **Medio.** Riesgo de retraso en compras de hardware crítico. |
+| **Social** | Generación de estudiantes digitalmente nativos con alta expectativa. | **Alto.** Exige disponibilidad 24/7 y servicios móviles seguros. |
+| **Tecnológico** | Auge de la Inteligencia Artificial y servicios Cloud (Huawei Cloud). | **Crítico.** Requiere controles de seguridad avanzados y auditoría de IA. |
+| **Ecológico** | Política de "Cero Papel" y eco-eficiencia (Green IT). | **Medio.** Impulsa la digitalización segura y reducción de energía en DC. |
+| **Legal** | Nueva Ley de Protección de Datos (D.S. 016-2024-JUS) y Ciberdefensa. | **Alto.** Incrementa las sanciones por brechas de datos. |
+
+#### 1.2. Las 5 Fuerzas de Porter (Microentorno)
+
+1.  **Rivalidad entre competidores:** Universidades públicas y privadas compiten por prestigio y licenciamiento SUNEDU. La seguridad es un diferenciador de calidad.
+2.  **Poder de negociación de proveedores:** Alta dependencia de proveedores de Nube (Huawei) e Internet. Se requiere gestión de SLAs (A.15).
+3.  **Amenaza de nuevos competidores:** Programas de educación virtual global. Exige una plataforma UNCP resiliente y segura.
+4.  **Amenaza de productos sustitutos:** Cursos online y certificaciones técnicas. La UNCP debe proteger su valor oficial (Grados y Títulos).
+5.  **Poder de negociación de los alumnos:** Los estudiantes demandan transparencia y protección de su privacidad.
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+### Fase 2: Diagnóstico Estratégico Cuantificado
+
+#### 2.1. Matriz de Evaluación de Factores Internos (MEFI)
+
+| Fortaleza / Debilidad | Peso | Calificación | Ponderado |
+| :--- | :--- | :--- | :--- |
+| **F1:** Comité de Gobierno Digital formalizado (Res. 1862). | 0.15 | 4 | 0.60 |
+| **F2:** Infraestructura Cloud Huawei Cloud operativa. | 0.15 | 4 | 0.60 |
+| **D1:** Nivel de madurez digital inicial (1.569). | 0.20 | 1 | 0.20 |
+| **D2:** Resistencia al cambio cultural en personal antiguo. | 0.20 | 2 | 0.40 |
+| **D3:** Limitada segmentación de red en facultades. | 0.30 | 1 | 0.30 |
+| **TOTAL** | **1.00** | - | **2.10** |
+*(Nota: Un puntaje de 2.10 indica una posición interna débil; se requiere fortalecer la segmentación y la cultura).*
+
+#### 2.2. Matriz de Evaluación de Factores Externos (MEFE)
+
+| Oportunidad / Amenaza | Peso | Calificación | Ponderado |
+| :--- | :--- | :--- | :--- |
+| **O1:** Presupuesto asignado al PGTD (S/ 6.4M). | 0.25 | 4 | 1.00 |
+| **O2:** Apoyo técnico de la PCM/SGTD para interoperabilidad. | 0.15 | 3 | 0.45 |
+| **A1:** Incremento de ataques de Ransomware a universidades. | 0.35 | 1 | 0.35 |
+| **A2:** Nuevas exigencias legales de protección de datos (JUS). | 0.25 | 2 | 0.50 |
+| **TOTAL** | **1.00** | - | **2.30** |
+*(Nota: Un puntaje de 2.30 indica que la UNCP está respondiendo de forma promedio a las amenazas externas; debe acelerar el SGSI).*
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+### Fase 3: Estrategia Proactiva (Análisis CAME)
+
+Basado en el FODA cruzado, se establecen las siguientes acciones:
+
+| Estrategia | Acción Concreta (Plan de Acción) |
+| :--- | :--- |
+| **Corregir (D3+O1)** | Ejecutar el proyecto PGTD-04 para implementar **Microsegmentación ZTNA** y remediar la debilidad de red. |
+| **Afrontar (A1+F2)** | Utilizar la **Resiliencia Cloud** y backups inmutables en Huawei Cloud para defenderse del Ransomware. |
+| **Mantener (F1+O2)** | Fortalecer la gobernanza del Comité de Gobierno Digital mediante la auditoría continua (P-SGSI-09). |
+| **Explotar (O2+D1)** | Aprovechar los lineamientos de la PCM para elevar rápidamente el nivel de madurez en servicios digitales. |
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+### Fase 4: Definición del Alcance Basado en Riesgos (Cláusula 4.3)
+
+El alcance del SGSI (definido en `Alcance-SGSI-UNCP.md`) se ratifica considerando que los mayores riesgos provienen de la **interacción de la red de facultades con servicios externos**. Se confirma la necesidad de un enfoque **Zero Trust** para mitigar las debilidades internas detectadas en la MEFI.
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+**Resultado del Diagnóstico:** La UNCP posee una base tecnológica sólida (Cloud) pero una infraestructura de red y una cultura orgánica vulnerables. El SGSI debe priorizar la **Capacitación (OGTD6)** y la **Seguridad de Red (ZTNA)** para equilibrar la balanza estratégica.
+
+
+## D-SGSI-02: Alcance del SGSI - Universidad Nacional del Centro del Perú
 
 ### 1. Organización
 
@@ -260,161 +360,7 @@ No se excluye ninguno de los requisitos de las cláusulas 4 a 10 de la norma ISO
 *Versión 2.0 (Enfoque Vanguardia) - Aprobado para el proyecto SGSI-UNCP 2026.*
 
 
-## D-SGSI-01: Análisis del Contexto Estratégico del SGSI-UNCP
-
-**Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 1.0 (Análisis 360°: PESTEL, Porter, MEFE, MEFI, CAME)
-**Referencia:** ISO/IEC 27001:2022 (Cláusula 4)
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-### Fase 1: Análisis del Entorno (Cláusula 4.1)
-
-#### 1.1. Análisis PESTEL (Macroentorno)
-
-| Factor | Descripción y Diagnóstico | Impacto en SGSI |
-| :--- | :--- | :--- |
-| **Político** | Mandato nacional de Transformación Digital (PCM/SGTD). | **Alto.** Obliga a la implementación del SGSI por ley. |
-| **Económico** | Presupuesto institucional (Canon/RDR) sujeto a priorización. | **Medio.** Riesgo de retraso en compras de hardware crítico. |
-| **Social** | Generación de estudiantes digitalmente nativos con alta expectativa. | **Alto.** Exige disponibilidad 24/7 y servicios móviles seguros. |
-| **Tecnológico** | Auge de la Inteligencia Artificial y servicios Cloud (Huawei Cloud). | **Crítico.** Requiere controles de seguridad avanzados y auditoría de IA. |
-| **Ecológico** | Política de "Cero Papel" y eco-eficiencia (Green IT). | **Medio.** Impulsa la digitalización segura y reducción de energía en DC. |
-| **Legal** | Nueva Ley de Protección de Datos (D.S. 016-2024-JUS) y Ciberdefensa. | **Alto.** Incrementa las sanciones por brechas de datos. |
-
-#### 1.2. Las 5 Fuerzas de Porter (Microentorno)
-
-1.  **Rivalidad entre competidores:** Otras universidades públicas y privadas compiten por prestigio y licenciamiento SUNEDU. La seguridad es un diferenciador de calidad.
-2.  **Poder de negociación de proveedores:** Alta dependencia de proveedores de Nube (Huawei) e Internet. Se requiere gestión de SLAs (A.15).
-3.  **Amenaza de nuevos competidores:** Programas de educación virtual global. Exige una plataforma UNCP resiliente y segura.
-4.  **Amenaza de productos sustitutos:** Cursos online y certificaciones técnicas. La UNCP debe proteger su valor oficial (Grados y Títulos).
-5.  **Poder de negociación de los alumnos:** Los estudiantes demandan transparencia y protección de su privacidad.
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-### Fase 2: Diagnóstico Estratégico Cuantificado
-
-#### 2.1. Matriz de Evaluación de Factores Internos (MEFI)
-
-| Fortaleza / Debilidad | Peso | Calificación | Ponderado |
-| :--- | :--- | :--- | :--- |
-| **F1:** Comité de Gobierno Digital formalizado (Res. 1862). | 0.15 | 4 | 0.60 |
-| **F2:** Infraestructura Cloud Huawei Cloud operativa. | 0.15 | 4 | 0.60 |
-| **D1:** Nivel de madurez digital inicial (1.569). | 0.20 | 1 | 0.20 |
-| **D2:** Resistencia al cambio cultural en personal antiguo. | 0.20 | 2 | 0.40 |
-| **D3:** Limitada segmentación de red en facultades. | 0.30 | 1 | 0.30 |
-| **TOTAL** | **1.00** | - | **2.10** |
-*(Nota: Un puntaje de 2.10 indica una posición interna débil; se requiere fortalecer la segmentación y la cultura).*
-
-#### 2.2. Matriz de Evaluación de Factores Externos (MEFE)
-
-| Oportunidad / Amenaza | Peso | Calificación | Ponderado |
-| :--- | :--- | :--- | :--- |
-| **O1:** Presupuesto asignado al PGTD (S/ 6.4M). | 0.25 | 4 | 1.00 |
-| **O2:** Apoyo técnico de la PCM/SGTD para interoperabilidad. | 0.15 | 3 | 0.45 |
-| **A1:** Incremento de ataques de Ransomware a universidades. | 0.35 | 1 | 0.35 |
-| **A2:** Nuevas exigencias legales de protección de datos (JUS). | 0.25 | 2 | 0.50 |
-| **TOTAL** | **1.00** | - | **2.30** |
-*(Nota: Un puntaje de 2.30 indica que la UNCP está respondiendo de forma promedio a las amenazas externas; debe acelerar el SGSI).*
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-### Fase 3: Estrategia Proactiva (Análisis CAME)
-
-Basado en el FODA cruzado, se establecen las siguientes acciones:
-
-| Estrategia | Acción Concreta (Plan de Acción) |
-| :--- | :--- |
-| **Corregir (D3+O1)** | Ejecutar el proyecto PGTD-04 para implementar **Microsegmentación ZTNA** y remediar la debilidad de red. |
-| **Afrontar (A1+F2)** | Utilizar la **Resiliencia Cloud** y backups inmutables en Huawei Cloud para defenderse del Ransomware. |
-| **Mantener (F1+O2)** | Fortalecer la gobernanza del Comité de Gobierno Digital mediante la auditoría continua (P-SGSI-09). |
-| **Explotar (O2+D1)** | Aprovechar los lineamientos de la PCM para elevar rápidamente el nivel de madurez en servicios digitales. |
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-### Fase 4: Definición del Alcance Basado en Riesgos (Cláusula 4.3)
-
-El alcance del SGSI (definido en `Alcance-SGSI-UNCP.md`) se ratifica considerando que los mayores riesgos provienen de la **interacción de la red de facultades con servicios externos**. Se confirma la necesidad de un enfoque **Zero Trust** para mitigar las debilidades internas detectadas en la MEFI.
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-**Resultado del Diagnóstico:** La UNCP posee una base tecnológica sólida (Cloud) pero una infraestructura de red y una cultura orgánica vulnerables. El SGSI debe priorizar la **Capacitación (OGTD6)** y la **Seguridad de Red (ZTNA)** para equilibrar la balanza estratégica.
-
-
-## D-SGSI-07: Mapa de Procesos del SGSI
-
-**Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 1.0
-**Alineamiento:** ISO/IEC 27001:2022 (Cláusula 4.4)
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-### 1. Clasificación de Procesos para la Seguridad
-El SGSI protege la información que fluye a través de los siguientes niveles de procesos:
-
-#### A. Procesos Estratégicos (Gestión y Gobierno)
-*Son los procesos que definen la dirección de la seguridad y supervisan el cumplimiento.*
-1.  **Gobierno Digital:** Liderazgo del Comité de Gobierno Digital (CGD).
-2.  **Planeamiento Estratégico:** Alineamiento del SGSI con el PEI y PGTD.
-3.  **Gestión de Calidad y Mejora Continua:** Auditorías internas y revisión por la dirección.
-4.  **Gestión de Riesgos Institucionales:** Aplicación de ISO 31000.
-
-#### B. Procesos Misionales (El "Core" Universitario)
-*Son los procesos que generan valor a la sociedad. Su interrupción es crítica.*
-1.  **Gestión Académica:** Admisión, matrícula, formación profesional, grados y títulos (Activo crítico: ERP ADESA).
-2.  **Investigación y Posgrado:** Desarrollo de tesis, patentes y publicaciones (Activo crítico: DSpace).
-3.  **Responsabilidad Social:** Proyección social y extensión universitaria.
-4.  **Servicios Estudiantiles:** Comedor, Centro Médico y Bienestar (Activo crítico: Historias Clínicas).
-
-#### C. Procesos de Apoyo (Soporte Técnico y Administrativo)
-*Son los procesos necesarios para que los misionales funcionen de forma segura.*
-1.  **Tecnologías de la Información (OTI):** Gestión de infraestructura, redes, cloud y seguridad (CSIRT).
-2.  **Gestión de Recursos Humanos:** Contratación, capacitación y desvinculación segura.
-3.  **Gestión Financiera y Abastecimiento:** Contabilidad, tesorería y relación con proveedores (Activo crítico: SIGA/SIAF).
-4.  **Gestión Documentaria:** Mesa de partes, archivo central y expedientes digitales.
-5.  **Asesoría Jurídica:** Cumplimiento legal (Protección de Datos / Ciberdefensa).
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-### 2. Diagrama de Interacción de Seguridad
-
-```mermaid
-graph TD
-    subgraph ESTRATÉGICOS
-        P1[Gobierno Digital] --> P2[Planeamiento]
-    end
-    
-    subgraph MISIONALES
-        M1[Admisión/Matrícula] --- M2[Investigación]
-        M2 --- M3[Grados y Títulos]
-    end
-    
-    subgraph APOYO
-        S1[TI / Ciberseguridad] -.-> M1
-        S2[RRHH] -.-> M2
-        S3[Legal] -.-> M3
-    end
-    
-    P2 ==> MISIONALES
-    APOYO ==> MISIONALES
-```
-
-*Nota: La seguridad de la información (TI/CSIRT) actúa como un habilitador transversal para todos los procesos misionales.*
-
-
-## SGSI - Sistema de Gestión de Seguridad de la Información
+## D-SGSI-06: Marco Conceptual del SGSI
 
 
 ### Universidad Nacional del Centro del Perú (UNCP)
@@ -530,7 +476,7 @@ Conforme a la R.M. N° 119-2018-PCM y los Lineamientos del PGTD (R.S. N° 005-20
 **Evaluación de riesgos:**
 - Identificación de activos (digitales y físicos)
 - Identificación de amenazas y vulnerabilidades
-- Análisis de impacto (pérdida de notas, filtración de datos personales, etc.)
+- Análisis de impacto (pérdida de notas, filtración de datos personales, interrupción de matrícula)
 - Plan de tratamiento de riesgos
 
 **Declaración de Aplicabilidad (SoA):**
@@ -641,7 +587,7 @@ Conforme a la R.M. N° 119-2018-PCM y los Lineamientos del PGTD (R.S. N° 005-20
 |---|---|---|
 | **Políticas** | Dispersas, no formalizadas | Política SGSI aprobada por rectorado, comunicada a toda la UNCP |
 | **Organización** | Sin Oficial de Seguridad designado | Comité de Gobierno Digital activo + Oficial de Seguridad |
-| **Seguridad física** | Acceso sin control en varias facultades | Controles perimetrales, archivadores con llave, cámaras, bitácoras |
+| **Seguridad física** | Acceso sin control en sedes académicas y administrativas | Controles perimetrales, archivadores con llave, cámaras, bitácoras |
 | **Seguridad digital** | Sin segmentación de red, backups no validados | Red segmentada, backups periódicos probados, firewall |
 | **Documentos físicos** | Archivos sin clasificación de seguridad | Documentos clasificados (público, interno, confidencial, secreto) |
 | **Control de acceso** | Usuarios compartidos, contraseñas débiles | Acceso por roles, 2FA, política de contraseñas |
@@ -724,6 +670,71 @@ El PGTD de la UNCP incluye el proyecto PGTD-01 "Implementación del SGSI basado 
 *Versión: 1.1*
 *Estado: Borrador conceptual (mejorado)*
 *Documentos relacionados: PGTD-UNCP 2026-2030, R.S. N° 005-2018-PCM/SGTD*
+
+
+## D-SGSI-07: Mapa de Procesos del SGSI
+
+**Organización:** Universidad Nacional del Centro del Perú (UNCP)
+**Versión:** 1.0
+**Alineamiento:** ISO/IEC 27001:2022 (Cláusula 4.4)
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+### 1. Clasificación de Procesos para la Seguridad
+El SGSI protege la información que fluye a través de los siguientes niveles de procesos:
+
+#### A. Procesos Estratégicos (Gestión y Gobierno)
+*Son los procesos que definen la dirección de la seguridad y supervisan el cumplimiento.*
+1.  **Gobierno Digital:** Liderazgo del Comité de Gobierno Digital (CGD).
+2.  **Planeamiento Estratégico:** Alineamiento del SGSI con el PEI y PGTD.
+3.  **Gestión de Calidad y Mejora Continua:** Auditorías internas y revisión por la dirección.
+4.  **Gestión de Riesgos Institucionales:** Aplicación de ISO 31000.
+
+#### B. Procesos Misionales (El "Core" Universitario)
+*Son los procesos que generan valor a la sociedad. Su interrupción es crítica.*
+1.  **Gestión Académica:** Admisión, matrícula, formación profesional, grados y títulos (Activo crítico: ERP ADESA).
+2.  **Investigación y Posgrado:** Desarrollo de tesis, patentes y publicaciones (Activo crítico: DSpace).
+3.  **Responsabilidad Social:** Proyección social y extensión universitaria.
+4.  **Servicios Estudiantiles:** Comedor, Centro Médico y Bienestar (Activo crítico: Historias Clínicas).
+
+#### C. Procesos de Apoyo (Soporte Técnico y Administrativo)
+*Son los procesos necesarios para que los misionales funcionen de forma segura.*
+1.  **Tecnologías de la Información (OTI):** Gestión de infraestructura, redes, cloud y seguridad (CSIRT).
+2.  **Gestión de Recursos Humanos:** Contratación, capacitación y desvinculación segura.
+3.  **Gestión Financiera y Abastecimiento:** Contabilidad, tesorería y relación con proveedores (Activo crítico: SIGA/SIAF).
+4.  **Gestión Documentaria:** Mesa de partes, archivo central y expedientes digitales.
+5.  **Asesoría Jurídica:** Cumplimiento legal (Protección de Datos / Ciberdefensa).
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+### 2. Diagrama de Interacción de Seguridad
+
+```mermaid
+graph TD
+    subgraph ESTRATÉGICOS
+        P1[Gobierno Digital] --> P2[Planeamiento]
+    end
+    
+    subgraph MISIONALES
+        M1[Admisión/Matrícula] --- M2[Investigación]
+        M2 --- M3[Grados y Títulos]
+    end
+    
+    subgraph APOYO
+        S1[TI / Ciberseguridad] -.-> M1
+        S2[RRHH] -.-> M2
+        S3[Legal] -.-> M3
+    end
+    
+    P2 ==> MISIONALES
+    APOYO ==> MISIONALES
+```
+
+*Nota: La seguridad de la información (TI/CSIRT) actúa como un habilitador transversal para todos los procesos misionales.*
 
 
 
@@ -847,177 +858,6 @@ _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\
 \newpage
 # Planificacion
 
-## Plantilla de Inventario de Activos de Informacion - UNCP
-
-### Instrucciones
-
-1. El responsable de cada unidad organizacional debe completar una fila por activo.
-2. Los niveles de clasificacion (C-I-D) se asignan segun la tabla de criterios en la Seccion 3.
-3. Entregar a la OTI para consolidacion en el registro maestro.
-4. Actualizar semestralmente o ante cambios significativos.
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-### 1. Registro de Activos
-
-| # | ID Activo | Nombre del Activo | Descripcion | Tipo | Propietario | Custodio | Ubicacion Fisica | Ubicacion Logica | Formato / Soporte | Usuarios |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | HW-001 | Servidor ADESA | Servidor principal de gestion documental | Hardware | OTI | OTI | Data Center - Sede Central | 192.168.x.x | Fisico-Servidor | Administrativos OTI |
-| 2 | SW-001 | Sistema GESDOC | Sistema de gestion documental | Software | OTI | OTI | Servidor ADESA | gesdoc.uncp.edu.pe | Digital-Aplicacion Web | Toda la comunidad UNCP |
-| 3 | DT-001 | Base Datos Matricula | Registro de estudiantes matriculados | Dato | Secretaria Academica | OTI | Servidor BD Principal | db.uncp.edu.pe | Digital-Base de Datos | Secretaria Academica, OTI |
-| 4 | PR-001 | Red LAN Sede Central | Infraestructura de red cableada | Red | OTI | OTI | Sede Central - Campus | 10.0.0.0/16 | Fisico-Red | Toda la sede |
-| 5 | PE-001 | Personal OTI (2) | Personal administrativo de OTI | Persona | OTI | RRHH | OTI - Sede Central | N/A | N/A | N/A |
-
-#### Tipos de Activo
-- **Hardware (HW)**: Servidores, computadoras, equipos de red, dispositivos moviles
-- **Software (SW)**: Sistemas, aplicaciones, licencias
-- **Dato (DT)**: Bases de datos, archivos, documentos
-- **Red (PR)**: Infraestructura de red, conectividad
-- **Persona (PE)**: Personal con roles criticos
-- **Servicio (SV)**: Servicios TI prestados
-- **Instalacion (IN)**: Data centers, racks, cableado estructurado
-- **Soporte Fisico (SF)**: Documentos impresos, medios removibles
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-### 2. Clasificacion de Seguridad (C-I-D)
-
-| ID Activo | Confidencialidad | Integridad | Disponibilidad | Nivel Criticidad | Fecha Evaluacion |
-|---|---|---|---|---|---|
-| HW-001 | 2 - Uso Interno | 3 - Alta | 3 - Alta | Alta | 2025-05-30 |
-| SW-001 | 1 - Publico | 2 - Media | 2 - Media | Media | 2025-05-30 |
-| DT-001 | 3 - Confidencial | 3 - Alta | 3 - Alta | Critico | 2025-05-30 |
-| PR-001 | 1 - Publico | 2 - Media | 3 - Alta | Alta | 2025-05-30 |
-| PE-001 | 2 - Uso Interno | 2 - Media | 2 - Media | Media | 2025-05-30 |
-
-#### Escala de Valoracion
-| Nivel | Confidencialidad | Integridad | Disponibilidad |
-|---|---|---|---|
-| 3 - Alto | Datos personales, academicos, financieros | Requiere exactitud total, no se tolera alteracion | Tolerancia < 4 hrs, impacto critico |
-| 2 - Medio | Uso interno, no publico | Alteracion afecta operaciones pero es recuperable | Tolerancia 4-24 hrs, impacto significativo |
-| 1 - Bajo | Informacion publica | Sin consecuencias graves por alteracion | Tolerancia > 24 hrs, impacto menor |
-
-#### Nivel de Criticidad
-| Combinacion C-I-D | Criticidad |
-|---|---|
-| C>=2 e I>=2 y D>=2, o cualquier C=3 | **Critico** |
-| C>=2 o I>=2 o D>=2 | **Alta** |
-| C=1 e I=1 y D=1 | **Media** |
-| C=1 y (I=1 o D=1) | **Baja** |
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-### 3. Controles Asociados (ISO 27001:2022 - Anexo A)
-
-| ID Activo | Controles Aplicables | Estado | Observaciones |
-|---|---|---|---|
-| HW-001 | A.5.9 (Inventario), A.7.9 (Seguridad en locales), A.8.1 (Proteccion equipos) | Pendiente | Data center sin control de acceso biometrico |
-| SW-001 | A.5.23 (Filtrado web), A.8.8 (Gestion de vulnerabilidades tecnicas), A.8.20 (Seguridad en redes) | Pendiente | Sin actualizacion de software definida |
-| DT-001 | A.5.13 (Etiquetado de informacion), A.5.33 (Proteccion de registros), A.8.11 (Control de acceso) | Pendiente | Sin clasificacion formal implementada |
-| PR-001 | A.8.1 (Proteccion equipos), A.8.20 (Seguridad en redes), A.8.21 (Seguridad de servicios en red) | Pendiente | Sin segmentacion de red implementada |
-| PE-001 | A.5.4 (Responsabilidades), A.5.6 (Contacto con la autoridad), A.6.3 (Toma de conciencia) | Pendiente | Sin capacitacion formal en seguridad |
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-### 4. Procedimiento de Auditoria AS-IS
-
-#### 4.1 Objetivo
-Identificar, documentar y clasificar todos los activos de informacion de la UNCP como linea base para la implementacion del SGSI (PGTD-01).
-
-#### 4.2 Alcance
-Todas las unidades organizacionales de la UNCP en las 4 sedes:
-- Sede Central (Huancayo)
-- Sede Mantaro (Jauja)
-- Sede Satipo
-- Sede Tarma
-
-#### 4.3 Metodologia
-
-##### Fase 1: Preparacion (Semana 1)
-1. Designar responsable de inventario por cada unidad organizacional
-2. Distribuir la presente plantilla
-3. Capacitar a los responsables en la clasificacion C-I-D
-
-##### Fase 2: Levantamiento (Semana 2-3)
-1. Cada unidad completa su inventario usando la plantilla
-2. La OTI consolida y revisa consistencia
-3. Identificar activos compartidos o duplicados entre unidades
-
-##### Fase 3: Valoracion (Semana 4)
-1. Asignar niveles C-I-D a cada activo
-2. Calcular nivel de criticidad
-3. Identificar controles ISO 27001 aplicables
-
-##### Fase 4: Reporte (Semana 5)
-1. Generar registro maestro de activos consolidado
-2. Identificar brechas (activos sin controles)
-3. Priorizar activos criticos para proteccion inmediata
-4. Presentar informe a la Alta Direccion
-
-#### 4.4 Formulario de Auditoria por Unidad
-
-```
-UNIDAD ORGANIZACIONAL: _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}
-RESPONSABLE DEL INVENTARIO: _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}
-FECHA: _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-ACTIVO #: _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}
-Nombre del Activo: _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}
-Descripcion: _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}
-Tipo: $\square$ HW  $\square$ SW  $\square$ DT  $\square$ PR  $\square$ PE  $\square$ SV  $\square$ IN  $\square$ SF
-Propietario: _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}
-Custodio: _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}
-Ubicacion Fisica: _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}
-Ubicacion Logica (IP/URL/Ruta): _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}
-Formato/Soporte: _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}
-Usuarios/Clientes: _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}
-
-Clasificacion:
-  Confidencialidad: $\square$ 1 - Publico  $\square$ 2 - Interno  $\square$ 3 - Confidencial
-  Integridad:       $\square$ 1 - Baja     $\square$ 2 - Media     $\square$ 3 - Alta
-  Disponibilidad:   $\square$ 1 - Baja     $\square$ 2 - Media     $\square$ 3 - Alta
-
-Controles Actuales: _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}
-
-Observaciones: _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}
-```
-
-#### 4.5 Criterios de Aceptacion
-
-- 100% de unidades organizacionales completan inventario
-- Cada activo tiene clasificacion C-I-D asignada
-- Registro maestro consolidado y aprobado por OTI
-- Activos criticos identificados y reportados a la Alta Direccion
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-### 5. Registro de Cambios
-
-| Version | Fecha | Descripcion del Cambio | Responsable |
-|---|---|---|---|
-| 1.0 | 2025-05-30 | Creacion inicial de la plantilla | Comite de Gobierno Digital UNCP |
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-*Documento: PL-ACT-001 | Version: 1.0 | Estado: Borrador | Proyecto: PGTD-01 (SGSI)*
-
-
 ## D-SGSI-04: Metodología de Evaluación y Tratamiento de Riesgos de Seguridad de la Información
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
@@ -1128,7 +968,7 @@ La selección de los controles se ha basado en los resultados obtenidos tras apl
 | :--- | :--- | :--- | :--- |
 | **5.1 Políticas para la seguridad de la información** | Sí | Requerido por la norma y vital para establecer directrices. | **Implementado.** (D-SGSI-03: Política General SGSI aprobada). |
 | **5.2 Roles y responsabilidades de seguridad de la información** | Sí | Necesario para asignar responsabilidades claras en la UNCP. | **Implementado.** (Oficial de Seguridad designado por Res. N° 2143-R-2023). |
-| **5.9 Inventario de información y otros activos asociados** | Sí | Crítico para proteger el ERP ADESA, Campus Virtual y demás. | **En Proceso.** (Existe inventario 2025, requiere actualización SGSI). |
+| **5.9 Inventario de información y otros activos asociados** | Sí | Crítico para proteger el ERP ADESA, Campus Virtual y SIGA. | **En Proceso.** (Existe inventario 2025, requiere actualización SGSI). |
 | **5.10 Uso aceptable de la información y de los activos** | Sí | Fundamental para regular el comportamiento de los 10,000 estudiantes y personal. | **Planificado.** (Requiere redacción de POL-01). |
 | **5.19 Seguridad de la información en las relaciones con proveedores**| Sí | Vital debido a los servicios alojados en Huawei Cloud. | **Planificado.** (Requiere P-SGSI-07). |
 
@@ -1170,6 +1010,101 @@ _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\
 _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}
 **Director(a) General de Administración (Líder GD)**
 
+## R-SGSI-01: Inventario de Activos de Informacion - UNCP
+
+### Instrucciones
+
+1. El responsable de cada unidad organizacional debe completar una fila por activo.
+2. Los niveles de clasificacion (Confidencialidad, Integridad, Disponibilidad) se asignan segun la Sección 2.
+3. Entregar a la Oficina de Tecnologías de la Información (OTI) para consolidacion.
+4. Actualizar semestralmente o ante cambios significativos.
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+### 1. Registro Maestro de Activos
+
+\begin{compacttable}[Inventario de Activos Críticos (Parte A)]
+\begin{tabularx}{\textwidth}{|c|L{1.5cm}|L{2cm}|Y|L{2cm}|L{1.5cm}|L{1.5cm}|}
+\hline
+\tableheader \# & ID & Nombre & Descripcion & Tipo & Prop. & Cust. \\ \hline
+1 & HW-001 & Servidor ADESA & Gestion documental principal & Hardware & OTI & OTI \\ \hline
+2 & SW-001 & Sistema GESDOC & Tramite documentario & Software & OTI & OTI \\ \hline
+3 & DT-001 & BD Matricula & Registro de estudiantes & Dato & Acad. & OTI \\ \hline
+4 & PR-001 & Red LAN & Red cableada central & Red & OTI & OTI \\ \hline
+5 & PE-001 & Personal OTI & Administradores & Persona & OTI & RRHH \\ \hline
+\end{tabularx}
+\end{compacttable}
+
+\begin{compacttable}[Inventario de Activos Críticos (Parte B: Ubicación y Soporte)]
+\begin{tabularx}{\textwidth}{|L{1.5cm}|L{2.5cm}|L{2.5cm}|L{2cm}|Y|}
+\hline
+\tableheader ID & Ubicacion Fisica & Ubicacion Logica & Soporte & Usuarios \\ \hline
+HW-001 & Data Center & 192.168.x.x & Servidor & Administrativos \\ \hline
+SW-001 & Servidor ADESA & gesdoc.uncp.edu.pe & Web App & Comunidad UNCP \\ \hline
+DT-001 & Servidor BD & db.uncp.edu.pe & BD Digital & Academica, OTI \\ \hline
+PR-001 & Campus & 10.0.0.0/16 & Fisico-Red & Sede Central \\ \hline
+PE-001 & Oficina OTI & N/A & Humano & N/A \\ \hline
+\end{tabularx}
+\end{compacttable}
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+### 2. Clasificacion de Seguridad (C-I-D)
+
+| ID Activo | Confidencialidad | Integridad | Disponibilidad | Criticidad | Fecha |
+|---|---|---|---|---|---|
+| HW-001 | 2 - Interno | 3 - Alta | 3 - Alta | Alta | 2026-06-03 |
+| SW-001 | 1 - Publico | 2 - Media | 2 - Media | Media | 2026-06-03 |
+| DT-001 | 3 - Confidencial | 3 - Alta | 3 - Alta | Critico | 2026-06-03 |
+| PR-001 | 1 - Publico | 2 - Media | 3 - Alta | Alta | 2026-06-03 |
+| PE-001 | 2 - Interno | 2 - Media | 2 - Media | Media | 2026-06-03 |
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+### 3. Controles Asociados (ISO 27001:2022)
+
+| ID Activo | Controles Aplicables | Estado | Observaciones |
+|---|---|---|---|
+| HW-001 | A.5.9, A.7.9, A.8.1 | Pendiente | Sin biometría |
+| SW-001 | A.5.23, A.8.8, A.8.20 | Pendiente | Versión antigua |
+| DT-001 | A.5.13, A.5.33, A.8.11 | Pendiente | Requiere cifrado |
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+### 4. Formulario de Auditoria por Unidad
+
+#### 4.1 Identificación de la Unidad
+| Campo | Información |
+| :--- | :--- |
+| **Unidad Organizacional:** | _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt} |
+| **Responsable Inventario:** | _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt} |
+| **Fecha de Registro:** | _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt} |
+
+#### 4.2 Detalle del Activo (Completar por cada activo)
+| Atributo | Espacio para Registro |
+| :--- | :--- |
+| **ID Activo / \#:** | _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt} |
+| **Nombre del Activo:** | _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt} |
+| **Descripción:** | _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt} |
+| **Tipo:** | $\square$ Hardware $\square$ Software $\square$ Dato $\square$ Red $\square$ Persona |
+| **Ubicación Lógica:** | _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt} |
+| **Usuarios Autorizados:** | _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt} |
+| **Valor C-I-D:** | C:$\square$ I:$\square$ D:$\square$ |
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+*Este documento es propiedad de la Universidad Nacional del Centro del Perú.*
+
+
 ## R-SGSI-02: Matriz de Evaluación y Plan de Tratamiento de Riesgos
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
@@ -1208,7 +1143,7 @@ _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\
 \newpage
 # Soporte
 
-## P-SGSI-04: Plan Anual de Capacitación y Concientización en Seguridad
+## P-SGSI-08: Plan Anual de Capacitación y Concientización en Seguridad
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
 **Año:** 2026
@@ -1260,7 +1195,7 @@ Jefe de la Unidad de Recursos Humanos - UNCP
 \newpage
 # Operacion
 
-## P-SGSI-03: Marco de Respuesta Dinámica ante Incidentes de Seguridad (CSIRT-UNCP)
+## P-SGSI-02: Marco de Respuesta Dinámica ante Incidentes de Seguridad (CSIRT-UNCP)
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
 **Versión:** 1.0 (Enfoque DevSecOps)
@@ -1319,7 +1254,7 @@ Ante una alerta, se activa el CSIRT (Computer Security Incident Response Team) d
 **Este documento es una guía dinámica y se actualiza trimestralmente según la evolución de las amenazas detectadas.**
 
 
-## P-SGSI-04: Gestión de Identidades y Control de Acceso (Identity-First)
+## P-SGSI-03: Gestión de Identidades y Control de Acceso (Identity-First)
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
 **Versión:** 1.0 (Enfoque Zero Trust)
@@ -1358,7 +1293,38 @@ La UNCP adopta un modelo de "Nunca confiar, siempre verificar". El acceso a los 
 *   Uso de videovigilancia con analítica para detectar accesos no autorizados en zonas críticas.
 
 
-## P-SGSI-06: Marco de Resiliencia y Continuidad en Nube Híbrida
+## P-SGSI-04: Procedimiento de Gestión de Cambios en TI
+
+**Organización:** Universidad Nacional del Centro del Perú (UNCP)
+**Versión:** 1.0 (Enfoque Ágil)
+**Norma:** ISO/IEC 27001:2022 (Control A.8.32)
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+### 1. Objetivo
+Asegurar que los cambios en los sistemas de información e infraestructura de la UNCP se realicen de forma controlada, minimizando el impacto en la disponibilidad y seguridad.
+
+### 2. Tipos de Cambio
+1.  **Cambio Estándar:** Cambios de bajo riesgo, rutinarios y pre-aprobados (ej. parches de seguridad mensuales).
+2.  **Cambio Normal:** Requiere evaluación por el Comité de Cambios (CAB) o el Jefe de la OTI (ej. actualización de versión del ERP ADESA).
+3.  **Cambio de Emergencia:** Requiere implementación inmediata ante un incidente crítico (ej. caída de base de datos).
+
+### 3. Flujo del Cambio
+1.  **Solicitud:** Se registra el requerimiento en el sistema de tickets.
+2.  **Evaluación de Impacto:** Se analiza el riesgo, los recursos necesarios y el plan de retroceso (rollback).
+3.  **Aprobación:** Según el tipo de cambio.
+4.  **Implementación:** Se realiza en el horario de menor impacto (ventana de mantenimiento).
+5.  **Pruebas de Aceptación:** Se valida que el cambio no afectó la seguridad ni la funcionalidad.
+6.  **Cierre y Registro:** Documentación del resultado.
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+
+## P-SGSI-05: Marco de Resiliencia y Continuidad en Nube Híbrida
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
 **Versión:** 1.0 (Enfoque Resiliencia Activa)
@@ -1396,36 +1362,7 @@ La UNCP garantiza la continuidad de sus servicios críticos (ERP ADESA, Campus V
 *   En caso de interrupción mayor, la OTI activará el protocolo de comunicación institucional para informar a los 10,000 estudiantes a través de redes sociales oficiales y SMS.
 
 
-## P-SGSI-05: Procedimiento de Gestión de Cambios en TI
-
-**Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 1.0 (Enfoque Ágil)
-**Norma:** ISO/IEC 27001:2022 (Control A.8.32)
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-### 1. Objetivo
-Asegurar que los cambios en los sistemas de información e infraestructura de la UNCP se realicen de forma controlada, minimizando el impacto en la disponibilidad y seguridad.
-
-### 2. Tipos de Cambio
-1.  **Cambio Estándar:** Cambios de bajo riesgo, rutinarios y pre-aprobados (ej. parches de seguridad mensuales).
-2.  **Cambio Normal:** Requiere evaluación por el Comité de Cambios (CAB) o el Jefe de la OTI (ej. actualización de versión del ERP ADESA).
-3.  **Cambio de Emergencia:** Requiere implementación inmediata ante un incidente crítico (ej. caída de base de datos).
-
-### 3. Flujo del Cambio
-1.  **Solicitud:** Se registra el requerimiento en el sistema de tickets.
-2.  **Evaluación de Impacto:** Se analiza el riesgo, los recursos necesarios y el plan de retroceso (rollback).
-3.  **Aprobación:** Según el tipo de cambio.
-4.  **Implementación:** Se realiza en el horario de menor impacto (ventana de mantenimiento).
-5.  **Pruebas de Aceptación:** Se valida que el cambio no afectó la seguridad ni la funcionalidad.
-6.  **Cierre y Registro:** Documentación del resultado.
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-## P-SGSI-07: Procedimiento de Gestión de Seguridad con Proveedores
+## P-SGSI-06: Procedimiento de Gestión de Seguridad con Proveedores
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
 **Versión:** 1.0
@@ -1441,11 +1378,33 @@ Aplica a todos los proveedores con acceso a información o infraestructura de la
 ### 2. Requisitos de Seguridad
 *   **Contratos:** Deben incluir cláusulas de confidencialidad y cumplimiento del SGSI.
 *   **SLA de Seguridad:** Se deben definir tiempos de respuesta ante incidentes detectados en la plataforma del proveedor.
-*   **Derecho a Auditoría:** La UNCP se reserva el derecho de solicitar reportes de seguridad (SOC2 u otros) al proveedor.
+*   **Derecho a Auditoría:** La UNCP se reserva el derecho de solicitar reportes de seguridad (SOC2 o equivalentes) al proveedor.
 
 ### 3. Monitoreo y Revisión
 *   Revisión anual del desempeño de seguridad del proveedor.
 *   Cierre de accesos inmediato al finalizar la vigencia del contrato.
+
+
+## P-SGSI-07: Procedimiento de Eliminación Segura de Información
+
+**Organización:** Universidad Nacional del Centro del Perú (UNCP)
+**Versión:** 1.0
+**Norma:** ISO/IEC 27001:2022 (Controles A.8.10, A.8.11)
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+### 1. Destrucción de Medios Físicos (Papel)
+*   Documentos clasificados como **Confidenciales** (actas de notas, planillas) nunca deben desecharse íntegros en la basura.
+*   Es obligatorio el uso de trituradoras de papel que garanticen un corte de partículas irreconstruible.
+
+### 2. Eliminación de Medios Digitales
+*   Antes de desechar o reutilizar un equipo, los discos duros deben ser sometidos a un borrado seguro (Wipe) mediante software especializado o destrucción física si están dañados.
+*   Los medios extraíbles (USB/CD) que contuvieron datos sensibles deben ser destruidos físicamente.
+
+### 3. Registro de Destrucción
+*   Toda eliminación masiva de activos o documentos debe quedar registrada en el formato **F-SGSI-05 (Acta de Eliminación)**.
 
 
 
@@ -1629,7 +1588,7 @@ _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
 **Fecha:** [Fecha]
 **Lugar:** [Sala de Reuniones / Virtual]
-**Participantes:** Comité de Gobierno Digital (Rector, DGA, OTI, Oficial de Seguridad, etc.)
+**Participantes:** Comité de Gobierno Digital (Rector, DGA, OTI, Oficial de Seguridad, Asesoría Jurídica y RRHH)
 
 
 \vspace{0.3cm}\hrule\vspace{0.3cm}
@@ -1668,7 +1627,7 @@ La Alta Dirección manifiesta que el SGSI de la UNCP es [Adecuado / Inadecuado],
 [Lista de nombres y firmas]
 
 
-## R-SGSI-01: Cuadro de Mando de Seguridad y Verificación Continua
+## R-SGSI-03: Cuadro de Mando de Seguridad y Verificación Continua
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
 **Versión:** 1.0 (Dashboard Dinámico)
@@ -1700,7 +1659,7 @@ En lugar de una auditoría anual masiva, se realizarán **Micro-Auditorías trim
 El Comité de Gobierno Digital recibirá un informe mensual automatizado con los hallazgos de las micro-auditorías y el estado de los riesgos, permitiendo una toma de decisiones basada en hechos recientes, no en reportes pasados.
 
 
-## R-SGSI-06: Programa Maestro de Auditoría Basada en Riesgos (Ciclo 2026)
+## R-SGSI-04: Programa Maestro de Auditoría Basada en Riesgos (Ciclo 2026)
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
 **Versión:** 1.0
@@ -1760,7 +1719,7 @@ Toda no conformidad detectada deberá tener un Plan de Acción en un plazo no ma
 
 
 ### 2. Análisis de Causa Raíz
-**Método Utilizado:** [5 Porqués / Ishikawa / Otros]
+**Método Utilizado:** [5 Porqués / Ishikawa / Lluvia de ideas]
 **Resultado del Análisis:**
 [Explicar por qué ocurrió la no conformidad].
 
@@ -1806,7 +1765,7 @@ _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\
 \newpage
 # Anexo A Controles
 
-## D-SGSI-02: Guía de Implementación de Controles Críticos (ISO 27002:2022)
+## D-SGSI-08: Guía de Implementación de Controles Críticos (ISO 27002:2022)
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
 **Versión:** 1.0 (Enfoque Zero Trust y Automatización)
@@ -1881,6 +1840,7 @@ Aplica a todos los desarrollos internos (OTI), mantenimiento del ERP ADESA y des
 
 ### 2. Seguridad desde el Diseño (Shift-Left)
 *   **Análisis de Requisitos:** Todo requerimiento de software debe incluir criterios de seguridad y privacidad desde su definición.
+*   **Desarrollo Móvil:** Las aplicaciones desarrolladas para uso en dispositivos móviles deben heredar los controles de la **POL-SGSI-05**, asegurando el manejo seguro de datos en entornos no controlados (BYOD).
 *   **Revisiones de Código:** Se integrarán escaneos estáticos de seguridad (SAST) en los *pipelines* de integración continua (CI/CD).
 
 ### 3. Seguridad en APIs
@@ -1895,58 +1855,7 @@ Aplica a todos los desarrollos internos (OTI), mantenimiento del ERP ADESA y des
 *   Los datos de producción (reales) **nunca** se utilizarán en entornos de desarrollo o pruebas. Se deben aplicar técnicas de enmascaramiento o generación de datos sintéticos.
 
 
-## POL-SGSI-05: Política de Dispositivos Móviles y Seguridad Móvil
-
-**Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 1.0
-**Norma:** ISO/IEC 27001:2022 (Control A.8.1)
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-### 1. Objetivo
-Establecer las medidas de seguridad para proteger la información institucional procesada o almacenada en dispositivos móviles (laptops, smartphones, tablets), tanto institucionales como personales (BYOD).
-
-### 2. Requisitos de Seguridad
-1.  **Cifrado Obligatorio:** Todo dispositivo móvil que acceda a correos o sistemas de la UNCP debe tener el almacenamiento cifrado.
-2.  **Bloqueo de Pantalla:** Uso obligatorio de PIN, patrón complejo o biometría con bloqueo automático tras 2 minutos de inactividad.
-3.  **Software Original:** Se prohíbe el acceso desde dispositivos con "Jailbreak" o "Root", ya que comprometen la seguridad del sistema operativo.
-4.  **Actualizaciones:** El usuario es responsable de mantener el sistema operativo y las aplicaciones de seguridad actualizadas.
-
-### 3. Registro y Pérdida
-*   Todo dispositivo móvil institucional debe estar inventariado en la OTI.
-*   En caso de pérdida o robo, el usuario debe reportarlo en **menos de 2 horas** a la OTI para proceder al borrado remoto de la cuenta institucional.
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-## POL-SGSI-06: Política de Contraseñas y Autenticación Segura
-
-**Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 1.0
-**Norma:** ISO/IEC 27001:2022 (Control A.5.17)
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-### 1. Robustez de Contraseñas
-Las contraseñas de acceso a los sistemas de la UNCP (ERP, SIGA, Correo) deben cumplir:
-*   Longitud mínima: 12 caracteres.
-*   Complejidad: Combinación de mayúsculas, minúsculas, números y símbolos.
-*   Historial: No se pueden repetir las últimas 5 contraseñas.
-
-### 2. Gestión de Credenciales
-*   **Prohibición de Compartir:** Las credenciales son personales e intransferibles.
-*   **Doble Factor (MFA):** El uso de MFA es obligatorio para todo el personal administrativo y técnico.
-*   **Cambio Forzado:** Se requerirá el cambio de contraseña ante cualquier sospecha de compromiso.
-
-### 3. Bloqueo de Cuenta
-Las cuentas se bloquearán automáticamente tras 5 intentos fallidos de inicio de sesión para prevenir ataques de fuerza bruta.
-
-
-## POL-SGSI-02: Políticas de Usuario Final (Uso Aceptable, Escritorio Limpio y Teletrabajo)
+## POL-SGSI-02: Política de Uso Aceptable, Escritorio y Teletrabajo (Uso Aceptable, Escritorio Limpio y Teletrabajo)
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
 **Versión:** 1.0
@@ -1973,7 +1882,9 @@ Las cuentas se bloquearán automáticamente tras 5 intentos fallidos de inicio d
 
 \vspace{0.3cm}\hrule\vspace{0.3cm}
 
-## POL-SGSI-03: Política de Respaldo e Información (Clasificación y Backup)
+
+
+## POL-SGSI-03: Política de Respaldo e Información e Información (Clasificación y Backup)
 
 ### 1. Clasificación de la Información (Control A.5.12)
 La UNCP clasifica su información en:
@@ -1989,70 +1900,72 @@ La UNCP clasifica su información en:
 
 \vspace{0.3cm}\hrule\vspace{0.3cm}
 
-## POL-SGSI-04: Política de Proveedores y Continuidad
+
+
+## POL-SGSI-04: Política de Seguridad con Proveedores y Continuidad
 
 *(Consolidado con los procedimientos operativos de la carpeta 05).*
+
+
+## POL-SGSI-05: Política de Dispositivos Móviles y Seguridad Móvil
+
+**Organización:** Universidad Nacional del Centro del Perú (UNCP)
+**Versión:** 1.0
+**Norma:** ISO/IEC 27001:2022 (Control A.8.1)
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+### 1. Objetivo y Alcance Diferenciado
+Establecer las medidas de seguridad para proteger la información institucional procesada o almacenada en dispositivos móviles (laptops, smartphones, tablets).
+
+*   **Alcance Mandatorio:** Aplica de forma obligatoria a todo el **Personal Administrativo, Docente y Autoridades** que utilicen dispositivos (propios o institucionales) para acceder a sistemas críticos de la universidad.
+*   **Alcance Informativo (Estudiantes):** Debido a la falta de control técnico de la universidad sobre el hardware personal de los alumnos, para este grupo se aplicarán **Campañas de Concientización** que promuevan estas prácticas de seguridad para proteger su propia información académica.
+
+### 2. Requisitos de Seguridad (Obligatorios para Personal)
+1.  **Cifrado Obligatorio:** Todo dispositivo móvil que acceda a correos o sistemas de la UNCP debe tener el almacenamiento cifrado.
+2.  **Bloqueo de Pantalla:** Uso obligatorio de PIN, patrón complejo o biometría con bloqueo automático tras 2 minutos de inactividad.
+3.  **Software Original:** Se prohíbe el acceso desde dispositivos con "Jailbreak" o "Root", ya que comprometen la seguridad del sistema operativo.
+4.  **Actualizaciones:** El usuario es responsable de mantener el sistema operativo y las aplicaciones de seguridad actualizadas.
+
+### 3. Registro y Pérdida
+*   Todo dispositivo móvil institucional debe estar inventariado en la OTI.
+*   En caso de pérdida o robo, el usuario debe reportarlo en **menos de 2 horas** a la OTI para proceder al borrado remoto de la cuenta institucional.
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+
+## POL-SGSI-06: Política de Contraseñas y Autenticación Segura
+
+**Organización:** Universidad Nacional del Centro del Perú (UNCP)
+**Versión:** 1.0
+**Norma:** ISO/IEC 27001:2022 (Control A.5.17)
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+### 1. Robustez de Contraseñas
+Las contraseñas de acceso a los sistemas de la UNCP (ERP, SIGA, Correo) deben cumplir:
+*   Longitud mínima: 12 caracteres.
+*   Complejidad: Combinación de mayúsculas, minúsculas, números y símbolos.
+*   Historial: No se pueden repetir las últimas 5 contraseñas.
+
+### 2. Gestión de Credenciales
+*   **Prohibición de Compartir:** Las credenciales son personales e intransferibles.
+*   **Doble Factor (MFA):** El uso de MFA es obligatorio para todo el personal administrativo y técnico.
+*   **Cambio Forzado:** Se requerirá el cambio de contraseña ante cualquier sospecha de compromiso.
+
+### 3. Bloqueo de Cuenta
+Las cuentas se bloquearán automáticamente tras 5 intentos fallidos de inicio de sesión para prevenir ataques de fuerza bruta.
 
 
 
 \newpage
 # Formatos
-
-## F-SGSI-03: Formato de Baja de Usuario y Devolución de Activos
-
-**Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Fecha de Cese:** [Fecha]
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-
-### 1. Datos del Colaborador
-*   **Nombre Completo:** [Nombre]
-*   **Unidad Orgánica:** [Facultad/Oficina]
-*   **Motivo de Baja:** [Renuncia / Término de Contrato / Otro]
-
-### 2. Devolución de Activos Físicos
-| Activo | Estado | Recibido por (Firma) |
-| :--- | :--- | :--- |
-| Laptop / Computadora | $\square$ OK $\square$ Dañado | |
-| Celular Institucional | $\square$ OK $\square$ Dañado | |
-| Tarjetas de Acceso / Llaves | $\square$ OK $\square$ Extraviado | |
-| Otros: _\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt}_\hspace{0pt} | $\square$ OK $\square$ Dañado | |
-
-### 3. Deshabilitación de Accesos Digitales (Uso OTI)
-$\square$ Correo Institucional Desactivado
-$\square$ Acceso ERP ADESA Eliminado
-$\square$ Acceso SIGA / SIAF Eliminado
-$\square$ VPN / Carpetas de Red Eliminado
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-## F-SGSI-04: Reporte de Acción Correctiva (RAC)
-
-**ID RAC:** [Año]-[Nro]
-**Fecha:** [Fecha]
-
-### 1. Descripción de la No Conformidad
-[Describir detalladamente el hallazgo o falla detectada].
-
-### 2. Análisis de Causa Raíz
-[Explicar por qué sucedió el problema - Ejemplo: 5 Porqués].
-
-### 3. Plan de Acción
-*   **Acción de Corrección:** [Solución inmediata]
-*   **Acción Correctiva:** [Cambio en el proceso para que no vuelva a pasar]
-
-**Responsable:** [Nombre]
-**Fecha de Cierre:** [Fecha]
-
-
-\vspace{0.3cm}\hrule\vspace{0.3cm}
-
-**Validación de Eficacia (Oficial de Seguridad):**
-[Firma y Fecha]
-
 
 ## F-SGSI-01: Formato de Solicitud de Alta / Baja / Cambio de Acceso
 
@@ -2091,6 +2004,8 @@ $\square$ Carpeta de Red Compartida
 
 \vspace{0.3cm}\hrule\vspace{0.3cm}
 
+
+
 ## F-SGSI-02: Registro de Asistencia a Capacitación
 
 **Tema:** [Tema]
@@ -2110,6 +2025,64 @@ $\square$ Carpeta de Red Compartida
 
 **Observaciones:**
 [Espacio para notas del instructor]
+
+
+## F-SGSI-03: Formato de Baja de Usuario y Devolución de Activos
+
+**Organización:** Universidad Nacional del Centro del Perú (UNCP)
+**Fecha de Cese:** [Fecha]
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+### 1. Datos del Colaborador
+*   **Nombre Completo:** [Nombre]
+*   **Unidad Orgánica:** [Facultad/Oficina]
+*   **Motivo de Baja:** [Renuncia / Término de Contrato / Despido / Jubilación]
+
+### 2. Devolución de Activos Físicos
+| Activo | Estado | Recibido por (Firma) |
+| :--- | :--- | :--- |
+| Laptop / Computadora | $\square$ OK $\square$ Dañado | |
+| Celular Institucional | $\square$ OK $\square$ Dañado | |
+| Tarjetas de Acceso / Llaves | $\square$ OK $\square$ Extraviado | |
+| Activos Adicionales Asignados | $\square$ OK $\square$ Dañado | |
+
+### 3. Deshabilitación de Accesos Digitales (Uso OTI)
+$\square$ Correo Institucional Desactivado
+$\square$ Acceso ERP ADESA Eliminado
+$\square$ Acceso SIGA / SIAF Eliminado
+$\square$ VPN / Carpetas de Red Eliminado
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
+
+## F-SGSI-04: Reporte de Acción Correctiva (RAC)
+
+**ID RAC:** [Año]-[Nro]
+**Fecha:** [Fecha]
+
+### 1. Descripción de la No Conformidad
+[Describir detalladamente el hallazgo o falla detectada].
+
+### 2. Análisis de Causa Raíz
+[Explicar por qué sucedió el problema - Ejemplo: 5 Porqués].
+
+### 3. Plan de Acción
+*   **Acción de Corrección:** [Solución inmediata]
+*   **Acción Correctiva:** [Cambio en el proceso para que no vuelva a pasar]
+
+**Responsable:** [Nombre]
+**Fecha de Cierre:** [Fecha]
+
+
+\vspace{0.3cm}\hrule\vspace{0.3cm}
+
+**Validación de Eficacia (Oficial de Seguridad):**
+[Firma y Fecha]
 
 
 ## F-SGSI-05: Acta de Eliminación Segura de Activos / Información
@@ -2139,6 +2112,8 @@ Certificamos que los activos y la información descrita anteriormente han sido e
 
 
 \vspace{0.3cm}\hrule\vspace{0.3cm}
+
+
 
 ## F-SGSI-06: Bitácora de Acceso a Áreas Críticas (Datacenter)
 

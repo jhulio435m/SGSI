@@ -12,6 +12,7 @@ Aplica a todos los desarrollos internos (OTI), mantenimiento del ERP ADESA y des
 
 ## 2. Seguridad desde el Diseño (Shift-Left)
 *   **Análisis de Requisitos:** Todo requerimiento de software debe incluir criterios de seguridad y privacidad desde su definición.
+*   **Desarrollo Móvil:** Las aplicaciones desarrolladas para uso en dispositivos móviles deben heredar los controles de la **POL-SGSI-05**, asegurando el manejo seguro de datos en entornos no controlados (BYOD).
 *   **Revisiones de Código:** Se integrarán escaneos estáticos de seguridad (SAST) en los *pipelines* de integración continua (CI/CD).
 
 ## 3. Seguridad en APIs

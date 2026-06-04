@@ -17,7 +17,7 @@
 ***
 
 ## 2. Análisis de Causa Raíz
-**Método Utilizado:** [5 Porqués / Ishikawa / Otros]
+**Método Utilizado:** [5 Porqués / Ishikawa / Lluvia de ideas]
 **Resultado del Análisis:**
 [Explicar por qué ocurrió la no conformidad].
 

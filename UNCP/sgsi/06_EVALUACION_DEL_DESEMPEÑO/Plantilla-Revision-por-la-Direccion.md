@@ -3,7 +3,7 @@
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
 **Fecha:** [Fecha]
 **Lugar:** [Sala de Reuniones / Virtual]
-**Participantes:** Comité de Gobierno Digital (Rector, DGA, OTI, Oficial de Seguridad, etc.)
+**Participantes:** Comité de Gobierno Digital (Rector, DGA, OTI, Oficial de Seguridad, Asesoría Jurídica y RRHH)
 
 ***
 
