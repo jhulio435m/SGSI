@@ -1,13 +1,18 @@
-# P-SGSI-03: Gestión de Identidades y Control de Acceso (Identity-First)
+---
+title: Gestión de Identidades y Control de Acceso (Identity-First)
+code: P-SGSI-03
+---
+
+# Gestión de Identidades y Control de Acceso (Identity-First)
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 2.0 (Enfoque Zero Trust)
-**Norma:** ISO/IEC 27001:2022 (Controles A.5.15 — Control de acceso, A.5.16 — Gestión de identidades, A.5.17 — Autenticación, A.5.18 — Derechos de acceso, A.8.2 — Derechos de acceso con privilegios, A.8.3 — Gestión de contraseñas, A.8.4 — Acceso a utilidades de programación, A.8.5 — Autenticación para acceso remoto)
+**Aprobado por:** Oficial de Seguridad y Confianza Digital
+**Norma:** ISO/IEC 27001:2022 (Controles A.5.15, A.5.16, A.5.17, A.5.18, A.8.2, A.8.3, A.8.4, A.8.5)
 **Alineamiento:** TRV-01 (Gestión de Identidades IdM/SSO), POL-SGSI-06 (Política de Contraseñas), POL-SGSI-05 (Dispositivos Móviles)
 
 ***
 
-## 1. Filosofía de Control: Zero Trust (Confianza Cero)
+## Filosofía de Control: Zero Trust (Confianza Cero)
 La UNCP adopta un modelo de **"Nunca confiar, siempre verificar"**. El acceso a los activos de información (ERP ADESA, Campus Virtual, SIGA, recursos cloud) no depende de la ubicación física (estar en el campus), sino de la verificación sólida y continua de la identidad, el dispositivo y el contexto de la solicitud.
 
 ### 1.1 Principios del Modelo Zero Trust en la UNCP
@@ -18,7 +23,7 @@ La UNCP adopta un modelo de **"Nunca confiar, siempre verificar"**. El acceso a 
 
 ---
 
-## 2. Ciclo de Vida de la Identidad Digital
+## Ciclo de Vida de la Identidad Digital
 
 ### 2.1 Registro y Alta (Onboarding)
 
@@ -69,7 +74,7 @@ La UNCP adopta un modelo de **"Nunca confiar, siempre verificar"**. El acceso a 
 
 ---
 
-## 3. Gestión de Cuentas Privilegiadas (PAM)
+## Gestión de Cuentas Privilegiadas (PAM)
 
 ### 3.1 Principios
 - Queda **prohibido** el uso compartido de cuentas genéricas como "admin", "root", "administrator" o "sa". Todo administrador debe usar una cuenta nominativa con privilegios asignados según su rol.
@@ -87,7 +92,7 @@ La UNCP adopta un modelo de **"Nunca confiar, siempre verificar"**. El acceso a 
 
 ---
 
-## 4. Gestión de Acceso para Estudiantes (Alcance Específico)
+## Gestión de Acceso para Estudiantes (Alcance Específico)
 
 Dado que el estudiante no está sujeto a las políticas obligatorias de dispositivos (POL-SGSI-05), el acceso a los sistemas académicos se gestiona de la siguiente forma:
 
@@ -101,7 +106,7 @@ Dado que el estudiante no está sujeto a las políticas obligatorias de disposit
 
 ---
 
-## 5. Control de Acceso Físico
+## Control de Acceso Físico
 
 ### 5.1 Acceso al Datacenter
 - **Mecanismo:** Biometría (huella dactilar) + tarjeta de proximidad.
@@ -118,7 +123,7 @@ Dado que el estudiante no está sujeto a las políticas obligatorias de disposit
 
 ---
 
-## 6. Responsabilidades
+## Responsabilidades
 
 | Rol | Responsabilidad |
 |---|---|
@@ -131,7 +136,7 @@ Dado que el estudiante no está sujeto a las políticas obligatorias de disposit
 
 ---
 
-## 7. Métricas de Cumplimiento
+## Métricas de Cumplimiento
 
 | Indicador | Meta | Frecuencia | Fuente |
 |---|---|---|---|
@@ -143,7 +148,7 @@ Dado que el estudiante no está sujeto a las políticas obligatorias de disposit
 
 ---
 
-## 8. Documentos Relacionados
+## Documentos Relacionados
 
 | Código | Nombre |
 |---|---|
@@ -154,5 +159,3 @@ Dado que el estudiante no está sujeto a las políticas obligatorias de disposit
 | F-SGSI-03 | Formato de Baja de Usuario y Devolución de Activos |
 
 ***
-
-**Versión 2.0 — Incluye Zero Trust, tabla de onboarding por tipo de usuario, acceso condicional, PAM JIT, y matriz de acceso para estudiantes.**

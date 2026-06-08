@@ -1,13 +1,18 @@
-# D-SGSI-08: Guía de Implementación de Controles Críticos (ISO 27002:2022)
+---
+title: Guía de Implementación de Controles Críticos (ISO 27002:2022)
+code: D-SGSI-08
+---
+
+# Guía de Implementación de Controles Críticos (ISO 27002:2022)
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 2.0 (Enfoque Zero Trust y Automatización)
+**Aprobado por:** Oficial de Seguridad y Confianza Digital
 **Basado en:** ISO/IEC 27002:2022
 **Alineamiento:** D-SGSI-05 (Declaración de Aplicabilidad), P-SGSI-03 (Gestión de Accesos), P-SGSI-02 (Gestión de Incidentes)
 
 ***
 
-## 1. Matriz de Controles de Vanguardia
+## Matriz de Controles de Vanguardia
 
 Esta tabla detalla los controles priorizados para los activos críticos de la UNCP (ERP ADESA, Campus Virtual, Datos Personales, infraestructura cloud), integrando los atributos de la norma y mejoras de automatización con enfoque Zero Trust.
 
@@ -49,7 +54,7 @@ Esta tabla detalla los controles priorizados para los activos críticos de la UN
 | **8.8** | Gestión de vulnerabilidades técnicas | Prevenir la explotación de vulnerabilidades | Preventivo / CIA / Proteger | **Automatización:** Escaneo semanal de vulnerabilidades en todos los sistemas (locales y cloud). Parches críticos (CVSS >= 9.0) aplicados en < 48 horas. Escaneo de contenedores e imágenes en el registro. Reporte mensual al CGD. |
 | **8.13** | Copias de seguridad | Proteger los datos contra pérdida | Preventivo / CIA / Proteger | **Regla 3-2-1:** Respaldo diario de bases de datos críticas en Huawei Cloud CBR (inmutable). Pruebas de restauración trimestrales. Cifrado en reposo y en tránsito de todos los respaldos (POL-SGSI-03). |
 | **8.16** | Seguimiento de actividades (Monitoreo) | Detectar comportamientos anómalos | Detectivo / CIA / Detectar | **UBA/SIEM:** Uso de análisis de comportamiento (User Behavior Analytics) para detectar accesos anómalos. Integración de logs de Huawei Cloud, ERP ADESA, Moodle, firewalls y MDM en el SIEM. Alertas en tiempo real al CSIRT. |
-| **8.20** | Seguridad de redes | Proteger la información en las redes | Preventivo / CIA / Proteger | **ZTNA/Microsegmentación:** Aplicación de Zero Trust Network Access para segmentar lógicamente los recursos. Un alumno en la WiFi de la facultad no tiene visibilidad de los servidores de tesorería. Firewall interno entre segmentos académico y administrativo. 802.1X para autenticación de puertos. |
+| **8.20** | Seguridad de redes | Proteger la información en las redes | Preventivo / CIA / Proteger | **ZTNA (Microsegmentación):** Aplicación de Zero Trust Network Access para segmentar lógicamente los recursos. Un alumno en la WiFi de la facultad no tiene visibilidad de los servidores de tesorería. Firewall interno entre segmentos académico y administrativo. 802.1X para autenticación de puertos. |
 | **8.24** | Uso de criptografía | Proteger la confidencialidad e integridad | Preventivo / CIA / Proteger | **Cifrado Generalizado:** TLS 1.3 en todas las comunicaciones externas. Cifrado en reposo para bases de datos (TDE) y backups. Cifrado de discos (BitLocker/FileVault) en todos los dispositivos móviles institucionales. Política de gestión de claves con rotación anual. |
 | **8.25** | Ciclo de vida de desarrollo seguro | Integrar seguridad en el desarrollo | Preventivo / CI / Proteger | **DevSecOps:** Escaneo SAST en cada commit del ERP ADESA. Escaneo DAST trimestral en aplicaciones web. Análisis de dependencias (SBOM) para identificar librerías con CVEs. Pruebas de penetración anuales en aplicaciones críticas (POL-SGSI-01). |
 | **8.31** | Separación de entornos | Evitar contaminación de datos | Preventivo / CI / Proteger | **IaC:** Los entornos de desarrollo y pruebas se despliegan como infraestructura como código (Terraform/Ansible). Prohibición de uso de datos reales de producción en entornos no productivos. Datos sintéticos o enmascarados para pruebas. |
@@ -57,7 +62,7 @@ Esta tabla detalla los controles priorizados para los activos críticos de la UN
 
 ---
 
-## 2. Acciones de Mejora (Superando el Estándar)
+## Acciones de Mejora (Superando el Estándar)
 
 Para que la UNCP alcance el nivel de madurez deseado en el PGTD y se diferencie como institución líder en seguridad digital, se sugieren las siguientes metodologías de mejora continua:
 
@@ -82,7 +87,7 @@ Para que la UNCP alcance el nivel de madurez deseado en el PGTD y se diferencie 
 
 ---
 
-## 3. Mapa de Correlación con la SoA
+## Mapa de Correlación con la SoA
 
 | Control de esta Guía | ID en la SoA (D-SGSI-05) | Estado Objetivo 2027 |
 |---|---|---|
@@ -95,12 +100,12 @@ Para que la UNCP alcance el nivel de madurez deseado en el PGTD y se diferencie 
 
 ---
 
-## 4. Restricción de Confidencialidad y Cumplimiento
+## Restricción de Confidencialidad y Cumplimiento
 Todas las recomendaciones contenidas en esta guía están diseñadas para cumplir con la **Ley N° 29733** (Protección de Datos Personales), el **D.L. N° 1412** (Ley de Gobierno Digital), el **D.S. N° 016-2024-JUS** (Reglamento LPDP) y el **D.S. N° 029-2021-PCM** (Reglamento de Gobierno Digital). Este documento es para uso interno de la UNCP; su distribución externa requiere la anonimización de activos específicos y la autorización del Oficial de Seguridad.
 
 ---
 
-## 5. Documentos Relacionados
+## Documentos Relacionados
 
 | Código | Nombre |
 |---|---|
@@ -114,8 +119,3 @@ Todas las recomendaciones contenidas en esta guía están diseñadas para cumpli
 
 ***
 
-**Versión 2.0 — Incluye 20 controles detallados vs 6 de la v1.0, cubriendo las 4 categorías del Anexo A (Organizacionales, Personas, Físicos, Tecnológicos). Agregado mapa de correlación con la SoA y nuevas acciones de mejora (Bug Bounty, SOAR).**
-
-___________________________
-**Oficial de Seguridad de la Información**
-Presidente del Equipo de Respuesta a Incidentes (CSIRT)

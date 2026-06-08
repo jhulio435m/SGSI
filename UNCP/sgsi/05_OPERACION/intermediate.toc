@@ -1,0 +1,17 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Procedimiento de Eliminación Segura de Información y Activos}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Objetivo}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Alcance}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Niveles de Eliminación Segura}{2}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Métodos Específicos por Tipo de Medio}{2}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}4.1 Medios Físicos (Papel)}{2}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}4.2 Discos Duros HDD}{3}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.3}4.3 Unidades de Estado Sólido SSD}{3}{subsubsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.4}4.4 Medios Extraíbles (USB, CD/DVD, Tarjetas SD)}{3}{subsubsection.1.4.4}%
+\contentsline {subsubsection}{\numberline {1.4.5}4.5 Dispositivos Móviles (Smartphones, Tablets)}{3}{subsubsection.1.4.5}%
+\contentsline {subsubsection}{\numberline {1.4.6}4.6 Información en la Nube}{3}{subsubsection.1.4.6}%
+\contentsline {subsection}{\numberline {1.5}Verificación Post-Eliminación}{4}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Cadena de Custodia para Eliminación}{4}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Proveedores Externos de Eliminación}{4}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Responsabilidades}{4}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Documentos Relacionados}{4}{subsection.1.9}%

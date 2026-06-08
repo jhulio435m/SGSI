@@ -1,16 +1,21 @@
-# P-SGSI-04: Procedimiento de Gestión de Cambios en TI
+---
+title: Procedimiento de Gestión de Cambios en TI
+code: P-SGSI-04
+---
+
+# Procedimiento de Gestión de Cambios en TI
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 2.0 (Enfoque ITIL + Ágil)
-**Norma:** ISO/IEC 27001:2022 (Control A.8.32 — Gestión de cambios)
+**Aprobado por:** Jefe de la Oficina de Tecnologías de la Información
+**Norma:** ISO/IEC 27001:2022 (Control A.8.32)
 **Alineamiento:** P-SGSI-02 (Gestión de Incidentes), P-SGSI-05 (Resiliencia y Continuidad)
 
 ***
 
-## 1. Objetivo
+## Objetivo
 Asegurar que todos los cambios en los sistemas de información, infraestructura tecnológica y aplicaciones de la UNCP se realicen de forma controlada, planificada y documentada, minimizando el riesgo de incidentes de seguridad, indisponibilidad de servicios o pérdida de datos.
 
-## 2. Alcance
+## Alcance
 Este procedimiento aplica a todo cambio sobre los sistemas y servicios cubiertos por el SGSI, incluyendo:
 - Cambios en servidores (parches, actualizaciones, migraciones).
 - Cambios en redes (firewalls, routers, segmentación, VLANs).
@@ -19,7 +24,7 @@ Este procedimiento aplica a todo cambio sobre los sistemas y servicios cubiertos
 - Cambios en políticas y reglas de seguridad (firewall, WAF, IDS/IPS, acceso condicional).
 - Cambios en la documentación oficial del SGSI (políticas, procedimientos).
 
-## 3. Tipos de Cambio
+## Tipos de Cambio
 
 ### 3.1 Cambio Estándar
 **Definición:** Cambios de bajo riesgo, rutinarios, pre-aprobados y repetitivos, que siguen un procedimiento documentado y no requieren evaluación adicional del CAB (Comité Asesor de Cambios).
@@ -63,11 +68,17 @@ Este procedimiento aplica a todo cambio sobre los sistemas y servicios cubiertos
 
 ---
 
-## 4. Flujo del Cambio Normal
+## Flujo del Cambio Normal
 
-```
-Solicitud → Evaluación de Impacto → Aprobación → Planificación → Implementación → Pruebas → Cierre
-```
+| Fase | Descripción |
+|:-----|:------------|
+| Solicitud | Registrar el cambio en el sistema de tickets con datos mínimos (ID, sistema, descripción, justificación) |
+| Evaluación de Impacto | Evaluar riesgo de seguridad, impacto en disponibilidad, plan de retroceso, comunicación y recursos |
+| Aprobación | Según tipo: estándar (pre-aprobado), normal (Jefe OTI / CAB), emergencia (verbal + regularización) |
+| Planificación | Definir ventana de implementación, asignar responsables, preparar plan de rollback, comunicar a áreas afectadas |
+| Implementación | Ejecutar el cambio dentro de la ventana planificada, registrar todos los pasos y desviaciones |
+| Pruebas | Verificar funcionamiento, validar controles de seguridad, ejecutar rollback si falla |
+| Cierre | Documentar resultado, actualizar documentación técnica e inventario, archivar ticket |
 
 ### 4.1 Solicitud
 - Se registra en el sistema de tickets o mediante el formato definido por la OTI.
@@ -112,7 +123,7 @@ Se evalúan los siguientes aspectos antes de aprobar cualquier cambio no estánd
 
 ---
 
-## 5. Comité Asesor de Cambios (CAB)
+## Comité Asesor de Cambios (CAB)
 
 Se conformará un CAB para la revisión de cambios normales de alto impacto. El CAB estará integrado por:
 - Jefe de la OTI (presidente).
@@ -124,7 +135,7 @@ El CAB se reunirá de forma quincenal o cuando sea convocado por el Jefe de la O
 
 ---
 
-## 6. Ventanas de Mantenimiento
+## Ventanas de Mantenimiento
 
 | Tipo | Día | Horario | Aplica a |
 |---|---|---|---|
@@ -134,7 +145,7 @@ El CAB se reunirá de forma quincenal o cuando sea convocado por el Jefe de la O
 
 ---
 
-## 7. Responsabilidades
+## Responsabilidades
 
 | Rol | Responsabilidad |
 |---|---|
@@ -146,12 +157,12 @@ El CAB se reunirá de forma quincenal o cuando sea convocado por el Jefe de la O
 
 ---
 
-## 8. Excepciones
+## Excepciones
 Cualquier cambio que no pueda seguir el procedimiento estándar debe ser documentado como excepción y aprobado por el Jefe de la OTI y el Oficial de Seguridad. Las excepciones se revisarán en la siguiente reunión del CAB para determinar si se requiere actualizar el procedimiento.
 
 ---
 
-## 9. Registro de Cambios
+## Registro de Cambios
 
 Todo cambio debe quedar registrado con la siguiente información mínima:
 - ID de cambio (correlativo).
@@ -164,7 +175,7 @@ Todo cambio debe quedar registrado con la siguiente información mínima:
 
 ---
 
-## 10. Documentos Relacionados
+## Documentos Relacionados
 
 | Código | Nombre |
 |---|---|
@@ -174,5 +185,3 @@ Todo cambio debe quedar registrado con la siguiente información mínima:
 | R-SGSI-01 | Inventario de Activos de Información |
 
 ***
-
-**Versión 2.0 — Incluye cambios de emergencia con procedimiento detallado, tabla de ejemplos por tipo de cambio, CAB, ventanas de mantenimiento y plantilla de registro.**

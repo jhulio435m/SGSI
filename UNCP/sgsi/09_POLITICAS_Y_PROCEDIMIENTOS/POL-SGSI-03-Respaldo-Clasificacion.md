@@ -1,23 +1,28 @@
-# POL-SGSI-03: Política de Clasificación de la Información y Respaldos
+---
+title: Política de Clasificación de la Información y Respaldos
+code: POL-SGSI-03
+---
+
+# Política de Clasificación de la Información y Respaldos
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 2.0
-**Norma:** ISO/IEC 27001:2022 (Controles A.5.12 — Clasificación de la información, A.5.13 — Etiquetado de la información, A.5.14 — Transferencia de información, A.8.13 — Copias de seguridad)
+**Aprobado por:** Comité de Gobierno y Transformación Digital
+**Norma:** ISO/IEC 27001:2022 (Controles A.5.12, A.5.13, A.5.14, A.8.13)
 **Alineamiento:** D-SGSI-02 (Alcance del SGSI), P-SGSI-07 (Eliminación Segura)
 
 ***
 
-## 1. Objetivo
+## Objetivo
 Establecer el esquema de clasificación de la información institucional y las directrices para su etiquetado, manejo y respaldo, garantizando que cada activo de información reciba el nivel de protección adecuado según su valor y criticidad para la UNCP.
 
-## 2. Alcance
+## Alcance
 Esta política aplica a toda la información generada, procesada, almacenada o transmitida por la UNCP, independientemente de su formato (digital, físico, transmitido), soporte (servidores, nube, papel, dispositivos móviles) o ubicación (instalaciones UNCP, trabajo remoto, proveedores).
 
 ---
 
 ## PARTE I: CLASIFICACIÓN DE LA INFORMACIÓN
 
-## 3. Niveles de Clasificación
+## Niveles de Clasificación
 
 La UNCP clasifica su información en tres niveles, basándose en el impacto potencial sobre la Confidencialidad, Integridad y Disponibilidad (CID):
 
@@ -27,7 +32,7 @@ La UNCP clasifica su información en tres niveles, basándose en el impacto pote
 | **Uso Interno** | Información de acceso restringido al personal de la UNCP que no debe ser divulgada externamente sin autorización | Impacto moderado: podría afectar la imagen institucional o procesos internos | Manuales de procedimientos, memorandos internos, directivas, organigramas, información presupuestal agregada, resultados de evaluaciones internas |
 | **Confidencial** | Información sensible cuya divulgación no autorizada podría causar daño significativo a la UNCP, a los miembros de su comunidad o a terceros | Impacto alto o crítico: sanciones legales, pérdida de confianza, daño reputacional severo | Datos personales de estudiantes y personal (Ley N° 29733), notas y actas académicas, planillas, historias clínicas del Centro Médico, contratos, resoluciones rectorales, credenciales de acceso, tesis en proceso de revisión, información financiera detallada |
 
-## 4. Etiquetado de la Información
+## Etiquetado de la Información
 
 ### 4.1 Información Digital
 Todo documento digital debe incluir una marca de clasificación visible:
@@ -44,7 +49,7 @@ Los documentos impresos clasificados como **Confidenciales** deben llevar un sel
 ### 4.3 Sistemas de Información
 Los sistemas que almacenan o procesan información deben mostrar una advertencia de clasificación al iniciar sesión, indicando que la información contenida es de uso institucional y su acceso está restringido.
 
-## 5. Manejo Seguro según Clasificación
+## Manejo Seguro según Clasificación
 
 | Actividad | Pública | Uso Interno | Confidencial |
 |---|---|---|---|
@@ -56,7 +61,7 @@ Los sistemas que almacenan o procesan información deben mostrar una advertencia
 | **Envío físico** | Sin restricción | Sobre cerrado | Sobre cerrado y lacrado, con acuse de recibo |
 | **Acceso desde móvil** | Sin restricción | Permitido con PIN/bloqueo | Permitido solo con cifrado de dispositivo + VPN |
 
-## 6. Transferencia de Información a Terceros
+## Transferencia de Información a Terceros
 
 - La transferencia de información clasificada como **Confidencial** a terceros (otras instituciones, entidades del Estado, investigadores externos) debe ser autorizada por escrito por el dueño del proceso y registrada.
 - Cuando la transferencia sea masiva o periódica, debe formalizarse mediante un **Acuerdo de Confidencialidad** o **Convenio de Intercambio de Información**.
@@ -66,14 +71,14 @@ Los sistemas que almacenan o procesan información deben mostrar una advertencia
 
 ## PARTE II: POLÍTICA DE RESPALDOS
 
-## 7. Principios Generales de Respaldo
+## Principios Generales de Respaldo
 
 1. **Regla 3-2-1:** Mantener al menos **3 copias** de los datos críticos, en **2 soportes diferentes**, con **1 copia fuera del sitio principal**.
 2. **Cifrado:** Todos los respaldos que contengan información **Confidencial** deben estar cifrados, tanto en tránsito como en reposo.
 3. **Pruebas:** Todo respaldo debe ser restaurable. Se realizarán pruebas de restauración con la frecuencia indicada.
 4. **Registro:** Todos los procesos de respaldo y restauración deben quedar registrados (logs).
 
-## 8. Frecuencia y Retención por Tipo de Información
+## Frecuencia y Retención por Tipo de Información
 
 | Tipo de Información | Sistema / Dato | Frecuencia de Respaldo | Tiempo de Retención | Ubicación |
 |---|---|---|---|---|
@@ -86,7 +91,7 @@ Los sistemas que almacenan o procesan información deben mostrar una advertencia
 | **Historias clínicas** | Centro Médico UNCP | **Diaria** | 20 años según legislación sanitaria | Huawei Cloud CBR (cifrado) |
 | **Configuración de red y sistemas** | Switches, firewalls, servidores | **Antes de cada cambio significativo** + mensual completo | 2 años | Copia local + cloud |
 
-## 9. Metodología de Respaldo
+## Metodología de Respaldo
 
 ### 9.1 Infraestructura Local + Cloud (Híbrida)
 - **Respaldos primarios:** Automatizados mediante **Huawei Cloud Backup & Recovery (CBR)**, con política de retención configurada por tipo de datos.
@@ -97,7 +102,7 @@ Los sistemas que almacenan o procesan información deben mostrar una advertencia
 - Cada respaldo debe generar un **hash (SHA-256)** del archivo de respaldo para verificar su integridad.
 - El sistema de respaldo debe notificar automáticamente a la OTI ante cualquier fallo o corrupción.
 
-## 10. Pruebas de Restauración
+## Pruebas de Restauración
 
 | Tipo de Datos | Frecuencia de Prueba | Alcance | Responsable |
 |---|---|---|---|
@@ -111,7 +116,7 @@ Los resultados de cada prueba deben documentarse en un informe que incluya:
 - Tiempo total de restauración (comparado con el RTO definido en P-SGSI-05).
 - Incidencias encontradas y acciones correctivas tomadas.
 
-## 11. Responsabilidades
+## Responsabilidades
 
 | Rol | Responsabilidad |
 |---|---|
@@ -120,10 +125,10 @@ Los resultados de cada prueba deben documentarse en un informe que incluya:
 | **Usuario (Personal)** | Identificar y etiquetar la información que genera según su clasificación; reportar cualquier anomalía en el respaldo de sus archivos. |
 | **Oficial de Seguridad** | Auditar el cumplimiento de esta política; revisar anualmente los criterios de clasificación y retención. |
 
-## 12. Incumplimiento
+## Incumplimiento
 El manejo inadecuado de información clasificada (ej. envío de datos confidenciales por canales no seguros, almacenamiento de datos institucionales en servicios cloud personales) será gestionado según la sección 9 de la POL-SGSI-05 y el régimen disciplinario aplicable.
 
-## 13. Documentos Relacionados
+## Documentos Relacionados
 
 | Código | Nombre |
 |---|---|
@@ -134,6 +139,4 @@ El manejo inadecuado de información clasificada (ej. envío de datos confidenci
 | POL-SGSI-05 | Política de Seguridad para Dispositivos Móviles del Personal |
 
 ***
-
-**Aprobado por:**
-Comité de Gobierno y Transformación Digital — UNCP
+---

@@ -1,0 +1,491 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{csquotes}
+\usepackage{mathpazo}
+\usepackage[scaled=0.9]{helvet}
+\usepackage{courier}
+\usepackage{calc}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{xurl}
+\usepackage[strings]{underscore}
+\usepackage{fancyhdr}
+\usepackage{sectsty}
+\usepackage{tocloft}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue,breaklinks=true]{hyperref}
+\usepackage{enumitem}
+
+\definecolor{uncpblue}{HTML}{1A237E}
+\allsectionsfont{\color{uncpblue}}
+
+\renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
+\cftpagenumbersoff{section}
+\cftpagenumbersoff{subsection}
+\cftpagenumbersoff{subsubsection}
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsubsecfont}{\normalfont}
+\renewcommand{\cftsubsubsecfont}{\normalfont}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.85}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textcolor{uncpblue}{\textbf{SGSI-UNCP}}}
+\fancyhead[R]{\small\textcolor{uncpblue}{P-SGSI-08}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\setlength{\headheight}{14pt}
+
+\setlist{nosep,leftmargin=*,after=\vspace{2pt}}
+\setlength{\emergencystretch}{2em}
+
+\newcommand{\makecover}{
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+{\Huge\bfseries\color{uncpblue} SGSI-UNCP\par}
+\vspace{0.7cm}
+{\LARGE Plan Anual de Capacitación y Concientización en Seguridad de la
+Información\par}
+\vspace{0.5cm}
+{\large Documento Base del Sistema de Gestión\\de Seguridad de la Información\par}
+\vspace{1.5cm}
+{\small Universidad Nacional del Centro del Perú\par}
+\vfill
+\end{titlepage}
+}
+
+\begin{document}
+
+\makecover
+\setcounter{tocdepth}{2}
+\RaggedRight
+\tableofcontents
+\newpage
+
+\RaggedRight
+\section{Plan Anual de Capacitación y Concientización en Seguridad de la
+Información}\label{plan-anual-de-capacitaciuxf3n-y-concientizaciuxf3n-en-seguridad-de-la-informaciuxf3n}
+
+\textbf{Organización:} Universidad Nacional del Centro del Perú (UNCP)
+\textbf{Año:} 2026 \textbf{Responsable:} Oficial de Seguridad / Unidad
+de RRHH \textbf{Presupuesto Estimado:} S/ 45,000 \textbf{Alineamiento:}
+OGTD5 (Fortalecer la gestión de competencias digitales), OGTD6
+(Desarrollar competencias digitales), POL-SGSI-02 (Uso Aceptable)
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Objetivos}\label{objetivos}
+
+\subsubsection{1.1 Generales}\label{generales}
+
+\begin{itemize}
+\tightlist
+\item
+  Elevar el nivel de cultura de seguridad de la información en toda la
+  comunidad universitaria (personal administrativo, docente, autoridades
+  y estudiantes).
+\item
+  Reducir la probabilidad y el impacto de incidentes de seguridad
+  causados por error humano (phishing, pérdida de credenciales, uso
+  inadecuado de recursos).
+\item
+  Desarrollar las competencias técnicas del personal de la OTI para
+  operar y mantener los controles de seguridad implementados en el marco
+  del SGSI.
+\end{itemize}
+
+\subsubsection{1.2 Específicos (Metas
+2026)}\label{especuxedficos-metas-2026}
+
+{\setlength{\RaggedRightRightskip}{0pt plus 5em}\small\sloppy \begin{longtable}[]{@{}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Meta
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Indicador
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Línea Base
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Meta
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Cobertura de capacitación obligatoria & \% de trabajadores que completan
+el curso anual de fundamentos de ciberseguridad & 0\% (nuevo programa) &
+100\% \\
+Reducción de vulnerabilidad al phishing & \% de usuarios que hacen clic
+en enlaces de simulacros de phishing & Esperado \textasciitilde30\%
+inicial & \textless{} 10\% al final del año \\
+Personal técnico certificado & Número de certificaciones de seguridad
+obtenidas por el equipo OTI & 0 & 3 certificaciones \\
+Satisfacción de la capacitación & Calificación promedio de los cursos
+(escala 1-5) & N/A & \textgreater= 4.0 \\
+\end{longtable}\normalsize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Programa de Capacitación
+Técnica}\label{programa-de-capacitaciuxf3n-tuxe9cnica}
+
+\emph{Dirigido al personal de la OTI, administradores de sistemas y
+responsables de seguridad.}
+
+{\setlength{\RaggedRightRightskip}{0pt plus 5em}\small\sloppy \begin{longtable}[]{@{}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Tema
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Modalidad
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Duración (horas)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mes
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Proveedor Sugerido
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Costo Estimado (S/)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Implementación y Auditoría de ISO 27001:2022 & Virtual / Presencial & 24
+hrs (3 días) & Marzo & Consultora especializada & 12,000 \\
+Administración Segura en Huawei Cloud & Virtual (oficial Huawei) & 20
+hrs (5 sesiones) & Abril & Huawei Academy / Partner & 8,000 \\
+Gestión de Incidentes y Respuesta a Incidentes (CSIRT) & Presencial & 24
+hrs (3 días) & Junio & Entrenador local o virtual & 10,000 \\
+Desarrollo Seguro de Software (DevSecOps / SAST / DAST) & Virtual & 16
+hrs (4 sesiones) & Agosto & Plataforma de entrenamiento técnico &
+6,000 \\
+Administración de SIEM (Wazuh / Sentinel) y Threat Hunting & Presencial
+& 16 hrs (2 días) & Octubre & Consultora especializada & 9,000 \\
+\textbf{Total Presupuesto Técnico} & & \textbf{100 hrs} & & &
+\textbf{45,000} \\
+\end{longtable}\normalsize}
+
+\textbf{Certificaciones objetivo para el personal OTI (2026-2027):} -
+ISO/IEC 27001 Lead Implementer o Lead Auditor (1 persona). - Huawei
+Cloud Security Certification o equivalent (2 personas). - Certified
+Incident Handler (EC-Council / SANS) o equivalent (1 persona).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Programa de Concientización
+General}\label{programa-de-concientizaciuxf3n-general}
+
+\emph{Dirigido a todo el personal administrativo, docentes y
+autoridades.}
+
+\subsubsection{3.1 Actividades
+Permanentes}\label{actividades-permanentes}
+
+{\setlength{\RaggedRightRightskip}{0pt plus 5em}\small\sloppy \begin{longtable}[]{@{}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Actividad
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Descripción
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Canal
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Frecuencia
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Responsable
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Tips de Seguridad & Mensajes cortos con recomendaciones prácticas
+(contraseñas seguras, phishing, cifrado, bloqueo de pantalla) & Correo
+institucional & Mensual & Oficial de Seguridad \\
+Video-Cápsulas ``Protege tus Datos'' & Videos de 2-3 minutos sobre temas
+específicos de seguridad & Redes sociales UNCP + Moodle & Trimestral &
+Oficial de Seguridad + Imagen Institucional \\
+Simulacro de Phishing & Envío controlado de correos simulados para medir
+y concientizar sobre identificación de phishing & Correo institucional &
+Semestral (abril y octubre) & OTI (Seguridad) \\
+Curso Virtual: Fundamentos de Ciberseguridad & Curso obligatorio con
+evaluación final en el Campus Virtual & Moodle & Anual (permanente, con
+recordatorio en marzo) & OTI + RRHH \\
+Semana de la Ciberseguridad UNCP & Evento anual con charlas, talleres y
+actividades interactivas & Presencial + Streaming & Anual (agosto) &
+Comité organizador \\
+\end{longtable}\normalsize}
+
+\subsubsection{3.2 Curso Obligatorio: ``Fundamentos de Ciberseguridad
+para el Personal
+UNCP''}\label{curso-obligatorio-fundamentos-de-ciberseguridad-para-el-personal-uncp}
+
+{\setlength{\RaggedRightRightskip}{0pt plus 5em}\small\sloppy \begin{longtable}[]{@{}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Módulo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Contenido
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Duración Estimada
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Introducción a la Seguridad de la Información & Conceptos CID, activos
+de información, SGSI UNCP & 30 min \\
+Gestión de Contraseñas y MFA & Creación de contraseñas seguras, uso de
+MFA, gestores de contraseñas & 20 min \\
+Phishing e Ingeniería Social & Cómo identificar correos y mensajes
+sospechosos, qué hacer ante un intento & 25 min \\
+Uso Seguro de Correo y Dispositivos Móviles & Cifrado, VPN, bloqueo de
+pantalla, POL-SGSI-05 aplicable al personal & 20 min \\
+Protección de Datos Personales (Ley 29733) & Obligaciones del personal,
+datos sensibles, consentimiento & 20 min \\
+Reporte de Incidentes & Cuándo y cómo reportar, canales de comunicación
+(incidentes-seguridad@uncp.edu.pe) & 15 min \\
+\textbf{Evaluación Final} & 10 preguntas (mínimo 14/20 para aprobar) &
+15 min \\
+\textbf{Total} & & \textbf{2 horas 25 min} \\
+\end{longtable}\normalsize}
+
+\subsubsection{3.3 Campañas Especiales}\label{campauxf1as-especiales}
+
+{\setlength{\RaggedRightRightskip}{0pt plus 5em}\small\sloppy \begin{longtable}[]{@{}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Campaña
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Periodo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tema Enfocado
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+``Empieza Seguro'' & Marzo (inicio de clases) & Contraseñas, MFA,
+bloqueo de pantalla \\
+``Semana de la Ciberseguridad'' & Agosto & Charlas magistrales, talleres
+prácticos, concurso de seguridad \\
+``Cierre Seguro'' & Diciembre & Respaldo de información, cierre de
+sesiones, seguridad en periodo vacacional \\
+\end{longtable}\normalsize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Estrategia para Estudiantes (Alcance
+Informativo)}\label{estrategia-para-estudiantes-alcance-informativo}
+
+Dado que la UNCP no ejerce control técnico sobre los dispositivos
+personales de los estudiantes, la estrategia se centra en la
+\textbf{concientización voluntaria}:
+
+{\setlength{\RaggedRightRightskip}{0pt plus 5em}\small\sloppy \begin{longtable}[]{@{}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Actividad
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Canal
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Frecuencia
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Guía de Seguridad Móvil para Estudiantes (descargable) & Portal
+institucional & Publicación única + actualización anual \\
+Infografías periódicas en redes sociales & Instagram / Facebook / TikTok
+UNCP & Mensual \\
+Cápsulas formativas en Moodle & Campus Virtual & Bimestral \\
+Participación en la Semana de la Ciberseguridad & Presencial / Streaming
+& Anual (agosto) \\
+Alertas de amenazas activas (phishing, fraudes) & Correo institucional
+estudiantil & Según evento \\
+\end{longtable}\normalsize}
+
+Los contenidos para estudiantes se enfocan en: protección de
+credenciales, identificación de phishing, uso de redes Wi-Fi seguras, y
+protección de dispositivos personales.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Evaluación del Plan}\label{evaluaciuxf3n-del-plan}
+
+\subsubsection{5.1 Indicadores de
+Gestión}\label{indicadores-de-gestiuxf3n}
+
+{\setlength{\RaggedRightRightskip}{0pt plus 5em}\small\sloppy \begin{longtable}[]{@{}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Indicador
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fórmula
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Meta
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Frecuencia
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fuente
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Cobertura} & (N° trabajadores que completaron curso obligatorio
+/ N° total de trabajadores) x 100 & \textbf{100\%} & Trimestral & Moodle
+/ F-SGSI-02 \\
+\textbf{Eficacia contra phishing} & (N° clics en simulacro / N° correos
+enviados) x 100 & \textbf{\textless{} 10\%} & Semestral & Plataforma de
+simulación \\
+\textbf{Satisfacción} & Promedio de calificación de cursos (encuesta
+1-5) & \textbf{\textgreater= 4.0} & Por curso & Encuesta en Moodle \\
+\textbf{Competencia técnica} & N° de certificaciones de seguridad
+obtenidas & \textbf{3} & Anual & Registro de certificaciones \\
+\textbf{Participación en Semana de Ciberseguridad} & N° de asistentes al
+evento anual & \textbf{\textgreater{} 200} & Anual & Registro de
+asistencia \\
+\end{longtable}\normalsize}
+
+\subsubsection{5.2 Retroalimentación y
+Mejora}\label{retroalimentaciuxf3n-y-mejora}
+
+\begin{itemize}
+\tightlist
+\item
+  Al finalizar cada actividad de capacitación se aplicará una encuesta
+  de satisfacción.
+\item
+  Los resultados del simulacro de phishing se analizarán para
+  identificar las áreas o perfiles más vulnerables y ajustar las
+  campañas de concientización.
+\item
+  El Oficial de Seguridad presentará un informe semestral al Comité de
+  Gobierno Digital con los resultados del plan.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Presupuesto}\label{presupuesto}
+
+{\setlength{\RaggedRightRightskip}{0pt plus 5em}\small\sloppy \begin{longtable}[]{@{}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Concepto
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Monto (S/)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Capacitación técnica (cursos + certificaciones) & 33,000 \\
+Plataforma de simulación de phishing (suscripción anual) & 5,000 \\
+Materiales didácticos, diseño de infografías y videos & 4,000 \\
+Semana de la Ciberseguridad (logística, ponentes, materiales) & 3,000 \\
+\textbf{Total} & \textbf{45,000} \\
+\end{longtable}\normalsize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Responsabilidades}\label{responsabilidades}
+
+{\setlength{\RaggedRightRightskip}{0pt plus 5em}\small\sloppy \begin{longtable}[]{@{}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Rol
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Responsabilidad
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Oficial de Seguridad} & Diseñar y coordinar el plan; elaborar
+contenidos técnicos; analizar resultados. \\
+\textbf{Unidad de RRHH} & Gestionar la inscripción del personal;
+registrar asistencia (F-SGSI-02); incluir la capacitación en el plan
+anual de RRHH. \\
+\textbf{OTI} & Administrar la plataforma Moodle para cursos virtuales;
+ejecutar simulacros de phishing. \\
+\textbf{Jefes de Área} & Asegurar que su personal complete el curso
+obligatorio; liberar tiempo para capacitación técnica. \\
+\textbf{Imagen Institucional} & Apoyar en la difusión de campañas de
+concientización en redes sociales y portal web. \\
+\end{longtable}\normalsize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Documentos Relacionados}\label{documentos-relacionados}
+
+{\setlength{\RaggedRightRightskip}{0pt plus 5em}\small\sloppy \begin{longtable}[]{@{}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\hspace{0pt}\RaggedRight\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Código
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Nombre
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+POL-SGSI-02 & Política de Uso Aceptable, Escritorio y Teletrabajo \\
+POL-SGSI-05 & Política de Seguridad para Dispositivos Móviles del
+Personal \\
+F-SGSI-02 & Registro de Asistencia a Capacitación \\
+R-SGSI-03 & Cuadro de Mando de Seguridad (KPIs) \\
+\end{longtable}\normalsize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Aprobado por:} Comité de Gobierno y Transformación Digital ---
+UNCP
+
+\end{document}

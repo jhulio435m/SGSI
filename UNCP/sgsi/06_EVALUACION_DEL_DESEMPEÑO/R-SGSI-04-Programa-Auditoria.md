@@ -1,14 +1,19 @@
-# R-SGSI-04: Programa Maestro de Auditoría Basada en Riesgos (Ciclo 2026)
+---
+title: Programa Maestro de Auditoría Basada en Riesgos (Ciclo 2026)
+code: R-SGSI-04
+---
+
+# Programa Maestro de Auditoría Basada en Riesgos (Ciclo 2026)
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 2.0
-**Norma:** ISO/IEC 27001:2022 (Cláusula 9.2 — Auditoría Interna)
+**Aprobado por:** Comité de Gobierno Digital
+**Norma:** ISO/IEC 27001:2022 (Cláusula 9.2 -- Auditoría Interna)
 **Metodología:** P-SGSI-09 (Metodología de Auditoría Basada en Riesgos y Procesos)
 **Alineamiento:** R-SGSI-03 (KPIs), D-SGSI-05 (SoA), PGTD-01 (Implementación SGSI)
 
 ***
 
-## 1. Objetivos del Programa de Auditoría 2026
+## Objetivos del Programa de Auditoría 2026
 
 1. Verificar la implementación y eficacia del 100% de los controles declarados en la SoA (D-SGSI-05).
 2. Evaluar la madurez de los procesos críticos del SGSI (Cl. 4–10 de ISO 27001:2022).
@@ -16,7 +21,7 @@
 4. Evaluar la efectividad del CSIRT Universitario mediante simulacros de ransomware y phishing.
 5. Validar el cumplimiento del Reglamento de Protección de Datos Personales (D.S. 016-2024-JUS) en procesos que tratan datos sensibles.
 
-## 2. Clasificación de Auditorías por Nivel de Riesgo
+## Clasificación de Auditorías por Nivel de Riesgo
 
 De acuerdo con P-SGSI-09 (Sección 2), las auditorías se asignan a procesos según su nivel de riesgo:
 
@@ -27,7 +32,7 @@ De acuerdo con P-SGSI-09 (Sección 2), las auditorías se asignan a procesos seg
 | **Medio** | Anual o bienal | Capacitación, Eliminación Segura, Control Documental |
 | **Bajo** | Bienal o a demanda | Procesos administrativos menores |
 
-## 3. Cronograma Detallado Q1–Q4 2026
+## Cronograma Detallado Q1–Q4 2026
 
 ### Q1 (Ene–Mar) — Accesos e Identidades
 
@@ -58,7 +63,7 @@ De acuerdo con P-SGSI-09 (Sección 2), las auditorías se asignan a procesos seg
 | Privacidad y Cumplimiento Legal | AUD-2026-008 | Cl. 10, Ley 29733, D.L. 1412, D.S. 016-2024-JUS | Protección de datos personales en procesos misionales | Alto | 3 días |
 | Pre-auditoría de Certificación | AUD-2026-009 | Cl. 4–10 + Anexo A | Preparación para certificación ISO 27001:2022 | Crítico | 5 días (externa) |
 
-## 4. Recursos y Presupuesto
+## Recursos y Presupuesto
 
 | Concepto | Tipo | Monto Estimado (S/) |
 | :--- | :--- | :--- |
@@ -69,7 +74,7 @@ De acuerdo con P-SGSI-09 (Sección 2), las auditorías se asignan a procesos seg
 | Simulacro de ransomware (Q4) | Plataforma de simulación | S/ 5,000 |
 | **Total presupuesto auditoría 2026** | | **S/ 38,000** |
 
-## 5. Seguimiento y Cierre
+## Seguimiento y Cierre
 
 ### 5.1 Plazos de Acción Correctiva
 | Tipo de Hallazgo | Plazo Máximo para Plan de Acción | Plazo Máximo para Cierre |
@@ -94,6 +99,6 @@ El programa se considera exitoso si al cierre de 2026:
 - [ ] La pre-auditoría externa (Q4) confirma preparación para certificación
 
 ---
-**Aprobado por:** [Comité de Gobierno Digital]
-**Fecha de aprobación:** [Fecha]
-**Próxima revisión del programa:** [Fecha — trimestral]
+**Aprobado por:** Comité de Gobierno Digital
+**Fecha de aprobación:** 15/01/2026
+**Próxima revisión del programa:** 15/04/2026 (trimestral)

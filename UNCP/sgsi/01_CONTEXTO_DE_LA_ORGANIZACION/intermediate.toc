@@ -1,0 +1,12 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
+\contentsline {section}{\numberline {2}Clasificación de Procesos para la Seguridad}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Procesos Estratégicos}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Procesos Misionales}{3}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Flujo de Datos del Proceso Misional Crítico: Gestión Académica}{4}{subsubsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.3}Procesos de Apoyo}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Matriz de Dependencias entre Procesos}{5}{section.3}%
+\contentsline {section}{\numberline {4}Controles de Seguridad por Nivel de Proceso}{6}{section.4}%
+\contentsline {section}{\numberline {5}Responsables de Procesos}{6}{section.5}%
+\contentsline {section}{\numberline {6}Mapa de Interacción del SGSI}{7}{section.6}%
+\contentsline {section}{\numberline {7}Documentos Relacionados}{7}{section.7}%

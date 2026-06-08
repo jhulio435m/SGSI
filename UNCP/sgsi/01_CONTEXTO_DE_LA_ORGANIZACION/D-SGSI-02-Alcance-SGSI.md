@@ -1,70 +1,142 @@
-# D-SGSI-02: Alcance del SGSI - Universidad Nacional del Centro del Perú
+---
+title: Alcance del Sistema de Gestión de Seguridad de la Información
+code: D-SGSI-02
+---
 
-## 1. Organización
+**Organización:** Universidad Nacional del Centro del Perú (UNCP)
 
-**Universidad Nacional del Centro del Perú (UNCP)**  
-RUC: 20172030258  
-Domicilio legal: Av. Mariscal Ramón Castilla km. 5, N° 3809-4089, El Tambo, Huancayo  
-Naturaleza: Universidad pública peruana, con autonomía académica, normativa y económica (Ley N° 30220).
+**RUC:** 20172030258
 
-***
+**Domicilio Legal:** Av. Mariscal Ramón Castilla km. 5, N° 3809-4089, El Tambo, Huancayo
 
-## 2. Definición del Alcance Estratégico (Enfoque de Excelencia)
+**Naturaleza:** Universidad pública peruana, con autonomía académica, normativa y económica (Ley Universitaria N° 30220)
 
-El Sistema de Gestión de Seguridad de la Información (SGSI) de la UNCP adopta una **Definición de Alcance Superior**, integrando los requisitos de la norma ISO/IEC 27001:2022 con metodologías de vanguardia para garantizar la protección de la información sin importar su ubicación, formato o método de acceso.
+**Referencia Normativa:** ISO/IEC 27001:2022 — Cláusula 4.3 (Determinación del alcance del SGSI), Cláusula 4.4 (Sistema de Gestión de Seguridad de la Información)
 
-### 2.1 Filosofía de Implementación
-*   **Enfoque Zero Trust (Confianza Cero):** El alcance no se limita a las paredes del campus. Se aplica una segmentación lógica estricta y verificación continua para cada intento de acceso, tratando las redes locales y remotas (VPN/Internet) con el mismo nivel de escrutinio.
-*   **Ubicación Agnóstica y Ciclo de Vida del Dato:** La seguridad "viaja" con el dato. El alcance protege la información crítica (notas, datos personales, investigación) en tránsito, en uso y en reposo, ya sea que resida en servidores locales, dispositivos de usuarios o en la nube (Huawei Cloud / Microsoft 365).
-*   **Inventario Dinámico y Mitigación de Shadow IT:** El alcance incluye todos los activos identificados mediante procesos de descubrimiento automático, asegurando que dispositivos no registrados o de reciente incorporación (IoT, BYOD) queden bajo el control del SGSI.
-*   **Resiliencia NIST CSF:** El alcance está diseñado para soportar no solo la protección (ISO 27001), sino también las capacidades operativas de detección y respuesta rápida ante incidentes.
+**Documentos Relacionados:** D-SGSI-01 (Contexto Estratégico), D-SGSI-06 (Marco Conceptual), PGTD-UNCP 2026-2030, R-SGSI-01 (Inventario de Activos), D-SGSI-05 (Declaración de Aplicabilidad)
 
-### 2.2 Ámbito Organizacional y Procesos Críticos
-El SGSI abarca el flujo completo de los datos en los siguientes macroprocesos:
-- **Gestión Académica:** Desde la admisión y matrícula hasta la emisión de grados y títulos (ERP ADESA).
-- **Investigación y Propiedad Intelectual:** Protección de tesis y proyectos (Repositorio DSpace).
-- **Gestión Administrativa y Financiera:** Planillas, tesorería y abastecimiento (SIGA / SIAF).
-- **Educación Digital:** Plataformas de aprendizaje y colaboración (Moodle / Teams).
+# Organización
 
-### 2.3 Ámbito Tecnológico (Infraestructura Híbrida)
-| Activo / Entorno | Descripción del Alcance |
-| :--- | :--- |
-| **Infraestructura On-Premise** | Datacenter Huancayo, redes de facultades (Sedes Mantaro, Satipo, Tarma). |
-| **Infraestructura Cloud** | IaaS/PaaS en Huawei Cloud, SaaS en Microsoft 365. |
-| **Acceso Remoto / VPN** | Todos los túneles IPsec y accesos SSL-VPN utilizados por administrativos y docentes. |
-| **Dispositivos Finales** | Laptops, tablets y estaciones de trabajo (incluyendo BYOD autorizados). |
+La Universidad Nacional del Centro del Perú (UNCP) es una institución educativa superior pública fundada en 1959, con sede central en Huancayo (Región Junín). Cuenta con aproximadamente 10,000 estudiantes, 1,200 docentes y 500 trabajadores administrativos distribuidos en 4 sedes académicas.
 
-### 2.4 Ámbito Geográfico
-El SGSI protege la información en las 4 sedes de la UNCP y en cualquier ubicación remota desde la cual se acceda a los sistemas institucionales bajo los controles de seguridad establecidos.
+El SGSI se implementa bajo el proyecto PGTD-01 del Plan de Gobierno y Transformación Digital 2026-2030, con un presupuesto de S/ 850,000 y un horizonte de 30 meses, con la meta de incorporar el 90% de los procesos institucionales al sistema y obtener la certificación ISO/IEC 27001:2022.
 
-***
+# Alcance del SGSI
 
-## 3. Justificación de Inclusiones Basada en Riesgos
+## Declaración de Alcance
 
-La delimitación de este alcance responde a los siguientes riesgos críticos identificados:
-1.  **Fuga de datos sensibles:** Debido al acceso remoto masivo de docentes y administrativos.
-2.  **Alteración de registros académicos:** Por debilidades en la segmentación de la red de facultades.
-3.  **Indisponibilidad de servicios:** Ante fallas en la infraestructura local o ataques dirigidos (DDoS).
+El Sistema de Gestión de Seguridad de la Información (SGSI) de la UNCP abarca la protección de la información generada, procesada, almacenada y transmitida por los procesos académicos, administrativos y de investigación de la universidad, independientemente de su ubicación física o lógica, formato o método de acceso, aplicando controles basados en riesgo bajo el modelo Zero Trust y gestionando el ciclo de vida completo del dato.
 
-Al incluir el ciclo de vida del dato y el enfoque Zero Trust, la UNCP garantiza que la seguridad sea consistente independientemente de las fronteras físicas.
+## Ámbito Organizacional
 
-***
+| Macroproceso | Unidades y Procesos Incluidos | Activos Críticos Asociados |
+|:-------------|:------------------------------|:---------------------------|
+| **Gestión Académica** | Admisión, Matrícula, Registro de Notas, Grados y Títulos, Certificaciones, Biblioteca | ERP ADESA (23 módulos), DSpace (Repositorio), KOHA (Biblioteca), Moodle 4.1 (Campus Virtual) |
+| **Investigación y Propiedad Intelectual** | Gestión de proyectos de investigación, Repositorio de tesis, Publicaciones científicas, 13 centros de investigación | Sistema de Investigación, DSpace, Laboratorios de investigación, Base de datos de patentes |
+| **Gestión Administrativa y Financiera** | Planillas, Tesorería, Abastecimiento, Contabilidad, Recursos Humanos, Bienestar Universitario | SIGA, SIAF, ERP ADESA (módulos financieros), Sistema de Tesorería, Planillas |
+| **Educación Digital y Colaboración** | Educación virtual, Comunicación institucional, Trabajo remoto | Microsoft 365 (Teams, SharePoint, Exchange Online), Moodle 4.1 |
+| **Gestión de Salud Universitaria** | Centro Médico Universitario, Seguro Estudiantil | Historia Clínica Electrónica, Base de datos de pacientes |
+| **Gestión de la Investigación Ambiental** | 13 centros de investigación: CENAA (agua), CEPREANDES (prevención de riesgos), IBIG (biotecnología), CIAM (alta montaña), CER (energías renovables), Nanotecnología, Biología Molecular, CIMMA (medicina de altura) | Datos de investigación ambiental, estaciones de monitoreo, SINIA/REDIAM |
 
-## 4. Mapa de Dependencias Críticas
+## Ámbito Tecnológico
 
-| Proceso | Activo Crítico | Dependencia Tecnológica |
-| :--- | :--- | :--- |
-| Matrícula / Notas | Base de Datos ADESA | Huawei Cloud / IdM Keycloak |
-| Gestión de Pagos | Sistema de Tesorería | SIAF / Pasarela de Pagos |
-| Educación Virtual | Campus Virtual (Moodle) | Almacenamiento S3 / Contenedores |
-| Investigación | Repositorio Digital | Red de Telemetría / SIEM |
+| Capa | Componentes Incluidos | Excluido del Alcance |
+|:-----|:----------------------|:--------------------|
+| **Infraestructura On-Premise** | Data Center Huancayo: 8 servidores físicos, 3 virtualizados, 12 TB almacenamiento objeto, 4 TB backup. Redes de facultades: 4 sedes (Huancayo, Mantaro, Satipo, Tarma), 143 APs, 137 PoE switches, 9 firewalls | Infraestructura civil (edificaciones, mobiliario) que no procesa ni almacena información |
+| **Infraestructura Cloud** | Huawei Cloud (IaaS/PaaS): servidores virtuales, balanceadores, WAF, Anti-DDoS. Microsoft 365 (SaaS): Exchange Online, SharePoint, Teams, OneDrive | Servicios cloud personales no autorizados (Shadow IT no descubierto) |
+| **Red y Conectividad** | 4 Gbps internet, VPN IPsec, SSL-VPN para acceso remoto, segmentación de red actual (sin ZTNA aún) | Redes de terceros no administradas por la UNCP |
+| **Dispositivos Finales** | 3,736 equipos de escritorio, 1,861 laptops, dispositivos móviles institucionales | Dispositivos personales BYOD no registrados (se gestionan progresivamente) |
+| **Seguridad Perimetral** | Firewalls existentes (con licencias vencidas — en proceso de renovación), WAF Huawei Cloud | — |
+| **Monitoreo** | Sin SIEM al inicio del proyecto. Se implementará durante la ejecución del PGTD-01 | — |
 
-***
+## Ámbito Geográfico
 
-## 5. Exclusiones Obligatorias
-No se excluye ninguno de los requisitos de las cláusulas 4 a 10 de la norma ISO/IEC 27001:2022, ya que son indispensables para la conformidad del sistema. Se excluyen únicamente activos físicos de infraestructura civil (edificaciones, mobiliario) que no procesan ni almacenan información.
+| Sede | Ubicación | Procesos Principales | Tipo de Conexión |
+|:-----|:-----------|:--------------------|:-----------------|
+| **Sede Central Huancayo** | Av. Mariscal Ramón Castilla km. 5, El Tambo | Rectorado, OTI, Administración Central, Facultades | Fibra óptica 4 Gbps |
+| **Sede Mantaro** | Distrito de El Mantaro, Jauja | Facultad de Ciencias Agrarias | Fibra óptica |
+| **Sede Satipo** | Satipo, Junín | Facultad de Ciencias Agrarias — Satipo | Fibra óptica |
+| **Sede Tarma** | Tarma, Junín | Facultad de Ciencias Agrarias — Tarma | Fibra óptica |
+| **Acceso Remoto** | Domicilios de docentes y administrativos, trabajo de campo, sedes temporales | Todos los procesos con acceso remoto autorizado | VPN / Internet |
 
-***
-**Declaración de Conformidad:** Este documento establece los límites y aplicabilidad del SGSI-UNCP, alineado a la excelencia operativa y la protección integral del patrimonio informativo de la universidad.
+## Ámbito Temporal
 
-*Versión 2.0 (Enfoque Vanguardia) - Aprobado para el proyecto SGSI-UNCP 2026.*
+El SGSI se implementa en fases progresivas conforme al cronograma del PGTD-01:
+
+| Fase | Periodo | Hito |
+|:-----|:--------|:-----|
+| **Fase 0 — Diagnóstico AS-IS** | 2026 Q2-Q3 | Auditoría inicial de activos, definición de políticas, designación de roles |
+| **Fase 1 — Implementación Basal** | 2026 Q4 — 2027 Q2 | Controles críticos (A.5, A.6, A.7, A.8), SIEM básico, MFA obligatorio |
+| **Fase 2 — Consolidación** | 2027 Q3 — 2028 Q1 | Segmentación ZTNA, integración PIDE, SOC básico, 50% procesos en SGSI |
+| **Fase 3 — Certificación** | 2028 Q2-Q4 | Auditoría interna, auditoría de certificación ISO 27001:2022, 90% procesos en SGSI |
+
+# Partes Interesadas y sus Requisitos
+
+| Parte Interesada | Requisitos Clave para el SGSI | Expectativa |
+|:-----------------|:------------------------------|:------------|
+| **Estudiantes (~10,000)** | Disponibilidad 24/7 de servicios académicos, protección de datos personales (Ley N° 29733), privacidad de calificaciones | Confianza en la plataforma digital |
+| **Docentes (~1,200)** | Acceso remoto seguro, integridad de investigaciones y publicaciones, protección de propiedad intelectual | Continuidad del trabajo académico |
+| **Personal Administrativo (~500)** | Confidencialidad de datos financieros y de personal, disponibilidad de sistemas de gestión | Eficiencia operativa |
+| **OTI (2 profesionales)** | Herramientas de monitoreo y respuesta, procesos documentados, autonomía técnica | Capacidad de gestión de seguridad |
+| **Organismo Supervisor (SUNEDU)** | Licenciamiento institucional, calidad educativa, infraestructura tecnológica adecuada | Cumplimiento normativo |
+| **PCM / SGTD** | Implementación del Marco de Confianza Digital (D.S. 126-2025-PCM), interoperabilidad PIDE, reporte de avance PGTD | Cumplimiento de política nacional |
+| **Proveedores (Huawei, Microsoft)** | SLA de seguridad, continuidad del servicio, protección de datos en cloud | Cumplimiento contractual |
+| **RENIEC / SUNEDU (PIDE)** | Interoperabilidad segura, autenticación de identidad, verificación de grados | Integración digital del Estado |
+| **Sociedad / Región Junín** | Transparencia, protección de datos de exalumnos y postulantes, continuidad del servicio educativo | Confianza institucional |
+
+# Límites del SGSI
+
+## Inclusiones
+
+Todas las cláusulas 4 a 10 de ISO/IEC 27001:2022 se incluyen sin exclusión, siendo indispensables para la conformidad del sistema:
+
+| Cláusula ISO 27001:2022 | Aplicación en UNCP |
+|:------------------------|:-------------------|
+| **4. Contexto de la organización** | Documentado en D-SGSI-01 (Análisis de Contexto Estratégico) y el presente documento |
+| **5. Liderazgo** | Política de Seguridad (D-SGSI-03), Acta de Compromiso (ACT-SGSI-01), roles y responsabilidades |
+| **6. Planificación** | Metodología de Gestión de Riesgos (D-SGSI-04), SoA (D-SGSI-05), objetivos de seguridad |
+| **7. Soporte** | Recursos, competencias, concientización (P-SGSI-08), comunicación, información documentada (P-SGSI-00) |
+| **8. Operación** | Planificación operativa, evaluación de riesgos, tratamiento de riesgos, controles A.5-A.8 |
+| **9. Evaluación del desempeño** | Monitoreo, medición, auditoría interna (P-SGSI-09), revisión por la dirección |
+| **10. Mejora** | No conformidades, acciones correctivas, mejora continua |
+
+## Exclusiones
+
+Se excluyen del alcance del SGSI los siguientes elementos, por no procesar ni almacenar información objeto de protección:
+
+- Infraestructura civil (edificaciones, mobiliario, instalaciones eléctricas no asociadas a TI)
+- Vehículos y activos de transporte
+- Activos de consumo (material de oficina, suministros de limpieza)
+- Sistemas de información de entidades externas sobre los cuales la UNCP no tenga control directo
+
+No se excluye ningún requisito de las cláusulas 4 a 10 de la norma ISO/IEC 27001:2022.
+
+# Justificación Basada en Riesgos
+
+La delimitación del alcance responde a los riesgos críticos identificados en el análisis de contexto (D-SGSI-01) y la matriz de evaluación de riesgos (R-SGSI-02):
+
+| Riesgo Crítico | Factor de Riesgo | Justificación de Inclusión en el Alcance |
+|:----------------|:-----------------|:-----------------------------------------|
+| Fuga de datos sensibles de estudiantes | Acceso remoto masivo, ausencia de DLP, MFA parcial | Se incluye el control de acceso remoto, la segmentación de red y la implementación de DLP progresivo |
+| Alteración de registros académicos | Segmentación de red deficiente, ausencia de ZTNA | Se incluye la infraestructura de red de facultades y el proyecto de microsegmentación (ZTNA) |
+| Indisponibilidad de servicios críticos | Dependencia de Huawei Cloud sin plan de salida, firewall obsoleto | Se incluye la gestión de continuidad del negocio y la resiliencia cloud |
+| Incumplimiento normativo | 7 nuevas normas 2024-2025, sanciones por brecha de datos | Se incluye el cumplimiento legal como requisito transversal del SGSI |
+| Fuga de propiedad intelectual | Repositorio DSpace sin controles de acceso granular, tesis sin respaldo off-site | Se incluye el sistema de investigación y el repositorio digital |
+| Ataque de ransomware | 96 ataques/min en Perú, universidades como blanco prioritario | Se incluyen controles A.8.16 (backups inmutables) y A.8.7 (protección contra malware) |
+
+# Mapa de Dependencias Críticas
+
+| Proceso | Activo Crítico | Dependencia Tecnológica | Dependencia Humana |
+|:--------|:---------------|:------------------------|:-------------------|
+| Matrícula / Notas | Base de Datos ADESA | Huawei Cloud / Keycloak IdM | OTI (2 personas) |
+| Gestión de Pagos | Sistema de Tesorería | SIAF / Pasarela de Pagos | Dirección de Finanzas |
+| Educación Virtual | Moodle 4.1 | Huawei Cloud S3 / Contenedores | Equipo de Educación Virtual |
+| Investigación | Repositorio DSpace | Red de Telemetría / Backup | Vicerrectorado de Investigación |
+| Comunicación | Microsoft 365 | Exchange Online / Teams | OTI / Comunicaciones |
+| Salud Universitaria | Historias Clínicas | Base de datos Centro Médico | Centro Médico Universitario |
+
+# Declaración de Conformidad
+
+El presente documento establece los límites y la aplicabilidad del SGSI-UNCP, alineado con los requisitos de la Cláusula 4.3 de ISO/IEC 27001:2022. El alcance definido ha sido determinado considerando las cuestiones internas y externas identificadas en el análisis de contexto (D-SGSI-01), las necesidades y expectativas de las partes interesadas, y los resultados de la evaluación de riesgos inicial.
+
+El SGSI será objeto de revisión periódica durante las auditorías internas y las revisiones por la dirección, pudiendo ajustarse su alcance cuando ocurran cambios significativos en la organización, su contexto o sus activos de información.

@@ -1,16 +1,21 @@
-# POL-SGSI-05: Política de Seguridad para Dispositivos Móviles del Personal
+---
+title: Política de Seguridad para Dispositivos Móviles del Personal
+code: POL-SGSI-05
+---
+
+# Política de Seguridad para Dispositivos Móviles del Personal
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 2.0
-**Norma:** ISO/IEC 27001:2022 (Control A.8.1 — Dispositivos móviles, A.6.7 — Teletrabajo, A.5.10 — Uso aceptable)
+**Aprobado por:** Comité de Gobierno y Transformación Digital
+**Norma:** ISO/IEC 27001:2022 (Controles A.8.1, A.6.7, A.5.10)
 **Alineamiento:** D-SGSI-02 (Alcance del SGSI), P-SGSI-03 (Gestión de Accesos), P-SGSI-02 (Gestión de Incidentes)
 
 ***
 
-## 1. Objetivo
+## Objetivo
 Establecer las medidas de seguridad para proteger la información institucional procesada, almacenada o accedida desde dispositivos móviles (laptops, smartphones, tablets) utilizados por el personal de la UNCP, mitigando los riesgos de fuga de datos, acceso no autorizado y compromiso de credenciales en entornos fuera del perímetro físico del campus.
 
-## 2. Alcance
+## Alcance
 
 ### 2.1 Sujetos Obligados
 Esta política aplica de forma obligatoria a todo **Personal Administrativo, Docente, Autoridades y Contratistas** que utilicen dispositivos móviles —sean institucionales o personales (BYOD)— para acceder a los sistemas de información, correo electrónico institucional, datos personales de terceros o cualquier activo de información cubierto por el SGSI-UNCP.
@@ -41,7 +46,7 @@ La UNCP recomienda a sus estudiantes adoptar las siguientes prácticas para prot
 4. **Redes Wi-Fi:** Evitar acceder al campus virtual, correo institucional o sistemas de matrícula desde redes Wi-Fi públicas o abiertas.
 5. **Apps oficiales:** Utilizar exclusivamente las aplicaciones oficiales de la UNCP (Moodle Mobile, Microsoft 365) descargadas desde tiendas oficiales (Google Play, App Store).
 6. **Phishing:** No hacer clic en enlaces sospechosos ni proporcionar credenciales institucionales en sitios no verificados.
-7. **Reporte:** Reportar cualquier actividad sospechosa o pérdida de acceso a la mesa de ayuda de la OTI a través del correo `incidentes-seguridad@uncp.edu.pe`.
+7. **Reporte:** Reportar cualquier actividad sospechosa o pérdida de acceso a la mesa de ayuda de la OTI a través del correo incidentes-seguridad@uncp.edu.pe.
 
 #### 2.3.3 Límites del Alcance Informativo
 - Ninguna de las recomendaciones anteriores constituye una obligación exigible para los estudiantes.
@@ -58,7 +63,7 @@ La UNCP recomienda a sus estudiantes adoptar las siguientes prácticas para prot
 | **BYOD — Laptop personal** | Equipo del empleado usado para trabajar | Control parcial: VPN + contenedor de datos o MDM con perfil separado |
 | **BYOD — Smartphone personal** | Teléfono personal con correo o apps UNCP | Control parcial: perfil de trabajo (Android Work / iOS Managed), sin acceso a datos personales |
 
-## 3. Requisitos de Seguridad (Obligatorios para el Personal)
+## Requisitos de Seguridad (Obligatorios para el Personal)
 
 ### 3.1 Cifrado del Dispositivo
 Todo dispositivo móvil que almacene o acceda a información institucional debe tener el almacenamiento interno cifrado mediante mecanismos nativos del sistema operativo:
@@ -113,7 +118,7 @@ En dispositivos BYOD, el personal debe garantizar que los datos institucionales 
 - **Laptops:** Partición o volumen cifrado independiente para datos laborales, o sesión de usuario separada.
 - **Prohibición expresa:** No almacenar datos institucionales (actas, listas de notas, comunicaciones internas) en servicios personales de almacenamiento en la nube (Google Drive personal, iCloud personal, Dropbox personal).
 
-## 4. Gestión de Dispositivos Móviles (MDM)
+## Gestión de Dispositivos Móviles (MDM)
 
 ### 4.1 Perfil Obligatorio
 Todo dispositivo —institucional o BYOD— que acceda a recursos UNCP deberá inscribirse en la plataforma de **Gestión de Dispositivos Móviles (MDM)** designada por la OTI. El perfil de gestión aplicará las siguientes políticas de forma automática:
@@ -134,7 +139,7 @@ En dispositivos personales, el MDM se configurará bajo el principio de **mínim
 ### 4.3 Exclusiones del MDM
 El Oficial de Seguridad podrá autorizar excepciones al perfil MDM en casos debidamente justificados (ej. dispositivos de investigación con software especializado incompatible), siempre que se apliquen controles compensatorios aprobados.
 
-## 5. BYOD — Procedimiento de Incorporación y Baja
+## BYOD — Procedimiento de Incorporación y Baja
 
 ### 5.1 Incorporación
 1. El empleado presenta una solicitud mediante el formato **F-SGSI-01**, indicando que utilizará su dispositivo personal para fines laborales.
@@ -155,7 +160,7 @@ El empleado que opte por BYOD acepta:
 - Que la OTI podrá bloquear el acceso a recursos UNCP si el dispositivo deja de cumplir los requisitos.
 - Que los datos institucionales en el dispositivo podrán ser borrados remotamente sin posibilidad de recuperación por parte del usuario.
 
-## 6. Inventario, Pérdida y Robo
+## Inventario, Pérdida y Robo
 
 ### 6.1 Inventario de Dispositivos Institucionales
 - Todo dispositivo móvil de propiedad de la UNCP debe estar registrado en el inventario de activos de la OTI (**R-SGSI-01**) con los siguientes datos mínimos:
@@ -167,7 +172,7 @@ El empleado que opte por BYOD acepta:
 
 ### 6.2 Procedimiento ante Pérdida, Robo o Extravío
 1. **Reporte inmediato:** El usuario debe notificar a la OTI en un plazo máximo de **2 horas** desde el momento en que toma conocimiento de la pérdida o robo.
-2. **Canales de reporte:** Llamada telefónica a la mesa de ayuda + correo a `incidentes-seguridad@uncp.edu.pe`.
+2. **Canales de reporte:** Llamada telefónica a la mesa de ayuda o correo electrónico a la dirección incidentes-seguridad@uncp.edu.pe.
 3. **Acciones inmediatas de la OTI:**
    - Bloqueo de cuentas de acceso (correo, VPN, sistemas).
    - Borrado remoto del dispositivo (completo para equipos institucionales, selectivo para BYOD).
@@ -179,7 +184,7 @@ El empleado que opte por BYOD acepta:
 - Antes de reasignar un dispositivo institucional a otro usuario, la OTI debe realizar un formateo completo con borrado seguro (wipe conforme a **P-SGSI-07**).
 - La baja definitiva de dispositivos por obsolescencia o daño debe registrarse en el formato **F-SGSI-05 (Acta de Eliminación Segura)**.
 
-## 7. Roles y Responsabilidades
+## Roles y Responsabilidades
 
 | Rol | Responsabilidad |
 |---|---|
@@ -190,7 +195,7 @@ El empleado que opte por BYOD acepta:
 | **OTI (Infraestructura)** | Configurar y mantener la VPN, el Conditional Access y las políticas de red para dispositivos móviles; realizar auditorías técnicas periódicas. |
 | **Comité de Gobierno Digital** | Aprobar esta política y sus actualizaciones; revisar las métricas de cumplimiento de forma trimestral. |
 
-## 8. Métricas de Cumplimiento
+## Métricas de Cumplimiento
 
 | Indicador | Meta | Frecuencia | Fuente |
 |---|---|---|---|
@@ -200,7 +205,7 @@ El empleado que opte por BYOD acepta:
 | % de personal capacitado en esta política | 100% | Anual | Moodle / F-SGSI-02 |
 | % de BYOD con perfil MDM activo | 100% de los autorizados | Mensual | MDM |
 
-## 9. Incumplimiento y Medidas Disciplinarias
+## Incumplimiento y Medidas Disciplinarias
 
 El incumplimiento de esta política será gestionado de la siguiente forma:
 
@@ -210,10 +215,10 @@ El incumplimiento de esta política será gestionado de la siguiente forma:
 | **Grave** (acceso desde dispositivo con jailbreak/root, incumplimiento recurrente) | Restricción temporal del acceso remoto; comunicación al Comité de Gobierno Digital. |
 | **Muy Grave** (fuga de datos por negligencia, pérdida de dispositivo sin reportar, incumplimiento doloso) | Restricción permanente del acceso remoto; apertura de proceso administrativo disciplinario según el régimen laboral aplicable; reporte a la Autoridad Nacional de Protección de Datos si corresponde (Ley N° 29733). |
 
-## 10. Revisión y Actualización
+## Revisión y Actualización
 Esta política será revisada al menos una vez al año por el Oficial de Seguridad, o antes si ocurre un cambio significativo en el panorama de amenazas móviles, en la normativa nacional aplicable o en la infraestructura tecnológica de la UNCP. Las actualizaciones serán aprobadas por el Comité de Gobierno Digital.
 
-## 11. Documentos Relacionados
+## Documentos Relacionados
 
 | Código | Nombre |
 |---|---|

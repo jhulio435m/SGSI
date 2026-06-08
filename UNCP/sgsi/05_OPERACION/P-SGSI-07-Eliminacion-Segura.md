@@ -1,17 +1,22 @@
-# P-SGSI-07: Procedimiento de Eliminación Segura de Información y Activos
+---
+title: Procedimiento de Eliminación Segura de Información y Activos
+code: P-SGSI-07
+---
+
+# Procedimiento de Eliminación Segura de Información y Activos
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 2.0
-**Norma:** ISO/IEC 27001:2022 (Controles A.8.10 — Eliminación de información, A.8.11 — Enmascaramiento de datos, A.7.14 — Eliminación segura de activos)
+**Aprobado por:** Oficial de Seguridad y Confianza Digital
+**Norma:** ISO/IEC 27001:2022 (Controles A.8.10, A.8.11, A.7.14)
 **Referencia Técnica:** NIST SP 800-88 Rev. 1 (Guidelines for Media Sanitization)
 **Alineamiento:** POL-SGSI-03 (Clasificación de la Información), F-SGSI-05 (Acta de Eliminación Segura)
 
 ***
 
-## 1. Objetivo
+## Objetivo
 Establecer los métodos y controles para la eliminación segura de información y activos de almacenamiento en la UNCP, garantizando que los datos institucionales no puedan ser recuperados o reconstruidos una vez finalizada su vida útil, mitigando el riesgo de fugas de información por disposición inadecuada.
 
-## 2. Alcance
+## Alcance
 Este procedimiento aplica a toda información y activos de almacenamiento de la UNCP, independientemente de su formato (físico o digital), incluyendo:
 
 - Documentos en papel (actas, expedientes, contratos, resoluciones).
@@ -22,7 +27,7 @@ Este procedimiento aplica a toda información y activos de almacenamiento de la 
 - Respaldos en cinta o discos externos.
 - Información en la nube (buckets, volúmenes, snapshots).
 
-## 3. Niveles de Eliminación Segura
+## Niveles de Eliminación Segura
 
 La UNCP adopta los tres niveles de sanitización definidos en **NIST SP 800-88 Rev. 1**:
 
@@ -32,7 +37,7 @@ La UNCP adopta los tres niveles de sanitización definidos en **NIST SP 800-88 R
 | **Purge (Purgado)** | Desmagnetización (Degaussing) para HDD, o borrado seguro criptográfico (Cryptographic Erase) para SSD | El medio queda inutilizable para cualquier propósito posterior | Equipos que se dan de baja definitiva para donación, venta o reciclaje |
 | **Destroy (Destrucción Física)** | Trituración, pulverización, incineración o perforación del medio | Destrucción irreversible del medio físico | Medios dañados, clasificados como Confidenciales, o cuando el riesgo de fuga de datos es alto |
 
-## 4. Métodos Específicos por Tipo de Medio
+## Métodos Específicos por Tipo de Medio
 
 ### 4.1 Medios Físicos (Papel)
 
@@ -80,7 +85,7 @@ La UNCP adopta los tres niveles de sanitización definidos en **NIST SP 800-88 R
   3. Solicitar al proveedor la certificación de eliminación de los datos de sus servidores.
   4. Eliminar las cuentas de acceso asociadas.
 
-## 5. Verificación Post-Eliminación
+## Verificación Post-Eliminación
 
 Después de aplicar cualquier método de eliminación, se debe verificar:
 
@@ -92,7 +97,7 @@ Después de aplicar cualquier método de eliminación, se debe verificar:
 | SSD con Cryptographic Erase | Verificación de que la unidad aparece como "no inicializada" o sin particiones |
 | Destrucción física | Inspección visual del daño irreversible |
 
-## 6. Cadena de Custodia para Eliminación
+## Cadena de Custodia para Eliminación
 
 Para activos clasificados como **Confidenciales** o de alto valor, se debe mantener una cadena de custodia documentada:
 
@@ -101,7 +106,7 @@ Para activos clasificados como **Confidenciales** o de alto valor, se debe mante
 3. **Testigo** (Oficial de Seguridad o delegado) presencia la eliminación y firma el **F-SGSI-05 (Acta de Eliminación Segura)**.
 4. **Acta** se archiva en el expediente del activo por un período mínimo de **5 años**.
 
-## 7. Proveedores Externos de Eliminación
+## Proveedores Externos de Eliminación
 
 Si se contrata a un tercero para la eliminación masiva de activos:
 
@@ -110,7 +115,7 @@ Si se contrata a un tercero para la eliminación masiva de activos:
 - La UNCP se reserva el derecho de realizar auditorías in situ al proceso del proveedor.
 - Se debe firmar un acuerdo de confidencialidad previo a la entrega de los activos.
 
-## 8. Responsabilidades
+## Responsabilidades
 
 | Rol | Responsabilidad |
 |---|---|
@@ -119,7 +124,7 @@ Si se contrata a un tercero para la eliminación masiva de activos:
 | **Oficial de Seguridad** | Aprobar el método según la clasificación; verificar la destrucción de activos Confidenciales |
 | **Jefe de Área** | Autorizar la baja de activos de su unidad |
 
-## 9. Documentos Relacionados
+## Documentos Relacionados
 
 | Código | Nombre |
 |---|---|

@@ -1,16 +1,21 @@
-# POL-SGSI-01: Política de Seguridad en el Desarrollo de Software y APIs
+---
+title: Política de Seguridad en el Desarrollo de Software y APIs
+code: POL-SGSI-01
+---
+
+# Política de Seguridad en el Desarrollo de Software y APIs
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 2.0 (Enfoque DevSecOps / Shift-Left)
-**Norma:** ISO/IEC 27001:2022 (Controles A.8.25 — Ciclo de vida de desarrollo seguro, A.8.26 — Seguridad de aplicaciones, A.8.27 — Principios de ingeniería de seguridad, A.8.28 — Codificación segura, A.8.29 — Pruebas de seguridad, A.8.30 — Desarrollo subcontratado)
+**Aprobado por:** Oficial de Seguridad y Confianza Digital
+**Norma:** ISO/IEC 27001:2022 (Controles A.8.25--A.8.30)
 **Alineamiento:** D-SGSI-08 (Guía de Controles ISO 27002), P-SGSI-04 (Gestión de Cambios), POL-SGSI-05 (Dispositivos Móviles)
 
 ***
 
-## 1. Objetivo
+## Objetivo
 Establecer los principios, requisitos y controles de seguridad que deben integrarse en todas las fases del ciclo de vida de desarrollo de software y APIs en la UNCP, garantizando que las aplicaciones institucionales sean seguras por diseño, por defecto y durante toda su operación.
 
-## 2. Alcance
+## Alcance
 Esta política aplica a:
 - Todo desarrollo interno realizado por la OTI.
 - Todo mantenimiento y evolución del ERP ADESA, Campus Virtual (Moodle), SIGA y sistemas satélites.
@@ -20,7 +25,7 @@ Esta política aplica a:
 
 ---
 
-## 3. Principios de Seguridad en el Desarrollo
+## Principios de Seguridad en el Desarrollo
 
 ### 3.1 Seguridad por Diseño (Shift-Left)
 - Los requisitos de seguridad y privacidad deben definirse en la fase de análisis, no agregarse al final.
@@ -36,7 +41,7 @@ Esta política aplica a:
 
 ---
 
-## 4. Ciclo de Vida de Desarrollo Seguro (SDLC)
+## Ciclo de Vida de Desarrollo Seguro (SDLC)
 
 ### 4.1 Fase de Requisitos
 - Todo requerimiento funcional debe incluir criterios de aceptación de seguridad.
@@ -94,7 +99,7 @@ Todo el código debe seguir buenas prácticas de codificación segura:
 
 ---
 
-## 5. Gestión de Vulnerabilidades y Parches en Desarrollo
+## Gestión de Vulnerabilidades y Parches en Desarrollo
 
 | Tipo | Plazo de Corrección | Responsable |
 |---|---|---|
@@ -105,7 +110,7 @@ Todo el código debe seguir buenas prácticas de codificación segura:
 
 ---
 
-## 6. Seguridad en APIs
+## Seguridad en APIs
 
 ### 6.1 Requisitos Obligatorios
 - Toda API debe exponerse a través del **API Gateway** designado (TRV-02) para garantizar control de acceso, rate-limiting, logging y auditoría centralizados.
@@ -123,7 +128,7 @@ Todo el código debe seguir buenas prácticas de codificación segura:
 
 ---
 
-## 7. Desarrollo por Terceros
+## Desarrollo por Terceros
 Cuando un proveedor externo desarrolle software para la UNCP:
 - El contrato debe incluir los requisitos de esta política como anexo obligatorio.
 - El código fuente y la documentación son propiedad de la UNCP y deben entregarse al finalizar el contrato.
@@ -133,7 +138,7 @@ Cuando un proveedor externo desarrolle software para la UNCP:
 
 ---
 
-## 8. Responsabilidades
+## Responsabilidades
 
 | Rol | Responsabilidad |
 |---|---|
@@ -145,12 +150,12 @@ Cuando un proveedor externo desarrolle software para la UNCP:
 
 ---
 
-## 9. Excepciones
+## Excepciones
 Cualquier desviación de esta política debe ser documentada y aprobada por el Oficial de Seguridad. Las excepciones temporales deben tener una fecha de vencimiento y un plan de remediación.
 
 ---
 
-## 10. Documentos Relacionados
+## Documentos Relacionados
 
 | Código | Nombre |
 |---|---|
@@ -161,5 +166,4 @@ Cualquier desviación de esta política debe ser documentada y aprobada por el O
 | POL-SGSI-03 | Política de Clasificación de la Información y Respaldos |
 
 ***
-
-**Versión 2.0 — Incluye SDLC completo con 6 fases, umbrales de vulnerabilidad con CVSS, tabla de pruebas de seguridad, requisitos detallados de APIs, SBOM obligatorio y desarrollo por terceros.**
+---**

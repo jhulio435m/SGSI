@@ -1,19 +1,24 @@
-# P-SGSI-06: Procedimiento de Gestión de Seguridad con Proveedores
+---
+title: Procedimiento de Gestión de Seguridad con Proveedores
+code: P-SGSI-06
+---
+
+# Procedimiento de Gestión de Seguridad con Proveedores
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 2.0
-**Norma:** ISO/IEC 27001:2022 (Controles A.5.19 - A.5.23)
+**Aprobado por:** Oficial de Seguridad y Confianza Digital
+**Norma:** ISO/IEC 27001:2022 (Controles A.5.19 -- A.5.23)
 **Alineamiento:** POL-SGSI-04 (Política de Seguridad con Proveedores), D-SGSI-04 (Metodología de Riesgos)
 
 ***
 
-## 1. Objetivo
+## Objetivo
 Establecer el proceso operativo para la evaluación, contratación, monitoreo y cese de proveedores con acceso a información, sistemas o instalaciones de la UNCP, asegurando que los riesgos de seguridad sean gestionados durante todo el ciclo de vida de la relación contractual.
 
-## 2. Alcance
+## Alcance
 Este procedimiento aplica a todos los proveedores clasificados como **Críticos** y **Alto** según la POL-SGSI-04, que tengan acceso a datos institucionales, infraestructura tecnológica o instalaciones físicas de la UNCP.
 
-## 3. Ciclo de Vida de la Gestión del Proveedor
+## Ciclo de Vida de la Gestión del Proveedor
 
 ### 3.1 Fase Precontractual
 
@@ -66,7 +71,7 @@ Se levanta un acta de cierre firmada por el proveedor y la UNCP que certifique:
 - La desactivación de accesos.
 - La ausencia de reclamaciones de seguridad pendientes.
 
-## 4. Requisitos de Seguridad por Tipo de Servicio
+## Requisitos de Seguridad por Tipo de Servicio
 
 ### 4.1 Servicios Cloud (Huawei Cloud, Microsoft 365)
 - El contrato debe especificar la **región geográfica** donde residirán los datos (debe cumplir la Ley N° 29733).
@@ -84,7 +89,7 @@ Se levanta un acta de cierre firmada por el proveedor y la UNCP que certifique:
 - Se debe seguir la **POL-SGSI-01 (Desarrollo Seguro)**, incluyendo escaneo SAST/DAST.
 - El código debe entregarse con el SBOM (Software Bill of Materials) actualizado.
 
-## 5. Matriz de Proveedores Críticos (Registro)
+## Matriz de Proveedores Críticos (Registro)
 
 La OTI mantendrá un **Registro Maestro de Proveedores** con los siguientes campos mínimos:
 
@@ -101,7 +106,7 @@ La OTI mantendrá un **Registro Maestro de Proveedores** con los siguientes camp
 | Fecha de Última Evaluación | DD/MM/AAAA |
 | Estado | Activo / En evaluación / En cese / Inactivo |
 
-## 6. Documentos Relacionados
+## Documentos Relacionados
 
 | Código | Nombre |
 |---|---|

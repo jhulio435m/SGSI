@@ -1,22 +1,27 @@
-# POL-SGSI-06: Política de Contraseñas y Autenticación Segura
+---
+title: Política de Contraseñas y Autenticación Segura
+code: POL-SGSI-06
+---
+
+# Política de Contraseñas y Autenticación Segura
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 2.0
-**Norma:** ISO/IEC 27001:2022 (Control A.5.17 — Autenticación, A.8.3 — Gestión de contraseñas, A.8.5 — Autenticación para acceso remoto)
-**Referencia Técnica:** NIST SP 800-63B (Digital Identity Guidelines — Authentication Lifecycle Management)
+**Aprobado por:** Oficial de Seguridad y Confianza Digital
+**Norma:** ISO/IEC 27001:2022 (Controles A.5.17, A.8.3, A.8.5)
+**Referencia Técnica:** NIST SP 800-63B (Digital Identity Guidelines)
 **Alineamiento:** P-SGSI-03 (Gestión de Accesos), POL-SGSI-05 (Dispositivos Móviles)
 
 ***
 
-## 1. Objetivo
+## Objetivo
 Establecer los requisitos mínimos de creación, uso, almacenamiento y rotación de contraseñas en la UNCP, así como las condiciones para el uso de mecanismos de autenticación multifactor, con el fin de reducir el riesgo de accesos no autorizados a los sistemas institucionales.
 
-## 2. Alcance
+## Alcance
 Esta política aplica a todo usuario de los sistemas de información de la UNCP (personal administrativo, docente, estudiantes, contratistas y proveedores) que utilice credenciales de acceso para autenticarse en recursos institucionales.
 
 ---
 
-## 3. Requisitos de Contraseñas
+## Requisitos de Contraseñas
 
 ### 3.1 Creación y Complejidad
 
@@ -56,7 +61,7 @@ El sistema de autenticación debe rechazar automáticamente las siguientes contr
 
 ---
 
-## 4. Gestión de Credenciales
+## Gestión de Credenciales
 
 ### 4.1 Prohibiciones
 - Las credenciales de acceso son **personales e intransferibles**. Queda prohibido compartir contraseñas con otros usuarios, incluyendo compañeros de trabajo o superiores jerárquicos.
@@ -77,7 +82,7 @@ La UNCP permite y **recomienda el uso de gestores de contraseñas empresariales*
 
 ---
 
-## 5. Autenticación Multifactor (MFA)
+## Autenticación Multifactor (MFA)
 
 ### 5.1 Obligatoriedad
 
@@ -97,7 +102,7 @@ Solo se permite el acceso sin MFA en los siguientes casos, con autorización del
 
 ---
 
-## 6. Bloqueo de Cuenta
+## Bloqueo de Cuenta
 
 | Parámetro | Valor |
 |---|---|
@@ -108,7 +113,7 @@ Solo se permite el acceso sin MFA en los siguientes casos, con autorización del
 
 ---
 
-## 7. Autenticación para Acceso Remoto (Control A.8.5)
+## Autenticación para Acceso Remoto (Control A.8.5)
 
 Todo acceso remoto a los sistemas de la UNCP (VPN, escritorio remoto, consolas de administración cloud) debe cumplir:
 - MFA obligatorio.
@@ -118,7 +123,7 @@ Todo acceso remoto a los sistemas de la UNCP (VPN, escritorio remoto, consolas d
 
 ---
 
-## 8. Contraseñas Temporales y de Primer Acceso
+## Contraseñas Temporales y de Primer Acceso
 - Las contraseñas temporales (otorgadas en la creación de la cuenta o después de un restablecimiento) deben:
   - Ser generadas aleatoriamente (mínimo 12 caracteres).
   - Expirar en un máximo de **24 horas** o en el **primer inicio de sesión exitoso**.
@@ -127,7 +132,7 @@ Todo acceso remoto a los sistemas de la UNCP (VPN, escritorio remoto, consolas d
 
 ---
 
-## 9. Responsabilidades
+## Responsabilidades
 
 | Rol | Responsabilidad |
 |---|---|
@@ -138,7 +143,7 @@ Todo acceso remoto a los sistemas de la UNCP (VPN, escritorio remoto, consolas d
 
 ---
 
-## 10. Métricas de Cumplimiento
+## Métricas de Cumplimiento
 
 | Indicador | Meta | Frecuencia | Fuente |
 |---|---|---|---|
@@ -150,7 +155,7 @@ Todo acceso remoto a los sistemas de la UNCP (VPN, escritorio remoto, consolas d
 
 ---
 
-## 11. Documentos Relacionados
+## Documentos Relacionados
 
 | Código | Nombre |
 |---|---|
@@ -160,5 +165,4 @@ Todo acceso remoto a los sistemas de la UNCP (VPN, escritorio remoto, consolas d
 | D-SGSI-08 | Guía de Implementación de Controles (ISO 27002) |
 
 ***
-
-**Versión 2.0 — Alineada a NIST SP 800-63B: sin cambio forzado periódico, sin reglas de composición obligatorias, verificación contra listas negras de contraseñas comprometidas. Incluye gestores de contraseñas empresariales, cuentas de servicio, tabla de MFA por perfil y métricas de cumplimiento.**
+---**

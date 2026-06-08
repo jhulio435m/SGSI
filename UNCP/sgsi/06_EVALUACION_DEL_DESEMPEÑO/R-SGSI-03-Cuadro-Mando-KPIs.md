@@ -1,13 +1,18 @@
-# R-SGSI-03: Cuadro de Mando de Seguridad y Verificación Continua
+---
+title: Cuadro de Mando de Seguridad y Verificación Continua
+code: R-SGSI-03
+---
+
+# Cuadro de Mando de Seguridad y Verificación Continua
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 2.0 (Dashboard Dinámico)
-**Norma:** ISO/IEC 27001:2022 (Cláusula 9.1 — Monitoreo, medición, análisis y evaluación)
+**Aprobado por:** Oficial de Seguridad y Confianza Digital
+**Norma:** ISO/IEC 27001:2022 (Cláusula 9.1 -- Monitoreo, medición, análisis y evaluación)
 **Alineamiento:** P-SGSI-09 (Metodología de Auditoría), R-SGSI-04 (Programa de Auditoría), D-SGSI-05 (SoA)
 
 ***
 
-## 1. KPIs de Desempeño del SGSI
+## KPIs de Desempeño del SGSI
 
 La UNCP mide la efectividad del SGSI mediante indicadores clasificados en 4 categorías. La información se consolida en un dashboard (SIEM / Power BI) actualizado en tiempo real.
 
@@ -46,7 +51,7 @@ La UNCP mide la efectividad del SGSI mediante indicadores clasificados en 4 cate
 | KPI-14 | **Tiempo de Cierre de NC** | Días promedio para cerrar una no conformidad | < 30 días | Mensual | F-SGSI-04 (RAC) |
 | KPI-15 | **Cobertura de Auditoría** | % de procesos del alcance auditados en el ciclo anual | 100% | Anual | R-SGSI-04 |
 
-## 2. Micro-Auditorías Trimestrales (Programa 2026)
+## Micro-Auditorías Trimestrales (Programa 2026)
 
 En línea con P-SGSI-09 y R-SGSI-04, se ejecutan micro-auditorías focalizadas:
 
@@ -57,7 +62,7 @@ En línea con P-SGSI-09 y R-SGSI-04, se ejecutan micro-auditorías focalizadas:
 | **Q3 (Jul–Sep)** | Resiliencia, Respaldos y Continuidad | A.8.13, A.5.30, POL-SGSI-03, Huawei Cloud | Crítico |
 | **Q4 (Oct–Dic)** | Incidentes, Privacidad y Cumplimiento Legal | A.5.24, Cl. 10, Ley 29733, D.L. 1412 | Alto |
 
-## 3. Revisión por la Dirección (Cl. 9.3)
+## Revisión por la Dirección (Cl. 9.3)
 
 ### 3.1 Reporte Mensual Automatizado
 El dashboard genera automáticamente un informe ejecutivo para el Comité de Gobierno Digital que incluye:
@@ -73,7 +78,7 @@ Cada trimestre, el Oficial de Seguridad presenta el informe consolidado al Comit
 - Actualización del apetito de riesgo
 - Modificaciones al alcance o la SoA
 
-## 4. Umbrales de Alerta y Escalamiento
+## Umbrales de Alerta y Escalamiento
 
 | Semáforo | Rango | Acción |
 | :--- | :--- | :--- |
@@ -82,5 +87,3 @@ Cada trimestre, el Oficial de Seguridad presenta el informe consolidado al Comit
 | 🔴 **Rojo** | Desviación >= 10% de la meta | Acción correctiva inmediata (F-SGSI-04), escalar al CGD |
 
 ---
-**Última actualización de KPIs:** [Fecha]
-**Responsable de actualización:** Oficial de Seguridad y Confianza Digital

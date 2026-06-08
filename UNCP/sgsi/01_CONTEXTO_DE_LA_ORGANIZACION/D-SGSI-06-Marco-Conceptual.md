@@ -1,290 +1,244 @@
-# D-SGSI-06: Marco Conceptual del SGSI
+---
+title: Marco Conceptual del Sistema de Gestión de Seguridad de la Información
+code: D-SGSI-06
+---
 
+**Organización:** Universidad Nacional del Centro del Perú (UNCP)
 
-## Universidad Nacional del Centro del Perú (UNCP)
-### Marco Conceptual General
+**Referencia Normativa:** ISO/IEC 27001:2022, ISO/IEC 27002:2022, ISO/IEC 27000:2018
 
-***
+**Documentos Relacionados:** D-SGSI-00 (Marco Terminológico y Normativo), D-SGSI-01 (Contexto Estratégico), D-SGSI-02 (Alcance), PGTD-UNCP 2026-2030
 
-\newpage
-
-## 1. ¿Qué es un SGSI?
-
-Sistema de gestión basado en la norma **ISO/IEC 27001** que permite establecer, implementar, mantener y mejorar continuamente la seguridad de la información en una organización.
-
-Cubre **TODO tipo de información**, sin importar su formato:
-
-| Tipo | Ejemplos en UNCP |
-|---|---|
-| **Digital** | Bases de datos, sistemas (SIGA, campus virtual, correo), archivos, respaldos |
-| **Física (papel)** | Actas de notas, expedientes de estudiantes, contratos, resoluciones, informes |
-| **Transmitida** | Videoconferencias, llamadas, conversaciones |
-| **Almacenada en medios** | Discos duros, USB, CD/DVD, cintas de backup |
-
-Principios fundamentales: **Confidencialidad, Integridad, Disponibilidad (CID)**.
-
-***
+**Propósito:** Establecer el modelo conceptual que integra los elementos del SGSI, sus relaciones, principios fundamentales y ciclo de vida, adaptado al contexto de la UNCP.
 
 \newpage
 
-## 2. Información Física vs. Digital - Tratamiento Diferenciado
+# Concepto y Principios del SGSI
 
-### Información Física (soporte papel)
+## Definición
 
-| Aspecto | Consideraciones UNCP |
-|---|---|
-| **Archivos físicos** | Oficinas de registros académicos, tesorería, recursos humanos, secretarías de facultad |
-| **Expedientes** | Almacenados en estantes, archivadores, cajas. Control de acceso físico |
-| **Actas de notas** | Firmadas manualmente, resguardadas en archivos centrales |
-| **Contratos** | Versiones impresas con firmas ológrafas |
-| **Resoluciones** | Emitidas por rectorado y facultades, archivadas en físico |
-| **Tesis** | Copias físicas en bibliotecas central y facultades |
+Un Sistema de Gestión de Seguridad de la Información (SGSI) es un conjunto de políticas, procedimientos, controles y recursos interdependientes que una organización establece para gestionar la seguridad de su información, basado en la norma ISO/IEC 27001:2022 y adaptado a su contexto específico.
 
-### Protección de información física (Controles A.7, A.11)
+A diferencia de soluciones puntuales de seguridad (un firewall, un antivirus), el SGSI opera como un **sistema de gestión integral** que abarca personas, procesos y tecnología, con un enfoque basado en riesgos y mejora continua (ciclo PHVA — Planificar, Hacer, Verificar, Actuar).
 
-| Medida | Descripción |
-|---|---|
-| **Control de acceso físico** | Puertas con llave, tarjetas de proximidad, biométricos |
-| **Áreas seguras** | Sala de servidores, archivos centrales, tesorería |
-| **Perímetro de seguridad** | Vigilancia, cámaras, alarmas en edificios clave |
-| **Escritorios limpios (A.11.2.9)** | Documentos sensibles guardados bajo llave al retirarse |
-| **Pantallas limpias (A.11.2.9)** | Bloqueo de pantalla automático, documentos visibles solo a personal autorizado |
-| **Destrucción segura** | Trituradoras de papel certificadas para documentos confidenciales |
-| **Archivo histórico** | Control de acceso, condiciones ambientales (temperatura, humedad, plagas) |
+## Principios Fundamentales
 
-***
+| Principio | Definición | Aplicación en UNCP |
+|:----------|:-----------|:-------------------|
+| **Confidencialidad** | La información no está disponible ni se revela a personas, procesos o sistemas no autorizados. | Datos personales de 10,000 estudiantes protegidos bajo Ley N° 29733. Notas, grados y títulos accesibles solo por personal autorizado. |
+| **Integridad** | La información es completa, exacta y no ha sido alterada de forma no autorizada. | Registros académicos (ERP ADESA) y actas de notas deben ser inalterables. La investigación científica requiere integridad garantizada. |
+| **Disponibilidad** | La información es accesible y utilizable por usuarios autorizados cuando lo requieran. | Campus virtual (Moodle), portal académico y correo institucional deben tener disponibilidad 24/7 durante el ciclo académico. La OGTD4 del PGTD fija meta de 99.5% de uptime. |
 
-\newpage
+## Objetivos del SGSI en la UNCP
 
-## 3. Estructura del SGSI según ISO 27001 (Cláusulas 4-10)
+Los objetivos del SGSI se derivan de los Objetivos de Gobierno Digital (OGTD) del PGTD-UNCP 2026-2030:
 
-### Cl. 4 - Contexto de la organización
-
-**Partes interesadas internas:**
-- Rectorado, vicerrectorados, decanos, directores de escuela
-- Docentes, estudiantes, personal administrativo
-- Comité Electoral Universitario, Asamblea Universitaria
-
-**Partes interesadas externas:**
-- SUNEDU, MINEDU, CGR, PCM
-- Proveedores de servicios TI (internet, cloud, licencias)
-- Postulantes y público en general
-
-**Requisitos legales aplicables:**
-- Ley N° 29158 - Ley Orgánica del Poder Ejecutivo
-- Ley N° 29733 - Ley de Protección de Datos Personales
-- **D.S. N° 016-2024-JUS** - Nuevo Reglamento de la Ley N° 29733, vigente desde marzo 2025. Introduce DPIA, regulación de IA y transferencias internacionales de datos
-- Decreto Legislativo N° 1412 - Ley de Gobierno Digital
-- D.S. N° 029-2021-PCM - Reglamento de la Ley de Gobierno Digital
-- **D.S. N° 098-2025-PCM** - Modifica el D.S. N° 029-2021-PCM. Actualiza condiciones de identidad digital, servicios digitales, interoperabilidad y gestión documental electrónica en el Estado
-- D.S. N° 033-2018-PCM - Plataforma Digital Única del Estado Peruano
-- D.S. N° 103-2023-PCM - Política Nacional de Transformación Digital
-- **Ley N° 31814 y D.S. N° 115-2025-PCM** - Ley que promueve el uso de la IA y su Reglamento. Exige auditoría de algoritmos, supervisión humana y gestión de riesgos éticos en entidades públicas
-- R.M. N° 119-2018-PCM - Comité de Gobierno Digital
-- R.S. N° 005-2018-PCM/SGTD - Lineamientos para formulación del PGTD
-- R.S. N° 004-2018-PCM/SGTD - Lineamientos para gestión del Gobierno Digital
-- **R.S. N° 001-2025-PCM/SGTD** - Lineamiento para el diseño y desarrollo de servicios digitales accesibles para personas con discapacidad (WCAG 2.2)
-- **Directiva N° 001-2025-PCM/SGTD** - Directiva que regula el consumo seguro de los servicios de información de la PIDE y establece medidas de seguridad digital
-- Ley N° 27209 - Ley de Presupuesto del Sector Público
-- Directiva N° 006-2019-CG/INTEG - Sistema de Control Interno
-- Resolución N° 322-2026-CG - Plan de Gobierno y Transformación Digital CGR
-- Estatuto de la UNCP
-
-### Cl. 5 - Liderazgo
-
-Conforme a la R.M. N° 119-2018-PCM y los Lineamientos del PGTD (R.S. N° 005-2018-PCM/SGTD):
-
-| Rol | Responsabilidad |
-|---|---|
-| **Rector** | Titular de la entidad, preside el Comité de Gobierno Digital, máxima responsabilidad del SGSI |
-| **Comité de Gobierno Digital** | Dirige, evalúa y supervisa la transformación digital y el SGSI |
-| **Secretario Técnico del Comité** | Elabora actas, coordina agenda, registra información del PGTD |
-| **Oficial de Seguridad y Confianza Digital** | Lidera el SGSI operativamente, reporta al Comité |
-| **Decanos / Directores** | Responsables de la seguridad de la información en sus unidades |
-| **Todos los colaboradores** | Obligación de reportar incidentes de seguridad |
-
-### Cl. 6 - Planificación
-
-**Evaluación de riesgos:**
-- Identificación de activos (digitales y físicos)
-- Identificación de amenazas y vulnerabilidades
-- Análisis de impacto (pérdida de notas, filtración de datos personales, interrupción de matrícula)
-- Plan de tratamiento de riesgos
-
-**Declaración de Aplicabilidad (SoA):**
-- Define qué controles del Anexo A son aplicables a la UNCP
-
-### Cl. 7 - Soporte
-
-**Recursos:**
-- Presupuesto para seguridad (software, hardware, personal)
-- Infraestructura física y lógica
-
-**Competencia:**
-- Capacitación obligatoria en seguridad para todo el personal
-- Formación específica para el equipo SGSI
-
-**Concientización:**
-- Campañas de phishing simuladas
-- Charlas sobre seguridad de información física y digital
-- Inducción para nuevos ingresantes y personal
-
-**Documentación:**
-- Política SGSI, procedimientos, registros, manuales
-
-### Cl. 8 - Operación
-
-- Implementación de controles
-- Gestión de riesgos en operaciones diarias
-- Gestión de cambios (nuevos sistemas, procesos, personal)
-- Gestión de incidentes de seguridad
-
-### Cl. 9 - Evaluación
-
-- Auditorías internas periódicas
-- Revisión del SGSI por la alta dirección (anual)
-- Medición de indicadores de eficacia
-
-### Cl. 10 - Mejora
-
-- Gestión de no conformidades
-- Acciones correctivas y preventivas
-- Mejora continua del SGSI
-
-***
+| Objetivo SGSI | OGTD Relacionado | Indicador | Meta al 2028 |
+|:--------------|:-----------------|:----------|:-------------|
+| Proteger la confidencialidad e integridad de los datos académicos y de investigación | OGTD3 (SGSI/ISO 27001) | Porcentaje de procesos incorporados al SGSI | 90% |
+| Garantizar la disponibilidad de los servicios digitales críticos | OGTD4 (Infraestructura y Green IT) | Uptime de servicios críticos | 99.5% |
+| Cumplir con el marco legal peruano de protección de datos y confianza digital | OGTD3 + Marco de Confianza Digital (D.S. 126-2025-PCM) | No conformidades legales detectadas en auditoría | 0 |
+| Reducir el riesgo de incidentes de seguridad mediante controles preventivos y detectivos | OGTD3 | Tiempo medio de respuesta a incidentes | < 24 horas |
+| Elevar la cultura de seguridad en la comunidad universitaria | OGTD6 (Competencias digitales) | Porcentaje de trabajadores capacitados en seguridad | 100% |
 
 \newpage
 
-## 4. Controles del Anexo A ISO 27001 — Aplicación en UNCP
+# Modelo Conceptual del SGSI
 
-| Dominio | Controles clave | Digital | Física |
-|---|---|---|---|
-| **A.5 Políticas** | Política de seguridad, revisión | x | x |
-| **A.6 Organización interna** | Roles, segregación, contacto autoridades | x | x |
-| **A.7 RRHH** | Inducción, capacitación, disciplinario, desvinculación | x | x |
-| **A.8 Gestión de activos** | Inventario, clasificación, manejo de medios | x | x |
-| **A.9 Control de acceso** | Acceso a sistemas, VPN, roles, privilegios | x | x |
-| **A.10 Criptografía** | Cifrado de datos sensibles, firmas digitales | x | |
-| **A.11 Seguridad física** | Perímetro, salas seguras, escritorio limpio, CCTV | | x |
-| **A.12 Operaciones** | Backups, protección malware, gestión cambios, logs | x | |
-| **A.13 Comunicaciones** | Firewall, segmentación de red, VPN, correo seguro | x | |
-| **A.14 Adquisiciones** | Desarrollo seguro, pruebas, aceptación | x | |
-| **A.15 Relaciones proveedores** | Contratos con ISPs, servicios cloud, SaaS | x | x |
-| **A.16 Incidentes** | Reporte, clasificación, respuesta, lecciones aprendidas | x | x |
-| **A.17 Continuidad** | BCP y DRP para sistemas críticos | x | x |
-| **A.18 Cumplimiento** | Ley 29733, D.L. 1412, transparencia, CGR | x | x |
+## Ciclo PHVA (Planificar-Hacer-Verificar-Actuar)
 
-***
+El SGSI se implementa siguiendo el ciclo de mejora continua PHVA, alineado con las cláusulas 4 a 10 de ISO/IEC 27001:2022:
 
-\newpage
+| Fase | Cláusulas ISO 27001 | Actividades Clave en UNCP |
+|:-----|:--------------------|:-------------------------|
+| **Planificar** (Plan) | 4 (Contexto), 5 (Liderazgo), 6 (Planificación) | Análisis de contexto (D-SGSI-01), definición de alcance (D-SGSI-02), política de seguridad (D-SGSI-03), evaluación de riesgos (D-SGSI-04), SoA (D-SGSI-05) |
+| **Hacer** (Do) | 7 (Soporte), 8 (Operación) | Implementación de controles (A.5-A.8), capacitación (P-SGSI-08), gestión de incidentes (P-SGSI-02), control de acceso (P-SGSI-03) |
+| **Verificar** (Check) | 9 (Evaluación del desempeño) | Auditorías internas (P-SGSI-09), monitoreo de KPIs (R-SGSI-03), revisión por la dirección |
+| **Actuar** (Act) | 10 (Mejora) | Acciones correctivas, mejora continua, actualización del SoA |
 
-## 5. Activos críticos de información en la UNCP
+## Arquitectura del SGSI
 
-### Digitales
+| Fase PHVA | Componente | Cláusula ISO | Documentos Asociados | Función |
+|:----------|:-----------|:-------------|:---------------------|:--------|
+| **PLAN** | Política de Seguridad | 5 (Liderazgo) | D-SGSI-03, ACT-SGSI-01 | Establece la dirección estratégica, los objetivos y el compromiso de la alta dirección con el SGSI |
+| **PLAN** | Contexto de la Organización | 4 (Contexto) | D-SGSI-01, D-SGSI-02, D-SGSI-06, D-SGSI-07 | Determina las cuestiones internas y externas, las partes interesadas y el alcance del SGSI |
+| **PLAN** | Liderazgo | 5 (Liderazgo) | ACT-SGSI-01, D-SGSI-03 | Define roles, responsabilidades y la autoridad para el SGSI |
+| **PLAN** | Planificación | 6 (Planificación) | D-SGSI-04, D-SGSI-05, R-SGSI-01, R-SGSI-02 | Evalúa riesgos, define objetivos de seguridad y establece el plan de tratamiento |
+| **DO** | Soporte | 7 (Soporte) | P-SGSI-00, P-SGSI-08 | Provee recursos, competencias, concientización, comunicación e información documentada |
+| **DO** | Operación | 8 (Operación) | P-SGSI-02 al 07, POL-SGSI-01 al 07, Controles A.5-A.8 | Implementa y ejecuta los controles de seguridad y los procesos operativos |
+| **CHECK** | Evaluación del Desempeño | 9 (Evaluación) | P-SGSI-09, R-SGSI-03, R-SGSI-04 | Monitorea, mide, analiza, audita y revisa el desempeño del SGSI |
+| **ACT** | Mejora | 10 (Mejora) | Acciones Correctivas | Gestiona no conformidades, implementa acciones correctivas y mejora continuamente |
 
-| Activo | Riesgo si se pierde/filtra |
-|---|---|
-| Base de datos académica (matrícula, notas, grados) | Pérdida de historial académico, procesos judiciales |
-| Sistema de tesorería / recaudación | Fraude financiero, pérdida económica |
-| Correo institucional | Suplantación, phishing, fuga de información |
-| Plataforma campus virtual | Interrupción de servicio educativo |
-| Repositorio de tesis e investigación | Pérdida de propiedad intelectual |
-| Sistema de planillas (RRHH) | Fuga de datos personales de trabajadores |
-| Servidor de archivos compartidos | Pérdida de documentos institucionales |
-
-### Físicos
-
-| Activo | Ubicación | Riesgo |
-|---|---|---|
-| Actas de notas originales | Archivo central / facultades | Pérdida, deterioro, incendio |
-| Expedientes de grados y títulos | Secretaría general | Pérdida, falsificación |
-| Contratos y convenios | Oficina de planeamiento / legal | Pérdida, disputas legales |
-| Resoluciones rectorales | Archivo central | Pérdida de legalidad de actos |
-| Declaraciones juradas | RRHH / OCI | Fuga de datos personales |
-| Tesis impresas | Biblioteca central / facultades | Deterioro, extravío |
-
-***
+**Ciclo de retroalimentación:** Los resultados de la fase CHECK alimentan la fase ACT, cuyas salidas retroalimentan la fase PLAN, cerrando el ciclo PHVA de mejora continua.
 
 \newpage
 
-## 6. Mapa de transición AS-IS → TO-BE (vista general)
+# Información Digital y Física
 
-| Dimensión | AS-IS (actual) | TO-BE (deseado) |
-|---|---|---|
-| **Políticas** | Dispersas, no formalizadas | Política SGSI aprobada por rectorado, comunicada a toda la UNCP |
-| **Organización** | Sin Oficial de Seguridad designado | Comité de Gobierno Digital activo + Oficial de Seguridad |
-| **Seguridad física** | Acceso sin control en sedes académicas y administrativas | Controles perimetrales, archivadores con llave, cámaras, bitácoras |
-| **Seguridad digital** | Sin segmentación de red, backups no validados | Red segmentada, backups periódicos probados, firewall |
-| **Documentos físicos** | Archivos sin clasificación de seguridad | Documentos clasificados (público, interno, confidencial, secreto) |
-| **Control de acceso** | Usuarios compartidos, contraseñas débiles | Acceso por roles, 2FA, política de contraseñas |
-| **Incidentes** | No se reportan formalmente | Procedimiento de gestión de incidentes, CSIRT universitario |
-| **Concientización** | Mínima o nula | Programa permanente de capacitación y simulacros |
-| **Cumplimiento legal** | Parcial (Ley 29733, D.L. 1412) | Cumplimiento auditado, reportes a CGR y PCM |
-| **Mejora continua** | No existe ciclo de mejora | Auditorías internas, revisión por dirección, acciones correctivas |
-| **Monitoreo de red** | Sin TAP, IDS/IPS ni SNMPv3 | TAP físico en Datacenter + SPAN en facultades + NetFlow/IPFIX en routers + SNMPv3 cifrado (AES) |
-| **Alta disponibilidad** | Servidores físicos sin clustering ni replicación | Nube Híbrida Activo-Activo (Proxmox/Ceph o vSAN) + GSLB + Contenedores Docker/Kubernetes |
-| **Segmentación de red** | Ausente en la mayoría de facultades | Microsegmentación ZTNA + VLANs por tipo de usuario + 802.1X |
-| **Conectividad entre sedes** | VPNs estáticas sin priorización | SD-WAN con túneles IPsec dinámicos entre 4 sedes |
-| **Conectividad cloud** | Ninguna | AWS Direct Connect / Azure ExpressRoute a PNGD-PCM |
-| **SIEM** | Inexistente | Wazuh / Microsoft Sentinel con IA para detección de DDoS y SQLi |
+## Tratamiento Diferenciado
 
-***
+El SGSI de la UNCP abarca la información en **todos sus formatos**, reconociendo que la seguridad debe ser integral e independiente del soporte:
 
-\newpage
+| Tipo de Información | Características | Ejemplos en UNCP | Controles Aplicables |
+|:--------------------|:----------------|:-----------------|:---------------------|
+| **Digital** | Almacenada en sistemas, bases de datos, archivos electrónicos. Respaldo, cifrado, control de acceso lógico. | ERP ADESA (23 módulos), Moodle 4.1, DSpace, Microsoft 365, SIGA, SIAF | A.8 (Activos), A.9 (Acceso), A.10 (Criptografía), A.12 (Operaciones), A.13 (Comunicaciones) |
+| **Física (papel)** | Documentos impresos, actas, expedientes. Almacenamiento en archivos físicos. | Actas de notas, resoluciones rectorales, contratos, expedientes de grados y títulos, tesis impresas | A.7 (RRHH — inducción), A.11 (Seguridad física), A.8.3 (Manejo de medios) |
+| **Transmitida** | Comunicaciones orales, videoconferencias, telefonía. | Clases virtuales (Teams), reuniones del CGD, llamadas telefónicas | A.7 (Concientización), A.13 (Seguridad en comunicaciones) |
 
-## 7. Normativa peruana relacionada
+## Controles para Información Física
 
-| Norma | Relación con SGSI |
-|---|---|
-| **Ley N° 29733** - Protección de Datos Personales | Exige medidas de seguridad para datos personales (estudiantes, docentes) |
-| **D.S. N° 016-2024-JUS** - Nuevo Reglamento de la Ley N° 29733 | Introduce DPIA, regulación de IA y transferencias internacionales de datos. Vigente desde marzo 2025 |
-| **D.L. N° 1412** - Ley de Gobierno Digital | Marco para gobierno digital en entidades públicas |
-| **D.S. N° 029-2021-PCM** - Reglamento de la Ley de Gobierno Digital | Procedimientos y condiciones para gobierno digital |
-| **D.S. N° 098-2025-PCM** - Modificatoria del D.S. N° 029-2021-PCM | Actualiza condiciones de identidad digital, servicios digitales, interoperabilidad y gestión documental electrónica |
-| **D.S. N° 033-2018-PCM** - Plataforma Digital Única | Digitalización de servicios públicos |
-| **D.S. N° 103-2023-PCM** - PNTD | Alinea al Sistema Nacional de Transformación Digital |
-| **Ley N° 31814 y D.S. N° 115-2025-PCM** - Ley de IA y su Reglamento | Exige auditoría de algoritmos, supervisión humana y registro de sistemas de riesgo alto en entidades públicas |
-| **R.M. N° 119-2018-PCM** - Comité de Gobierno Digital | Crea el Comité de Gobierno Digital en cada entidad |
-| **R.S. N° 005-2018-PCM/SGTD** - Lineamientos PGTD | Estructura y contenido mínimo del Plan de Gobierno y Transformación Digital |
-| **R.S. N° 001-2025-PCM/SGTD** - Lineamiento de accesibilidad digital | Diseño y desarrollo de servicios digitales accesibles para personas con discapacidad (WCAG 2.2) |
-| **Directiva N° 001-2025-PCM/SGTD** - Consumo seguro de servicios PIDE | Regula las medidas de seguridad digital para interoperabilidad y respuesta a incidentes |
-| **Resolución N° 322-2026-CG** - Plan de Gobierno y Transformación Digital CGR | Directrices para implementación en entidades sujetas a control |
-| **Directiva N° 006-2019-CG/INTEG** - SCI | Implementación del Sistema de Control Interno |
-| **ISO/IEC 27001:2022** | Estándar internacional para SGSI |
+La UNCP, por su naturaleza como institución educativa pública, gestiona un volumen significativo de información en soporte físico que debe ser protegida:
 
-***
+| Control ISO 27002 | Aplicación en UNCP | Estado Actual |
+|:------------------|:-------------------|:--------------|
+| **A.7.3** — Concientización, educación y capacitación | Personal de archivo y secretarías debe conocer procedimientos de manejo seguro de documentos físicos | No implementado |
+| **A.8.3** — Manejo de soportes de almacenamiento | Procedimientos para almacenamiento, transporte y eliminación de documentos físicos confidenciales | Parcial (no formalizado) |
+| **A.11.1.1** — Perímetro de seguridad física | Control de acceso a edificios, vigilancia, cámaras en archivos centrales y tesorería | Parcial |
+| **A.11.1.2** — Controles de acceso físico | Puertas con llave, tarjetas de proximidad o biométricos en áreas sensibles | Parcial |
+| **A.11.1.4** — Protección contra amenazas externas | Extintores, detección de incendios, control de humedad en archivos | No verificado |
+| **A.11.2.9** — Escritorio limpio y pantalla limpia | Documentos sensibles guardados bajo llave al retirarse; bloqueo automático de pantalla | No implementado |
+| **A.11.2.7** — Eliminación segura | Trituradoras certificadas para documentos confidenciales; destrucción certificada de activos | No implementado |
 
 \newpage
 
-## 8. SGSI y Plan de Gobierno y Transformación Digital (PGTD)
+# Estructura del SGSI
 
-El SGSI se articula directamente con el Plan de Gobierno y Transformación Digital (PGTD) de la UNCP en los siguientes aspectos:
+## Mapa de Documentos del SGSI
 
-| Componente PGTD | Relación con SGSI |
-|---|---|
-| **Objetivo OGD.01** - Servicios digitales | Requiere controles de seguridad (A.9, A.13, A.14) |
-| **Objetivo OGD.02** - Seguridad de la información | Núcleo del SGSI (todas las cláusulas 4-10) |
-| **Objetivo OGD.04** - Modernización TI | Implementa controles de infraestructura (A.11, A.12, A.13) |
-| **Proyecto PGTD-01** - Implementación SGSI | Proyecto principal de seguridad basado en ISO 27001 |
-| **Proyecto PGTD-06** - Gestión de incidentes | Control A.16 - Gestión de incidentes de seguridad |
-| **Desafío 5** - Seguridad de la información | Alineado con los 3 principios CID del SGSI |
+| Tipo | Prefijo | Cantidad | Función |
+|:-----|:--------|:---------|:--------|
+| Documento de Referencia | D-SGSI | 10 | Marco conceptual, contexto, alcance, política, metodología, SoA, mapa de procesos, guía de controles, estrategia de certificación |
+| Procedimiento | P-SGSI | 9 | Control documental, incidentes, accesos, cambios, continuidad, proveedores, eliminación segura, capacitación, auditoría |
+| Política | POL-SGSI | 7 | Desarrollo seguro, uso aceptable, clasificación, proveedores, móviles, contraseñas, seguridad física |
+| Registro | R-SGSI | 5 | Lista maestra, inventario de activos, matriz de riesgos, KPIs, programa de auditoría |
+| Formato | F-SGSI | 6 | Solicitud de acceso, asistencia, baja de usuario, RAC, eliminación segura, bitácora de acceso |
+| Acta | ACT-SGSI | 1 | Compromiso de la alta dirección |
 
-El PGTD de la UNCP incluye el proyecto PGTD-01 "Implementación del SGSI basado en ISO 27001" con un horizonte 2026-2030 y un presupuesto estimado de S/ 850,000.
+## Ciclo de Vida de la Información Documentada
 
-***
+| Etapa | Descripción | Responsable | Registro Asociado |
+|:------|:------------|:------------|:------------------|
+| **Creación** | Elaboración del documento según la plantilla establecida | Autor designado | R-SGSI-00 (Lista Maestra) |
+| **Revisión** | Verificación técnica y normativa del contenido | Oficial de Seguridad | — |
+| **Aprobación** | Validación formal por la autoridad competente | Comité de Gobierno Digital / Rector | ACT-SGSI-01 |
+| **Publicación** | Difusión en el repositorio documental del SGSI | OTI | R-SGSI-00 |
+| **Distribución** | Comunicación a las partes interesadas | Oficial de Seguridad | — |
+| **Acceso** | Consulta controlada según nivel de clasificación | Usuarios autorizados | F-SGSI-01 (Solicitud de acceso) |
+| **Revisión periódica** | Evaluación de vigencia y actualización | Oficial de Seguridad | P-SGSI-09 (Auditoría) |
+| **Actualización** | Modificación controlada del contenido | Autor designado | P-SGSI-04 (Gestión de cambios) |
+| **Eliminación** | Destrucción segura cuando pierde vigencia | Oficial de Seguridad | F-SGSI-05 (Acta de eliminación) |
+
+## Roles y Responsabilidades
+
+| Rol SGSI | Responsabilidad Principal | Designación en UNCP |
+|:---------|:-------------------------|:--------------------|
+| **Titular de la Entidad** | Responsabilidad última del SGSI. Preside el Comité de Gobierno Digital. Aprueba la política de seguridad. | Rector de la UNCP |
+| **Comité de Gobierno Digital** | Dirige, evalúa y supervisa la transformación digital y el SGSI. Aprueba el SoA, los resultados de auditorías y la revisión por la dirección. | Resolución N° 1862-R-2023 |
+| **Oficial de Seguridad y Confianza Digital** | Lidera el SGSI operativamente. Coordina la implementación de controles, gestiona incidentes y reporta al Comité. Es el punto de contacto ante la SGTD. | R. N° 2143-R-2023 |
+| **Responsable de OTI** | Implementa los controles técnicos. Administra la infraestructura de seguridad (firewalls, SIEM, backups). | OTI (2 profesionales) |
+| **Oficial de Gobierno de Datos** | Gestiona la calidad, integridad y uso de los datos institucionales. Define políticas de datos. | Por designar (Compromiso 20 CGR) |
+| **Oficial de Datos Personales** | Asegura el cumplimiento de la Ley N° 29733. Atiende solicitudes de ejercicio de derechos ARCO. | Por designar |
+| **Responsables de Proceso** | Aseguran que los controles de seguridad se apliquen en sus procesos. Reportan incidentes. | Decanos, Directores, Jefes de Oficina |
+| **Todos los Colaboradores** | Obligación de conocer y aplicar la política de seguridad. Reportar incidentes y vulnerabilidades. | ~1,700 docentes y administrativos |
 
 \newpage
 
-## 9. Próximos pasos
+# Activos de Información
 
-1. **AS-IS (actual):** Levantamiento completo de activos (digitales + físicos), procesos, riesgos actuales, brechas
-2. **TO-BE (deseado):** Arquitectura objetivo, controles a implementar, procesos rediseñados
-3. **Plan de implementación:** Cronograma, recursos, presupuesto, responsables
-4. **Certificación:** Auditoría interna → certificación ISO 27001
+## Clasificación de la Información
 
-***
+La UNCP clasifica su información según su nivel de sensibilidad y criticidad, en línea con el control A.5.12 de ISO 27002:
 
-*Documento: SGCI-UNCP-MC-001*
-*Versión: 1.1*
-*Estado: Borrador conceptual (mejorado)*
-*Documentos relacionados: PGTD-UNCP 2026-2030, R.S. N° 005-2018-PCM/SGTD*
+| Nivel de Clasificación | Descripción | Ejemplos en UNCP | Medidas de Protección |
+|:-----------------------|:------------|:-----------------|:---------------------|
+| **Público** | Información destinada al conocimiento general, sin restricción de acceso | Oferta académica, noticias institucionales, resoluciones publicadas en transparencia | Controles básicos de integridad y disponibilidad |
+| **Interno** | Información de uso interno que no debe ser divulgada externamente | Directivas, comunicaciones internas, manuales de procedimientos | Control de acceso por roles, marcado de documentos |
+| **Confidencial** | Información sensible cuya divulgación no autorizada causaría daño a la UNCP o a terceros | Datos personales de estudiantes y trabajadores (Ley N° 29733), calificaciones, expedientes de grado | Cifrado, control de acceso estricto, registro de accesos, MFA |
+| **Secreto / Restringido** | Información altamente sensible cuya divulgación causaría daño severo | Estrategias de certificación, claves criptográficas, resultados de auditorías internas, credenciales de administración | Cifrado en reposo y tránsito, acceso con doble factor, registro detallado de accesos, segregación de funciones |
+
+## Ciclo de Vida del Activo de Información
+
+| Etapa | Descripción | Controles Clave |
+|:------|:------------|:----------------|
+| **Identificación** | Registro del activo en el inventario con su clasificación, propietario y criticidad | R-SGSI-01 (Inventario de Activos), A.5.9 |
+| **Almacenamiento** | Protección según clasificación: cifrado, control de acceso, respaldo | A.8.24 (Cifrado), A.8.13 (Backups), A.9.4 (Restricción de acceso) |
+| **Uso** | Acceso y procesamiento por personal autorizado según sus funciones | A.9.2 (Gestión de acceso), A.9.3 (Responsabilidades de acceso) |
+| **Transporte** | Traslado físico o transmisión electrónica entre sedes o hacia la nube | A.8.3 (Manejo de medios), A.13.2 (Transferencia de información) |
+| **Eliminación** | Destrucción segura cuando el activo pierde vigencia o utilidad | P-SGSI-07 (Eliminación Segura), F-SGSI-05 |
+
+\newpage
+
+# Modelo de Transición AS-IS a TO-BE
+
+## Diagnóstico de Madurez por Dimensión
+
+| Dimensión | AS-IS (2026) | TO-BE (2028) | Brecha |
+|:----------|:-------------|:-------------|:-------|
+| **Políticas de seguridad** | Dispersas, no formalizadas, sin política general aprobada | Política SGSI aprobada por rectorado, comunicada y entendida por toda la UNCP | Crítica |
+| **Gobernanza** | CGD formalizado pero sin reuniones periódicas. Oficial de Seguridad designado. | CGD activo con reuniones trimestrales. Oficial de Seguridad con equipo dedicado. | Media |
+| **Gestión de riesgos** | No existe metodología formal de gestión de riesgos de seguridad | Metodología implementada (D-SGSI-04), matriz de riesgos actualizada semestralmente | Crítica |
+| **Control de acceso** | Usuarios compartidos, contraseñas débiles, sin MFA generalizado | Acceso por roles (RBAC), MFA obligatorio para todos los sistemas críticos, política de contraseñas (POL-SGSI-06) | Crítica |
+| **Seguridad de red** | Sin segmentación en facultades, firewall perimetral obsoleto sin licencias | Microsegmentación ZTNA, firewalls renovados con licencias vigentes, SD-WAN entre 4 sedes | Crítica |
+| **Monitoreo** | Sin SIEM, detección manual de incidentes | SIEM (Wazuh / Microsoft Sentinel), SOC básico, detección automatizada de amenazas | Crítica |
+| **Backups** | Backups sin validación periódica, sin respaldo off-site | Backups inmutables en Huawei Cloud, probados mensualmente, DRP documentado | Alta |
+| **Concientización** | Programa mínimo o inexistente | Programa permanente de capacitación, phishing simulado trimestral, inducción obligatoria | Crítica |
+| **Cumplimiento normativo** | Parcial (Ley N° 29733, D.L. N° 1412) | Cumplimiento auditado, reportes a CGR y PCM, alineación con Marco de Confianza Digital | Alta |
+| **Mejora continua** | No existe ciclo de mejora formal | Auditorías internas trimestrales, revisión por dirección anual, acciones correctivas documentadas | Crítica |
+
+## Hoja de Ruta de Implementación
+
+| Horizonte | Logros Clave | Nivel de Madurez Esperado |
+|:----------|:-------------|:--------------------------|
+| **Corto plazo** (2026) | Política de seguridad aprobada, inventario de activos completo, MFA implementado, primera campaña de concientización, renovación de firewalls | 1.800 |
+| **Mediano plazo** (2027) | SIEM operativo, segmentación ZTNA en sedes principales, integración PIDE, 50% de procesos en SGSI, capacitación al 100% del personal | 2.500 |
+| **Largo plazo** (2028) | Auditoría de certificación ISO 27001:2022, 90% de procesos en SGSI, SOC consolidado, gobierno de datos implementado | 3.500 |
+
+\newpage
+
+# Integración con el PGTD
+
+## Articulación SGSI-PGTD
+
+El SGSI no es un sistema aislado; se articula con los instrumentos de gestión de la UNCP:
+
+| Instrumento de Gestión | Relación con el SGSI |
+|:-----------------------|:---------------------|
+| **PEI 2024-2030** | El SGSI contribuye al logro de los objetivos estratégicos institucionales relacionados con calidad, modernización y transformación digital |
+| **PGTD 2026-2030** | El SGSI es el proyecto PGTD-01, alineado con los 6 OGTD y los desafíos de seguridad |
+| **Mapa de Procesos (Nivel 0 y 01)** | Define los procesos que serán incorporados al SGSI (meta: 90% al 2028) |
+| **Plan de Continuidad Operativa 2024** | Se actualizará para alinearse con el control A.17 (Continuidad) del SGSI |
+| **SCI (Control Interno)** | El SGSI refuerza el componente de control de información del SCI, en línea con la Directiva N° 006-2019-CG/INTEG |
+| **Plan Anual de Contrataciones (PAC)** | Los proyectos de seguridad (renovación de firewalls, SIEM, ZTNA) se programan en el PAC |
+
+## Proyectos Relacionados
+
+| Proyecto PGTD | Descripción | Presupuesto | Relación con SGSI |
+|:--------------|:------------|:-----------|:------------------|
+| **PGTD-01** | Implementación del SGSI basado en ISO 27001 | S/ 850,000 | Proyecto principal — núcleo del SGSI |
+| **PGTD-02** | Portal único e identidad digital (SSO) | S/ 650,000 | Control A.9 (Acceso), A.13 (Comunicaciones) |
+| **PGTD-04** | Modernización de infraestructura TI | Por definir | Controles A.11 (Física), A.12 (Operaciones), A.13 (Red) |
+| **PGTD-06** | Gestión de incidentes de seguridad informática | Por definir | Control A.16 (Gestión de incidentes) |
+
+\newpage
+
+# Referencias Normativas
+
+| Norma / Documento | Descripción | Relación con el SGSI |
+|:------------------|:------------|:---------------------|
+| ISO/IEC 27000:2018 | Vocabulario y fundamentos de SGSI | Terminología base del sistema |
+| ISO/IEC 27001:2022 | Requisitos para un SGSI | Norma de referencia — estructura del SGSI |
+| ISO/IEC 27002:2022 | Guía de controles de seguridad | Base para los controles del Anexo A |
+| ISO/IEC 27005:2018 | Gestión de riesgos de seguridad | Metodología de evaluación de riesgos (D-SGSI-04) |
+| Ley N° 29733 | Ley de Protección de Datos Personales | Cumplimiento legal (A.18) |
+| D.S. N° 016-2024-JUS | Nuevo Reglamento de la Ley N° 29733 | DPIA, IA, transferencias internacionales |
+| D.L. N° 1412 | Ley de Gobierno Digital | Marco normativo de gobierno digital |
+| D.S. N° 029-2021-PCM | Reglamento de la Ley de Gobierno Digital | Condiciones para gobierno digital |
+| D.S. N° 098-2025-PCM | Modificación del D.S. N° 029-2021-PCM | Identidad digital, interoperabilidad |
+| D.S. N° 126-2025-PCM | Marco de Confianza Digital | Confianza digital como pilar del SGSI |
+| D.S. N° 115-2025-PCM | Reglamento de la Ley N° 31814 (IA) | Auditoría de algoritmos, supervisión humana |
+| D.S. N° 103-2023-PCM | Política Nacional de Transformación Digital al 2030 | Alineación con política nacional |
+| R.S. N° 005-2018-PCM/SGTD | Lineamientos para formulación del PGTD | Estructura y contenido mínimo del PGTD |
+| R.S N° 001-2025-PCM/SGTD | Lineamiento de accesibilidad digital (WCAG 2.2) | Accesibilidad de servicios digitales |
+| Directiva N° 001-2025-PCM/SGTD | Consumo seguro de servicios PIDE | Medidas de seguridad para interoperabilidad |
+| Resolución N° 322-2026-CG | Plan de Gobierno y Transformación Digital CGR | Directrices para entidades sujetas a control |
+| Directiva N° 006-2019-CG/INTEG | Sistema de Control Interno | Integración SCI-SGSI |

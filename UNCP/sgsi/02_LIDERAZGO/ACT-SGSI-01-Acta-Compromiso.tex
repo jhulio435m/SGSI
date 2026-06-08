@@ -1,0 +1,209 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{csquotes}
+\usepackage{mathpazo}
+\usepackage[scaled=0.9]{helvet}
+\usepackage{courier}
+\usepackage{calc}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{xurl}
+\usepackage[strings]{underscore}
+\usepackage{fancyhdr}
+\usepackage{sectsty}
+\usepackage{tocloft}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue,breaklinks=true]{hyperref}
+\usepackage{enumitem}
+
+\definecolor{uncpblue}{HTML}{1A237E}
+\allsectionsfont{\color{uncpblue}}
+
+\renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
+\cftpagenumbersoff{section}
+\cftpagenumbersoff{subsection}
+\cftpagenumbersoff{subsubsection}
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsubsecfont}{\normalfont}
+\renewcommand{\cftsubsubsecfont}{\normalfont}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.85}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textcolor{uncpblue}{\textbf{SGSI-UNCP}}}
+\fancyhead[R]{\small\textcolor{uncpblue}{ACT-SGSI-01}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\setlength{\headheight}{14pt}
+
+\setlist{nosep,leftmargin=*,after=\vspace{2pt}}
+\setlength{\emergencystretch}{2em}
+
+\newcommand{\makecover}{
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+{\Huge\bfseries\color{uncpblue} SGSI-UNCP\par}
+\vspace{0.7cm}
+{\LARGE Acta de Compromiso de la Alta Dirección con el SGSI\par}
+\vspace{0.5cm}
+{\large Documento Base del Sistema de Gestión\\de Seguridad de la Información\par}
+\vspace{1.5cm}
+{\small Universidad Nacional del Centro del Perú\par}
+\vfill
+\end{titlepage}
+}
+
+\begin{document}
+
+\makecover
+\setcounter{tocdepth}{2}
+\RaggedRight
+\tableofcontents
+\newpage
+
+\RaggedRight
+\section{Acta de Compromiso de la Alta Dirección con el
+SGSI}\label{acta-de-compromiso-de-la-alta-direcciuxf3n-con-el-sgsi}
+
+\textbf{Organización:} Universidad Nacional del Centro del Perú (UNCP)
+\textbf{Aprobado por:} Rector / Presidente del Comité de Gobierno
+Digital \textbf{Norma:} ISO/IEC 27001:2022 (Cláusula 5.1)
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Declaración de
+Intención}\label{declaraciuxf3n-de-intenciuxf3n}
+
+La Alta Dirección de la Universidad Nacional del Centro del Perú (UNCP),
+en su calidad de máxima autoridad y en el marco de sus competencias
+establecidas en la Ley Universitaria N.° 30220 y el Estatuto
+Institucional, reconoce que la información académica, administrativa e
+investigativa constituye un activo estratégico fundamental para el
+cumplimiento de la misión universitaria.
+
+En concordancia con el Plan de Gobierno y Transformación Digital (PGTD
+2026-2030) y las disposiciones del Decreto Legislativo N.° 1412 (Ley de
+Gobierno Digital), manifestamos nuestro compromiso incondicional con el
+establecimiento, implementación, mantenimiento y mejora continua del
+Sistema de Gestión de Seguridad de la Información (SGSI) basado en la
+norma internacional ISO/IEC 27001:2022.
+
+\subsection{Compromisos Específicos}\label{compromisos-especuxedficos}
+
+Para asegurar la eficacia del SGSI y en cumplimiento de la Cláusula 5.1
+de la ISO/IEC 27001:2022, la Alta Dirección asume los siguientes
+compromisos:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Liderazgo y Ejemplo:} Actuar como promotores visibles de la
+  cultura de seguridad de la información en toda la comunidad
+  universitaria, participando activamente en las actividades de
+  sensibilización y difusión del SGSI.
+\item
+  \textbf{Asignación de Recursos:} Dotar al SGSI del presupuesto,
+  personal calificado, infraestructura tecnológica y tiempo necesario
+  para su implantación y operación continua, conforme al proyecto
+  PGTD-01 (S/ 850,000).
+\item
+  \textbf{Alineamiento Estratégico:} Asegurar que los objetivos de
+  seguridad de la información estén integrados en los procesos de
+  planeamiento institucional y alineados con los Objetivos Estratégicos
+  Institucionales (OEI) del PEI 2026-2030 y los Objetivos de Gobierno y
+  Transformación Digital (OGTD) del PGTD.
+\item
+  \textbf{Revisión por la Dirección:} Realizar revisiones periódicas del
+  SGSI al menos una vez al año o cuando ocurran cambios significativos,
+  evaluando su conveniencia, adecuación, eficacia y eficiencia, de
+  acuerdo con la Cláusula 9.3 de la ISO/IEC 27001:2022.
+\item
+  \textbf{Comunicación Interna y Externa:} Promover la importancia de
+  una gestión de seguridad eficaz mediante canales formales de
+  comunicación, asegurando que todas las partes interesadas comprendan
+  los requisitos del SGSI y su rol en el cumplimiento de los mismos.
+\item
+  \textbf{Mejora Continua:} Impulsar la adopción del ciclo PHVA
+  (Planificar-Hacer-Verificar-Actuar) como metodología para la mejora
+  continua del SGSI, fomentando la identificación y corrección proactiva
+  de desviaciones.
+\item
+  \textbf{Cumplimiento Normativo:} Garantizar el cumplimiento de la Ley
+  N.° 29733 (Ley de Protección de Datos Personales), el D.S. N.°
+  029-2021-PCM (Reglamento de la Ley de Gobierno Digital), el Marco de
+  Confianza Digital y demás normativa aplicable en materia de seguridad
+  digital y protección de datos.
+\end{enumerate}
+
+\subsection{Designación de Autoridad}\label{designaciuxf3n-de-autoridad}
+
+En cumplimiento del Artículo 5 del D.S. N.° 029-2021-PCM, se designa y
+ratifica al:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Director(a) General de Administración} como Líder de Gobierno
+  y Transformación Digital, responsable de la supervisión estratégica
+  del SGSI y de la ejecución de los proyectos del PGTD.
+\item
+  \textbf{Oficial de Seguridad y Confianza Digital} como responsable
+  operativo del SGSI, con plena autoridad técnica para la implementación
+  de controles, gestión de incidentes y administración de riesgos de
+  seguridad de la información.
+\end{itemize}
+
+Ambos cargos reportarán directamente al Comité de Gobierno Digital y al
+Rectorado sobre el estado y desempeño del SGSI.
+
+\subsection{Incumplimiento}\label{incumplimiento}
+
+El incumplimiento de los compromisos establecidos en la presente acta o
+de las políticas y controles derivados del SGSI será puesto en
+conocimiento del Comité de Gobierno Digital para la adopción de medidas
+correctivas, sin perjuicio de las responsabilidades administrativas,
+civiles o penales que pudieran corresponder conforme a la normativa
+universitaria y la legislación nacional aplicable.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Firmas de la Alta Dirección:}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Rector de la UNCP} Presidente del Comité de Gobierno Digital
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Vicerrector Académico}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Vicerrector de Investigación}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Director(a) General de Administración} Líder de Gobierno y
+Transformación Digital
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Oficial de Seguridad y Confianza Digital}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\emph{Documento aprobado en Sesión del Comité de Gobierno Digital, en
+conformidad con el D.S. N.° 029-2021-PCM y la R.S. N.°
+005-2018-PCM-SEGDI.}
+
+\end{document}

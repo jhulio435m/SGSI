@@ -1,4 +1,9 @@
-# P-SGSI-08: Plan Anual de Capacitación y Concientización en Seguridad de la Información
+---
+title: Plan Anual de Capacitación y Concientización en Seguridad de la Información
+code: P-SGSI-08
+---
+
+# Plan Anual de Capacitación y Concientización en Seguridad de la Información
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
 **Año:** 2026
@@ -8,7 +13,7 @@
 
 ***
 
-## 1. Objetivos
+## Objetivos
 
 ### 1.1 Generales
 - Elevar el nivel de cultura de seguridad de la información en toda la comunidad universitaria (personal administrativo, docente, autoridades y estudiantes).
@@ -25,7 +30,7 @@
 
 ---
 
-## 2. Programa de Capacitación Técnica
+## Programa de Capacitación Técnica
 *Dirigido al personal de la OTI, administradores de sistemas y responsables de seguridad.*
 
 | Tema | Modalidad | Duración (horas) | Mes | Proveedor Sugerido | Costo Estimado (S/) |
@@ -44,7 +49,7 @@
 
 ---
 
-## 3. Programa de Concientización General
+## Programa de Concientización General
 *Dirigido a todo el personal administrativo, docentes y autoridades.*
 
 ### 3.1 Actividades Permanentes
@@ -80,7 +85,7 @@
 
 ---
 
-## 4. Estrategia para Estudiantes (Alcance Informativo)
+## Estrategia para Estudiantes (Alcance Informativo)
 
 Dado que la UNCP no ejerce control técnico sobre los dispositivos personales de los estudiantes, la estrategia se centra en la **concientización voluntaria**:
 
@@ -96,7 +101,7 @@ Los contenidos para estudiantes se enfocan en: protección de credenciales, iden
 
 ---
 
-## 5. Evaluación del Plan
+## Evaluación del Plan
 
 ### 5.1 Indicadores de Gestión
 
@@ -115,7 +120,7 @@ Los contenidos para estudiantes se enfocan en: protección de credenciales, iden
 
 ---
 
-## 6. Presupuesto
+## Presupuesto
 
 | Concepto | Monto (S/) |
 |---|---|
@@ -127,7 +132,7 @@ Los contenidos para estudiantes se enfocan en: protección de credenciales, iden
 
 ---
 
-## 7. Responsabilidades
+## Responsabilidades
 
 | Rol | Responsabilidad |
 |---|---|
@@ -139,7 +144,7 @@ Los contenidos para estudiantes se enfocan en: protección de credenciales, iden
 
 ---
 
-## 8. Documentos Relacionados
+## Documentos Relacionados
 
 | Código | Nombre |
 |---|---|

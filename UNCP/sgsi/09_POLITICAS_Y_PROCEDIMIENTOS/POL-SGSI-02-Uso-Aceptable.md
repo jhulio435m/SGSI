@@ -1,21 +1,26 @@
-# POL-SGSI-02: Política de Uso Aceptable, Escritorio Limpio, Teletrabajo y Comunicaciones
+---
+title: Política de Uso Aceptable, Escritorio Limpio, Teletrabajo y Comunicaciones
+code: POL-SGSI-02
+---
+
+# Política de Uso Aceptable, Escritorio Limpio, Teletrabajo y Comunicaciones
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 2.0
-**Norma:** ISO/IEC 27001:2022 (Controles A.5.10 — Uso aceptable, A.6.7 — Teletrabajo, A.7.7 — Escritorio y pantalla limpios, A.8.10 — Eliminación de información, A.8.23 — Filtrado web)
+**Aprobado por:** Comité de Gobierno y Transformación Digital
+**Norma:** ISO/IEC 27001:2022 (Controles A.5.10, A.6.7, A.7.7, A.8.10, A.8.23)
 **Alineamiento:** POL-SGSI-05 (Dispositivos Móviles), POL-SGSI-06 (Contraseñas), P-SGSI-02 (Gestión de Incidentes)
 
 ***
 
-## 1. Objetivo
+## Objetivo
 Establecer las normas de conducta que todo usuario de los recursos informáticos de la UNCP debe observar, garantizando un uso adecuado, ético y seguro de los activos de información institucionales.
 
-## 2. Alcance
+## Alcance
 Esta política aplica a todo el personal administrativo, docente, autoridades, contratistas y cualquier tercero que utilice los recursos informáticos o acceda a la información de la UNCP. Los estudiantes están sujetos a las disposiciones de uso aceptable del reglamento académico y a las campañas de concientización definidas en el P-SGSI-08.
 
 ---
 
-## 3. Política de Uso Aceptable (Control A.5.10)
+## Política de Uso Aceptable (Control A.5.10)
 
 ### 3.1 Uso de Recursos Institucionales
 - Los recursos informáticos de la UNCP (correo, internet, sistemas, equipos) son proporcionados para fines institucionales. Se permite un uso personal incidental siempre que no interfiera con las funciones laborales, no consuma recursos excesivos y no infrinja esta política.
@@ -59,7 +64,7 @@ Esta política aplica a todo el personal administrativo, docente, autoridades, c
 
 ---
 
-## 4. Política de Escritorio y Pantalla Limpia (Control A.7.7)
+## Política de Escritorio y Pantalla Limpia (Control A.7.7)
 
 - Al ausentarse del puesto de trabajo, todo documento clasificado como **Confidencial** o **Uso Interno** debe guardarse bajo llave en un archivador o cajón cerrado.
 - No se debe dejar información sensible visible sobre el escritorio (notas, actas, planillas, contraseñas escritas en papel).
@@ -69,7 +74,7 @@ Esta política aplica a todo el personal administrativo, docente, autoridades, c
 
 ---
 
-## 5. Política de Teletrabajo y Trabajo Remoto (Control A.6.7)
+## Política de Teletrabajo y Trabajo Remoto (Control A.6.7)
 
 ### 5.1 Condiciones Generales
 - El teletrabajo solo está permitido para el personal que cuente con autorización expresa de su jefe inmediato y de la OTI.
@@ -88,7 +93,7 @@ Esta política aplica a todo el personal administrativo, docente, autoridades, c
 
 ---
 
-## 6. Almacenamiento y Transferencia de Información
+## Almacenamiento y Transferencia de Información
 
 - Los datos institucionales deben almacenarse exclusivamente en:
   - Servidores institucionales (locales o cloud autorizado como Huawei Cloud).
@@ -101,7 +106,7 @@ Esta política aplica a todo el personal administrativo, docente, autoridades, c
 
 ---
 
-## 7. Monitoreo y Privacidad
+## Monitoreo y Privacidad
 
 - El usuario no debe tener expectativa de privacidad absoluta al utilizar los recursos informáticos de la UNCP. Los sistemas pueden ser monitoreados para garantizar la seguridad, el cumplimiento de políticas y la continuidad operativa.
 - El monitoreo incluye, sin limitarse a: logs de navegación web, registro de acceso a sistemas, correo electrónico (metadatos y contenido en investigaciones autorizadas), uso de aplicaciones.
@@ -109,7 +114,7 @@ Esta política aplica a todo el personal administrativo, docente, autoridades, c
 
 ---
 
-## 8. Reporte de Incidentes
+## Reporte de Incidentes
 
 Todo usuario tiene la obligación de reportar cualquier incidente de seguridad, actividad sospechosa o incumplimiento de esta política a través de:
 - Correo: `incidentes-seguridad@uncp.edu.pe`
@@ -118,7 +123,7 @@ Todo usuario tiene la obligación de reportar cualquier incidente de seguridad, 
 
 ---
 
-## 9. Incumplimiento
+## Incumplimiento
 
 El incumplimiento de esta política puede resultar en:
 - Amonestación verbal o escrita.
@@ -128,7 +133,7 @@ El incumplimiento de esta política puede resultar en:
 
 ---
 
-## 10. Documentos Relacionados
+## Documentos Relacionados
 
 | Código | Nombre |
 |---|---|
@@ -139,5 +144,4 @@ El incumplimiento de esta política puede resultar en:
 | P-SGSI-08 | Plan Anual de Capacitación y Concientización |
 
 ***
-
-**Versión 2.0 — Incluye secciones de correo electrónico, navegación web, licencias de software, redes sociales, almacenamiento de datos, monitoreo y privacidad.**
+---**

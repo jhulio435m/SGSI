@@ -1,13 +1,18 @@
-# P-SGSI-09: Metodología de Auditoría Basada en Riesgos y Procesos
+---
+title: Metodología de Auditoría Basada en Riesgos y Procesos
+code: P-SGSI-09
+---
+
+# Metodología de Auditoría Basada en Riesgos y Procesos
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Versión:** 2.0 (Integración ISO 31000 / MAGERIT / NIST CSF)
-**Norma:** ISO/IEC 27001:2022 (Cláusula 9.2 — Auditoría Interna)
+**Aprobado por:** Oficial de Seguridad y Confianza Digital
+**Norma:** ISO/IEC 27001:2022 (Cláusula 9.2 -- Auditoría Interna)
 **Alineamiento:** R-SGSI-04 (Programa Maestro de Auditoría), R-SGSI-03 (Cuadro de Mando KPIs), D-SGSI-04 (Metodología de Riesgos)
 
 ***
 
-## 1. Enfoque Estratégico
+## Enfoque Estratégico
 La UNCP abandona el modelo de auditoría estática anual por un enfoque de **Auditoría Continua y Basada en Riesgos**. El objetivo no es solo verificar el cumplimiento con ISO 27001, sino evaluar la resiliencia operativa (NIST CSF) y el valor de los activos (MAGERIT), integrando los hallazgos en el ciclo de mejora continua del SGSI.
 
 ### 1.1 Principios Rectores
@@ -18,7 +23,7 @@ La UNCP abandona el modelo de auditoría estática anual por un enfoque de **Aud
 
 ---
 
-## 2. Criterios de Evaluación y Priorización (Basado en Riesgo)
+## Criterios de Evaluación y Priorización (Basado en Riesgo)
 
 Siguiendo la **ISO 31000**, la frecuencia y profundidad de la auditoría se determinan mediante el Nivel de Riesgo (NR) del proceso o activo, calculado según la metodología D-SGSI-04.
 
@@ -37,7 +42,7 @@ La frecuencia base puede ajustarse según:
 
 ---
 
-## 3. Técnicas de Auditoría y Métodos de Muestreo
+## Técnicas de Auditoría y Métodos de Muestreo
 
 ### 3.1 Técnicas de Recolección de Evidencia
 
@@ -66,7 +71,7 @@ Cuando no sea posible auditar el 100% de los elementos, se aplicarán los siguie
 
 ---
 
-## 4. Estructura del Equipo Auditor (Competencias)
+## Estructura del Equipo Auditor (Competencias)
 
 | Rol | Certificación Recomendada | Responsabilidad |
 |---|---|---|
@@ -78,7 +83,7 @@ Cuando no sea posible auditar el 100% de los elementos, se aplicarán los siguie
 
 ---
 
-## 5. Flujo del Proceso de Auditoría
+## Flujo del Proceso de Auditoría
 
 ### 5.1 Planificación
 1. El Oficial de Seguridad elabora el **Programa Maestro de Auditoría (R-SGSI-04)** con la frecuencia y alcance según la matriz de riesgos.
@@ -104,7 +109,7 @@ Cuando no sea posible auditar el 100% de los elementos, se aplicarán los siguie
 
 ---
 
-## 6. Clasificación de Hallazgos
+## Clasificación de Hallazgos
 
 | Tipo | Definición | Acción Requerida |
 |---|---|---|
@@ -116,7 +121,7 @@ Cuando no sea posible auditar el 100% de los elementos, se aplicarán los siguie
 
 ---
 
-## 7. Integración con KRIs y Auditorías No Programadas
+## Integración con KRIs y Auditorías No Programadas
 
 Cuando los **KRIs (Key Risk Indicators)** definidos en el R-SGSI-03 superen los umbrales críticos, se podrá activar una **auditoría no programada**:
 
@@ -129,7 +134,7 @@ Cuando los **KRIs (Key Risk Indicators)** definidos en el R-SGSI-03 superen los 
 
 ---
 
-## 8. Registros de Auditoría
+## Registros de Auditoría
 
 | Documento | Código | Tiempo de Retención |
 |---|---|---|
@@ -142,7 +147,7 @@ Cuando los **KRIs (Key Risk Indicators)** definidos en el R-SGSI-03 superen los 
 
 ---
 
-## 9. Documentos Relacionados
+## Documentos Relacionados
 
 | Código | Nombre |
 |---|---|
@@ -157,4 +162,3 @@ Cuando los **KRIs (Key Risk Indicators)** definidos en el R-SGSI-03 superen los 
 
 ***
 
-**Versión 2.0 — Incluye técnicas de auditoría, métodos de muestreo, clasificación detallada de hallazgos, criterios de ajuste de frecuencia e integración con KRIs para auditorías no programadas.**

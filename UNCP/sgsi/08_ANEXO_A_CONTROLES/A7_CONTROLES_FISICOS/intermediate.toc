@@ -1,0 +1,25 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Política de Seguridad Física y Áreas Seguras}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Objetivo}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Alcance}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Clasificación de Áreas}{2}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Perímetros de Seguridad Física}{2}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}4.1 Datacenter y Salas de Servidores (Área Crítica)}{2}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}4.2 Perímetro del Campus}{3}{subsubsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.5}Control de Acceso a Áreas Críticas}{3}{subsection.1.5}%
+\contentsline {subsubsection}{\numberline {1.5.1}5.1 Personal Autorizado}{3}{subsubsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.2}5.2 Visitantes y Contratistas}{3}{subsubsection.1.5.2}%
+\contentsline {subsubsection}{\numberline {1.5.3}5.3 Acceso Fuera del Horario Laboral}{3}{subsubsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.6}Protección contra Amenazas Ambientales}{3}{subsection.1.6}%
+\contentsline {subsubsection}{\numberline {1.6.1}6.1 Incendios}{3}{subsubsection.1.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.2}6.2 Clima y Humedad}{3}{subsubsection.1.6.2}%
+\contentsline {subsubsection}{\numberline {1.6.3}6.3 Energía Eléctrica}{4}{subsubsection.1.6.3}%
+\contentsline {subsection}{\numberline {1.7}Seguridad de las Áreas de Trabajo (Escritorio y Pantalla Limpia)}{4}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Seguridad de Activos Fuera de las Instalaciones}{4}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Mantenimiento de Equipos}{4}{subsection.1.9}%
+\contentsline {subsection}{\numberline {1.10}Cableado de Seguridad}{4}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.11}Eliminación Segura de Activos Físicos}{4}{subsection.1.11}%
+\contentsline {subsection}{\numberline {1.12}Responsabilidades}{5}{subsection.1.12}%
+\contentsline {subsection}{\numberline {1.13}Monitoreo y Métricas}{5}{subsection.1.13}%
+\contentsline {subsection}{\numberline {1.14}Documentos Relacionados}{5}{subsection.1.14}%
+\contentsline {subsection}{\numberline {1.15}***}{5}{subsection.1.15}%
