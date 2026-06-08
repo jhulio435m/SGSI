@@ -29,18 +29,18 @@ code: F-SGSI-02
 
 ## Lista de Participantes
 
-| Nro | Nombre y Apellido | DNI | Unidad Orgánica | Cargo | Correo | Hora Ingreso | Hora Salida | Firma |
-|:---|:---|:---|:---|:---|:---|:---:|:---:|:---|
-| 1 | María Elena Rojas Quispe | 20123456 | Facultad de Ingeniería Civil | Secretaría | mrojas@uncp.edu.pe | 08:10 | 12:15 | |
-| 2 | Pedro Antonio Gutiérrez Loayza | 20345678 | Facultad de Ciencias Forestales | Asistente Administrativo | pgutierrez@uncp.edu.pe | 08:05 | 12:20 | |
-| 3 | Luz Milagros Huamán Torres | 20456789 | Facultad de Educación | Secretaría | lhuaman@uncp.edu.pe | 08:15 | 12:10 | |
-| 4 | Carlos Alberto Paredes Lazo | 20567890 | Facultad de Ingeniería de Minas | Jefe de Administración | cparedes@uncp.edu.pe | 08:00 | 12:30 | |
-| 5 | Rosa Angélica Salazar Córdova | 20678901 | Facultad de Ciencias de la Salud | Asistente | rsalazar@uncp.edu.pe | 08:00 | 12:00 | |
-| 6 | José Luis Ramos Chávez | 20789012 | Facultad de Ingeniería Química | Administrador | jramos@uncp.edu.pe | 08:10 | 12:25 | |
-| 7 | Carmen Rosa Huaraca Aparco | 20890123 | Facultad de Contabilidad | Secretaría | chuaraca@uncp.edu.pe | 08:05 | 12:15 | |
-| 8 | Daniel Enrique Vega Centeno | 20901234 | Facultad de Arquitectura | Asistente | dvega@uncp.edu.pe | 08:20 | 12:10 | |
-| 9 | Patricia Isabel Campos Flores | 21012345 | Facultad de Sociología | Secretaría | pcampos@uncp.edu.pe | 08:00 | 12:00 | |
-| 10 | Fernando Antonio Linares Torres | 21123456 | Facultad de Ingeniería Mecánica | Técnico Administrativo | flinares@uncp.edu.pe | 08:05 | 12:20 | |
+| Nro | Nombre y Apellido | DNI | Unidad Orgánica | Cargo | Hora Ingreso | Hora Salida | Firma |
+|:---|:---|:---|:---|:---|:---:|:---:|:---|
+| 1 | María E. Rojas | 20123456 | Ing. Civil | Secretaría | 08:10 | 12:15 | |
+| 2 | Pedro A. Gutiérrez | 20345678 | Cienc. Forestales | Asistente | 08:05 | 12:20 | |
+| 3 | Luz M. Huamán | 20456789 | Educación | Secretaría | 08:15 | 12:10 | |
+| 4 | Carlos A. Paredes | 20567890 | Ing. Minas | Jefe Admin. | 08:00 | 12:30 | |
+| 5 | Rosa A. Salazar | 20678901 | Cienc. Salud | Asistente | 08:00 | 12:00 | |
+| 6 | José L. Ramos | 20789012 | Ing. Química | Administrador | 08:10 | 12:25 | |
+| 7 | Carmen R. Huaraca | 20890123 | Contabilidad | Secretaría | 08:05 | 12:15 | |
+| 8 | Daniel E. Vega | 20901234 | Arquitectura | Asistente | 08:20 | 12:10 | |
+| 9 | Patricia I. Campos | 21012345 | Sociología | Secretaría | 08:00 | 12:00 | |
+| 10 | Fernando A. Linares | 21123456 | Ing. Mecánica | Técnico Admin. | 08:05 | 12:20 | |
 
 *Agregar filas adicionales según sea necesario.*
 

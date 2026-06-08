@@ -1,95 +1,108 @@
-# F-SGSI-04: Reporte de Acción Correctiva (RAC)
+---
+title: Reporte de Acción Correctiva (RAC)
+code: F-SGSI-04
+---
+
+# Reporte de Acción Correctiva (RAC)
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
 **Referencia:** ISO/IEC 27001:2022 (Cl. 10.1)
-**ID RAC:** RAC-[Año]-[Nro]
-**Fecha de Apertura:** [Fecha]
-**Fecha de Cierre:** [Fecha]
+**ID RAC:** RAC-2026-002
+**Fecha de Apertura:** 22/05/2026
+**Fecha de Cierre:** 15/07/2026
 
-***
+---
 
-## 1. Origen de la No Conformidad
-[ ] Auditoría Interna (AUD-[ID])
+## Origen de la No Conformidad
+
+[x] Auditoría Interna (AUD-2026-001)
 [ ] Auditoría Externa / Certificación
-[ ] Revisión por la Dirección (REV-[ID])
-[ ] Incidente de seguridad (INC-[ID])
+[ ] Revisión por la Dirección (REV-ID)
+[ ] Incidente de seguridad (INC-ID)
 [ ] Queja / Reclamo de usuario
 [ ] Monitoreo continuo (KPI por debajo del umbral)
 [ ] Autoevaluación / Hallazgo interno
 
-## 2. Descripción de la No Conformidad / Hallazgo
+## Descripción de la No Conformidad / Hallazgo
 
-### 2.1 Descripción Detallada
-[Describir detalladamente el hallazgo o falla detectada, incluyendo qué ocurrió, cuándo, dónde y qué requisito se incumple.]
+### Descripción Detallada
 
-### 2.2 Requisito Incumplido
-*   [ ] Requisito de ISO/IEC 27001:2022 — Cláusula: __________
-*   [ ] Control del Anexo A — Control: __________
-*   [ ] Requisito legal (Ley 29733 / D.L. 1412 / otro): __________
-*   [ ] Política / Procedimiento interno: __________
+Durante la auditoría interna AUD-2026-001 realizada el 20/05/2026, se identificó que la sala de servidores de la Facultad de Ingeniería de Sistemas (FIIS) alberga 3 equipos (2 switches Cisco Catalyst 2960, 1 servidor HP ProLiant DL380) no registrados en el inventario de activos R-SGSI-01. Los equipos no tienen código de activo, custodio asignado ni clasificación de seguridad. Esto incumple el control A.7.8 de ISO/IEC 27001:2022 (ubicación y protección de equipos) y la política POL-SGSI-07.
 
-### 2.3 Clasificación Inicial
-[ ] **No Conformidad Mayor** — Impacto significativo en el SGSI
-[ ] **No Conformidad Menor** — Incumplimiento puntual y controlable
+### Requisito Incumplido
+
+- [x] Requisito de ISO/IEC 27001:2022 -- Control: A.7.8
+- [ ] Control del Anexo A -- Control: __________
+- [ ] Requisito legal (Ley 29733 / D.L. 1412 / otro): __________
+- [x] Política / Procedimiento interno: POL-SGSI-07, R-SGSI-01
+
+### Clasificación Inicial
+
+[x] **No Conformidad Mayor** -- Impacto significativo en el SGSI
+[ ] **No Conformidad Menor** -- Incumplimiento puntual y controlable
 [ ] **Observación / Oportunidad de Mejora**
 
-## 3. Análisis de Causa Raíz
+## Análisis de Causa Raíz
 
-### 3.1 Metodología Utilizada
-[ ] 5 Porqués
+### Metodología Utilizada
+
+[x] 5 Porqués
 [ ] Diagrama de Ishikawa (Causa-Efecto)
 [ ] Árbol de Problemas
 [ ] Otra: __________
 
-### 3.2 Desarrollo del Análisis
-1. [Pregunta 1] → [Respuesta 1]
-2. [Pregunta 2] → [Respuesta 2]
-3. [Pregunta 3] → [Respuesta 3]
-4. [Pregunta 4] → [Respuesta 4]
-5. [Pregunta 5] → [Respuesta 5]
+### Desarrollo del Análisis
 
-### 3.3 Causa Raíz Identificada
-[Descripción de la causa raíz determinada tras el análisis.]
+1. ¿Por qué los equipos no están inventariados? -> Porque no se incluyeron en el levantamiento inicial de activos.
+2. ¿Por qué no se incluyeron? -> Porque la sala de servidores de la FIIS no fue considerada en el alcance del inventario.
+3. ¿Por qué no fue considerada? -> Porque el procedimiento R-SGSI-01 no especificaba claramente las ubicaciones a cubrir.
+4. ¿Por qué no se especificaron las ubicaciones? -> Porque el responsable del inventario asumió que solo el Data Center principal alberga servidores.
+5. ¿Por qué asumió eso? -> Porque no existía un censo completo de ubicaciones con infraestructura TI ni un procedimiento de verificación cruzada con registros de compras y redes.
 
-## 4. Plan de Acción
+### Causa Raíz Identificada
 
-### 4.1 Acción de Corrección (Solución Inmediata — Contención)
+Ausencia de un censo completo de ubicaciones con infraestructura TI al momento de elaborar el inventario, y falta de verificación cruzada con registros de compras (DGA) y redes (OTI) para identificar todas las salas de servidores activas.
+
+## Plan de Acción
+
+### Acción de Corrección (Solución Inmediata -- Contención)
+
 | Acción | Responsable | Fecha de Ejecución | Estado |
-| :--- | :--- | :--- | :--- |
-| [Acción inmediata para contener el problema] | [Nombre] | [Fecha] | [ ] Pendiente [ ] Ejecutado |
+|:---|:---|:---:|:---:|
+| Registrar los 3 equipos encontrados en R-SGSI-01 con código de activo y custodio asignado (Jefe FIIS) | Ing. Marco Quispe (OTI) | 25/05/2026 | [ ] Pendiente [x] Ejecutado |
 
-### 4.2 Acción Correctiva (Solución Permanente — Evitar Recurrencia)
+### Acción Correctiva (Solución Permanente -- Evitar Recurrencia)
+
 | Acción | Responsable | Fecha Límite | Recursos Necesarios | Estado |
-| :--- | :--- | :--- | :--- | :--- |
-| [Acción para eliminar la causa raíz] | [Nombre] | [Fecha] | [Detalle] | [ ] Pendiente [ ] Ejecutado |
+|:---|:---|:---:|:---|:---:|
+| Realizar censo físico completo de todas las salas de servidores y gabinetes de telecomunicaciones en todas las facultades | Ing. Marco Quispe (OTI) | 30/06/2026 | 1 técnico OTI, 2 semanas | [ ] Pendiente [x] Ejecutado |
+| Actualizar el procedimiento R-SGSI-01 para incluir verificación cruzada con DGA (compras) y OTI Redes | Oficial de Seguridad | 30/06/2026 | 4 horas | [ ] Pendiente [x] Ejecutado |
 
-### 4.3 Acciones Preventivas Adicionales (Opcional)
-[Acciones para prevenir que ocurra en otras áreas o procesos.]
+### Acciones Preventivas Adicionales (Opcional)
 
-## 5. Seguimiento y Cierre
+Establecer una revisión trimestral del inventario de activos con cruce de información entre OTI (redes) y DGA (compras) para asegurar que todo equipo adquirido sea inventariado dentro de los 15 días hábiles posteriores a su recepción.
 
-### 5.1 Verificación de Implementación
-[ ] Acciones correctivas implementadas según lo planificado
-[ ] Evidencia objetiva de implementación adjunta
-[ ] Personal relevante notificado / capacitado
+## Seguimiento y Cierre
 
-### 5.2 Validación de Eficacia (Oficial de Seguridad)
+### Verificación de Implementación
+
+[x] Acciones correctivas implementadas según lo planificado
+[x] Evidencia objetiva de implementación adjunta
+[x] Personal relevante notificado / capacitado
+
+### Validación de Eficacia (Oficial de Seguridad)
+
 **¿La acción correctiva fue eficaz para eliminar la causa raíz y prevenir la recurrencia?**
-[ ] Sí [ ] Parcialmente [ ] No
 
-**Observaciones:** [Observaciones]
+[x] Sí [ ] Parcialmente [ ] No
 
-**Nombre del Oficial de Seguridad:** [Nombre]
+**Observaciones:** El censo completo identificó 12 ubicaciones adicionales (facultades) con infraestructura TI, incorporando 5 equipos más al inventario. El procedimiento R-SGSI-01 fue actualizado a versión 2.1. Se programó la revisión trimestral cruzada para setiembre 2026.
+
+**Nombre del Oficial de Seguridad:** Ing. Luis Castillo Gutierrez
 **Firma:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-**Fecha de Validación:** [Fecha]
+**Fecha de Validación:** 15/07/2026
 
-### 5.3 Cierre Formal
-**Aprobado por:** [Nombre del Responsable del SGSI]
-**Fecha de Cierre:** [Fecha]
+### Cierre Formal
 
----
-
-**Historial de Cambios:**
-| Versión | Fecha | Descripción |
-| :--- | :--- | :--- |
-| 1.0 | [Fecha] | Creación del RAC |
+**Aprobado por:** Ing. Luis Castillo Gutierrez -- Oficial de Seguridad
+**Fecha de Cierre:** 15/07/2026

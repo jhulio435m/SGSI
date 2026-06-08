@@ -1,9 +1,12 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.6.7)  8 JUN 2026 12:01
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.6.7)  8 JUN 2026 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**C:/Users/zahid/Music/SGSI/UNCP/sgsi/10_FORMATOS/intermediate.tex
-(C:/Users/zahid/Music/SGSI/UNCP/sgsi/10_FORMATOS/intermediate.tex
+**C:/Users/zahid/Music/SGSI/UNCP/sgsi/12_CERTIFICACION_Y_AUDITORIAS_EXTERNAS/in
+termediate.tex
+
+(C:/Users/zahid/Music/SGSI/UNCP/sgsi/12_CERTIFICACION_Y_AUDITORIAS_EXTERNAS/int
+ermediate.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 (C:\Program Files\MiKTeX\tex/latex/base\article.cls
@@ -478,7 +481,8 @@ File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
 \g__pdfannot_backend_int=\count322
 \g__pdfannot_backend_link_int=\count323
 )
-(C:\Users\zahid\Music\SGSI\UNCP\sgsi\10_FORMATOS\intermediate.aux
+(C:\Users\zahid\Music\SGSI\UNCP\sgsi\12_CERTIFICACION_Y_AUDITORIAS_EXTERNAS\int
+ermediate.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
@@ -545,53 +549,130 @@ LaTeX Info: Redefining \% on input line 66.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 66.
-(C:\Users\zahid\Music\SGSI\UNCP\sgsi\10_FORMATOS\intermediate.out)
-(C:\Users\zahid\Music\SGSI\UNCP\sgsi\10_FORMATOS\intermediate.out)
+
+(C:\Users\zahid\Music\SGSI\UNCP\sgsi\12_CERTIFICACION_Y_AUDITORIAS_EXTERNAS\int
+ermediate.out)
+(C:\Users\zahid\Music\SGSI\UNCP\sgsi\12_CERTIFICACION_Y_AUDITORIAS_EXTERNAS\int
+ermediate.out)
 \@outlinefile=\write3
 \openout3 = `intermediate.out'.
 
  [1
 
 ]
-(C:\Users\zahid\Music\SGSI\UNCP\sgsi\10_FORMATOS\intermediate.toc
+(C:\Users\zahid\Music\SGSI\UNCP\sgsi\12_CERTIFICACION_Y_AUDITORIAS_EXTERNAS\int
+ermediate.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@toc=\write4
 \openout4 = `intermediate.toc'.
 
- [1] [2]
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 2
-15.
+ [1]
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
+13.
 
 (C:\Users\zahid\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-215.
+113.
 
 (C:\Users\zahid\AppData\Roaming\MiKTeX\tex/latex/psnfss\omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-215.
+113.
 
 (C:\Users\zahid\AppData\Roaming\MiKTeX\tex/latex/psnfss\omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-215.
+113.
 
 (C:\Users\zahid\AppData\Roaming\MiKTeX\tex/latex/psnfss\omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-215.
+113.
 
 (C:\Users\zahid\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-) [3]
-(C:\Users\zahid\Music\SGSI\UNCP\sgsi\10_FORMATOS\intermediate.aux
+)
+! Undefined control sequence.
+l.174 \tightlist
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[2]
+! Undefined control sequence.
+<recently read> \tightlist 
+                           
+l.243 \tightlist
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \tightlist 
+                           
+l.265 \tightlist
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 2
+80.
+(C:\Users\zahid\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
+! Undefined control sequence.
+<recently read> \tightlist 
+                           
+l.280   \tightlist
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[3]
+! Undefined control sequence.
+<recently read> \tightlist 
+                           
+l.301 \tightlist
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \tightlist 
+                           
+l.316 \tightlist
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+ignored error: Infinite glue shrinkage found in box being split [4] [5]
+(C:\Users\zahid\Music\SGSI\UNCP\sgsi\12_CERTIFICACION_Y_AUDITORIAS_EXTERNAS\int
+ermediate.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 )
@@ -600,16 +681,16 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `intermediate.out' has not changed.
-(rerunfilecheck)             Checksum: 975496EEF0506D0F2751B3BBE6EF0182;820.
+(rerunfilecheck)             Checksum: 49C243AEBA8273F0BB2BEEB65CAA5167;1696.
  ) 
 Here is how much of TeX's memory you used:
- 12837 strings out of 402987
- 199916 string characters out of 5452872
- 673783 words of memory out of 5000000
- 41405 multiletter control sequences out of 15000+600000
- 646535 words of font info for 69 fonts, out of 8000000 for 9000
+ 12891 strings out of 402987
+ 201289 string characters out of 5452872
+ 665613 words of memory out of 5000000
+ 41455 multiletter control sequences out of 15000+600000
+ 646848 words of font info for 70 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 72i,13n,79p,365b,511s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,12n,79p,409b,634s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on C:\Users\zahid\Music\SGSI\UNCP\sgsi\10_FORMATOS\intermediate.
-pdf (4 pages).
+Output written on C:\Users\zahid\Music\SGSI\UNCP\sgsi\12_CERTIFICACION_Y_AUDITO
+RIAS_EXTERNAS\intermediate.pdf (6 pages).

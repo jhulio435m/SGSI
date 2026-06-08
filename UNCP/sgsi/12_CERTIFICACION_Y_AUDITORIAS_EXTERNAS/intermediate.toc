@@ -1,0 +1,19 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Estrategia de Certificación ISO 27001:2022}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Objetivo}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Selección de Entidad Certificadora}{2}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Criterios de Selección}{2}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Entidades Certificadoras Recomendadas}{2}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Proceso de Contratación Recomendado}{3}{subsubsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.3}Proceso de Certificación (Fases)}{3}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Cronograma General}{3}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Auditoría de Etapa 1 (Revisión Documental)}{3}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}Auditoría de Etapa 2 (Verificación en Campo)}{3}{subsubsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.4}Emisión del Certificado}{4}{subsubsection.1.3.4}%
+\contentsline {subsubsection}{\numberline {1.3.5}Auditorías de Vigilancia (Años 2, 3 y 4)}{4}{subsubsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.4}Preparación Final (Pre-auditoría)}{4}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}Auditoría de Brecha (Gap Analysis)}{4}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}Cierre de Brechas}{4}{subsubsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.5}Recursos Necesarios}{4}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Riesgos Identificados para la Certificación}{5}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Documentos Relacionados}{5}{subsection.1.7}%

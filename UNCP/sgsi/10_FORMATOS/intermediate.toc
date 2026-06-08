@@ -1,16 +1,5 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Formato de Solicitud de Alta / Baja / Cambio de Acceso}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Datos del Solicitante}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Datos del Usuario Destinatario (si es distinto al solicitante)}{2}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Tipo de Solicitud}{2}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Sistemas / Recursos Requeridos}{2}{subsection.1.4}%
-\contentsline {subsubsection}{\numberline {1.4.1}Sistemas Transaccionales}{2}{subsubsection.1.4.1}%
-\contentsline {subsubsection}{\numberline {1.4.2}Acceso a Infraestructura}{2}{subsubsection.1.4.2}%
-\contentsline {subsubsection}{\numberline {1.4.3}Servicios en la Nube (Huawei Cloud)}{2}{subsubsection.1.4.3}%
-\contentsline {subsubsection}{\numberline {1.4.4}Perfiles y Privilegios}{3}{subsubsection.1.4.4}%
-\contentsline {subsection}{\numberline {1.5}Justificación}{3}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}Autorizaciones}{3}{subsection.1.6}%
-\contentsline {subsubsection}{\numberline {1.6.1}Jefe Inmediato del Solicitante}{3}{subsubsection.1.6.1}%
-\contentsline {subsubsection}{\numberline {1.6.2}Oficial de Seguridad (si aplica -- accesos críticos, privilegiados, proveedores)}{3}{subsubsection.1.6.2}%
-\contentsline {subsubsection}{\numberline {1.6.3}Ejecutado por (OTI)}{3}{subsubsection.1.6.3}%
-\contentsline {subsection}{\numberline {1.7}Confirmación de Cierre (para bajas)}{3}{subsection.1.7}%
+\contentsline {section}{\numberline {1}Bitácora de Acceso a Áreas Críticas}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Registro de Ingresos}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Registro de Llaves / Tarjetas de Acceso}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Controles Diarios}{3}{subsection.1.3}%
