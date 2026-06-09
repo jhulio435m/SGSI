@@ -1,6 +1,0 @@
-\babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Objetivo}{2}{section.1}%
-\contentsline {section}{\numberline {2}Instrucciones de Uso}{2}{section.2}%
-\contentsline {section}{\numberline {3}Lista Maestra}{2}{section.3}%
-\contentsline {section}{\numberline {4}Resumen por Tipo Documental}{3}{section.4}%
-\contentsline {section}{\numberline {5}Referencias}{4}{section.5}%

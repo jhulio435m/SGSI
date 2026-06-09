@@ -6,7 +6,6 @@ code: D-SGSI-08
 # Guía de Implementación de Controles Críticos (ISO 27002:2022)
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Oficial de Seguridad y Confianza Digital
 **Basado en:** ISO/IEC 27002:2022
 **Alineamiento:** D-SGSI-05 (Declaración de Aplicabilidad), P-SGSI-03 (Gestión de Accesos), P-SGSI-02 (Gestión de Incidentes)
 
@@ -35,7 +34,7 @@ Esta tabla detalla los controles priorizados para los activos críticos de la UN
 | ID | Control | Propósito | Atributos | Guía de Implementación Mejorada |
 |---|---|---|---|---|
 | **6.3** | Concienciación, educación y formación | Asegurar que el personal conoce sus responsabilidades | Preventivo / C / Proteger | **Programa:** Curso anual obligatorio de fundamentos de ciberseguridad en Moodle. Simulacros de phishing semestrales. Campañas de concientización mensuales. Programa de capacitación técnica trimestral (P-SGSI-08). |
-| **6.7** | Trabajo a distancia | Proteger la información accesada remotamente | Preventivo / CIA / Proteger | **VPN + MFA:** Acceso remoto obligatorio mediante VPN institucional con MFA. Prohibición de uso de redes Wi-Fi públicas para sistemas críticos. Cifrado obligatorio en dispositivos móviles (POL-SGSI-05). |
+| **6.7** | Trabajo a distancia | Proteger la información accesada remotamente | Preventivo / CIA / Proteger | **VPN + MFA:** Acceso remoto obligatorio mediante VPN institucional con MFA para sistemas internos. Cifrado obligatorio en dispositivos institucionales y BYOD autorizado. Para dispositivos personales de estudiantes/docentes en uso académico general, aplicar MFA, concientización y bloqueo de cuentas comprometidas. |
 
 ### 1.3 Controles Físicos (A.7)
 
@@ -55,7 +54,7 @@ Esta tabla detalla los controles priorizados para los activos críticos de la UN
 | **8.13** | Copias de seguridad | Proteger los datos contra pérdida | Preventivo / CIA / Proteger | **Regla 3-2-1:** Respaldo diario de bases de datos críticas en Huawei Cloud CBR (inmutable). Pruebas de restauración trimestrales. Cifrado en reposo y en tránsito de todos los respaldos (POL-SGSI-03). |
 | **8.16** | Seguimiento de actividades (Monitoreo) | Detectar comportamientos anómalos | Detectivo / CIA / Detectar | **UBA/SIEM:** Uso de análisis de comportamiento (User Behavior Analytics) para detectar accesos anómalos. Integración de logs de Huawei Cloud, ERP ADESA, Moodle, firewalls y MDM en el SIEM. Alertas en tiempo real al CSIRT. |
 | **8.20** | Seguridad de redes | Proteger la información en las redes | Preventivo / CIA / Proteger | **ZTNA (Microsegmentación):** Aplicación de Zero Trust Network Access para segmentar lógicamente los recursos. Un alumno en la WiFi de la facultad no tiene visibilidad de los servidores de tesorería. Firewall interno entre segmentos académico y administrativo. 802.1X para autenticación de puertos. |
-| **8.24** | Uso de criptografía | Proteger la confidencialidad e integridad | Preventivo / CIA / Proteger | **Cifrado Generalizado:** TLS 1.3 en todas las comunicaciones externas. Cifrado en reposo para bases de datos (TDE) y backups. Cifrado de discos (BitLocker/FileVault) en todos los dispositivos móviles institucionales. Política de gestión de claves con rotación anual. |
+| **8.24** | Uso de criptografía | Proteger la confidencialidad e integridad | Preventivo / CIA / Proteger | **Cifrado Generalizado:** TLS 1.3 en todas las comunicaciones externas. Cifrado en reposo para bases de datos (TDE) y backups. Cifrado de discos (BitLocker/FileVault) en todos los dispositivos institucionales y BYOD autorizado. Cifrado recomendado para dispositivos personales fuera del control técnico de la UNCP. |
 | **8.25** | Ciclo de vida de desarrollo seguro | Integrar seguridad en el desarrollo | Preventivo / CI / Proteger | **DevSecOps:** Escaneo SAST en cada commit del ERP ADESA. Escaneo DAST trimestral en aplicaciones web. Análisis de dependencias (SBOM) para identificar librerías con CVEs. Pruebas de penetración anuales en aplicaciones críticas (POL-SGSI-01). |
 | **8.31** | Separación de entornos | Evitar contaminación de datos | Preventivo / CI / Proteger | **IaC:** Los entornos de desarrollo y pruebas se despliegan como infraestructura como código (Terraform/Ansible). Prohibición de uso de datos reales de producción en entornos no productivos. Datos sintéticos o enmascarados para pruebas. |
 | **8.32** | Gestión de cambios | Controlar los cambios en los sistemas | Preventivo / CIA / Proteger | **ITIL:** Cambios clasificados como estándar, normal o emergencia (P-SGSI-04). Evaluación de impacto de seguridad obligatoria para cambios normales. Plan de rollback documentado. CAB quincenal para cambios mayores. |
@@ -118,4 +117,3 @@ Todas las recomendaciones contenidas en esta guía están diseñadas para cumpli
 | R-SGSI-01 | Inventario de Activos de Información |
 
 ***
-

@@ -9,7 +9,11 @@ code: D-SGSI-07
 
 **Documentos Relacionados:** D-SGSI-01 (Contexto Estratégico), D-SGSI-02 (Alcance del SGSI), D-SGSI-06 (Marco Conceptual), R-SGSI-01 (Inventario de Activos), R-SGSI-02 (Matriz de Riesgos)
 
-**Mapa de Procesos Institucional:** Resoluciones R. N° 3524-R-2026 (Nivel 0) y R. N° 3526-R-2026 (Nivel 01)
+**Mapa de Procesos Institucional:** Resoluciones R. N° 3524-R-2025 (Nivel 0) y R. N° 3526-R-2025 (Nivel 1)
+
+![Mapa de Procesos Nivel 0 de la UNCP](../imagenes/mapa-procesos-nivel-0.png)
+
+![Mapa de Procesos Nivel 1 de la UNCP](../imagenes/mapa-procesos-nivel-1.png)
 
 # Introducción
 
@@ -65,7 +69,7 @@ Los procesos de apoyo son necesarios para que los procesos misionales funcionen 
 
 | Proceso | Descripción | Activo de Información Clave | Sistema Asociado | Dependencia Crítica |
 |:--------|:------------|:----------------------------|:-----------------|:--------------------|
-| Tecnologías de la Información (OTI) | Gestión de infraestructura TI, redes, cloud, seguridad, CSIRT, soporte técnico. Solo 2 profesionales para ~11,700 usuarios | Configuraciones de red, credenciales de administración, logs de seguridad, inventario de activos | SIEM (por implementar), Microsoft 365 Admin, Huawei Cloud Console | Crítica — todos los procesos dependen de TI |
+| Tecnologías de la Información (OTI) | Gestión de infraestructura TI, redes, cloud, seguridad, CSIRT, soporte técnico. Cuenta con 11 profesionales permanentes más soporte de practicantes para ~11,700 usuarios | Configuraciones de red, credenciales de administración, logs de seguridad, inventario de activos | Microsoft 365 Admin, Huawei Cloud Console | Crítica — todos los procesos dependen de TI |
 | Gestión de Recursos Humanos | Contratación, capacitación, evaluación de desempeño, desvinculación, planillas | Expedientes de personal, planillas, contratos, evaluaciones, declaraciones juradas | SIGA/SIAF — Módulo RRHH | Alta — fuga de datos personales de ~1,700 trabajadores |
 | Gestión Financiera y Abastecimiento | Contabilidad, tesorería, presupuesto, adquisiciones, proveedores | Registros contables, órdenes de compra, facturas, contratos, PAC | SIGA/SIAF, ERP ADESA (módulos financieros) | Crítica — fraude financiero, indisponibilidad de pagos |
 | Gestión Documentaria | Mesa de partes, archivo central, gestión de expedientes digitales y notificaciones | Documentos recibidos y emitidos, resoluciones, memorandos, TUPA | Sistema de trámite documentario (GESDOC) | Alta — pérdida de trazabilidad documental |
@@ -84,7 +88,7 @@ Los procesos de apoyo son necesarios para que los procesos misionales funcionen 
 | Tesorería | Matrícula (pagos), Abastecimiento (proveedores), RRHH (planillas) | Contabilidad, SUNAT | SIGA/SIAF | Imposibilidad de pagar planillas y proveedores |
 | OTI | Abastecimiento (hardware, licencias, servicios cloud) | Todos los procesos (conectividad, sistemas, seguridad) | Microsoft 365, Huawei Cloud, Red de datos | Detención de todos los procesos institucionales |
 
-**Impacto transversal:** El proceso de OTI es el habilitador crítico de todos los demás procesos. Con solo 2 profesionales para ~11,700 usuarios, constituye el cuello de botella más significativo para la implementación del SGSI.
+**Impacto transversal:** El proceso de OTI es el habilitador crítico de todos los demás procesos. La OTI cuenta con 11 profesionales permanentes y equipo de practicantes, lo que permite operar adecuadamente el SGSI en todas las sedes periféricas de la universidad.
 
 # Controles de Seguridad por Nivel de Proceso
 

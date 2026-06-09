@@ -6,7 +6,6 @@ code: P-SGSI-04
 # Procedimiento de Gestión de Cambios en TI
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Jefe de la Oficina de Tecnologías de la Información
 **Norma:** ISO/IEC 27001:2022 (Control A.8.32)
 **Alineamiento:** P-SGSI-02 (Gestión de Incidentes), P-SGSI-05 (Resiliencia y Continuidad)
 

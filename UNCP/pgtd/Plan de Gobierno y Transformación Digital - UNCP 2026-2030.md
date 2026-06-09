@@ -86,8 +86,8 @@ NTP ISO/IEC 38500:2016 & Gobierno de TI para la Organizacion \\
 \tableheader Norma & Descripcion \\
 \midrule
 Estatuto de la UNCP & Norma institucional de maximo nivel \\
-Plan Estrategico Institucional (PEI) 2026-2030 & Instrumento de planeamiento estrategico de la UNCP \\
-Plan Operativo Institucional (POI) 2025 & Programacion operativa anual \\
+Plan Estrategico Institucional (PEI) 2024-2030 & Instrumento de planeamiento estrategico de la UNCP aprobado por R. N 3934-CU-2024 \\
+Plan Operativo Institucional (POI) 2025 actualizado & Programacion operativa anual aprobada por R. N 3811-R-2025, segun documento convertido \\
 Reglamento de Organizacion y Funciones (ROF) & Estructura organizacional de la UNCP \\
 \underline{Resolucion N 1862-R-2023} & \underline{Conformacion del Comite de Gobierno Digital UNCP} \\
 Politica de Seguridad de la Informacion (en formulacion) & Politica SGSI de la UNCP \\
@@ -154,23 +154,23 @@ Aprobada mediante Decreto Supremo N 141-2025-PCM, la PGG orienta el accionar del
 
 Este mandato vinculante sustenta tecnicamente todos los proyectos de digitalizacion, interoperabilidad y seguridad de la informacion contemplados en el presente plan de la UNCP.
 
-### 3.4 Alineamiento con el PEI UNCP 2026-2030
+### 3.4 Alineamiento con el PEI UNCP 2024-2030
 
 
 
-Los objetivos estrategicos institucionales (OEI) del PEI UNCP 2026-2030 que se relacionan directamente con el presente plan son:
+Los objetivos estrategicos institucionales (OEI) del PEI UNCP 2024-2030 que se relacionan directamente con el presente plan han sido tomados del documento PEI incorporado como referencia institucional. El PGTD se articula principalmente con el OEI.04, referido a la modernizacion de la gestion institucional vinculada a la transformacion digital, y complementariamente con los OEI academicos, de investigacion, responsabilidad social y gestion de riesgos.
 
-\begin{compacttable}[Alineamiento del PEI UNCP 2026-2030 con el PGTD]
+\begin{compacttable}[Alineamiento del PEI UNCP 2024-2030 con el PGTD]
 \rowcolors{2}{uncpTableStripe}{white}
 \begin{tabularx}{\textwidth}{C{0.13\textwidth} Y L{0.34\textwidth}}
 \toprule
 \tableheader OEI & Descripcion & Relacion con PGTD \\
 \midrule
-OEI.01 & Mejorar la calidad educativa con enfoque en competencias digitales & Proyectos de campus virtual, competencias digitales \\
-OEI.02 & Fortalecer la investigacion cientifica y la innovacion & Repositorio digital, interoperabilidad con SUNEDU \\
-OEI.03 & Modernizar la gestion institucional & Digitalizacion de procesos, SGSI, infraestructura TI \\
-OEI.04 & Implementar un SGSI basado en ISO 27001 & Proyecto PGTD-01 (SGSI) \\
-OEI.05 & Mejorar la atencion a la comunidad universitaria & Portal de servicios digitales, firma digital \\
+OEI.01 & Brindar formacion academica integral y humanista a estudiantes de pregrado y posgrado & Campus virtual, servicios academicos digitales y competencias digitales \\
+OEI.02 & Fortalecer la investigacion, desarrollo, innovacion y emprendimiento en la comunidad universitaria & Repositorio digital, plataformas de investigacion, interoperabilidad academica y datos para investigacion \\
+OEI.03 & Fortalecer la responsabilidad social, extension universitaria y proyeccion social en la comunidad universitaria & Servicios digitales de extension, transparencia, gobierno abierto y publicacion de informacion \\
+OEI.04 & Modernizar la gestion institucional vinculada a la transformacion digital & Digitalizacion de procesos, SGSI, infraestructura TI, gestion documental, interoperabilidad y arquitectura digital \\
+OEI.05 & Implementar la gestion de riesgos de desastres en la comunidad universitaria & Continuidad operativa, resiliencia tecnologica, respaldos, recuperacion y comunicaciones de emergencia \\
 \bottomrule
 \end{tabularx}
 \end{compacttable}
@@ -217,22 +217,24 @@ La UNCP actualmente cuenta con las siguientes unidades relacionadas con la gesti
 Rector & Titular de la entidad / Presidente del CGTD \\
 Director(a) General de Administracion & Lider de Gobierno y Transformacion Digital \\
 Jefe(a) de la Oficina de Tecnologias de la Informacion (OTI) & Responsable del area de informatica \\
-Oficial de Seguridad de la Informacion & Responsable de seguridad (Res. N 2143-R-2023) \\
+Oficial de Seguridad de la Informacion & Mg. Rocio Rosanna Damian Alvarado, Jefa de la OTI, integrada al CGD por R. N 2143-R-2023 \\
 Jefe(a) de la Unidad de Recursos Humanos & Responsable del area de recursos humanos \\
 Jefe(a) de la Unidad de Tramite documentario y Archivo & Responsable del area de atencion al ciudadano \\
 Jefe(a) de la Oficina de Asesoria Juridica & Responsable del area legal \\
 Jefe(a) de la Oficina de Planeamiento y Presupuesto & Responsable del area de planificacion \\
-Responsable de Software Publico & Designado por Res. N 2140-R-2023 \\
+Responsable de Software Publico & Mg. Rocio Rosanna Damian Alvarado, designada por R. N 2140-R-2023 \\
 \bottomrule
 \end{tabularx}
 \end{compacttable}
 
 **Observaciones sobre la estructura actual:**
-- El Comite de Gobierno Digital se encuentra operativo y sesiona regularmente segun el marco legal vigente.
-- Se cuenta con un Oficial de Seguridad de la Informacion designado formalmente mediante Resolucion N 2143-R-2023.
+- El Comite de Gobierno Digital se encuentra formalmente constituido mediante R. N 1862-R-2023; su periodicidad de sesiones debe sustentarse con actas, convocatorias o reportes recientes.
+- La R. N 2143-R-2023 integra al Comite de Gobierno Digital a la Mg. Rocio Rosanna Damian Alvarado, Jefa de la OTI, como Oficial de Seguridad de la Informacion. Antes del cierre operativo deben evidenciarse suplencia, dedicacion y recursos asignados.
 - La OTI cuenta con personal tecnico especializado, incluyendo a Rocio Damian y Juan Carlos Garay, aunque se requiere fortalecer el equipo para los nuevos desafios.
 - El rol de Lider de Gobierno y Transformacion Digital es ejercido por el Director General de Administracion (DGA).
-- Se ha designado un Responsable de Software Publico segun Resolucion N 2140-R-2023.
+- La R. N 2140-R-2023 designa a la Mg. Rocio Rosanna Damian Alvarado como Funcionaria Responsable del Software Publico.
+
+**Trazabilidad de resoluciones oficiales:** el portal institucional publica resoluciones rectorales en `https://uncp.edu.pe/la-universidad/resoluciones-rectorales/`, que carga el repositorio `https://resoluciones.uncp.edu.pe/documentos/R-RE`. Las resoluciones directorales se publican en `https://uncp.edu.pe/la-universidad/resoluciones-directorales/`, que carga `https://resoluciones.uncp.edu.pe/documentos/R-DR`. Para cerrar la evidencia del PGTD-UNCP deben incorporarse las conversiones Markdown de las resoluciones citadas y las actas operativas del CGTD.
 
 ### 4.2 Infraestructura Tecnologica
 
@@ -390,7 +392,7 @@ De acuerdo con el diagnostico realizado y los datos del plan anterior, la situac
 \tableheader Dimension & Situacion Actual \\
 \midrule
 Politicas de seguridad & En proceso de formalizacion y actualizacion bajo ISO 27001 \\
-Organizacion de seguridad & Oficial de Seguridad designado (Res. N 2143-R-2023) \\
+Organizacion de seguridad & Oficial de Seguridad integrado al CGD por Res. N 2143-R-2023; pendiente fortalecer suplencia, dedicacion y recursos operativos \\
 Gestion de activos & Inventario de activos digitales realizado en 2025 \\
 Control de acceso & Implementacion de protocolos HTTPS, SSL Wildcard e IAM \\
 Seguridad de redes & Firewalls fisicos (9) y virtuales (1), segmentacion por VLANs \\
@@ -465,7 +467,7 @@ D.S. N 033-2018-PCM (GOB.PE) & Implementado: Presencia activa en gob.pe/uncp \\
 \tableheader Dimension & Situacion Actual (AS-IS) \\
 \midrule
 Politicas de seguridad & Basadas en estandares internacionales, en formalizacion \\
-Organizacion TI & Comite operativo, Oficial de Seguridad designado \\
+Organizacion TI & Comite formalizado; Oficial de Seguridad y Responsable de Software Publico designados, pendiente evidenciar operatividad con actas e informes \\
 Infraestructura de red & Fibra optica, 4 Gbps de internet, segmentacion VLAN \\
 Infraestructura Cloud & Huawei Cloud (PaaS/IaaS) operativa para sistemas criticos \\
 Sistemas de informacion & ERP ADESA integrado con 23 modulos \\
@@ -526,7 +528,7 @@ Con un puntaje general de **1.569**, la UNCP se ubica en el **Nivel 1-2 (Inicial
 \toprule
 \tableheader Sub-Dominio & Peso & Puntaje & Ponderado & Justificacion \\
 \midrule
-SD1. Alineamiento Estrategico & 35\% & 2.5 & 0.875 & PEI 2026-2030 incluye objetivos digitales, pero sin indicadores TIC especificos \\
+SD1. Alineamiento Estrategico & 35\% & 2.5 & 0.875 & PEI 2024-2030 incluye el OEI.04 de modernizacion institucional vinculada a transformacion digital; falta desagregar indicadores TIC especificos del PGTD \\
 SD2. Presupuesto de Gobierno Digital & 30\% & 2.0 & 0.600 & Presupuesto TI del 1.2\% del total, sin partida PGTD especifica \\
 SD3. Gobernanza y Gestion del Gobierno Digital & 35\% & 2.0 & 0.700 & CGD creado (R. 1862-R-2023) pero con operatividad limitada, sin Lider de GD formal \\
 \bottomrule
@@ -558,7 +560,7 @@ SD8. Procesos de Negocio Digitalizados & 25\% & 2.0 & 0.500 & Aproximadamente 15
 \toprule
 \tableheader Sub-Dominio & Peso & Puntaje & Ponderado & Justificacion \\
 \midrule
-SD9. Seguridad de la Informacion & 25\% & 1.5 & 0.375 & Sin SGSI, controles minimos, sin Oficial de Seguridad \\
+SD9. Seguridad de la Informacion & 25\% & 1.5 & 0.375 & Sin SGSI implementado; Oficial de Seguridad integrado al CGD, con capacidad operativa por fortalecer \\
 SD10. Interoperabilidad & 20\% & 1.0 & 0.200 & Sin integracion con PIDE, sistemas aislados \\
 SD11. Gobierno Abierto & 15\% & 2.0 & 0.300 & Portal de transparencia basico, datos abiertos limitados \\
 SD12. Arquitectura Digital & 20\% & 1.0 & 0.200 & Sin arquitectura digital definida \\
@@ -619,7 +621,7 @@ D5. Cultura Digital & 1.175 & 2.000 & 3.000 \\
 
 ## 5. Objetivos de Gobierno y Transformacion Digital
 
-A partir del analisis de la situacion actual, los desafios identificados y el alineamiento estrategico con el PEI y las politicas nacionales, se definen los siguientes Objetivos de Gobierno y Transformacion Digital (OGTD) para la UNCP en el periodo 2026-2030. Cada OGTD se vincula a uno o mas desafios de gobierno digital (DGD) y a objetivos estrategicos institucionales (OEI) del PEI 2026-2030.
+A partir del analisis de la situacion actual, los desafios identificados y el alineamiento estrategico con el PEI y las politicas nacionales, se definen los siguientes Objetivos de Gobierno y Transformacion Digital (OGTD) para la UNCP en el periodo 2026-2030. Cada OGTD se vincula a uno o mas desafios de gobierno digital (DGD) y a objetivos estrategicos institucionales (OEI) del PEI 2024-2030.
 
 ### Matriz de Alineacion OGTD - Desafios - PEI
 
@@ -629,12 +631,12 @@ A partir del analisis de la situacion actual, los desafios identificados y el al
 \toprule
 \tableheader OGTD & Descripcion & Desafio Asociado & OEI PEI \\
 \midrule
-OGTD1 & Optimizar y promover la digitalizacion de procesos academicos y administrativos & DGD.04, DGD.02 & OEI.03, OEI.05 \\
-OGTD2 & Fortalecer la interaccion de la comunidad universitaria a traves de servicios digitales integrados & DGD.02, DGD.01 & OEI.01, OEI.05 \\
-OGTD3 & Optimizar los mecanismos de seguridad de la informacion para garantizar la proteccion de los activos de informacion & DGD.03 & OEI.04 \\
-OGTD4 & Mantener la disponibilidad de la infraestructura tecnologica para atender la demanda de servicios digitales & DGD.06 & OEI.03 \\
-OGTD5 & Fortalecer las iniciativas y procesos para la gestion del cambio en la cultura organizacional & DGD.01, DGD.05 & OEI.01 \\
-OGTD6 & Fortalecer las competencias digitales de la comunidad universitaria con el fin de innovar procesos y servicios & DGD.05 & OEI.01, OEI.02 \\
+OGTD1 & Optimizar y promover la digitalizacion de procesos academicos y administrativos & DGD.04, DGD.02 & OEI.01, OEI.04 \\
+OGTD2 & Fortalecer la interaccion de la comunidad universitaria a traves de servicios digitales integrados & DGD.02, DGD.01 & OEI.01, OEI.03, OEI.04 \\
+OGTD3 & Optimizar los mecanismos de seguridad de la informacion para garantizar la proteccion de los activos de informacion & DGD.03 & OEI.04, OEI.05 \\
+OGTD4 & Mantener la disponibilidad de la infraestructura tecnologica para atender la demanda de servicios digitales & DGD.06 & OEI.04, OEI.05 \\
+OGTD5 & Fortalecer las iniciativas y procesos para la gestion del cambio en la cultura organizacional & DGD.01, DGD.05 & OEI.04 \\
+OGTD6 & Fortalecer las competencias digitales de la comunidad universitaria con el fin de innovar procesos y servicios & DGD.05 & OEI.01, OEI.02, OEI.04 \\
 \bottomrule
 \end{tabularx}
 \end{compacttable}
@@ -777,6 +779,26 @@ Porcentaje de estudiantes que completan curso de competencias digitales & 0\% & 
 
 A continuacion se presenta el portafolio de proyectos de gobierno digital priorizados para el periodo 2026-2030. Cada proyecto incluye su alcance, duracion estimada, costo y responsable.
 
+### 6.0 Trazabilidad con el PGD base
+
+La presente propuesta 2026-2030 toma como insumo el documento base `pgtd/plan_antiguo.md` y actualiza su periodo, alcance normativo y evidencia institucional. Para mantener continuidad metodologica, los proyectos identificados en el documento base se integran en el portafolio renovado de la siguiente forma:
+
+\begin{compacttable}[Trazabilidad entre el PGD base y la propuesta PGTD 2026-2030]
+\rowcolors{2}{uncpTableStripe}{white}
+\begin{tabularx}{\textwidth}{L{0.30\textwidth} Y L{0.28\textwidth}}
+\toprule
+\tableheader Linea del PGD base & Integracion en la propuesta 2026-2030 & Tratamiento \\
+\midrule
+Fortalecimiento del SGSI y gestion de riesgos & PGTD-01: Implementacion del SGSI basado en ISO 27001 & Se amplia a ISO/IEC 27001:2022, gestion de activos, riesgos, auditoria interna y preparacion para certificacion. \\
+Plan de transicion y adopcion de IPv6 & PGTD-04: Modernizacion de infraestructura TI & Se mantiene como componente obligatorio de cumplimiento tecnico y escalabilidad de red. Requiere plan formal de transicion solicitado a OTI. \\
+Analisis de duplicidad de sistemas y reutilizacion de software & PGTD-03 / PGTD-08 y Responsable de Software Publico & Se incorpora como racionalizacion del portafolio de sistemas, catalogo de APIs y evaluacion de reutilizacion antes de nuevos desarrollos. \\
+Gestion formal del cambio y adopcion tecnologica & PGTD-05: Programa de competencias digitales & Se refuerza con gestion del cambio, capacitacion diferenciada, comunicacion y medicion de adopcion. \\
+Continuidad y gestion de riesgos del modulo de tramite ERP-ADESA & PGTD-01 / PGTD-04 / PGTD-06 & Se integra a continuidad operativa, resiliencia tecnologica, respaldo, monitoreo y respuesta a incidentes. \\
+Consolidacion y optimizacion de infraestructura en la nube & PGTD-04 y componente transversal FinOps & Se incorpora como modernizacion de infraestructura, nube hibrida, seguridad cloud y control de costos. \\
+\bottomrule
+\end{tabularx}
+\end{compacttable}
+
 ### PGTD-01: Implementacion del SGSI basado en ISO 27001 y Marco de Ciberdefensa
 
 \begin{compacttable}[Ficha tecnica PGTD-01]
@@ -788,7 +810,7 @@ A continuacion se presenta el portafolio de proyectos de gobierno digital priori
 Objetivo asociado & OGTD3 \\
 Tipo & Proyecto de gestion interna / Seguridad \\
 Alcance & Diseno, implementacion y operacion del SGSI en la UNCP bajo el concepto de \textbf{Seguridad desde el Diseño}, conforme a las \textbf{clausulas 4-10 de ISO/IEC 27001:2022} y los controles del \textbf{Anexo A}, integrando los lineamientos de la Ley de Ciberdefensa (D.S. N 017-2024-PCM). \\
-Componentes & Elaboracion y aprobacion de la Politica SGSI; designacion del Oficial de Seguridad y Confianza Digital; inventario y clasificacion de activos; evaluacion y tratamiento de riesgos; implementacion de controles prioritarios; plan de concientizacion; auditoria interna y preparacion para certificacion ISO 27001:2022. \\
+Componentes & Elaboracion y aprobacion de la Politica SGSI; fortalecimiento operativo del Oficial de Seguridad de la Informacion integrado al CGD; inventario y clasificacion de activos; evaluacion y tratamiento de riesgos; implementacion de controles prioritarios; plan de concientizacion; auditoria interna y preparacion para certificacion ISO 27001:2022. \\
 Duracion estimada & 30 meses \\
 Costo estimado & S/ 850,000 \\
 Beneficiarios & Toda la comunidad universitaria (10,000+ personas) \\
@@ -977,7 +999,7 @@ Se recomienda que el Comite de Gobierno Digital gestione la inclusion de estos m
 SGSI-UNCP-Marco-Conceptual - Sistema de Gestion de Seguridad de la Informacion & UNCP - Documento interno \\
 Lineamientos para la formulacion del Plan de Gobierno y Transformación Digital (R.S. N 005-2018-PCM/SGTD) & Secretaria de Gobierno y Transformacion Digital - PCM \\
 Politica Nacional de Transformacion Digital al 2030 - Resumen Ejecutivo & Presidencia del Consejo de Ministros \\
-Plan Estrategico Institucional (PEI) UNCP 2026-2030 & UNCP - Oficina de Planeamiento \\
+Plan Estrategico Institucional (PEI) UNCP 2024-2030 & UNCP - Oficina de Planeamiento \\
 Plan Estrategico de Desarrollo Nacional (PEDN) al 2050 & CEPLAN \\
 Decreto Supremo N 029-2021-PCM - Reglamento LGD & PCM \\
 ISO/IEC 27001:2022 - Information Security Management Systems & ISO \\
@@ -1098,17 +1120,17 @@ El Comite de Gobierno y Transformacion Digital (CGTD) fue conformado en la UNCP 
 1 & Rector & Titular de la entidad / Presidente del CGTD \\
 2 & Director(a) General de Administracion & Lider de Gobierno y Transformacion Digital \\
 3 & Jefe(a) de la Oficina de Tecnologias de la Informacion (OTI) & Responsable del area de informatica \\
-4 & Oficial de Seguridad de la Informacion & Responsable de seguridad (Res. N 2143-R-2023) \\
+4 & Oficial de Seguridad de la Informacion & Mg. Rocio Rosanna Damian Alvarado, Jefa de la OTI, integrada al CGD por Res. N 2143-R-2023 \\
 5 & Jefe(a) de la Unidad de Recursos Humanos & Responsable del area de recursos humanos \\
 6 & Jefe(a) de la Unidad de Tramite documentario y Archivo & Responsable del area de atencion al ciudadano \\
 7 & Jefe(a) de la Oficina de Asesoria Juridica & Responsable del area legal \\
 8 & Jefe(a) de la Oficina de Planeamiento y Presupuesto & Responsable del area de planificacion \\
-9 & Responsable de Software Publico & Designado por Res. N 2140-R-2023 \\
+9 & Responsable de Software Publico & Mg. Rocio Rosanna Damian Alvarado, designada por Res. N 2140-R-2023 \\
 \bottomrule
 \end{tabularx}
 \end{compacttable}
 
-**Nota:** Esta composicion integra los roles establecidos en la Resolucion N 1862-R-2023 y las resoluciones complementarias N 2143-R-2023 (Seguridad) y N 2140-R-2023 (Software Publico), cumpliendo con el D.S. N 029-2021-PCM y R.M. N 087-2019-PCM.
+**Nota:** Esta composicion parte de los roles establecidos en la Resolucion N 1862-R-2023 y de las resoluciones complementarias N 2143-R-2023 (Oficial de Seguridad de la Informacion) y N 2140-R-2023 (Software Publico). Antes de la aprobacion final deben anexarse los documentos controlados y las actas recientes del CGD.
 
 **Funciones del CGTD:**
 - Aprobar el Plan de Gobierno y Transformacion Digital y sus actualizaciones
@@ -1153,7 +1175,7 @@ La actualizacion y gestion del Plan de Gobierno y Transformacion Digital de la U
 - **Meta de Liderazgo Sectorial:** La UNCP se traza como objetivo estrategico posicionarse en el **primer lugar del Ranking de Gobierno Digital** para universidades publicas nacionales al cierre del 2030.
 - La propuesta de actualizacion formal del Plan se realizara anualmente o cuando ocurra cualquiera de los siguientes motivos:
   - Cambios en el marco normativo nacional de gobierno digital (SGTD)
-  - Modificaciones significativas en el Plan Estrategico Institucional (PEI)
+  - Modificaciones significativas en el Plan Estrategico Institucional (PEI 2024-2030)
   - Identificacion de nuevos riesgos criticos de ciberdefensa (D.S. N 017-2024-PCM)
 - La actualizacion aprobada debera ser formalizada mediante Resolucion Rectoral.
 

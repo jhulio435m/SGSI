@@ -6,7 +6,6 @@ code: POL-SGSI-06
 # Política de Contraseñas y Autenticación Segura
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Oficial de Seguridad y Confianza Digital
 **Norma:** ISO/IEC 27001:2022 (Controles A.5.17, A.8.3, A.8.5)
 **Referencia Técnica:** NIST SP 800-63B (Digital Identity Guidelines)
 **Alineamiento:** P-SGSI-03 (Gestión de Accesos), POL-SGSI-05 (Dispositivos Móviles)
@@ -117,7 +116,7 @@ Solo se permite el acceso sin MFA en los siguientes casos, con autorización del
 
 Todo acceso remoto a los sistemas de la UNCP (VPN, escritorio remoto, consolas de administración cloud) debe cumplir:
 - MFA obligatorio.
-- Sesión con tiempo de expiración por inactividad: máximo **15 minutos**.
+- Sesión con tiempo de expiración por inactividad: máximo **1 hora (60 minutos)**.
 - Conexión cifrada (TLS 1.2+, IPsec).
 - Las cuentas de acceso remoto deben ser nominativas. No se permiten cuentas genéricas para acceso remoto.
 

@@ -1,3 +1,4 @@
+\usepackage[margin=2.2cm, top=2.5cm, bottom=2.5cm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{graphicx}
@@ -31,9 +32,14 @@
 \hypersetup{colorlinks=true, linkcolor=uncpAccent, urlcolor=uncpAccent, citecolor=uncpAccent, breaklinks=true}
 \setlength{\parskip}{6pt}
 \setlength{\parindent}{0pt}
+\newcommand{\savedtitle}{Manual del SGSI-UNCP}
+\makeatletter
+\let\oldtitle\title
+\renewcommand{\title}[1]{\oldtitle{#1}\gdef\savedtitle{#1}}
+\makeatother
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{\small $headertitle$}
+\rhead{\small\savedtitle}
 \lfoot{\small Universidad Nacional del Centro del Perú}
 \rfoot{\small Página \thepage\ de \pageref{LastPage}}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -67,17 +73,23 @@
 \newenvironment{compacttable}[1][]{%
   \ifstrempty{#1}{}{\captionof{table}{#1}\vspace{2pt}}%
   \small
-  \setlength{\tabcolsep}{4pt}
-  \renewcommand{\arraystretch}{1.18}
+  \setlength{\tabcolsep}{8pt}
+  \renewcommand{\arraystretch}{1.4}
 }{%
-  \par\vspace{2pt}{\footnotesize\textit{Fuente: Elaboración propia.}}\par
+  \par\vspace{4pt}{\footnotesize\textit{Fuente: Elaboración propia.}}\par
 }
-\AtBeginEnvironment{longtable}{\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.18}}
-\AtBeginEnvironment{tabular}{\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.18}}
-\AtBeginEnvironment{tabularx}{\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.18}}
+\AtBeginEnvironment{longtable}{\small\setlength{\tabcolsep}{8pt}\renewcommand{\arraystretch}{1.4}}
+\AtBeginEnvironment{tabular}{\small\setlength{\tabcolsep}{8pt}\renewcommand{\arraystretch}{1.4}}
+\AtBeginEnvironment{tabularx}{\small\setlength{\tabcolsep}{8pt}\renewcommand{\arraystretch}{1.4}}
 \newtcolorbox{notebox}{
   enhanced, colback=uncpSoft, colframe=uncpTableRule,
   boxrule=0.4pt, arc=1mm, left=7pt, right=7pt, top=5pt, bottom=5pt
+}
+\newtcolorbox{watermarkbox}[1]{
+  enhanced, colback=red!5!white, colframe=red!40!black,
+  boxrule=1.2pt, arc=2mm, left=12pt, right=12pt, top=10pt, bottom=10pt,
+  fontupper=\large\bfseries, halign=center,
+  drop shadow
 }
 \let\origfigure\figure
 \let\endorigfigure\endfigure

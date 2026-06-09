@@ -100,7 +100,7 @@ La Alta Dirección, en uso de sus atribuciones, declara que el SGSI de la UNCP e
 
 **Observaciones adicionales de la Alta Dirección:**
 
-El Dr. Amador Vilcatoma, Rector de la UNCP, felicitó al equipo SGSI por el avance logrado en los primeros 7 meses de implementación. Reiteró su compromiso de asignar los recursos necesarios para alcanzar la certificación ISO 27001:2022 en 2027. Instó a la OTI y al Oficial de Seguridad a cerrar las NC mayores antes del 30/06/2026 y a presentar un plan de trabajo para el segundo semestre en la próxima sesión del CGD.
+Pendiente de completar con el acta real de revisión por la dirección. La versión final debe consignar fecha de sesión, participantes, acuerdos, recursos aprobados, responsables y plazos, anexando el acta del CGD o documento equivalente.
 
 ## Próxima Revisión Programada
 

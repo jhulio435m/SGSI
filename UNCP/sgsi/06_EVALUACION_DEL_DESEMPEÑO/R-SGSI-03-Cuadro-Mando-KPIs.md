@@ -6,7 +6,6 @@ code: R-SGSI-03
 # Cuadro de Mando de Seguridad y Verificación Continua
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Oficial de Seguridad y Confianza Digital
 **Norma:** ISO/IEC 27001:2022 (Cláusula 9.1 -- Monitoreo, medición, análisis y evaluación)
 **Alineamiento:** P-SGSI-09 (Metodología de Auditoría), R-SGSI-04 (Programa de Auditoría), D-SGSI-05 (SoA)
 

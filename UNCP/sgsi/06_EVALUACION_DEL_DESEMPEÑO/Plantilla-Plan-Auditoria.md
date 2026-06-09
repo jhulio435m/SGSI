@@ -113,18 +113,4 @@ Desde la implementación inicial del SGSI (enero 2026) hasta el corte de la audi
 
 Los miembros del equipo auditor declaran su independencia respecto a las áreas auditadas y se comprometen a mantener la confidencialidad de la información obtenida durante el proceso, conforme a la POL-SGSI-02 y la Ley N° 29733.
 
-***
-
-**Elaborado por:**
-
-Mg. Carlos Ramos Quispe
-Auditor Líder
-
-**Aprobado por:**
-
-Ing. Luis Castillo Gutierrez
-Oficial de Seguridad y Confianza Digital
-
-**Fecha de Aprobación:**
-
-05/05/2026
+****

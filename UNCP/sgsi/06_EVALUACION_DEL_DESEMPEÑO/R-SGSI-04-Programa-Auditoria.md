@@ -6,7 +6,6 @@ code: R-SGSI-04
 # Programa Maestro de Auditoría Basada en Riesgos (Ciclo 2026)
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Comité de Gobierno Digital
 **Norma:** ISO/IEC 27001:2022 (Cláusula 9.2 -- Auditoría Interna)
 **Metodología:** P-SGSI-09 (Metodología de Auditoría Basada en Riesgos y Procesos)
 **Alineamiento:** R-SGSI-03 (KPIs), D-SGSI-05 (SoA), PGTD-01 (Implementación SGSI)
@@ -99,6 +98,6 @@ El programa se considera exitoso si al cierre de 2026:
 - [ ] La pre-auditoría externa (Q4) confirma preparación para certificación
 
 ---
-**Aprobado por:** Comité de Gobierno Digital
-**Fecha de aprobación:** 15/01/2026
-**Próxima revisión del programa:** 15/04/2026 (trimestral)
+**Fecha de aprobación:** [PENDIENTE DE APROBACIÓN POR COMITÉ]
+**Próxima revisión del programa:** [PENDIENTE]
+

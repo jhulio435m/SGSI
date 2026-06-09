@@ -1,0 +1,9 @@
+graph TD
+    User((Comunidad UNCP)) -->|Acceso HTTPS| GSLB{Balanceador Global GSLB}
+    GSLB -->|Salud OK - 60% Tráfico| DC[Data Center Local Huancayo]
+    GSLB -->|Salud OK - 40% Tráfico| Cloud[Huawei Cloud IaaS/PaaS]
+    DC -->|Falla de Red/Físico| GSLB
+    DC -->|Replicación Sincrónica BD Notas| Cloud
+    DC -->|Backup Diario| NAS[Storage NAS Local]
+    NAS -->|Replicación Semanal Cloud| CloudBackup[Huawei Cloud S3 Backup]
+    Cloud -->|Contenedores autoescalables| K8s[Moodle / ADESA Core]

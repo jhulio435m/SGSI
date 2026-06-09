@@ -1,0 +1,23 @@
+graph TD
+    classDef dev fill:#2ecc71,stroke:#27ae60,stroke-width:1px,color:#fff;
+    classDef pipeline fill:#3498db,stroke:#2980b9,stroke-width:1px,color:#fff;
+    classDef stage fill:#f1c40f,stroke:#f39c12,stroke-width:1px,color:#fff;
+
+    DEV["Desarrollador / Practicante"]:::dev
+    PUSH["Git Push"]
+    REPO["Servidor Git Institucional"]
+    CI["Pipeline CI/CD"]:::pipeline
+    SECRETS["1. Escaneo Secretos"]
+    SAST["2. Análisis Estático"]
+    SCA["3. Análisis Dependencias"]
+    VAL["Revisión Técnica / Validación OTI"]:::pipeline
+    DEPLOY["Despliegue a Staging / Producción"]:::stage
+
+    DEV --> PUSH
+    PUSH --> REPO
+    REPO --> CI
+    CI --> SECRETS
+    CI --> SAST
+    CI --> SCA
+    SECRETS & SAST & SCA --> VAL
+    VAL -->|Aprobación de Integración| DEPLOY

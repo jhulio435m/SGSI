@@ -13,7 +13,7 @@ code: R-SGSI-04
 
 ***
 
-**Leyenda: C:** Cumple | **NC:** No Conformidad (Mayor/Menor) | **OM:** Oportunidad de Mejora | **N/A:** No Aplica
+**Leyenda: C:** Cumple | **NC:** No Conformidad (Mayor/Menor) | **OM:** Oportunidad de Mejora | **PV:** Pendiente de Validación | **N/A:** No Aplica
 
 ## Cláusulas 4--10 (SGSI)
 
@@ -23,9 +23,9 @@ code: R-SGSI-04
 | Cl. 4.2 -- Partes Interesadas | ¿Se han identificado las partes interesadas y sus requisitos? | Tabla de 9 partes interesadas (SUNEDU, RENIEC, Minedu, PCM, estudiantes, docentes, administrativos, OTI, proveedores) en D-SGSI-02. | C |
 | Cl. 4.3 -- Alcance | ¿El alcance del SGSI (D-SGSI-02) está documentado y justificado? | D-SGSI-02 aprobado por CGD; alcance organizacional (sede Huancayo), tecnológico (sistemas misionales), geográfico (local) y temporal (2026--2030). | C |
 | Cl. 4.4 -- Procesos | ¿Los procesos del SGSI están identificados (D-SGSI-07)? | D-SGSI-07 vigente con matriz de procesos, dependencias y propietarios. | C |
-| Cl. 5.1 -- Liderazgo | ¿La Alta Dirección demuestra compromiso con el SGSI? | ACT-SGSI-01 firmada; Rector preside CGD mensualmente con agenda de seguridad; presupuesto PGTD-01 de S/ 850,000 asignado. | C |
+| Cl. 5.1 -- Liderazgo | ¿La Alta Dirección demuestra compromiso con el SGSI? | CGD formalizado por R. N.° 1862-R-2023; presupuesto PGTD-01 de S/ 850,000 previsto. Pendiente incorporar actas recientes y evidencia de revisión por Rectorado. | PV |
 | Cl. 5.2 -- Política | ¿La política del SGSI (D-SGSI-03) está aprobada, comunicada y revisada? | D-SGSI-03 aprobada y publicada en intranet; 48 % del personal entrevistado la conoce (muestra: 140 personas). | OM |
-| Cl. 5.3 -- Roles | ¿Los roles y responsabilidades del SGSI están definidos y asignados? | Oficial de Seguridad designado por R.S. N.° 023-2026-UNCP; roles documentados en D-SGSI-06 y D-SGSI-07. | C |
+| Cl. 5.3 -- Roles | ¿Los roles y responsabilidades del SGSI están definidos y asignados? | Oficial de Seguridad integrado al CGD por R. N.° 2143-R-2023 y roles documentados en D-SGSI-06/D-SGSI-07. Pendiente evidenciar suplencia, RACI nominal y recursos asignados. | PV |
 | Cl. 6.1 -- Riesgos | ¿La evaluación de riesgos sigue la metodología aprobada (D-SGSI-04)? | D-SGSI-04 vigente; R-SGSI-02 completo con 15 riesgos evaluados (5 altos, 10 medios). | C |
 | Cl. 6.1.3 -- SoA | ¿La SoA (D-SGSI-05) incluye todos los controles y justifica exclusiones? | D-SGSI-05: 84 controles aplicables, 9 excluidos con justificación; cuadro resumen por dominio. | C |
 | Cl. 6.2 -- Objetivos | ¿Los objetivos de seguridad están definidos y se monitorean (R-SGSI-03)? | R-SGSI-03 con 5 KPIs; pendiente la primera revisión formal de indicadores al corte de mayo 2026. | C |
@@ -46,7 +46,7 @@ code: R-SGSI-04
 | Control | Pregunta de Verificación | Evidencia | Resultado |
 |:---|:---|:---|:---:|
 | A.5.1 -- Políticas | ¿Las políticas de seguridad están documentadas y aprobadas? | POL-SGSI-01 a POL-SGSI-11 publicadas en intranet; firmadas por Rector. | C |
-| A.5.2 -- Roles | ¿Los roles de seguridad están definidos y asignados? | Roles mapeados en D-SGSI-06 (8 roles SGSI); R.S. N.° 023-2026-UNCP designa Oficial de Seguridad. | C |
+| A.5.2 -- Roles | ¿Los roles de seguridad están definidos y asignados? | Roles mapeados en D-SGSI-06. Pendiente incorporar resolución vigente y matriz RACI nominal para confirmar asignación efectiva. | PV |
 | A.5.10 -- Uso Aceptable | ¿Se aplica la política de uso aceptable (POL-SGSI-02)? | POL-SGSI-02 publicada; 100 % del personal firma acuerdo en inducción. | C |
 | A.5.15 -- Control de Acceso | ¿Se utiliza MFA para acceso remoto y sistemas críticos (P-SGSI-03)? | MFA implementado en VPN (Duo Security), correo (Microsoft 365 Authenticator) y ERP ADESA (token SMS). | C |
 | A.5.16 -- Identidades | ¿La gestión de identidades cubre altas, bajas y cambios? | P-SGSI-03 documentado; integración parcial con AD; gestión de altas/bajas en proceso de automatización. | C |

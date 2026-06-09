@@ -85,7 +85,7 @@ La auditoría se realizó siguiendo la metodología definida en **P-SGSI-09** (M
 
 | ID | Referencia | Descripción de la Fortaleza |
 | :--- | :--- | :--- |
-| F01 | Cl. 5 / A.5.1 | El Comité de Gobierno Digital (CGD) sesiona mensualmente con agenda de seguridad informática; el Rector Dr. Amador Vilcatoma preside personalmente las revisiones |
+| F01 | Cl. 5 / A.5.1 | El Comité de Gobierno Digital (CGD) se encuentra formalizado por R. N.° 1862-R-2023; la periodicidad de sesiones, agenda de seguridad y revisión por Rectorado deben verificarse con actas o reportes recientes |
 | F02 | A.8.9 | Gestión de configuración de activos mediante CMDB actualizada con 24 activos críticos inventariados en R-SGSI-01 |
 
 ### No Conformidades

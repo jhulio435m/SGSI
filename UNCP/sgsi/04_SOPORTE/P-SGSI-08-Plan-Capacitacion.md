@@ -16,7 +16,7 @@ code: P-SGSI-08
 ## Objetivos
 
 ### 1.1 Generales
-- Elevar el nivel de cultura de seguridad de la información en toda la comunidad universitaria (personal administrativo, docente, autoridades y estudiantes).
+- Elevar el nivel de cultura de seguridad de la información en toda la comunidad universitaria (personal administrativo, docente, autoridades y estudiantes), reconociendo que las personas son el activo más expuesto y vulnerable frente a phishing, ingeniería social, errores operativos, uso inseguro de credenciales y baja cultura de reporte.
 - Reducir la probabilidad y el impacto de incidentes de seguridad causados por error humano (phishing, pérdida de credenciales, uso inadecuado de recursos).
 - Desarrollar las competencias técnicas del personal de la OTI para operar y mantener los controles de seguridad implementados en el marco del SGSI.
 
@@ -155,5 +155,4 @@ Los contenidos para estudiantes se enfocan en: protección de credenciales, iden
 
 ***
 
-**Aprobado por:**
 Comité de Gobierno y Transformación Digital — UNCP

@@ -25,7 +25,7 @@ Para asegurar la eficacia del SGSI y en cumplimiento de la Cláusula 5.1 de la I
 
 2. **Asignación de Recursos:** Dotar al SGSI del presupuesto, personal calificado, infraestructura tecnológica y tiempo necesario para su implantación y operación continua, conforme al proyecto PGTD-01 (S/ 850,000).
 
-3. **Alineamiento Estratégico:** Asegurar que los objetivos de seguridad de la información estén integrados en los procesos de planeamiento institucional y alineados con los Objetivos Estratégicos Institucionales (OEI) del PEI 2026-2030 y los Objetivos de Gobierno y Transformación Digital (OGTD) del PGTD.
+3. **Alineamiento Estratégico:** Asegurar que los objetivos de seguridad de la información estén integrados en los procesos de planeamiento institucional y alineados con los Objetivos Estratégicos Institucionales (OEI) del PEI 2024-2030 y los Objetivos de Gobierno y Transformación Digital (OGTD) del PGTD.
 
 4. **Revisión por la Dirección:** Realizar revisiones periódicas del SGSI al menos una vez al año o cuando ocurran cambios significativos, evaluando su conveniencia, adecuación, eficacia y eficiencia, de acuerdo con la Cláusula 9.3 de la ISO/IEC 27001:2022.
 

@@ -6,7 +6,6 @@ code: R-SGSI-02
 # Matriz de Evaluación y Plan de Tratamiento de Riesgos
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Oficial de Seguridad y Confianza Digital
 **Metodología:** D-SGSI-04 (NR = O × I)
 **Criterio de Aceptación:** NR <= 4 (Bajo)
 
@@ -24,13 +23,14 @@ code: R-SGSI-02
 | R06 | Microsoft 365 (Correo) | Phishing dirigido / suplantación de identidad | Falta de capacitación en seguridad, ausencia de DMARC/DKIM avanzado | 3 | 3 | 9 | Alto | Mitigar |
 | R07 | Huawei Cloud | Configuración incorrecta de IAM / exposición de datos | Falta de revisión periódica de accesos cloud, ausencia de Cloud Security Posture Management | 2 | 4 | 8 | Medio | Mitigar |
 | R08 | DSpace (Repositorio) | Pérdida de propiedad intelectual / plagio | Control de acceso básico sin registro de descargas, ausencia de DRM | 2 | 3 | 6 | Medio | Mitigar |
-| R09 | Personal OTI (2 profesionales) | Error humano / mala configuración | Personal insuficiente para ~11,700 usuarios, alta carga laboral, sin segregación de funciones | 3 | 3 | 9 | Alto | Transferir |
+| R09 | Personal OTI (11 profesionales + practicantes) | Error humano / mala configuración / fuga de datos por personal temporal | Falta de especialización en ciberseguridad, alta rotación de practicantes sin capacitación formal | 2 | 3 | 6 | Medio | Mitigar |
 | R10 | Sistema GESDOC | Denegación de servicio (DDoS) | Sin CDN, sin protecciones anti-DDoS, ancho de banda limitado | 2 | 3 | 6 | Medio | Mitigar |
 | R11 | Servidor ADESA (HW-001) | Corte eléctrico prolongado | UPS con autonomía limitada (30 min), sin generador eléctrico de respaldo | 2 | 4 | 8 | Medio | Mitigar |
 | R12 | Portal Web (WordPress) | Defacement / suplantación institucional | Plugins sin actualizar, sin WAF, sin monitoreo de integridad de archivos | 2 | 3 | 6 | Medio | Mitigar |
 | R13 | VPN Corporativa | Acceso no autorizado desde equipos personales | Sin control de dispositivos (BYOD), sin MFA obligatorio | 2 | 4 | 8 | Medio | Mitigar |
 | R14 | SIGA/SIAF (RRHH, Planillas) | Fuga de datos personales de trabajadores | Acceso privilegiado sin auditoría, datos personales sin cifrar | 2 | 4 | 8 | Medio | Mitigar |
 | R15 | Sede Desconcentrada (Filial) | Robo de equipos / pérdida de información | Sin inventario actualizado de activos, sin cifrado de discos | 3 | 3 | 9 | Alto | Mitigar |
+| R16 | APIs y Canales de Integración (Frontera del SGSI) | Explotación de APIs expuestas / inyección de payloads maliciosos | Falta de pasarela de APIs unificada (API Gateway), endpoints desprotegidos en filiales, dependencia de APIs externas (PIDE) sin validación estricta | 2 | 3 | 6 | Medio | Mitigar |
 
 ## Plan de Tratamiento de Riesgos
 
@@ -44,23 +44,24 @@ code: R-SGSI-02
 | R06 | A.6.3 (Concienciación), A.8.7 (Protección contra Malware), A.8.20 (Redes) | Campaña de phishing simulada trimestral, habilitar DMARC/DKIM, implementar Microsoft Defender for Office 365 | OTI (Seguridad) + Capacitación | Q2-2026 | Pendiente | 4 (Bajo) |
 | R07 | A.5.19 (Proveedores), A.8.29 (Cloud Pública), A.5.22 (Cambios) | Revisión trimestral de roles IAM, implementar CSPM, auditoría de configuraciones cloud | OTI (Cloud) | Q2-2026 | En Proceso | 4 (Bajo) |
 | R08 | A.5.32 (Propiedad Intelectual), A.8.3 (Control de Acceso), A.8.15 (Registro) | Implementar registro de descargas por usuario, habilitar DOI, auditar accesos administrativos | OTI (Sistemas) + Investigación | Q3-2026 | Pendiente | 3 (Bajo) |
-| R09 | A.5.3 (Segregación de Tareas), A.6.1 (Antecedentes), A.6.3 (Capacitación) | Contratar 2 profesionales adicionales, externalizar monitoreo SOC, implementar rotación de funciones | DGA / RRHH | Q4-2026 | Pendiente | 4 (Bajo) |
+| R09 | A.5.3 (Segregación de Tareas), A.6.3 (Capacitación), A.6.5 (Seguridad en contratación) | Capacitar y certificar al personal de planta en ciberseguridad, firmar acuerdos de confidencialidad y control para practicantes, segregación de accesos pruebas/producción | OTI (Seguridad) + RRHH | Q4-2026 | Pendiente | 3 (Bajo) |
 | R10 | A.8.20 (Redes), A.8.23 (Filtrado Web) | Implementar Cloudflare / CDN, contratar protección anti-DDoS, aumentar ancho de banda a 500 Mbps | OTI (Redes) | Q3-2026 | Pendiente | 3 (Bajo) |
 | R11 | A.7.11 (Infraestructura), A.7.12 (Cableado) | Adquirir generador eléctrico de respaldo (50 KVA), extender autonomía UPS a 2 horas | OTI (Infraestructura) | Q4-2026 | Pendiente | 4 (Bajo) |
 | R12 | A.8.8 (Vulnerabilidades), A.8.7 (Malware), A.8.15 (Registro) | Implementar WAF, monitoreo de integridad de archivos (Tripwire OSSEC), actualizar WordPress y plugins | OTI (Seguridad) | Q2-2026 | Pendiente | 3 (Bajo) |
 | R13 | A.8.5 (Autenticación Segura), A.6.7 (Trabajo Remoto) | Exigir MFA para toda conexión VPN, implementar control de endpoints (NAC), política de BYOD | OTI (Seguridad) | Q2-2026 | Pendiente | 3 (Bajo) |
 | R14 | A.8.2 (Accesos Privilegiados), A.8.11 (Enmascaramiento), A.8.15 (Registro) | Revisar y auditar accesos privilegiados, cifrar datos personales en reposo, implementar PAM | OTI (Seguridad) + RRHH | Q3-2026 | Pendiente | 4 (Bajo) |
 | R15 | A.7.6 (Equipos fuera de instalaciones), A.8.1 (Dispositivos), A.7.10 (Pérdida) | Cifrar discos de todas las laptops (BitLocker/FileVault), actualizar inventario, implementar rastreo GPS | OTI (Sistemas) | Q2-2026 | Pendiente | 3 (Bajo) |
+| R16 | A.8.20 (Redes), A.8.25 (Desarrollo Seguro), A.5.23 (Servicios Cloud/SaaS/APIs) | Implementar API Gateway con autenticación JWT/OAuth2, firma de peticiones, limitación de tasa (rate limiting) y cifrado de payloads | OTI (Desarrollo) | Q3-2026 | Pendiente | 3 (Bajo) |
 
 ## Resumen de Riesgos por Nivel
 
 | Nivel | Rango NR | Cantidad | Acción Requerida |
 |:------|:--------:|:--------:|:-----------------|
 | Crítico | 13 -- 16 | 0 | Acción inmediata del CGD |
-| Alto | 9 -- 12 | 5 | Tratamiento urgente (máx. 90 días) |
-| Medio | 5 -- 8 | 10 | Tratamiento planificado (plan anual) |
+| Alto | 9 -- 12 | 4 | Tratamiento urgente (máx. 90 días) |
+| Medio | 5 -- 8 | 12 | Tratamiento planificado (plan anual) |
 | Bajo | 1 -- 4 | 0 | Aceptado, monitoreo periódico |
-| **Total** | | **15** | |
+| **Total** | | **16** | |
 
 ## Seguimiento y Actualización
 

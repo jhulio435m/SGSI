@@ -6,7 +6,6 @@ code: P-SGSI-09
 # Metodología de Auditoría Basada en Riesgos y Procesos
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Oficial de Seguridad y Confianza Digital
 **Norma:** ISO/IEC 27001:2022 (Cláusula 9.2 -- Auditoría Interna)
 **Alineamiento:** R-SGSI-04 (Programa Maestro de Auditoría), R-SGSI-03 (Cuadro de Mando KPIs), D-SGSI-04 (Metodología de Riesgos)
 

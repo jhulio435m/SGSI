@@ -134,9 +134,9 @@ La UNCP, por su naturaleza como institución educativa pública, gestiona un vol
 |:---------|:-------------------------|:--------------------|
 | **Titular de la Entidad** | Responsabilidad última del SGSI. Preside el Comité de Gobierno Digital. Aprueba la política de seguridad. | Rector de la UNCP |
 | **Comité de Gobierno Digital** | Dirige, evalúa y supervisa la transformación digital y el SGSI. Aprueba el SoA, los resultados de auditorías y la revisión por la dirección. | Resolución N° 1862-R-2023 |
-| **Oficial de Seguridad y Confianza Digital** | Lidera el SGSI operativamente. Coordina la implementación de controles, gestiona incidentes y reporta al Comité. Es el punto de contacto ante la SGTD. | R. N° 2143-R-2023 |
+| **Oficial de Seguridad y Confianza Digital** | Lidera el SGSI operativamente. Coordina la implementación de controles, gestiona incidentes y reporta al Comité. Es el punto de contacto ante la SGTD. | Mg. Rocio Rosanna Damian Alvarado, integrada al CGD por R. N° 2143-R-2023 |
 | **Responsable de OTI** | Implementa los controles técnicos. Administra la infraestructura de seguridad (firewalls, SIEM, backups). | OTI (2 profesionales) |
-| **Oficial de Gobierno de Datos** | Gestiona la calidad, integridad y uso de los datos institucionales. Define políticas de datos. | Por designar (Compromiso 20 CGR) |
+| **Oficial de Gobierno de Datos** | Gestiona la calidad, integridad y uso de los datos institucionales. Define políticas de datos. | Pendiente de evidencia documental (Compromiso 20 CGR) |
 | **Oficial de Datos Personales** | Asegura el cumplimiento de la Ley N° 29733. Atiende solicitudes de ejercicio de derechos ARCO. | Por designar |
 | **Responsables de Proceso** | Aseguran que los controles de seguridad se apliquen en sus procesos. Reportan incidentes. | Decanos, Directores, Jefes de Oficina |
 | **Todos los Colaboradores** | Obligación de conocer y aplicar la política de seguridad. Reportar incidentes y vulnerabilidades. | ~1,700 docentes y administrativos |
@@ -175,7 +175,7 @@ La UNCP clasifica su información según su nivel de sensibilidad y criticidad, 
 | Dimensión | AS-IS (2026) | TO-BE (2028) | Brecha |
 |:----------|:-------------|:-------------|:-------|
 | **Políticas de seguridad** | Dispersas, no formalizadas, sin política general aprobada | Política SGSI aprobada por rectorado, comunicada y entendida por toda la UNCP | Crítica |
-| **Gobernanza** | CGD formalizado pero sin reuniones periódicas. Oficial de Seguridad designado. | CGD activo con reuniones trimestrales. Oficial de Seguridad con equipo dedicado. | Media |
+| **Gobernanza** | CGD formalizado mediante R. N° 1862-R-2023, Oficial de Seguridad integrado por R. N° 2143-R-2023 y Responsable de Software Publico designada por R. N° 2140-R-2023; falta evidenciar periodicidad de sesiones, suplencias y equipo dedicado. | CGD activo con reuniones trimestrales documentadas. Oficial de Seguridad con vigencia, suplencia y equipo dedicado. | Media |
 | **Gestión de riesgos** | No existe metodología formal de gestión de riesgos de seguridad | Metodología implementada (D-SGSI-04), matriz de riesgos actualizada semestralmente | Crítica |
 | **Control de acceso** | Usuarios compartidos, contraseñas débiles, sin MFA generalizado | Acceso por roles (RBAC), MFA obligatorio para todos los sistemas críticos, política de contraseñas (POL-SGSI-06) | Crítica |
 | **Seguridad de red** | Sin segmentación en facultades, firewall perimetral obsoleto sin licencias | Microsegmentación ZTNA, firewalls renovados con licencias vigentes, SD-WAN entre 4 sedes | Crítica |

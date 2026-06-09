@@ -1,11 +1,6 @@
-# INFORME FINAL EJECUTIVO: Diseño y Estructura del SGSI-UNCP (Vanguardia 2026-2030)
+# INFORME FINAL EJECUTIVO: Diseño y Estructura del SGSI-UNCP (2026-2030)
 
-**Para:** Rectorado y Comité de Gobierno y Transformación Digital (CGTD)
-**De:** Oficina de Tecnologías de la Información (OTI)
-**Fecha:** 3 de Junio de 2026
-**Asunto:** Entrega del Marco Documental y Estratégico para la Certificación ISO 27001:2022
 
-***
 
 ## 1. Resumen Ejecutivo
 Se entrega a la Universidad Nacional del Centro del Perú (UNCP) la arquitectura completa del **Sistema de Gestión de Seguridad de la Información (SGSI)**, diseñado bajo un enfoque de **Seguridad Ágil (DevSecOps)** y **Resiliencia Operativa**. Este sistema posiciona a la UNCP como líder nacional en gobierno digital, superando el cumplimiento normativo básico para alcanzar estándares de clase mundial (NIST, Zero Trust, MAGERIT).

@@ -49,7 +49,7 @@
 | Hito | Fecha | Proyecto |
 |---|---|---|
 | Politica SGSI aprobada por Rectorado | Junio 2026 | PGTD-01 |
-| Oficial de Seguridad y Confianza Digital designado | Julio 2026 | PGTD-01 |
+| Vigencia operativa del Oficial de Seguridad y Confianza Digital ratificada | Julio 2026 | PGTD-01 |
 | SSO implementado y operativo | Diciembre 2026 | PGTD-02 |
 | Matricula virtual redisenada operativa | Marzo 2027 | PGTD-03 |
 | Red de datos renovada en campus principal | Junio 2027 | PGTD-04 |

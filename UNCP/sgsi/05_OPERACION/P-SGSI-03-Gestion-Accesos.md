@@ -6,7 +6,6 @@ code: P-SGSI-03
 # Gestión de Identidades y Control de Acceso (Identity-First)
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Oficial de Seguridad y Confianza Digital
 **Norma:** ISO/IEC 27001:2022 (Controles A.5.15, A.5.16, A.5.17, A.5.18, A.8.2, A.8.3, A.8.4, A.8.5)
 **Alineamiento:** TRV-01 (Gestión de Identidades IdM/SSO), POL-SGSI-06 (Política de Contraseñas), POL-SGSI-05 (Dispositivos Móviles)
 
@@ -24,6 +23,8 @@ La UNCP adopta un modelo de **"Nunca confiar, siempre verificar"**. El acceso a 
 ---
 
 ## Ciclo de Vida de la Identidad Digital
+
+![Ciclo de Vida de Identidades Zero Trust](../imagenes/ciclo-identidades.png)
 
 ### 2.1 Registro y Alta (Onboarding)
 
@@ -63,7 +64,7 @@ La UNCP adopta un modelo de **"Nunca confiar, siempre verificar"**. El acceso a 
 |---|---|---|---|
 | Cese de personal administrativo | Desactivación de todas las cuentas (correo, VPN, sistemas) + reenvío de correo al jefe inmediato por 30 días | OTI (automatizado por IdM + RRHH) | Inmediato (día del cese) |
 | Renuncia de docente | Desactivación de acceso a sistemas de notas y actas. Correo activo por 90 días para transición | OTI + Facultad | Inmediato (notificación de RRHH) |
-| Egreso de estudiante | Desactivación de Moodle y sistemas académicos a los 6 meses de egreso. Correo activo por 1 año | OTI (automatizado) | Programado según calendario |
+| Egreso de estudiante | Desactivación de Moodle (Campus Virtual) a los 6 meses del egreso. El correo institucional y el acceso de consulta académica en el ERP ADESA permanecen activos de forma indefinida para trámites y comunicación con egresados. | OTI (automatizado) | Programado según calendario |
 | Término de contrato de proveedor | Desactivación de cuentas temporales + VPN | OTI | 24 horas tras el término |
 | Fallecimiento | Bloqueo inmediato de todas las cuentas | OTI + RRHH | Inmediato |
 

@@ -12,3 +12,7 @@ Thumbs.db
 node_modules/
 __pycache__/
 *.pyc
+
+# Archivos PDF (se compilan y suben vía CI/CD a Google Drive, no van al repositorio de GitHub)
+*.pdf
+**/*.pdf

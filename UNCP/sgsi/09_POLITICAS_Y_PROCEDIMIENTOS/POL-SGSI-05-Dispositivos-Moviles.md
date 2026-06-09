@@ -6,25 +6,26 @@ code: POL-SGSI-05
 # Política de Seguridad para Dispositivos Móviles del Personal
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Comité de Gobierno y Transformación Digital
 **Norma:** ISO/IEC 27001:2022 (Controles A.8.1, A.6.7, A.5.10)
 **Alineamiento:** D-SGSI-02 (Alcance del SGSI), P-SGSI-03 (Gestión de Accesos), P-SGSI-02 (Gestión de Incidentes)
 
 ***
 
 ## Objetivo
-Establecer las medidas de seguridad para proteger la información institucional procesada, almacenada o accedida desde dispositivos móviles (laptops, smartphones, tablets) utilizados por el personal de la UNCP, mitigando los riesgos de fuga de datos, acceso no autorizado y compromiso de credenciales en entornos fuera del perímetro físico del campus.
+Establecer medidas de seguridad proporcionales para proteger la información institucional procesada, almacenada o accedida desde dispositivos móviles (laptops, smartphones, tablets), diferenciando entre equipos institucionales bajo control de la UNCP, dispositivos personales usados voluntariamente para fines laborales (BYOD) y dispositivos personales de estudiantes o docentes usados solo para servicios académicos generales.
 
 ## Alcance
 
 ### 2.1 Sujetos Obligados
-Esta política aplica de forma obligatoria a todo **Personal Administrativo, Docente, Autoridades y Contratistas** que utilicen dispositivos móviles —sean institucionales o personales (BYOD)— para acceder a los sistemas de información, correo electrónico institucional, datos personales de terceros o cualquier activo de información cubierto por el SGSI-UNCP.
+Esta política aplica de forma obligatoria a todo **Personal Administrativo, Autoridades, Contratistas y Docentes** cuando utilicen dispositivos institucionales asignados por la UNCP o cuando accedan a sistemas administrativos, datos personales de terceros, registros académicos, expedientes, sistemas internos o activos de información cubiertos por el SGSI-UNCP.
+
+Los dispositivos personales de docentes no quedan bajo control técnico general de la universidad. Solo se aplicarán condiciones de acceso cuando el docente solicite voluntariamente usar BYOD para funciones laborales que involucren información institucional no pública o sistemas internos.
 
 ### 2.2 Alcance Obligatorio (Personal)
-Aplica a todo el personal detallado en la sección 2.1. El cumplimiento de esta política es **exigible** y su incumplimiento está sujeto a las medidas disciplinarias de la sección 9.
+Aplica a dispositivos institucionales y a dispositivos personales inscritos voluntariamente en BYOD para acceso laboral. El cumplimiento es **exigible** sobre el acceso a recursos institucionales y sobre los activos de información de la UNCP; no implica control general sobre el dispositivo personal completo.
 
-### 2.3 Alcance Informativo (Estudiantes)
-La Universidad no ejerce control técnico ni jurídico sobre los dispositivos personales de los alumnos, por lo que no puede imponer requisitos de seguridad obligatorios sobre los mismos. Sin embargo, en su compromiso con la protección de la información académica y datos personales, la UNCP establece el siguiente **alcance informativo y de concientización** dirigido al estudiantado:
+### 2.3 Alcance Informativo (Estudiantes y uso académico general)
+La Universidad no ejerce control técnico ni jurídico sobre los dispositivos personales de alumnos y docentes usados para actividades académicas generales, por lo que no puede imponer requisitos de seguridad obligatorios sobre dichos equipos. Sin embargo, en su compromiso con la protección de la información académica y datos personales, la UNCP establece el siguiente **alcance informativo y de concientización** dirigido a la comunidad universitaria:
 
 #### 2.3.1 Campañas de Concientización
 Se implementará un programa anual de concientización en seguridad móvil para estudiantes, con los siguientes componentes:
@@ -60,13 +61,14 @@ La UNCP recomienda a sus estudiantes adoptar las siguientes prácticas para prot
 | **Laptop institucional** | Equipo asignado por la OTI | Control total: cifrado, MDM, inventario obligatorio |
 | **Smartphone institucional** | Equipo con línea corporativa | Control total: MDM, perfil de trabajo, borrado remoto |
 | **Tablet institucional** | Equipo para uso en campo | Control total: mismas reglas que laptop |
-| **BYOD — Laptop personal** | Equipo del empleado usado para trabajar | Control parcial: VPN + contenedor de datos o MDM con perfil separado |
-| **BYOD — Smartphone personal** | Teléfono personal con correo o apps UNCP | Control parcial: perfil de trabajo (Android Work / iOS Managed), sin acceso a datos personales |
+| **BYOD — Laptop personal autorizada** | Equipo personal usado voluntariamente para funciones laborales | Control de acceso: VPN + MFA + contenedor o perfil separado cuando aplique |
+| **BYOD — Smartphone personal autorizado** | Teléfono personal con correo o apps UNCP para funciones laborales | Control de acceso: perfil de trabajo recomendado; sin control sobre datos personales |
+| **Dispositivo personal de estudiante/docente para uso académico general** | Equipo usado para Moodle, correo, consulta de notas o servicios públicos | Sin control técnico obligatorio; recomendaciones, MFA cuando esté disponible y bloqueo de acceso ante compromiso de cuenta |
 
-## Requisitos de Seguridad (Obligatorios para el Personal)
+## Requisitos de Seguridad
 
 ### 3.1 Cifrado del Dispositivo
-Todo dispositivo móvil que almacene o acceda a información institucional debe tener el almacenamiento interno cifrado mediante mecanismos nativos del sistema operativo:
+Todo dispositivo institucional o BYOD autorizado que almacene o acceda a información institucional no pública debe tener el almacenamiento interno cifrado mediante mecanismos nativos del sistema operativo:
 
 | SO | Mecanismo Exigido |
 |---|---|
@@ -75,7 +77,7 @@ Todo dispositivo móvil que almacene o acceda a información institucional debe 
 | iOS | Cifrado nativo por hardware (activado por defecto con código de acceso) |
 | Android | Cifrado basado en archivos (Android 10+) con PIN de arranque |
 
-El Oficial de Seguridad podrá realizar verificaciones periódicas del estado de cifrado mediante el MDM o mediante auditoría directa.
+El Oficial de Seguridad podrá realizar verificaciones periódicas del estado de cifrado mediante MDM o auditoría directa solo sobre dispositivos institucionales o BYOD inscritos. Para dispositivos personales no inscritos, el cifrado se mantiene como recomendación de seguridad.
 
 ### 3.2 Bloqueo de Pantalla y Autenticación
 - **Mecanismo aceptado:** PIN (mínimo 6 dígitos), patrón complejo (mínimo 6 nodos), huella dactilar o reconocimiento facial.
@@ -84,24 +86,24 @@ El Oficial de Seguridad podrá realizar verificaciones periódicas del estado de
 - Se prohíbe el uso de patrones de desbloqueo simples (línea recta, formas evidentes) o PINs predecibles (1234, fechas de nacimiento).
 
 ### 3.3 Integridad del Sistema y Restricciones de Software
-Se prohíbe el acceso a los recursos de la UNCP desde dispositivos que presenten las siguientes condiciones:
+Se prohíbe el acceso a sistemas internos, datos personales de terceros o recursos administrativos de la UNCP desde dispositivos institucionales o BYOD autorizados que presenten las siguientes condiciones:
 
 - **Jailbreak** (iOS) o **root** (Android): cualquier modificación que eleve privilegios por encima de lo previsto por el fabricante.
 - **Sistema operativo no oficial** (ROMs custom, builds no firmadas).
 - **Gestor de arranque desbloqueado** sin autorización expresa de la OTI (solo aplica para equipos de desarrollo debidamente justificados).
 - **Instalación de aplicaciones de fuentes no oficiales** (sideloading, tiendas de terceros) en dispositivos que acceden a datos institucionales.
 
-La OTI implementará mecanismos de detección remota (compatibilidad con SafetyNet/Play Integrity en Android, verificación de integridad en iOS a través de MDM) y bloqueará el acceso al detectar incumplimiento.
+La OTI implementará mecanismos de detección remota en dispositivos institucionales o BYOD inscritos y bloqueará el acceso al detectar incumplimiento. En dispositivos personales no inscritos solo podrá bloquear o reforzar la autenticación de la cuenta institucional cuando exista evidencia de compromiso.
 
 ### 3.4 Actualizaciones y Parches
 - El usuario debe instalar las actualizaciones de seguridad del sistema operativo dentro de los **15 días calendario** posteriores a su publicación por el fabricante.
 - Las actualizaciones críticas (parches de día cero o vulnerabilidades con CVE de severidad crítica) deberán instalarse en un plazo máximo de **72 horas**.
 - No se permitirá la conexión a servicios UNCP desde dispositivos que ejecuten versiones de sistema operativo que hayan alcanzado su **fin de soporte (End of Life)** por parte del fabricante.
-- La OTI podrá auditar el nivel de parches mediante el MDM y restringir el acceso condicional (Conditional Access) en caso de incumplimiento.
+- La OTI podrá auditar el nivel de parches mediante el MDM en dispositivos institucionales o BYOD inscritos y restringir el acceso condicional en caso de incumplimiento.
 
 ### 3.5 Conexiones de Red y Acceso Remoto
 - Queda prohibido el acceso a sistemas críticos (ERP ADESA, SIGA, SIAF, bases de datos, consolas de administración cloud) desde redes Wi-Fi públicas (aeropuertos, hoteles, cafeterías, centros comerciales) o redes no seguras.
-- Todo acceso remoto a la red interna de la UNCP debe realizarse exclusivamente a través de la **VPN institucional** con autenticación multifactor (MFA).
+- Todo acceso remoto a la red interna de la UNCP debe realizarse exclusivamente a través de la **VPN institucional** con autenticación multifactor (MFA) y solo desde dispositivos institucionales o BYOD autorizados.
 - El tráfico de la VPN debe permanecer activo durante toda la sesión de acceso a recursos institucionales. No se permite el "split tunneling" para conexiones que manejen datos clasificados como Confidenciales o de Uso Interno.
 - Para conexiones de bajo riesgo (correo web, portal institucional público) no es obligatorio el uso de VPN, pero sí de HTTPS/TLS 1.2 o superior.
 
@@ -121,7 +123,7 @@ En dispositivos BYOD, el personal debe garantizar que los datos institucionales 
 ## Gestión de Dispositivos Móviles (MDM)
 
 ### 4.1 Perfil Obligatorio
-Todo dispositivo —institucional o BYOD— que acceda a recursos UNCP deberá inscribirse en la plataforma de **Gestión de Dispositivos Móviles (MDM)** designada por la OTI. El perfil de gestión aplicará las siguientes políticas de forma automática:
+Todo dispositivo institucional que acceda a recursos internos de la UNCP deberá inscribirse en la plataforma de **Gestión de Dispositivos Móviles (MDM)** designada por la OTI. Los dispositivos personales solo se inscribirán si el usuario participa voluntariamente en el esquema BYOD autorizado para funciones laborales.
 
 - Exigencia de cifrado y código de acceso.
 - Borrado remoto selectivo (solo datos institucionales en BYOD) o total (en dispositivos institucionales).
@@ -142,11 +144,11 @@ El Oficial de Seguridad podrá autorizar excepciones al perfil MDM en casos debi
 ## BYOD — Procedimiento de Incorporación y Baja
 
 ### 5.1 Incorporación
-1. El empleado presenta una solicitud mediante el formato **F-SGSI-01**, indicando que utilizará su dispositivo personal para fines laborales.
+1. El trabajador o docente presenta una solicitud mediante el formato **F-SGSI-01**, indicando que utilizará voluntariamente su dispositivo personal para fines laborales específicos.
 2. El jefe inmediato autoriza la solicitud.
 3. La OTI verifica que el dispositivo cumple los requisitos mínimos (versión de SO, capacidad de cifrado, compatibilidad con MDM).
 4. Se instala el perfil MDM y se configura el contenedor de trabajo.
-5. El empleado firma el compromiso de cumplimiento de la presente política.
+5. El solicitante firma el compromiso de cumplimiento de la presente política, limitado al contenedor, cuenta o acceso institucional autorizado.
 6. La OTI registra el dispositivo en el inventario auxiliar de BYOD (no en el inventario de activos institucionales).
 
 ### 5.2 Baja y Desvinculación
@@ -154,8 +156,8 @@ El Oficial de Seguridad podrá autorizar excepciones al perfil MDM en casos debi
 - El empleado que se desvincule voluntariamente del programa BYOD podrá solicitar la remoción del perfil MDM, previa verificación de que no existen datos institucionales en el dispositivo.
 - En caso de pérdida o robo de un dispositivo BYOD, aplica el mismo procedimiento de la sección 6.2.
 
-### 5.3 Riesgos Aceptados por el Empleado BYOD
-El empleado que opte por BYOD acepta:
+### 5.3 Riesgos Aceptados por el Usuario BYOD
+El usuario que opte voluntariamente por BYOD acepta:
 - Que el dispositivo será verificado periódicamente por el MDM para garantizar el cumplimiento.
 - Que la OTI podrá bloquear el acceso a recursos UNCP si el dispositivo deja de cumplir los requisitos.
 - Que los datos institucionales en el dispositivo podrán ser borrados remotamente sin posibilidad de recuperación por parte del usuario.
@@ -171,8 +173,8 @@ El empleado que opte por BYOD acepta:
 - Se realizará un inventario físico anual para conciliar los registros con los dispositivos asignados.
 
 ### 6.2 Procedimiento ante Pérdida, Robo o Extravío
-1. **Reporte inmediato:** El usuario debe notificar a la OTI en un plazo máximo de **2 horas** desde el momento en que toma conocimiento de la pérdida o robo.
-2. **Canales de reporte:** Llamada telefónica a la mesa de ayuda o correo electrónico a la dirección incidentes-seguridad@uncp.edu.pe.
+1. **Reporte inmediato:** El usuario debe notificar a la OTI en un plazo máximo de **4 horas** desde el momento en que toma conocimiento de la pérdida o robo.
+2. **Canales de reporte:** Llamada telefónica a la mesa de ayuda, portal de autoservicio de Microsoft 365, o correo electrónico a la dirección incidentes-seguridad@uncp.edu.pe.
 3. **Acciones inmediatas de la OTI:**
    - Bloqueo de cuentas de acceso (correo, VPN, sistemas).
    - Borrado remoto del dispositivo (completo para equipos institucionales, selectivo para BYOD).
@@ -189,6 +191,7 @@ El empleado que opte por BYOD acepta:
 | Rol | Responsabilidad |
 |---|---|
 | **Usuario (personal)** | Conocer y cumplir esta política; mantener su dispositivo actualizado y seguro; reportar incidentes de forma oportuna. |
+| **Estudiantes y docentes en uso académico general** | Aplicar buenas prácticas recomendadas, proteger sus credenciales, activar MFA cuando esté disponible y reportar incidentes o accesos sospechosos. |
 | **Jefe Inmediato** | Autorizar el acceso móvil y BYOD de su equipo; asegurar que el personal a su cargo recibe inducción en esta política. |
 | **Oficial de Seguridad** | Mantener esta política actualizada; supervisar el cumplimiento; evaluar riesgos de dispositivos móviles. |
 | **OTI (Mesa de Ayuda)** | Gestionar el MDM; atender reportes de pérdida/robo; ejecutar borrados remotos; mantener el inventario de dispositivos. |
@@ -199,11 +202,12 @@ El empleado que opte por BYOD acepta:
 
 | Indicador | Meta | Frecuencia | Fuente |
 |---|---|---|---|
-| % de dispositivos con cifrado activo | 100% | Mensual | MDM |
-| % de dispositivos con SO sin soporte | < 2% | Trimestral | MDM |
+| % de dispositivos institucionales con cifrado activo | 100% | Mensual | MDM |
+| % de dispositivos institucionales con SO sin soporte | < 2% | Trimestral | MDM |
 | Tiempo medio de respuesta ante robo/pérdida | < 2 horas | Por evento | Sistema de tickets |
 | % de personal capacitado en esta política | 100% | Anual | Moodle / F-SGSI-02 |
-| % de BYOD con perfil MDM activo | 100% de los autorizados | Mensual | MDM |
+| % de BYOD inscritos con perfil activo | 100% de los autorizados | Mensual | MDM |
+| % de estudiantes alcanzados por campañas de concientización móvil | 80% anual | Anual | Moodle / comunicaciones institucionales |
 
 ## Incumplimiento y Medidas Disciplinarias
 

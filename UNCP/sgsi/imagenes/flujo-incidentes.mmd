@@ -1,0 +1,17 @@
+graph TD
+    A[Ocurrencia de Evento] --> B{Método de Detección}
+    B -->|Automático SIEM/IDS| C[Registro & Triaje en OTI]
+    B -->|Reporte de Usuario| C
+    C --> D{Nivel de Criticidad}
+    D -->|Crítico / Alto| E[Notificar Oficial de Seguridad + CGD]
+    D -->|Medio / Bajo| F[Cola de Soporte OTI]
+    E --> G[Activar CSIRT-UNCP]
+    G --> H[Contención Inmediata < 1h / 4h]
+    F --> H
+    H --> I[Erradicación & Parcheo]
+    I --> J[Recuperación desde Backups Inmutables]
+    J --> K{¿Crítico o Alto?}
+    K -->|Sí| L[Reunión Post-Mortem < 5 días]
+    K -->|No| M[Cierre de Ticket]
+    L --> N[Lecciones Aprendidas & Actualizar Playbooks]
+    N --> M

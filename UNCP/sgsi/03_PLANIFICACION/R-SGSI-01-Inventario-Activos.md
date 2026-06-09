@@ -40,7 +40,7 @@ code: R-SGSI-01
 | 17 | RD-001 | Red LAN | Red cableada del campus central (10.0.0.0/16) | Red | OTI | OTI |
 | 18 | RD-002 | Red WiFi | Red inalámbrica institucional (estudiantes, docentes, invitados) | Red | OTI | OTI |
 | 19 | RD-003 | VPN Corporativa | Acceso remoto seguro para personal administrativo | Red | OTI | OTI |
-| 20 | PE-001 | Personal OTI | Administradores de sistemas, redes y seguridad (2 profesionales) | Persona | OTI | RRHH |
+| 20 | PE-001 | Personal OTI | Equipo de administración de sistemas, redes y seguridad (11 profesionales + practicantes) | Persona | OTI | RRHH |
 | 21 | PE-002 | Oficial de Seguridad | Responsable del SGSI y la confianza digital | Persona | CGD | RRHH |
 | 22 | SV-001 | Huawei Cloud | Infraestructura cloud para servicios críticos (IaaS) | Servicio | OTI | Huawei |
 | 23 | SV-002 | Internet Dedicado | Enlace de internet principal (fibra óptica) | Servicio | OTI | Proveedor |

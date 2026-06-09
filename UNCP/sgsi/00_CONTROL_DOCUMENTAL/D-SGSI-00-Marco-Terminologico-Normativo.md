@@ -255,7 +255,7 @@ Correspondencia entre ISO/IEC 27000, NIST SP 800-53, MITRE ATT&CK v14 y MAGERIT 
 | Ley N° 29733 | Art. 3 (Principios), Art. 9 (Seguridad) | Controles de acceso, cifrado e incidentes sobre bases de datos con datos personales |
 | D.S. N° 016-2024-JUS | Exige DPIA para tratamientos de alto riesgo | Realizar DPIAs antes de nuevos sistemas con datos personales a gran escala |
 | D.L. N° 1412 | Art. 4, 13 (Confianza Digital), 17 (Interoperabilidad) | SGSI demuestra seguridad digital. Sistemas PIDE deben cumplir Directiva 001-2025-PCM/SGTD |
-| D.S. N° 029-2021-PCM | Designacion del Oficial de Seguridad | Brecha: UNCP no ha designado este rol. Accion prioritaria |
+| D.S. N° 029-2021-PCM | Designacion del Oficial de Seguridad | R. N° 2143-R-2023 integra al CGD a la Mg. Rocio Rosanna Damian Alvarado como Oficial de Seguridad de la Informacion. Accion prioritaria: evidenciar suplencia, dedicacion y recursos operativos |
 | D.S. N° 141-2025-PCM | Quinta Disposicion: uso intensivo de tecnologias digitales | SGSI como habilitador de tecnologia digital segura |
 | Ley Universitaria 30220 | Autonomia, licenciamiento, calidad educativa | SGSI contribuye a CBC 6 (Infraestructura) y CBC 7 (Gestion de calidad) |
 | D.S. N° 051-2018-PCM | 1% de presupuesto TI para software público | UNCP debe priorizar software público en adquisiciones y desarrollo |
@@ -269,10 +269,15 @@ Correspondencia entre ISO/IEC 27000, NIST SP 800-53, MITRE ATT&CK v14 y MAGERIT 
 |:---|---|---|
 | PGTD 2026-2030 | 2026 | Define el proyecto PGTD-01 (SGSI) con presupuesto de S/ 850,000 |
 | PEI 2024-2030 | 2024 | Objetivos estrategicos que el SGSI apoya mediante gestion de riesgos |
-| Plan de Continuidad Operativa | 2026 | Procedimientos de continuidad complementados con controles A.5.29 y A.5.30 |
-| Mapa de Procesos Nivel 0 y 01 | 2025 | Identifica procesos criticos a proteger |
+| R. N° 1862-R-2023 | 2023 | Designa el Comite de Gobierno Digital de la UNCP y establece sus funciones conforme a la R.M. N° 119-2018-PCM |
+| R. N° 2143-R-2023 | 2023 | Integra al Comite de Gobierno Digital a la Mg. Rocio Rosanna Damian Alvarado, Jefa de la OTI, como Oficial de Seguridad de la Informacion |
+| R. N° 2140-R-2023 | 2023 | Designa a la Mg. Rocio Rosanna Damian Alvarado como Funcionaria Responsable del Software Publico |
+| R. N° 3255-R-2024 | 2024 | Aprueba el Plan de Continuidad Operativa; complementa controles A.5.29 y A.5.30 |
+| R. N° 3524-R-2025 y R. N° 3526-R-2025 | 2025 | Aprueban el Mapa de Procesos Nivel 0 y Nivel 1; identifican procesos criticos a proteger |
 | Directiva de Correo Electronico | 2022 | Primer documento formal de seguridad. Integrado en POL-SGSI-05 |
 | ROF, MOF, CAP, PAP | 2014-2025 | Unidades y cargos responsables de seguridad de la informacion |
+
+**Fuentes institucionales pendientes de control documental:** las resoluciones rectorales se verifican en `https://uncp.edu.pe/la-universidad/resoluciones-rectorales/` y el repositorio embebido `https://resoluciones.uncp.edu.pe/documentos/R-RE`; las resoluciones directorales se verifican en `https://uncp.edu.pe/la-universidad/resoluciones-directorales/` y `https://resoluciones.uncp.edu.pe/documentos/R-DR`. Las resoluciones citadas deben conservarse como anexos Markdown/PDF controlados antes de aprobar la version final del SGSI.
 
 # Matriz de Correspondencia entre Marcos Normativos
 

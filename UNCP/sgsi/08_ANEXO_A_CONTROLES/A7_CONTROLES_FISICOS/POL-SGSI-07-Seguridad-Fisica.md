@@ -6,7 +6,6 @@ code: POL-SGSI-07
 # Política de Seguridad Física y Áreas Seguras
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Comité de Gobierno y Transformación Digital
 **Norma:** ISO/IEC 27001:2022 (Controles A.7.1--A.7.14)
 **Alineamiento:** P-SGSI-03 (Gestión de Accesos), P-SGSI-07 (Eliminación Segura), F-SGSI-06 (Bitácora de Acceso a Áreas Críticas)
 

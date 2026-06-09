@@ -1,0 +1,57 @@
+name: Compile PDFs and Upload to Google Drive
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build-and-upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install System Dependencies (Pandoc, XeLaTeX, Chromium)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-latex-extra librsvg2-bin chromium-browser
+
+      - name: Install Mermaid CLI
+        run: |
+          npm install -g @mermaid-js/mermaid-cli
+
+      - name: Install rclone
+        run: |
+          curl https://rclone.org/install.sh | sudo bash
+
+      - name: Recreate Mermaid Images
+        env:
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
+        run: |
+          # Compilar imágenes Mermaid
+          mmdc -i UNCP/pgtd/imagenes/arquitectura_hibrida.mmd -o UNCP/pgtd/imagenes/arquitectura_hibrida.png
+          mmdc -i UNCP/pgtd/imagenes/flujo_integracion.mmd -o UNCP/pgtd/imagenes/flujo_integracion.png
+          mmdc -i UNCP/pgtd/imagenes/telemetria_visibilidad.mmd -o UNCP/pgtd/imagenes/telemetria_visibilidad.png
+
+      - name: Compile all PDFs
+        run: |
+          cd UNCP
+          python3 build_sgsi.py
+
+      - name: Configure rclone
+        run: |
+          mkdir -p ~/.config/rclone
+          echo "${{ secrets.RCLONE_CONFIG }}" > ~/.config/rclone/rclone.conf
+
+      - name: Upload PDFs to Google Drive
+        run: |
+          # Sincronizar únicamente los archivos PDF generados al control remoto gdrive (eliminando en destino lo que se borre localmente)
+          rclone sync ./UNCP/ gdrive:SGSI_UNCP --include "*.pdf" --include "**/*.pdf" --verbose

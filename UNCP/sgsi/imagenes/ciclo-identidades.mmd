@@ -1,0 +1,11 @@
+graph TD
+    A[Sistemas Origen: Admisión / RRHH] -->|Sincronización Automatizada| B[Identity Provider IdP / Keycloak]
+    B --> C[Creación de Cuenta Nominativa]
+    C --> D{Solicitud de Acceso a Recursos}
+    D --> E{Políticas de Acceso Condicional}
+    E -->|Validar Dispositivo MDM / VPN| F{Verificar Identidad MFA}
+    E -->|Bloqueo de postura no segura| H[Acceso Denegado]
+    F -->|Autenticación Correcta| G[Acceso Concedido: Privilegio Mínimo]
+    F -->|Fallo de MFA / Sospecha| H
+    G --> I{Cese / Egreso / Baja}
+    I -->|Desactivación inmediata < 24h| J[Bloqueo e Inactivación de Cuenta]

@@ -13,14 +13,48 @@ Este documento detalla los requerimientos específicos de información y los act
 ## 2. Información sobre Estrategia y Organización
 
 ### 2.1 Planeamiento Estratégico Real
-*   **PEI 2024-2030 (PDF):** Documento completo aprobado para extraer los indicadores de los Objetivos Estratégicos Institucionales (OEI).
+*   **PEI 2024-2030:** Documento recibido e incorporado como referencia para extraer OEI, AEI e indicadores institucionales.
 *   **POI Multianual 2026-2028:** Detalle de las actividades operativas relacionadas con tecnologías de la información.
 
 ### 2.2 Estructura del CGTD
-*   **Resolución Rectoral Actualizada:** Copia de la resolución que conforma el Comité de Gobierno y Transformación Digital.
+*   **Resolución Rectoral vigente:** La conformación del Comité de Gobierno Digital se sustenta en la R. N.° 1862-R-2023. Se requiere validar si existe modificación posterior o reconformación vigente.
 *   **Directorio Real:** Nombres, cargos y correos institucionales de los miembros actuales para la conformación de la Matriz RACI.
+*   **Evidencia operativa:** Actas, convocatorias o reportes recientes del CGTD para documentar su funcionamiento y periodicidad de sesiones.
 
-### 2.3 Activos Visuales (Imágenes)
+### 2.3 Resoluciones y evidencia documental a convertir a Markdown
+
+El portal oficial de resoluciones rectorales (`https://uncp.edu.pe/la-universidad/resoluciones-rectorales/`) publica el listado vigente mediante el repositorio `https://resoluciones.uncp.edu.pe/documentos/R-RE`; el portal de resoluciones directorales (`https://uncp.edu.pe/la-universidad/resoluciones-directorales/`) usa `https://resoluciones.uncp.edu.pe/documentos/R-DR`. Para que el PGTD y el SGSI queden sustentados con evidencia real, se requiere convertir a Markdown, como mínimo, los siguientes documentos:
+
+La matriz consolidada de estado documental se mantiene en `UNCP/referencias/Matriz-Evidencia-Documental-UNCP.md`.
+
+*   **R. N.° 1862-R-2023:** Comité de Gobierno Digital de la UNCP. Existe referencia local (`UNCP/referencias/comite.md`), pero conviene reemplazarla por una conversión limpia del PDF cuando sea posible.
+*   **R. N.° 2143-R-2023:** recibida en Markdown. Integra al CGD a la Mg. Rocío Rosanna Damián Alvarado, Jefa de la OTI, como Oficial de Seguridad de la Información.
+*   **R. N.° 2140-R-2023:** recibida en Markdown. Designa a la Mg. Rocío Rosanna Damián Alvarado como Funcionaria Responsable del Software Público.
+*   **PEI 2024-2030:** recibido como `Plan+Estratégico+Institucional+UNCP+2024-2030.md`. Se usará para validar OEI, AEI, indicadores y alineamiento estratégico del PGTD/SGSI.
+*   **R. N.° 2443-R-2024:** recibida en Markdown. Aprueba el POI 2024.
+*   **R. N.° 3524-R-2025 y R. N.° 3526-R-2025:** recibidas como PDF y resumidas en `UNCP/referencias/AGENTS.md`. Sustentan el Mapa de Procesos Nivel 0 y Nivel 1; el diagrama Mermaid fue convertido a PNG.
+*   **R. N.° 3255-R-2024:** recibida en Markdown. Aprueba el Plan de Continuidad Operativa.
+*   **R. N.° 0835-R-2022:** recibida en Markdown. Designa el Comité de Gestión Ambiental y sustenta Green IT y ecoeficiencia digital.
+*   **Actas o informes CGTD 2024-2026:** no accesibles públicamente en red; deben solicitarse formalmente a la universidad para evidenciar sesiones, acuerdos, seguimiento del PGTD, asignación de responsables y reporte a Rectorado.
+*   **Evidencia de compromisos CGR pendientes:** no accesible públicamente en red; solicitar a la universidad documentación sobre PIDE, IPv6, Datos Abiertos, Encuesta Nacional de Activos Digitales, Oficial de Gobierno de Datos y Política de Privacidad.
+
+### 2.4 Requerimientos formales a la universidad
+
+Los siguientes documentos deben solicitarse a la UNCP porque no se encuentran disponibles públicamente o requieren validación interna:
+
+| Requerimiento | Unidad sugerida | Finalidad |
+|---|---|---|
+| Actas, convocatorias e informes del CGD 2024-2026 | Secretaría General / OTI / CGD | Evidenciar operación real del comité y seguimiento del PGTD/SGSI. |
+| Directorio vigente del CGD y suplentes | Secretaría General / OTI | Completar matriz RACI y comunicaciones oficiales. |
+| Asignación de dedicación, funciones o plan operativo del Oficial de Seguridad | OTI / DGA / RRHH | Sustentar capacidad operativa del SGSI. |
+| Evidencia de integración PIDE | OTI / Secretaría General | Sustentar interoperabilidad institucional. |
+| Plan de transición a IPv6 | OTI | Cerrar compromiso CGR pendiente. |
+| Evidencia de datos abiertos en PNDA o plan de datos abiertos | OTI / Unidad de Modernización | Sustentar gobierno abierto. |
+| Encuesta Nacional de Activos Digitales o inventario equivalente | OTI | Línea base de activos digitales. |
+| Designación del Oficial de Gobierno de Datos | Rectorado / Secretaría General / OTI | Sustentar gobierno de datos. |
+| Política de Privacidad y registro de tratamientos de datos personales | Asesoría Jurídica / OTI | Cumplimiento de Ley N.° 29733. |
+
+### 2.5 Activos Visuales (Imágenes)
 *   **Organigrama Institucional:** Imagen en alta resolución (.png o .jpg) para el anexo de estructura.
 *   **Mapa de Procesos (Nivel 0 y 01):** Diagramas en formato imagen para la sección de situación actual.
 

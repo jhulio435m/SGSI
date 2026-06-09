@@ -149,8 +149,3 @@ Los hallazgos de la auditoría de brecha se registran como RACs (**F-SGSI-04**) 
 | P-SGSI-09 | Metodología de Auditoría Basada en Riesgos |
 | R-SGSI-04 | Programa Maestro de Auditoría |
 | INFORME-FINAL-SGSI-UNCP | Informe Final Ejecutivo del Diseño del SGSI |
-
-***
-
-**Elaborado por:**
-Oficial de Seguridad y Confianza Digital -- UNCP

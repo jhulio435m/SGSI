@@ -1,0 +1,29 @@
+graph TD
+    classDef device fill:#1e3d59,stroke:#17b978,stroke-width:1.5px,color:#fff;
+    classDef monitor fill:#ff6f3c,stroke:#ff9a3c,stroke-width:1.5px,color:#fff;
+    classDef user fill:#8e44ad,stroke:#9b59b6,stroke-width:1.5px,color:#fff;
+
+    TRAFICO["Tráfico de Internet / Alumnos"]:::user
+    FW["Firewall / WAF NGFW"]:::device
+    TAP["TAP Físico (Línea Crítica)"]:::device
+    IDS["IDS / IPS (Detección en tiempo real)"]:::monitor
+    CORE["Switch Core UNCP"]:::device
+    NETFLOW["NetFlow / IPFIX"]
+    ANALYZER["Analizador de Flujos"]:::monitor
+    SPAN["SPAN Port (Zonas Académicas)"]:::device
+    WIRESHARK["Wireshark (Análisis)"]:::monitor
+    HW["Servidores / Switches / UPS"]:::device
+    SNMP["SNMPv3 (Cifrado AES)"]
+    ZABBIX["NMS / Zabbix"]:::monitor
+
+    TRAFICO --> FW
+    FW --> TAP
+    TAP -->|Copia 100%| IDS
+    TAP --> CORE
+    CORE -->|NetFlow / IPFIX| NETFLOW
+    NETFLOW --> ANALYZER
+    CORE --> SPAN
+    SPAN -->|Espejado por Software| WIRESHARK
+    CORE --> HW
+    HW -->|SNMPv3 Cifrado AES| SNMP
+    SNMP --> ZABBIX

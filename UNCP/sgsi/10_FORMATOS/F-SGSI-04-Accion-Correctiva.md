@@ -104,5 +104,4 @@ Establecer una revisión trimestral del inventario de activos con cruce de infor
 
 ### Cierre Formal
 
-**Aprobado por:** Ing. Luis Castillo Gutierrez -- Oficial de Seguridad
 **Fecha de Cierre:** 15/07/2026

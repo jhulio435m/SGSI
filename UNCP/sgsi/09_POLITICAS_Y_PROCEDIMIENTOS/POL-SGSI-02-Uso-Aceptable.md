@@ -6,7 +6,6 @@ code: POL-SGSI-02
 # Política de Uso Aceptable, Escritorio Limpio, Teletrabajo y Comunicaciones
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Comité de Gobierno y Transformación Digital
 **Norma:** ISO/IEC 27001:2022 (Controles A.5.10, A.6.7, A.7.7, A.8.10, A.8.23)
 **Alineamiento:** POL-SGSI-05 (Dispositivos Móviles), POL-SGSI-06 (Contraseñas), P-SGSI-02 (Gestión de Incidentes)
 

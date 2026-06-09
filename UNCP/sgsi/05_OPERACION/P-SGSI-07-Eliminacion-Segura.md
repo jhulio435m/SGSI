@@ -6,7 +6,6 @@ code: P-SGSI-07
 # Procedimiento de Eliminación Segura de Información y Activos
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Oficial de Seguridad y Confianza Digital
 **Norma:** ISO/IEC 27001:2022 (Controles A.8.10, A.8.11, A.7.14)
 **Referencia Técnica:** NIST SP 800-88 Rev. 1 (Guidelines for Media Sanitization)
 **Alineamiento:** POL-SGSI-03 (Clasificación de la Información), F-SGSI-05 (Acta de Eliminación Segura)

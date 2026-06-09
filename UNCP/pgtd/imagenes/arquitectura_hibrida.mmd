@@ -1,0 +1,22 @@
+graph TD
+    classDef uncp fill:#1e3d59,stroke:#17b978,stroke-width:1.5px,color:#fff;
+    classDef huawei fill:#ff6f3c,stroke:#ff9a3c,stroke-width:1.5px,color:#fff;
+    classDef user fill:#8e44ad,stroke:#9b59b6,stroke-width:1.5px,color:#fff;
+
+    CLIENTES["Comunidad UNCP<br>(Acceso de Usuarios)"]:::user
+    MFA["Autenticación Microsoft 365 MFA"]
+    GSLB["Balanceador Global GSLB (Huawei Cloud)"]:::huawei
+    
+    CLIENTES --> MFA
+    MFA --> GSLB
+    
+    subgraph Sede["Sede Central Huancayo (Nodo Principal Local)"]
+        LOCAL["<b>Data Center UNCP</b><br>• Perímetro: NGFW perimetral<br>• Visibilidad: TAP Físico & NetFlow<br>• Distribución: Core Switches PoE 802.1X<br>• Datos: Base de datos ERP ADESA"]:::uncp
+    end
+    
+    subgraph Nube["Huawei Cloud (Nodo de Contingencia)"]
+        CLOUD["<b>Nube Híbrida (Huawei Cloud)</b><br>• Perímetro: Cloud WAF & IPS<br>• Cómputo: ECS (Docker/Kubernetes)<br>• Base de datos: RDS (Replicación)<br>• Backup: Object Storage (OBS)"]:::huawei
+    end
+    
+    GSLB -->|Activo-Sincrónico| LOCAL
+    GSLB -->|Failover Asincrónico| CLOUD

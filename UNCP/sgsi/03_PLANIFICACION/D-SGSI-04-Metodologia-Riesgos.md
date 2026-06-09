@@ -6,7 +6,6 @@ code: D-SGSI-04
 # Metodología de Evaluación y Tratamiento de Riesgos de Seguridad de la Información
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Oficial de Seguridad y Confianza Digital
 **Norma:** ISO/IEC 27001:2022 (Cláusulas 6.1.2, 6.1.3) e ISO 31000
 
 ***

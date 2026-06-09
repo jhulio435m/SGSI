@@ -6,7 +6,6 @@ code: P-SGSI-02
 # Marco de Respuesta ante Incidentes de Seguridad (CSIRT-UNCP)
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Oficial de Seguridad y Confianza Digital
 **Norma:** ISO/IEC 27001:2022 (Controles A.5.24 -- A.5.28)
 **Alineamiento:** PGTD-06 (Sistema de Gestión de Incidentes), D.S. N.° 029-2021-PCM (Marco de Confianza Digital)
 
@@ -35,6 +34,8 @@ Aplica a todos los incidentes de seguridad que afecten o puedan afectar la confi
 | **Bajo** | Impacto menor o potencial. Sin consecuencias inmediatas | Intento de escaneo de puertos bloqueado por firewall, spam desde cuenta institucional comprometida (menor), alerta falsa de SIEM | < 72 horas |
 
 ## Ciclo de Vida del Incidente
+
+![Flujo del Ciclo de Vida de Incidentes (CSIRT-UNCP)](../imagenes/flujo-incidentes.png)
 
 ### Preparación (Planificar)
 

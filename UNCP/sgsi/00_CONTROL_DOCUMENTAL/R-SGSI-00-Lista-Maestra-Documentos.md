@@ -58,6 +58,7 @@ Mantener un registro único, actualizado y trazable de toda la información docu
 | POL-SGSI-04 | Política de Seguridad en las Relaciones con Proveedores | 2.0 | 09_POLITICAS_Y_PROCEDIMIENTOS |
 | POL-SGSI-05 | Política de Seguridad para Dispositivos Móviles del Personal | 2.0 | 09_POLITICAS_Y_PROCEDIMIENTOS |
 | POL-SGSI-06 | Política de Contraseñas y Autenticación Segura (NIST SP 800-63B) | 2.0 | 09_POLITICAS_Y_PROCEDIMIENTOS |
+| POL-SGSI-08 | Política de Privacidad y Protección de Datos Personales (Ley N.° 29733) | 1.0 | 09_POLITICAS_Y_PROCEDIMIENTOS |
 | F-SGSI-01 | Formato de Solicitud de Alta/Baja/Cambio de Acceso | 1.0 | 10_FORMATOS |
 | F-SGSI-02 | Registro de Asistencia a Capacitación | 1.0 | 10_FORMATOS |
 | F-SGSI-03 | Formato de Baja de Usuario y Devolución de Activos | 1.0 | 10_FORMATOS |
@@ -72,7 +73,7 @@ Mantener un registro único, actualizado y trazable de toda la información docu
 |:-----|:--------|:---------|:-----------|
 | Documento de Referencia | D-SGSI | 8 | D-00, D-01, D-02, D-03, D-04, D-05, D-06, D-07, D-08, D-12 |
 | Procedimiento | P-SGSI | 7 | P-00, P-02, P-03, P-04, P-05, P-06, P-07, P-08, P-09 |
-| Política | POL-SGSI | 7 | POL-01 a POL-07 |
+| Política | POL-SGSI | 8 | POL-01 a POL-08 |
 | Registro | R-SGSI | 5 | R-00, R-01, R-02, R-03, R-04 |
 | Formato | F-SGSI | 6 | F-01 a F-06 |
 | Acta | ACT-SGSI | 1 | ACT-01 |

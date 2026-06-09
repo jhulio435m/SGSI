@@ -1,0 +1,13 @@
+graph TD
+    A[Titular de Datos] -->|Solicitud ARCO + Copia DNI| B[Mesa de Partes Virtual / Física]
+    B -->|Derivación < 24h| C[Oficial de Seguridad de la OTI]
+    C --> D{Triaje y Validación de Identidad}
+    D -->|Identidad No Validada| E[Rechazo de Solicitud]
+    D -->|Válido| F{Tipo de Derecho}
+    F -->|Acceso| G[Recopilar Información en Bases de Datos]
+    F -->|Rectificación/Cancelación/Oposición| H[Asesoría Jurídica + Modificación Técnica OTI]
+    G --> I{Plazo Límite}
+    H --> I
+    I -->|Acceso: Max 20 días hábiles| J[Respuesta Formal Firmada al Titular]
+    I -->|Otros: Max 10 días hábiles| J
+    J --> K[Registro y Reporte al CGD]

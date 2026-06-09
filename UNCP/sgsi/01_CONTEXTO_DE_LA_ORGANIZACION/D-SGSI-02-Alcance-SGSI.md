@@ -42,10 +42,10 @@ El Sistema de Gestión de Seguridad de la Información (SGSI) de la UNCP abarca 
 
 | Capa | Componentes Incluidos | Excluido del Alcance |
 |:-----|:----------------------|:--------------------|
-| **Infraestructura On-Premise** | Data Center Huancayo: 8 servidores físicos, 3 virtualizados, 12 TB almacenamiento objeto, 4 TB backup. Redes de facultades: 4 sedes (Huancayo, Mantaro, Satipo, Tarma), 143 APs, 137 PoE switches, 9 firewalls | Infraestructura civil (edificaciones, mobiliario) que no procesa ni almacena información |
+| **Infraestructura On-Premise** | Data Center Huancayo: 8 servidores físicos, 3 virtualizados, 12 TB almacenamiento objeto, 4 TB backup. Redes de facultades: 4 sedes (Huancayo, Mantaro, Satipo, Tarma), 143 APs, 137 PoE switches, 9 firewalls. **Se incluye de forma explícita el aseguramiento de todas las APIs y servicios locales expuestos en cualquiera de las sedes periféricas como fronteras críticas.** | Infraestructura civil (edificaciones, mobiliario) que no procesa ni almacena información |
 | **Infraestructura Cloud** | Huawei Cloud (IaaS/PaaS): servidores virtuales, balanceadores, WAF, Anti-DDoS. Microsoft 365 (SaaS): Exchange Online, SharePoint, Teams, OneDrive | Servicios cloud personales no autorizados (Shadow IT no descubierto) |
-| **Red y Conectividad** | 4 Gbps internet, VPN IPsec, SSL-VPN para acceso remoto, segmentación de red actual (sin ZTNA aún) | Redes de terceros no administradas por la UNCP |
-| **Dispositivos Finales** | 3,736 equipos de escritorio, 1,861 laptops, dispositivos móviles institucionales | Dispositivos personales BYOD no registrados (se gestionan progresivamente) |
+| **Red y Conectividad** | 4 Gbps internet, VPN IPsec, SSL-VPN para acceso remoto (con obligatoriedad de cumplimiento de directivas de seguridad y validación de postura de red), segmentación de red actual (sin ZTNA aún). **Se incluyen las interfaces y endpoints de APIs que integran servicios externos.** | Redes de terceros no administradas por la UNCP (a excepción de las APIs y canales de comunicación desarrollados o controlados por la UNCP que actúan como integraciones) |
+| **Dispositivos Finales** | 3,736 equipos de escritorio, 1,861 laptops, dispositivos móviles institucionales y BYOD voluntario autorizado para funciones laborales | Dispositivos personales de estudiantes y docentes usados para servicios académicos generales; se gestionan mediante concientización, MFA cuando esté disponible y condiciones de acceso por cuenta |
 | **Seguridad Perimetral** | Firewalls existentes (con licencias vencidas — en proceso de renovación), WAF Huawei Cloud | — |
 | **Monitoreo** | Sin SIEM al inicio del proyecto. Se implementará durante la ejecución del PGTD-01 | — |
 
@@ -65,7 +65,7 @@ El SGSI se implementa en fases progresivas conforme al cronograma del PGTD-01:
 
 | Fase | Periodo | Hito |
 |:-----|:--------|:-----|
-| **Fase 0 — Diagnóstico AS-IS** | 2026 Q2-Q3 | Auditoría inicial de activos, definición de políticas, designación de roles |
+| **Fase 0 — Diagnóstico AS-IS** | 2026 Q2-Q3 | Auditoría inicial de activos, definición de políticas, ratificación de roles y matriz RACI |
 | **Fase 1 — Implementación Basal** | 2026 Q4 — 2027 Q2 | Controles críticos (A.5, A.6, A.7, A.8), SIEM básico, MFA obligatorio |
 | **Fase 2 — Consolidación** | 2027 Q3 — 2028 Q1 | Segmentación ZTNA, integración PIDE, SOC básico, 50% procesos en SGSI |
 | **Fase 3 — Certificación** | 2028 Q2-Q4 | Auditoría interna, auditoría de certificación ISO 27001:2022, 90% procesos en SGSI |
@@ -77,7 +77,7 @@ El SGSI se implementa en fases progresivas conforme al cronograma del PGTD-01:
 | **Estudiantes (~10,000)** | Disponibilidad 24/7 de servicios académicos, protección de datos personales (Ley N° 29733), privacidad de calificaciones | Confianza en la plataforma digital |
 | **Docentes (~1,200)** | Acceso remoto seguro, integridad de investigaciones y publicaciones, protección de propiedad intelectual | Continuidad del trabajo académico |
 | **Personal Administrativo (~500)** | Confidencialidad de datos financieros y de personal, disponibilidad de sistemas de gestión | Eficiencia operativa |
-| **OTI (2 profesionales)** | Herramientas de monitoreo y respuesta, procesos documentados, autonomía técnica | Capacidad de gestión de seguridad |
+| **OTI (11 profesionales + equipo de soporte/practicantes)** | Herramientas de monitoreo y respuesta, procesos documentados, autonomía técnica, soporte de red y aseguramiento de APIs en todas las sedes | Capacidad de gestión de seguridad y resiliencia operativa |
 | **Organismo Supervisor (SUNEDU)** | Licenciamiento institucional, calidad educativa, infraestructura tecnológica adecuada | Cumplimiento normativo |
 | **PCM / SGTD** | Implementación del Marco de Confianza Digital (D.S. 126-2025-PCM), interoperabilidad PIDE, reporte de avance PGTD | Cumplimiento de política nacional |
 | **Proveedores (Huawei, Microsoft)** | SLA de seguridad, continuidad del servicio, protección de datos en cloud | Cumplimiento contractual |
@@ -107,7 +107,7 @@ Se excluyen del alcance del SGSI los siguientes elementos, por no procesar ni al
 - Infraestructura civil (edificaciones, mobiliario, instalaciones eléctricas no asociadas a TI)
 - Vehículos y activos de transporte
 - Activos de consumo (material de oficina, suministros de limpieza)
-- Sistemas de información de entidades externas sobre los cuales la UNCP no tenga control directo
+- Sistemas de información de entidades externas sobre los cuales la UNCP no tenga control directo (sin embargo, los endpoints, APIs y canales de integración desarrollados o consumidos por la UNCP para interactuar con estos sistemas externos sí están incluidos en el alcance del SGSI para mitigar vectores de ataque externos)
 
 No se excluye ningún requisito de las cláusulas 4 a 10 de la norma ISO/IEC 27001:2022.
 
@@ -118,7 +118,7 @@ La delimitación del alcance responde a los riesgos críticos identificados en e
 | Riesgo Crítico | Factor de Riesgo | Justificación de Inclusión en el Alcance |
 |:----------------|:-----------------|:-----------------------------------------|
 | Fuga de datos sensibles de estudiantes | Acceso remoto masivo, ausencia de DLP, MFA parcial | Se incluye el control de acceso remoto, la segmentación de red y la implementación de DLP progresivo |
-| Alteración de registros académicos | Segmentación de red deficiente, ausencia de ZTNA | Se incluye la infraestructura de red de facultades y el proyecto de microsegmentación (ZTNA) |
+| Alteración de registros académicos | APIs expuestas sin autenticación segura en sedes, vulnerabilidades de red periféricas, segmentación de red deficiente, ausencia de ZTNA | Se incluye la seguridad y auditoría de APIs en todas las sedes, la infraestructura de red de facultades y el proyecto de microsegmentación (ZTNA) |
 | Indisponibilidad de servicios críticos | Dependencia de Huawei Cloud sin plan de salida, firewall obsoleto | Se incluye la gestión de continuidad del negocio y la resiliencia cloud |
 | Incumplimiento normativo | 7 nuevas normas 2024-2025, sanciones por brecha de datos | Se incluye el cumplimiento legal como requisito transversal del SGSI |
 | Fuga de propiedad intelectual | Repositorio DSpace sin controles de acceso granular, tesis sin respaldo off-site | Se incluye el sistema de investigación y el repositorio digital |
@@ -128,7 +128,7 @@ La delimitación del alcance responde a los riesgos críticos identificados en e
 
 | Proceso | Activo Crítico | Dependencia Tecnológica | Dependencia Humana |
 |:--------|:---------------|:------------------------|:-------------------|
-| Matrícula / Notas | Base de Datos ADESA | Huawei Cloud / Keycloak IdM | OTI (2 personas) |
+| Matrícula / Notas | Base de Datos ADESA | Huawei Cloud / Keycloak IdM | OTI (Equipo técnico y de desarrollo) |
 | Gestión de Pagos | Sistema de Tesorería | SIAF / Pasarela de Pagos | Dirección de Finanzas |
 | Educación Virtual | Moodle 4.1 | Huawei Cloud S3 / Contenedores | Equipo de Educación Virtual |
 | Investigación | Repositorio DSpace | Red de Telemetría / Backup | Vicerrectorado de Investigación |

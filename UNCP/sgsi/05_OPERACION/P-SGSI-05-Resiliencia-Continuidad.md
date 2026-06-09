@@ -6,13 +6,22 @@ code: P-SGSI-05
 # Marco de Resiliencia y Continuidad en Nube Híbrida
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Jefe de la Oficina de Tecnologías de la Información
 **Norma:** ISO/IEC 27001:2022 (Controles A.5.29, A.5.30)
-**Alineamiento:** OGTD4 y Anexo H.3 (Estrategia de Alta Disponibilidad del PGTD)
+**Alineamiento:** R. N.° 3255-R-2024 (Plan de Continuidad Operativa de la UNCP), OGTD4 y Anexo H.3 (Estrategia de Alta Disponibilidad del PGTD)
 
 ***
 
+## Integración con el Plan de Continuidad Operativa (R. N.° 3255-R-2024)
+
+El presente marco de resiliencia y recuperación tecnológica da soporte directo al **Plan de Continuidad Operativa (PCO) de la UNCP**, aprobado bajo la **R. N.° 3255-R-2024**. Este procedimiento define la respuesta técnica de TI ante los escenarios de interrupción institucional contemplados en dicho plan:
+
+1. **Inhabilitación Física del Campus (Escenario 1 del PCO):** Asegura que el personal administrativo y docente pueda continuar operaciones esenciales de gestión (SIAF, SIGA, ADESA) en modalidad de teletrabajo a través de la infraestructura cloud y accesos remotos seguros.
+2. **Caída Crítica de Infraestructura Tecnológica (Escenario 3 del PCO):** Define la resiliencia redundante para evitar la interrupción de clases virtuales (Moodle) y registros académicos (ADESA).
+3. **Coordinación y Enlace:** El Oficial de Seguridad de la Información (Mg. Rocío Rosanna Damián Alvarado) forma parte del Comité de Continuidad Operativa de la UNCP, coordinando la activación del DRP tecnológico con los planes de contingencia humana, legal e institucional de la universidad.
+
 ## Estrategia de Continuidad: Activo-Activo
+
+![Arquitectura de Resiliencia en Nube Híbrida de la UNCP](../imagenes/arquitectura-resiliencia.png)
 
 La UNCP garantiza la continuidad de sus servicios críticos (ERP ADESA, Campus Virtual Moodle) mediante una arquitectura de **nube híbrida**. Los servicios no dependen de un solo centro de datos; operan simultáneamente entre el Datacenter Local (Huancayo) y Huawei Cloud, con balanceo de carga global (GSLB) para conmutación automática por error.
 

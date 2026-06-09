@@ -1,0 +1,36 @@
+flowchart TD
+    subgraph E[MACROPROCESOS ESTRATÉGICOS]
+        direction TB
+        E1[Gobierno Institucional] --> E1a[Direccionamiento Estratégico] & E1b[Conducción Estratégica]
+        E2[Gestión Integral de la Calidad] --> E2a[Acreditación] & E2b[Mejora Continua]
+        E3[Gestión Estratégica y Económica] --> E3a[Planeamiento Institucional] & E3b[Programación Presupuestal] & E3c[Programación de Preinversiones] & E3d[Posicionamiento]
+    end
+
+    subgraph O[MACROPROCESOS OPERATIVOS / MISIONALES]
+        direction TB
+        O1[Gestión de Formación Profesional] --> O1a[Desarrollo Pregrado] & O1b[Desarrollo Posgrado] & O1c[Gestión Académica Administrativa] & O1d[Admisión]
+        O2[Gestión de Investigación I+D+I+E] --> O2a[Gestión de Investigación] & O2b[Desarrollo de Innovación] & O2c[Emprendimiento] & O2d[Transformación Académica]
+        O3[Gestión de Responsabilidad Social] --> O3a[Vinculación Grupos Interés] & O3b[Gestión de Impactos]
+        O4[Gestión de Extensión Universitaria] --> O4a[Extensión Cultural] & O4b[Proyección Social]
+        O5[Gestión de Bienestar Social] --> O5a[Servicio Salud] & O5b[Servicio Alimentación] & O5c[Servicio Biblioteca]
+    end
+
+    subgraph S[MACROPROCESOS DE SOPORTE]
+        direction TB
+        S1[Información - Comunicación] --> S1a[Administración Documentaria] & S1b[Gestión TICs] & S1c[Gestión Secretaría General] & S1d[Comunicación Institucional]
+        S2[Gestión Infraestructura y Laboratorios] --> S2a[Gestión Infraestructura] & S2b[Mantenimiento Equipos] & S2c[Talleres y Laboratorios]
+        S3[Abastecimiento] --> S3a[Adquisición Bienes y Servicios] & S3b[Bienes Patrimoniales]
+        S4[Gestión Financiera] --> S4a[Contabilidad] & S4b[Tesorería]
+        S5[Gestión de Talento Humano] --> S5a[Planificación Talento] & S5b[Gestión Empleo] & S5c[Rendimiento y Desarrollo] & S5d[Relaciones Humanas]
+    end
+
+    E -.-> O
+    S -.-> O
+
+    classDef est fill:#fef3c7,stroke:#b45309,color:#0f172a
+    classDef ope fill:#dcfce7,stroke:#15803d,color:#0f172a
+    classDef sop fill:#f3e8ff,stroke:#7e22ce,color:#0f172a
+
+    class E,E1,E1a,E1b,E2,E2a,E2b,E3,E3a,E3b,E3c,E3d est
+    class O,O1,O1a,O1b,O1c,O1d,O2,O2a,O2b,O2c,O2d,O3,O3a,O3b,O4,O4a,O4b,O5,O5a,O5b,O5c ope
+    class S,S1,S1a,S1b,S1c,S1d,S2,S2a,S2b,S2c,S3,S3a,S3b,S4,S4a,S4b,S5,S5a,S5b,S5c,S5d sop

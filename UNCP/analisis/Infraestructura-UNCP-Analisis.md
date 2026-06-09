@@ -96,8 +96,8 @@ PDF: `files.uncp.edu.pe/La+Universidad/Organigrama/ORGANIGRAMA+NIVELES.pdf`
 
 ### 2.3 ÓRGANOS DE LÍNEA ACADÉMICA
 
-- **Consejo de Facultad** → Decanato → Departamento Académico / Escuela Profesional / Unidad de Investigación / Unidad de Posgrado
-- **Escuela de Posgrado** → Dirección de Servicio Educativo de Extensión → Filiales
+- **Consejo de Facultad** -> Decanato -> Departamento Académico / Escuela Profesional / Unidad de Investigación / Unidad de Posgrado
+- **Escuela de Posgrado** -> Dirección de Servicio Educativo de Extensión -> Filiales
 
 ---
 
@@ -321,14 +321,14 @@ Atención presencial: 7:30 a.m. - 4:00 p.m.
 | **PAP** | 2025 | Presupuesto Analítico de Personal |
 | **TUPA** | 2024 | Texto Único de Procedimientos Administrativos |
 | **MAPRO** | Vigente | Manual de Procedimientos Administrativos |
-| **PEI** | 2024-2030 | Plan Estratégico Institucional |
+| **PEI** | 2024-2030 | Plan Estratégico Institucional incorporado como referencia para OEI/AEI e indicadores |
 | **POI Multianual** | 2026-2030 | Plan Operativo Institucional |
 | **PGTD** | 2026-2030 | Plan de Gobierno y Transformación Digital |
 | **Estatuto** | 2015 (TUO) | Estatuto Universitario |
-| **Mapa de Procesos Nivel 0** | 2025 | R. 3524-R-2026 |
-| **Mapa de Procesos Nivel 01** | 2025 | R. 3526-R-2026 |
+| **Mapa de Procesos Nivel 0** | 2025 | R. 3524-R-2025 |
+| **Mapa de Procesos Nivel 1** | 2025 | R. 3526-R-2025 |
 | **Directiva de Correo Electrónico** | 2022 | Uso del correo institucional |
-| **Plan de Continuidad Operativa** | 2024 | R. 3255-R-2026 |
+| **Plan de Continuidad Operativa** | 2024 | R. 3255-R-2024 |
 | **Reglamento SST** | 2021 | Seguridad y Salud en el Trabajo |
 | **Plan Anual SST** | 2021 | Seguridad y Salud en el Trabajo |
 
@@ -368,13 +368,13 @@ Disponibles en: https://uncp.edu.pe/documentos-de-gestion/
 | **OTI** | Existe con 2 personas asignadas |
 | **Directiva de Correo Electrónico** | Primer documento formal de seguridad (2022) |
 | **Concientización en Phishing** | Campañas visibles en homepage (banner 2026) |
-| **Plan de Continuidad Operativa** | Aprobado (R. 3255-R-2026) |
+| **Plan de Continuidad Operativa** | Aprobado (R. 3255-R-2024) |
 | **Turnitin** | Contratado para detección de similitud |
 
 ### Brechas Identificadas
 
-- Sin Oficial de Seguridad y Confianza Digital designado
-- Sin Comité de Gobierno Digital formalizado (más allá del PGTD)
+- Comité de Gobierno Digital formalizado mediante R. N.° 1862-R-2023; se requiere evidenciar su operación periódica mediante actas o reportes recientes
+- Oficial de Seguridad de la Información integrado al CGD mediante R. N.° 2143-R-2023; se requiere evidenciar vigencia nominal, suplencia operativa y recursos asignados
 - Sin política de seguridad de la información publicada
 - Sin política de privacidad en el sitio web
 - OTI con personal mínimo (2 personas) para una institución de ~11,700 miembros
@@ -411,14 +411,20 @@ Disponibles en: https://uncp.edu.pe/documentos-de-gestion/
 
 ### Brechas Identificadas
 - OTI con personal insuficiente (2 personas)
-- Sin Oficial de Seguridad designado
+- Oficial de Seguridad de la Información integrado al CGD, pero sin evidencia pública suficiente de equipo dedicado, suplencia y plan operativo anual de seguridad
 - Sin política de seguridad formal publicada
-- Sin Comité de Gobierno Digital operativo
+- Comité de Gobierno Digital formalizado; falta evidencia documental pública de operación continua y seguimiento del PGTD
 - Sin programa de concientización en seguridad estructurado
 - Sin política de privacidad visible en sitio web
 - Sistemas misionales (ADESA, SIGA, tesorería) sin visibilidad pública de controles de seguridad
 - Transición de Google Workspace a Microsoft 365 sin documentación de seguridad visible
 - Sin evidencia de pruebas de restauración de backups
+
+### Documentos Institucionales a Solicitar
+
+- Resoluciones rectorales desde el portal oficial `https://uncp.edu.pe/la-universidad/resoluciones-rectorales/` y su repositorio embebido `https://resoluciones.uncp.edu.pe/documentos/R-RE`
+- Resoluciones directorales desde `https://uncp.edu.pe/la-universidad/resoluciones-directorales/` y `https://resoluciones.uncp.edu.pe/documentos/R-DR`
+- Actas CGD 2024-2026, directorio vigente, suplencias y evidencias internas de PIDE, IPv6, datos abiertos, ENAD, Oficial de Gobierno de Datos y Política de Privacidad. El PEI 2024-2030 y las resoluciones 2143-R-2023, 2140-R-2023, 2443-R-2024, 3255-R-2024, 3524-R-2025 y 3526-R-2025 ya cuentan con evidencia local parcial o completa.
 
 ---
 
@@ -438,22 +444,10 @@ Establecer las directrices de diseño tecnológico y ciberseguridad para las pla
 
 Para cumplir con el Control A.8.16 (Monitoreo de Eventos), la infraestructura de red TO-BE articulará cuatro tecnologías complementarias:
 
-```
-           [ Tráfico de Internet / Alumnos ]
-                         │
-                  [ Firewall / WAF NGFW ]
-                         │
-         ╔═══════════════▼═══════════════╗
-         ║   TAP FÍSICO (Línea Crítica)  ║ ───► [ Copia 100% ] ──► [ IDS / IPS ]
-         ╚═══════════════┬═══════════════╝
-                         │
-             [ Switch Core UNCP ] ──────► [ NetFlow / IPFIX ] ──► [ Analizador de Flujos ]
-                         │
-         ╔═══════════════▼═══════════════╗
-         ║  SPAN PORT (Zonas Académicas) ║ ───► [ Espejado por Software ] ──► [ Wireshark ]
-         ╚═══════════════┬═══════════════╝
-                         │
-           [ Servidores / Switches / UPS ] ──► [ SNMPv3 (Cifrado AES) ] ──► [ NMS / Zabbix ]
+```{=latex}
+\begin{center}
+\includegraphics[width=0.65\textwidth]{pgtd/imagenes/telemetria_visibilidad.png}
+\end{center}
 ```
 
 | Componente | Descripción | Aplicación UNCP |

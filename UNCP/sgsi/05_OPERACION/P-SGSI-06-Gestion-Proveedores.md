@@ -6,7 +6,6 @@ code: P-SGSI-06
 # Procedimiento de Gestión de Seguridad con Proveedores
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Oficial de Seguridad y Confianza Digital
 **Norma:** ISO/IEC 27001:2022 (Controles A.5.19 -- A.5.23)
 **Alineamiento:** POL-SGSI-04 (Política de Seguridad con Proveedores), D-SGSI-04 (Metodología de Riesgos)
 

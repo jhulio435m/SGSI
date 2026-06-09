@@ -6,7 +6,6 @@ code: POL-SGSI-03
 # Política de Clasificación de la Información y Respaldos
 
 **Organización:** Universidad Nacional del Centro del Perú (UNCP)
-**Aprobado por:** Comité de Gobierno y Transformación Digital
 **Norma:** ISO/IEC 27001:2022 (Controles A.5.12, A.5.13, A.5.14, A.8.13)
 **Alineamiento:** D-SGSI-02 (Alcance del SGSI), P-SGSI-07 (Eliminación Segura)
 
