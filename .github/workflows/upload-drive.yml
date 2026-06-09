@@ -29,9 +29,11 @@ jobs:
           python3 build_sgsi.py
 
       - name: Configure rclone
+        env:
+          RCLONE_CONFIG_DATA: ${{ secrets.RCLONE_CONFIG }}
         run: |
           mkdir -p ~/.config/rclone
-          echo "${{ secrets.RCLONE_CONFIG }}" > ~/.config/rclone/rclone.conf
+          printf "%s\n" "$RCLONE_CONFIG_DATA" > ~/.config/rclone/rclone.conf
 
       - name: Upload PDFs to Google Drive
         run: |
